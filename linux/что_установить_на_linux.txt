@@ -1,0 +1,315 @@
+alien (конвертер в deb или rpm и обратно)
+exfat-util, exfat-fuse - драйвера exfat файловой системы для флешек
+wine - эмуль Win API
+sudo apt-get install GDebi (установка deb) + sudo dpkg -i /home/user/soft/*.deb - установка группы пакетов
+i-nex (аналог everest) - просмотр инфы о программах
+testdisk - востановление файлов (единственная прогрмма под linux)
+powertop - инфа о питании компаd
+DOSBox - эмуль DOS
+i2p
+TorBrowser
+
+Grub Customizer (в GTK) или sudo apt-get install kde-config-grub2 (в KDE)
+	- конфигуратор загрузки операционных систем
+	
+unetbootin - запись системы на флэшку, создание загрузочных дисков
+StarDict - словари + StarDict-tools (конвертирование словарей в StarDict) + StarDict-plugin-spell (проверка орфографии)
+GoldenDict -  форк StarDict, словари ABBYY Lingvo, StarDict, Babylon, Dictd
+gparted (gtk) или partion manager (kde) - редактор разделов жесткого диска, лучше всегда использовать gparted (он не глючен)
+	sudo fdisk -l - проверка состояния разделов
+
+KeePassX - менеджер паролей {
+	плагины firefox https://addons.mozilla.org/en-us/firefox/addon/passifox/
+					https://addons.mozilla.org/en-us/firefox/addon/keefox
+}
+
+pdftk - работа с pdf
+сжатие pdf (после установки pdftk)
+pdf2ps large.pdf very_large.ps
+ps2pdf very_large.ps small.pdf
+
+Marble - программа карта-глобус с поддержкой OpenStreetMap
+
+Octave - аналог matlab с похожим языком для мат. вычислений.
+
+clonezilla - резервные копии дисков
+
+sudo mount -t davfs https://webdav.yandex.ru /в-какой-то-каталог - монтирование webdav
+
+gigolo - подключение удалённых файловых систем, в том числе webdav
+
+davfs2 - консольная утилита для работы с webdav и схожими файловыми системами
+sudo dpkg-reconfigure davfs2
+
+hardinfo - инфа о оборудовании
+
+SANE, xsane - поддержка и работа со множеством моделей сканеров, сканирование по сети
+
+https://software.opensuse.org/package/imagewriter - фирменная утилита записи LiveUSB для open suse
+
+openbox и его компоненты - можно выбирать в качестве оконного менеджера в linuxmint mate
+
+----------------------
+!!!Менеджеры пакетов
+muon в KDE
+Synaptic в GTK
+
+----------------------
+!!!xfce
+sudo apt-get install xfce4-goodies - все плагины
+
+
+----------------------
+!!!эмуляторы компьютеров
+virtualbox (+ guest iso для него)
+qemu - эмулятор компьютера
+
+----------------------
+!!!Шифрование
+TrueCrypt 7a - проект закрыт
+VeraCrypt - шифрование дисков, создание виртуальных шифрованных дисков с двойным дном.
+CipherShed - форк TrueCrypt совместимый с TrueCrypt
+
+----------------------
+!!!Образы дисков и эмуляторы, запись
+AcetoneISO - монтирование образов
+Brasero - запись дисков, единственная нормальная
+k3b - запись дисков в KDE
+CDEmu - эмулятор дисковода
+
+--Преобразование других форматов в ISO
+sudo apt-get install ccd2iso //конвертировать команда: ccd2iso imagen.img imagen.iso
+sudo apt-get install nrg2iso
+sudo apt-get install mdf2iso
+B5I2ISO
+cdi2iso
+pdi2iso
+uif2iso
+
+----------------------
+!!!файловые менеджеры
+Krusader - в KDE
+double commander (doublecmd) - qt и gtk, поддерживает некоторые плагины\
+	от total commander
+xfe - двух панельный менеджер xfce, так себе
+
+----------------------
+!!!Консольные утилиты
+sudo apt-get install w3m w3m-img - браузер
+Links - браузер
+mc - файловый менеджер midnight commander
+aptitude - менеджер пакетов
+
+----------------------
+!!!Сети и Интернет
+--связь и обмен сообщениями
+Skype
+pidgin - месенджер + pidgin-otr плагин для шифрования
+
+--Удаленное управление
+remmina - vnc и rdp клиент
+vino - ещё какой-то сервер для vnc для gtk
+xvncviewer - TightVNC viewer клиент для vnc
+
+--снифера трафика и его анализ
+wireshark - снифер
+
+--торренты
+qbittorrent - аналог uTorrent
+
+
+--качалки
+(нормальных нету, только дополнение DownloadThemAll в Firefox)
+curl
+aria2
+Uget
+
+-браузеры
+firefox ESR
+firefox - поставить не из репа, под sudo можно обновлять быстрее
+chromium-browser + pepperflashplugin-nofree  -- Inox Browser - форк, но только гарантированно без мусора собирающего статистику
+
+--почтовый клиент
+thunderbird - поставить не из репозитория, под sudo обновлять можно быстрее
+Claws Mail - быстрый, но возможностей меньше чем в thunderbird, могут быть глюки
+
+--другое
+youtube-dl + gui для него - закачка с youtube и др. сайтов
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install youtube-dlg
+
+httrack + HTTraQt - скачивание сайтов целиком
+
+----------------------
+!!!Архиваторы
+p7zip-full (sudo apt-get install p7zip-rar p7zip-full) - множество типов архивов. Порт 7z под linux
+PeaZip
+sudo aptitude install rar unrar p7zip-full
+
+----------------------
+!!!В wine
+sumatra (в wine)
+WinDjView (в wine)
+7zip (в wine)
+Notepad++ (в wine)
+SAS Планета (в wine)
+HeidiSQL (в wine)
+Найти способ установить FineReader или аналог (в wine или virtualbox)
+Найти способ установить ms office (в wine или virtualbox)
+Найти способ установить lingoes (в wine или virtualbox)
+Найти способ установить photoshop (в wine или virtualbox)
+
+----------------------
+!!!Офис
+
+--текстовые редакторы
+vim
+emacs
+Notepadqq - клон Notepad++
+
+--просмотр документов
+libreoffice +
+ sudo apt-get install libreoffice-style-sifr + Tools > Options > LibreOffice > View and select "Sifr" under "Icon size and style"
+ + librecad
+ 
+Calligra Suite - оффисный пакет KDE, редактор графики, PDF, таблиц и т.д.
+ 
+xchm + kchm + утилита hh в wine - просмотр формата .chm
+chm2pdf
+fbreader - читалка
+CuneiForm - распознование текста + YAGF (интерфейс) + aspell (проверка орфографии) + ocrodjvu (распознование djvu) + xsane (со сканеров)
+SimpleScan - сканирование
+gscan2pdf - быстрое создание pdf и djvu из сканированных
+LaTeX - редактор формата .tex, для типографий
+Texmaker - редактор документов LaTeX
+Scribus - верстка как в Adobe InDesign, PDF, призентации и т.д.
+Gcalctool - калькулятор
+LanguageTool - проверка орфографии (нужна java)
+
+-----------------------
+!!!Разработка
+--среды
+eclipse (с сайта)
+netbeans (с сайта)
+phpmyadmin
+qtcreator (с сайта) - IDE для C/C++ и Qt
+Android SDK (с сайта)
+geany + geany-plugins - аналог Notepad++
+
+--компиляторы и библиотеки, базы, сервера
+openjdk (пакеты icedtea-plugin, default-jdk, default-jre, default-jdk-doc)
+oracle java
+perl
+python
+mono - sudo apt-get install mono-complete
+LAMP (php + apache + mysql)
+mysql + gui для него + mysql-workbench-community + скачать mysql connector
+tomcat
+g++
+gcc
+gcc-doc
+clang
+xampp - для linux, аналог lamp и Denver, с gui
+
+-node.js
+sudo apt-get install python-software-properties
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+sudo apt-get install nodejs (npm с некоторой версии интегрирована)
+	sudo npm install -g express
+	
+
+
+--контроль версий
+svn (subversion)
+git
+
+--сборщики
+make
+automake
+maven
+ant
+
+-----------------------
+!!!Мультимедия
+SoundConverter - преобразование одних форматов звука в другие
+DeVeDe - создание dvd для плеера
+recordMyDesktop - запись происходящего на экране + gtk-recordmydesktop + recorditnow (в KDE)
+arista - видеоконвертер
+gThumb - просмотр графики и видео
+EasyTag - редактор MP3 тегов в адио записях, исправление проблем с кодировкой тегов
+Mixxx - программа для диджеев, сведение звука в реальном времени
+Kodi (бывшее название - XBMC) - медиацентр для кучи форматов, онлайн медиа, youtube, виджеты и т.д.
+
+--Кодеки и плагины
+xubuntu-restricted-extras - набор всех кодеков + flashplayer
+sudo apt-get install libavcodec-extra
+-
+sudo apt-get install libdvdread4
+sudo /usr/share/doc/libdvdread4/install-css.sh
+-
+
+
+--плеера
+smplayer - более быстрый
+vlc
+
+--видеоредакторы
+Flowblade
+sudo apt-get install openshot openshot-doc
+PiTiVi
+Shotcut - видеоконвертер, нормальный
+
+--графические редакторы
+gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
+sudo apt-get install pinta
+Inkscape - векторный графический редактор
+krita - рисовалка для KDE
+Darktable - редактов фото, аналог Adobe Lightroom и Apple Aperture
+Fotoxx - управление коллекциями фотографий и их редактирование
+MozJPEG - сильное сжатие JPEG без потери совместимости с декодировщиками, например для веб-сайтов
+MyPaint - для рисования, в том числе с планшета
+
+--аудиоредакторы
+Audacity
+rosegarden
+Ardour - звуковой редактор для мекширования, обработки и т.д.
+	аналог профессиональных средств ProTools, Nuendo, Pyramix и Sequoia
+
+--3d редактор
+Blender
+
+-----------------------
+GNOME Disk или MountManager
+опции монтирования - писать в свойствах диска
+nosuid,nodev,nofail,exec,x-gvfs-show   - для ntfs
+defaults,user,exec - для ext4
+
+-----------------------
+Дополнительные библиотеки
+sudo dpkg --add-architecture i386 (добавить поддержку 32 бит архитектуры?)
+Набрать sudo apt-get install ia32-libs и выдаст чем его можно заменить
+sudo apt-get install lib32stdc++6
+sudo apt-get install lib32z1
+sudo apt-get install lib32ncurses5
+sudo apt-get install lib32bz2-1.0
+Для разрешения зависимостей в конце набрать sudo apt-get -f install
+
+Ускорение видео в vlc
+Установить xvba-va-driver (для проприетарных amd)
+затем в vlc Настройки → Ввод и кодеки → Использовать видеоускоритель включаем
+-----------------------
+Утилиты которые использует Krusader
+krename - групповое переименование
+kompare - сравнение
+kdiff3 - сравнение
+cfv - создание и проверка контрольных сумм
+arj - Архиваторы
+unace - Архиватор
+rar - архиватор
+kget - скачивание
+md5deep - считалка хэша
+md5sum - считалка хэша
+sha1deep - считалка хэша
+lha и unarj - не найдены

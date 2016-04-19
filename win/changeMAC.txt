@@ -1,0 +1,6 @@
+Сменить MAC адрес карт
+
+8256AEDFF578 - вилидный для wifi
+000C45A889AB - вилидный для ethernet
+
+getmac или ipconfig /all - смотреть адреса
