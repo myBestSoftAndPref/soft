@@ -90,7 +90,7 @@
 
 #### Настройки для удобства
 
-[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/About:config) - описаны настройки
+[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - описаны настройки
 
 Скопировать в файл ```profile/user.js```
 ```
@@ -142,17 +142,19 @@ user_pref("extensions.stylish.updatesEnabled", 0); //Отключить обно
 
 #### Разработка
 
-* [FireBug](https://addons.mozilla.org/en-US/firefox/addon/firebug) - основной инструмент, инспекция html, javascript, css, консоль, cookie и др. хранилищ, запросов. Множество [дополнений для FireBug](http://getfirebug.com/wiki/index.php/Firebug_Extensions) <br>
-У консоли FireBug есть дополнительные возможности: <br>
-	* [Функции логирование](https://getfirebug.com/wiki/index.php/Console_API) <br>
-	* [Команды командной строки](https://getfirebug.com/wiki/index.php/Command_Line_API) через которые можно находить функции, элементы DOM, выполнять скрипт, отслеживать вызов функций, трассировка вызовов, получить всех слушателей события, просматривать содержимое объектов <br>
-* [FireStorage Plus!](https://addons.mozilla.org/en-US/firefox/addon/firestorage-plus) - дополнение для FireBug для инспекции HTML5 Local Storage и подобного. <br>
-* [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - много инструментов, от линейки до автоформатирования javascript, отключения куков, css, валидации и др. <br>
-* [ColorZilla](https://addons.mozilla.org/en-US/firefox/addon/colorzilla) - инструменты для подборки цветов. <br>
-* [FirePath](https://addons.mozilla.org/en-US/firefox/addon/firepath) - дополнение для FireBug, позволяет находить, проверять, редактировать XPath, CSS и JQuery селекторы. <br>
-* [Javascript Deminifier](https://addons.mozilla.org/en-US/firefox/addon/javascript-deminifier/) - красиво формотирует javascript код.
-* [CSS Usage](https://addons.mozilla.org/en-US/firefox/addon/css-usage/) - дополнение для FireBug, просмотр стилей и информации о них.
-* [Tiny JavaScript Debugger](https://addons.mozilla.org/en-US/firefox/addon/tiny-javascript-debugger) - дебагер javascript
+* ```ctrl + shift + i``` - встроенные инструменты разработчика Firefox на сегодня имеют почти все возможности устаревших дополнений и большей части FireBug.
+* [FireBug](https://addons.mozilla.org/en-US/firefox/addon/firebug) - основной инструмент, инспекция html, javascript, css, консоль, cookie и др. хранилищ, запросов. Множество [дополнений для FireBug](http://getfirebug.com/wiki/index.php/Firebug_Extensions)
+	* У консоли FireBug есть дополнительные возможности:
+		* [Функции логирование](https://getfirebug.com/wiki/index.php/Console_API) <br>
+		* [Команды командной строки](https://getfirebug.com/wiki/index.php/Command_Line_API) через которые можно находить функции, элементы DOM, выполнять скрипт, отслеживать вызов функций, трассировка вызовов, получить всех слушателей события, просматривать содержимое объектов
+* [ColorZilla](https://addons.mozilla.org/en-US/firefox/addon/colorzilla) - инструменты для подборки цветов.
+* Устаревшие:
+	* [Tiny JavaScript Debugger](https://addons.mozilla.org/en-US/firefox/addon/tiny-javascript-debugger) - дебагер javascript
+	* [CSS Usage](https://addons.mozilla.org/en-US/firefox/addon/css-usage/) - дополнение для FireBug, просмотр стилей и информации о них.
+	* [FirePath](https://addons.mozilla.org/en-US/firefox/addon/firepath) - дополнение для FireBug, позволяет находить, проверять, редактировать XPath, CSS и JQuery селекторы.
+	* [Javascript Deminifier](https://addons.mozilla.org/en-US/firefox/addon/javascript-deminifier/) - красиво формотирует javascript код.
+	* [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - много инструментов, от линейки до автоформатирования javascript, отключения куков, css, валидации и др.
+	* [FireStorage Plus!](https://addons.mozilla.org/en-US/firefox/addon/firestorage-plus) - дополнение для FireBug для инспекции HTML5 Local Storage и подобного.
 
 #### Дополнения для приватности
 
@@ -196,6 +198,8 @@ user_pref("extensions.stylish.updatesEnabled", 0); //Отключить обно
 * [Pale Moon](https://www.palemoon.org/)
 * [IceCat](http://ftp.gnu.org/gnu/gnuzilla/)
 * [Firefox](https://ftp.mozilla.org/pub/firefox/)
+* [Firefox EME](https://ftp.mozilla.org/pub/firefox/)
+* [Firefox ESR](https://ftp.mozilla.org/pub/firefox/)
 
 #### Разработка стилей CSS для Firefox (и не только)
 
