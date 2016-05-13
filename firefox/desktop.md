@@ -203,6 +203,7 @@ user_pref("extensions.stylish.updatesEnabled", 0); //Отключить обно
 
 #### Разработка стилей CSS для Firefox (и не только)
 
+* [Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) - можно писать и применять стили CSS к интерфейсу и сайтам.
 * [DOM Inspector](https://addons.mozilla.org/en-us/firefox/addon/dom-inspector-6622/)
 * [Element Inspector](https://addons.mozilla.org/en-Us/firefox/addon/element-inspector/)
 * [InspectorWidget](https://addons.mozilla.org/en-us/firefox/addon/inspectorwidget/)
