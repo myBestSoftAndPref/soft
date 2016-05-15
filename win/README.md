@@ -109,7 +109,8 @@ https://www.jetbrains.com/idea/
 * фрэймворки для построения страниц (M + VC)
 	* Backbone.js http://backbonejs.org/
 	* AngularJS https://angularjs.org/
-	* ReactJS https://facebook.github.io/react/downloads.html
+	* ReactJS - V из MVC
+		* https://facebook.github.io/react/downloads.html
 	
 * оптимизаторы и минимизаторы для javascript
 	* jar программа для оптимизации js https://developers.google.com/closure/
@@ -118,28 +119,32 @@ https://www.jetbrains.com/idea/
 	
 #### Java библиотеки, фреймворки
 
-* Spring http://repo.spring.io/release/org/springframework/spring/
-* Spring MVC http://repo.spring.io/release/org/springframework/spring-webmvc/
-* Spring Security http://maven.springframework.org/release/org/springframework/security/spring-security/
 * Hibernate (можно использовать Criteria API) http://hibernate.org/orm/
 * Hibernate Validator http://hibernate.org/validator/
 * log4j - логирование http://logging.apache.org/log4j/
 * тестирование
 	* JUnit http://junit.org/
 	* Mockito https://github.com/mockito/mockito
-* Spring Boot - каркас для веб-приложений уже содержащий нужные библиотеки и втроенный tomcat
-http://spring-projects.ru/projects/spring-boot/
-	* Также можно составить свою конфигурацию онлайн на start.spring.io
-	* HikariCP - быстрый пулл соединений, глянуть если что
-	* инструкция по настройке https://habrahabr.ru/post/257223/
-* Spring Data JPA - реализация стандартных функций DAO, дополнительные можно добавлять самому http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/
-* spring-test-mvc - фрэймворк для тестов, в том числе UI (страниц)?
 * Thymeleaf - более красивые наборы тэгов для построения страниц
-* Spring Loaded - можно изменять классы без перезагрзки сервера
-	* https://github.com/spring-projects/spring-loaded
-	* инструкция Eclipse + Spring Loaded https://www.youtube.com/watch?v=GTrNkhVnJBU
+* Project Lombok - библиотека дающая аннотации, которые автогенерирует getters и setters
 * хороший список фрэймворков с рассуждением что и как https://habrahabr.ru/post/244531/
 
+* Spring
+	* Spring http://repo.spring.io/release/org/springframework/spring/
+	* Spring MVC http://repo.spring.io/release/org/springframework/spring-webmvc/
+	* Spring Security http://maven.springframework.org/release/org/springframework/security/spring-security/
+	* Spring Data JPA - реализация стандартных функций DAO, дополнительные можно добавлять самому http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/
+	* spring-test-mvc - фрэймворк для тестов, в том числе UI (страниц)?
+	* Spring Loaded - можно изменять классы без перезагрзки сервера
+		* https://github.com/spring-projects/spring-loaded
+		* инструкция Eclipse + Spring Loaded https://www.youtube.com/watch?v=GTrNkhVnJBU
+	* Spring Boot - каркас для веб-приложений уже содержащий нужные библиотеки и втроенный tomcat
+http://spring-projects.ru/projects/spring-boot/
+		* Также можно составить свою конфигурацию для Boot онлайн на start.spring.io
+		* HikariCP - быстрый пулл соединений, глянуть если что
+		* инструкция по настройке https://habrahabr.ru/post/257223/
+	* Spring Data REST - пример использования https://spring.io/guides/tutorials/react-and-spring-data-rest/
+		
 ## Видео/Аудио
 
 #### Плеера
