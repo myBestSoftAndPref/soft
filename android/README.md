@@ -12,3 +12,20 @@ c:\Users\user\AppData\Local\Temp\LumiaSoftwareRecoveryTool\
 
 сюда сохраняются временные файлы и конфиги
 c:\Users\All Users\Microsoft\Packages\
+
+
+###### Math
+
+Photomath  
+Mathpix  
+
+###### Internet
+
+###### Mail
+
+k9 mail
+
+###### Browser
+
+Firefox  
+Opera  
