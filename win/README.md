@@ -406,6 +406,15 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 * сглаживание шрифтов для Win XP https://www.microsoft.com/typography/ClearTypePowerToy.mspx
 * драйвер файловой системы exFAT для Win XP https://www.microsoft.com/ru-RU/download/details.aspx?id=19364
 
+* Официальная сборка обновлений по апрель 2016 для Win 7 SP1
+	* Фикс для установки этой сборки https://support.microsoft.com/en-us/kb/3020369
+	* Win7 x64 http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu
+	* Win7 x86 http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu
+	* после обновления можно отключить телеметрию
+		* http://www.overclock.net/t/1587577/windows-7-updates-list-descriptions-windows-7-8-telemetry-preparation
+		* http://techne.alaya.net/?p=12499
+		* http://www.dslreports.com/forum/r30348398-WIN7-Win-7-updates-to-avoid-or-be-careful-with
+
 ## Операционные системы
 
 * Tails - максимально анонимная система с установленными программами
