@@ -3,13 +3,13 @@
 **Примечание:** не используйте ```KDE Parted Manager``` и др. если не хотите проблем.  
 **После** всех действий: можно посмотреть командой ```sudo fdisk -l``` сообщения об ошибках, если что.
 
-1. (не работает с ```Windows```)
+1. (не работает с ```Windows```)  
 Набираем: ```sudo fdisk -l``` и угадываем путь к флэшке (пример: ```/dev/sdb```)  
 Записываем: ```sudo dd if=/usr/home/ubuntu.iso of=/dev/sdb bs=8MB;sync```
 
-2. (не работает с ```Windows```)
+2. (не работает с ```Windows```)  
 Программой ```Unetbootin```
 Установка ```sudo apt-get install unetbootin```
 
-3. Инструкций как вручную сделать USB Flash с ```Windows``` под ```ubuntu```:
+3. Инструкций как вручную сделать USB Flash с ```Windows``` под ```ubuntu```:  
 http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html
