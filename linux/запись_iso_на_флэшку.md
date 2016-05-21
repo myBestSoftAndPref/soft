@@ -11,5 +11,5 @@ sudo dd if=/usr/home/ubuntu.iso of=/dev/sdb bs=8MB;sync
 Программой Unetbootin
 Установка sudo apt-get install unetbootin
 
-3. Инструкций как вручную сделать USB Flash с linux под ubuntu:
+3. Инструкций как вручную сделать USB Flash с Windows под ubuntu:
 http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html
