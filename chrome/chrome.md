@@ -8,12 +8,12 @@
 5. ```Enable fast tab/window close``` - отключение события unload?, вопроса при закрытии вкладок (проверить) <br>
 6. ```Simplified fullscreen / mouse lock UI``` - отключение вопроса при переходе в полный экран
 
-Настройка: <br>
-1. Отключить автовыбор места загрузки файлов <br>
-2. Отключить мультизагрузку файлов при выборе только одного для загрузки (первого) <br>
-3. Отключить плагины кроме Native Client <br>
-4. Отключить уникальный идентификатор для контента <br>
-5. Добавить словари (добавить русский язык в настройках и поставить галочку для него "проверка орфографии") <br>
+Настройка:  
+1. Отключить автовыбор места загрузки файлов  
+2. Отключить мультизагрузку файлов при выборе только одного для загрузки (первого)  
+3. Отключить плагины кроме Native Client  
+4. Отключить уникальный идентификатор для контента  
+5. Добавить словари (добавить русский язык в настройках и поставить галочку для него "проверка орфографии")  
 6. Отключить предсказание действий пользователя и предзагрзку <br>
 7. Отключить сохранение паролей и автозаполнение полей <br>
 8. Отключить предложение перевода <br>
@@ -31,7 +31,7 @@
 ```chrome://downloads``` - загрузки
 
 Расширения: <br>
-[ZenMate Security, Privacy & Unblock VPN](https://chrome.google.com/webstore/detail/zenmate-security-privacy/fdcgdnkidjaadafnichfpabhfomcebme) - анонимайзер  <br>
+[ZenMate Security, Privacy & Unblock VPN](https://chrome.google.com/webstore/detail/zenmate-security-privacy/fdcgdnkidjaadafnichfpabhfomcebme) - анонимайзер, не безопасен  <br>
 [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) - пользовательские скрипты <br>
 [HTTPS Everywhere](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp) - принудительное использование https на сайтах где оно есть <br>
 [Sidewise Tree Style Tabs](https://chrome.google.com/webstore/detail/sidewise-tree-style-tabs/biiammgklaefagjclmnlialkmaemifgo) - (на выбор) древовидный вид вкладок <br>
@@ -40,3 +40,6 @@
 [Full Page Screen Capture](https://chrome.google.com/webstore/detail/full-page-screen-capture/fdpohaocaechififmbbbbbknoalclacl) - скриншот всей страницы <br>
 [Popup my Bookmarks](https://chrome.google.com/webstore/detail/popup-my-bookmarks/mppflflkbbafeopeoeigkbbdjdbeifni) - кнопка для закладок на панели, дополнительные настройки закладок, bookmarklets <br>
 [Disconnect Search](https://chrome.google.com/webstore/detail/disconnect-search/hmobfennjmjnkdbklhcnnfbhfibedgkk) - приватный поиск <br>
+
+Только для Opera:  
+[Vertical Tabs](https://addons.opera.com/ru/extensions/details/vertical-tabs) - вкладки слева + группы вкладок

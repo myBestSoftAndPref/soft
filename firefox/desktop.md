@@ -87,7 +87,8 @@
 [Add Bookmark Here 2](https://addons.mozilla.org/ru/firefox/addon/add-bookmark-here-2) - в каждое меню закладок добавляет кнопку "добавить закладку сюда", что экономит время на добавления (так как Mozilla так и не сделала удобное меню для добавления)
 <br>
 [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен (особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок).  
-[Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.
+[Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
+[Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок
 
 #### Настройки для удобства
 
