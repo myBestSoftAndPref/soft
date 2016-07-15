@@ -319,18 +319,19 @@ http://doublecmd.sourceforge.net/
 
 * UNetbootin создание LiveUSB из Linux образа диска для флэшки  https://unetbootin.github.io/
 * официальная утилита для создания LiveUSB из Win7 http://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool
-* Rufus может создавать установочные LiveUSB в том числе с WinXP
-https://rufus.akeo.ie/
+* Rufus может создавать установочные LiveUSB в том числе с WinXP https://rufus.akeo.ie/
+* Если нужно сделать загрузочный диск с Windows из под Ubuntu (Linux). Можно использовать этот способ и из под Windows, если установить в неё GRUB http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html
 
 #### Восстановление информации
 
-* TestDisk - консольная утилита восстановления удаленых файлов, фактически единственная свободная
+* TestDisk - консольная утилита восстановления удаленных файлов, фактически единственная свободная
 http://www.cgsecurity.org/wiki/TestDisk
 
 #### Эмуляторы
 
-* DAEMON Tools Lite - код закрыт, лучший из бесплатных эмуляторов
+* DAEMON Tools Lite - код закрыт, лучший из бесплатных эмуляторов дисководов
 http://www.daemon-tools.cc/rus/downloads
+* libretro - кросс платформенный эмулятор кучи консолей (ROM, т.е. игры нужно качать отдельно) http://www.libretro.com/
 
 #### Работа с cd и образами
 
@@ -384,7 +385,7 @@ http://processhacker.sourceforge.net/downloads.php
 * Autoruns - код закрыт, менеджер автозагрузки программ и служб
 https://technet.microsoft.com/en-us/sysinternals/bb963902.aspx
 * HWiNFO - код закрыт, информация о оборудовании http://www.hwinfo.com/download.php
-* CPU-Z - код закрыт, информация о процессоре и смежном обарудовании
+* CPU-Z - код закрыт, информация о процессоре и смежном оборудовании
 http://www.cpuid.com/softwares/cpu-z.html
 портативная версия http://portableapps.com/apps/utilities/ant_renamer_portable
 * GPU-Z - код закрыт, инфа о видеокарте https://www.techpowerup.com/gpuz/
@@ -394,12 +395,14 @@ http://www.cpuid.com/softwares/cpu-z.html
 	* https://github.com/Nummer/Destroy-Windows-10-Spying
 * Для запуска программ с правами и скриптов администратора http://www.microsoft.com/en-us/download/details.aspx?id=7352
 * DNSCrypt - шифруем DNS чтобы провайдер не вмешивался https://dnscrypt.org/#dnscrypt-windows
+* Набор системных утилит с закрытым кодом от компании **nirsoft**. Очень известный и популярный. http://www.nirsoft.net/utils/
+	* Подменяет дату в запущенной программе (программа видит подсунутое её время). Например для браузеров. http://www.nirsoft.net/utils/run_as_date.html
 
 ## Компоненты операционных систем
 
 * DirectX (в Win7 и выше устанавливать через систему обновлений)
 https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
-* исправлениие долгого обновления Win7
+* исправление долгого обновления Win7
 	* для x32 https://www.microsoft.com/en-us/download/details.aspx?id=49542
 	* для x64 https://www.microsoft.com/en-us/download/details.aspx?id=49540
 
@@ -410,7 +413,7 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 	* Фикс для установки этой сборки https://support.microsoft.com/en-us/kb/3020369
 	* Win7 x64 http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x64_2dafb1d203c8964239af3048b5dd4b1264cd93b9.msu
 	* Win7 x86 http://download.windowsupdate.com/d/msdownload/update/software/updt/2016/05/windows6.1-kb3125574-v4-x86_ba1ff5537312561795cc04db0b02fbb0a74b2cbd.msu
-	* после обновления можно отключить телеметрию
+	* после обновления можно отключить телеметрию. ТЕЛЕМЕТРИЯ ПРИЛИЧНО ЗАМЕДЛЯЕТ Win7!!! (незаметно на мощных компах)
 		* http://www.overclock.net/t/1587577/windows-7-updates-list-descriptions-windows-7-8-telemetry-preparation
 		* http://techne.alaya.net/?p=12499
 		* http://www.dslreports.com/forum/r30348398-WIN7-Win-7-updates-to-avoid-or-be-careful-with

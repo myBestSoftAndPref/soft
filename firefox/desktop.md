@@ -108,6 +108,21 @@ user_pref("browser.tabs.closeWindowWithLastTab", false); //Не закрыват
 user_pref("extensions.stylish.updatesEnabled", 0); //Отключить обновления стилей дополнения Stylish
 ```
 
+Пробуем немного ускорить Firefox:  
+```
+user_pref("browser.cache.use_new_backend", 1); //какой-то новый кэш для интерфейсы, меньше лагов
+user_pref("dom.ipc.plugins.asyncInit", true); //асинхронные плагины
+user_pref("network.http.pipelining", true); //Pipelining
+user_pref("network.http.pipelining.aggressive", true); //Pipelining ускоряет загрузку страниц за счет параллельных запросов
+user_pref("network.http.pipelining.ssl", true);
+user_pref("network.http.proxy.pipelining", true);
+user_pref("network.http.pipelining.max-optimistic-requests", 8);
+user_pref("javascript.options.asyncstack", true); //асинхронные js
+user_pref("layers.acceleration.force-enabled", true); //асинхронные что-то, МОГУТ БЫТЬ ПРОБЛЕМЫ с видео
+user_pref("network.http.max-connections", 512); //асинхронные что-то, МОГУТ БЫТЬ ПРОБЛЕМЫ с видео
+user_pref("browser.tabs.remote.autostart.2", true); //МОГУТ БЫТЬ ПРОБЛЕМЫ страница каждой вкладке обрабатывается в отдельном потоке
+```
+
 * Другое:
 	* Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
 	* В закладки Firefox компания в целях рекламы может добавить подписки RSS и Atom на новости в качестве рекламы. Проверьте их и удалите.
