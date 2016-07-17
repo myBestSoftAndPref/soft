@@ -173,7 +173,7 @@ http://www.shotcut.org/bin/view/Shotcut/Download
 https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html
 * LibreCAD - свободная программа для создание чертежей
 http://librecad.org/cms/home.html
-портативная версия http://portableapps.com/apps/graphics_pictures/librecad-portable
+* LICEcap - сделать анимированный GIF с записью экрана http://www.cockos.com/licecap/
 
 #### Просмотр и конвертация
 
@@ -226,6 +226,8 @@ https://web.skype.com/
 * Wire - код частично открыт (тот что шифрует). Имеет end-to-end шифрование https://wire.com/
 * jitsi - клиент XMPP, SIP, видеосвязь, написан на Java https://jitsi.org/
 * Linphone - SIP клиент http://www.linphone.org/
+* Rambox - одна программа на все мессенджеры (WhatsApp, Messenger, Skype, Telegram и т.д.)
+
 
 #### Почтовые клиенты
 
@@ -397,6 +399,13 @@ http://www.cpuid.com/softwares/cpu-z.html
 * DNSCrypt - шифруем DNS чтобы провайдер не вмешивался https://dnscrypt.org/#dnscrypt-windows
 * Набор системных утилит с закрытым кодом от компании **nirsoft**. Очень известный и популярный. http://www.nirsoft.net/utils/
 	* Подменяет дату в запущенной программе (программа видит подсунутое её время). Например для браузеров. http://www.nirsoft.net/utils/run_as_date.html
+* Chocolatey - пакетный менеджер как apt-get для Windows
+	```
+		choco install 7zip
+		choco install firefox
+		choco upgrade all -y
+	```
+* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
 
 ## Компоненты операционных систем
 

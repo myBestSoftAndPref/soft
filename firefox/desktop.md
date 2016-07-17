@@ -88,7 +88,8 @@
 <br>
 [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен (особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок).  
 [Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
-[Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок
+[Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок  
+[Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)
 
 #### Настройки для удобства
 
