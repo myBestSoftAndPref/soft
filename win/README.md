@@ -400,12 +400,7 @@ http://www.cpuid.com/softwares/cpu-z.html
 * Набор системных утилит с закрытым кодом от компании **nirsoft**. Очень известный и популярный. http://www.nirsoft.net/utils/
 	* Подменяет дату в запущенной программе (программа видит подсунутое её время). Например для браузеров. http://www.nirsoft.net/utils/run_as_date.html
 * Chocolatey - пакетный менеджер как apt-get для Windows
-	```
-		choco install 7zip
-		choco install firefox
-		choco upgrade all -y
-	```
-* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
+	* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
 
 ## Компоненты операционных систем
 
