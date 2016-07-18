@@ -170,7 +170,7 @@ javascript:void((function () {
 ```  
 Во время создания код bookmarklet преобразуется в base64 (URI Encoding).
 
-[bookmarklets.com](http://www.bookmarklets.com/), [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
+[marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
 #### Другие настройки
 
