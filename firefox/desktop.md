@@ -237,6 +237,7 @@ javascript:void((function () {
 * [Firefox](https://ftp.mozilla.org/pub/firefox/)
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/)
 * [Firefox ESR](https://ftp.mozilla.org/pub/firefox/)
+* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/)
 
 #### Разработка стилей CSS для Firefox (и не только)
 
