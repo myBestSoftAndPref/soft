@@ -106,7 +106,7 @@ user_pref("ui.submenuDelay", 0); //Этот параметр отвечает з
 user_pref("browser.link.open_newwindow.restriction", 0); //Открывать попапы во вкладках вместо отдельных окон
 user_pref("browser.tabs.closeWindowWithLastTab", false); //Не закрывать Firefox при закрытии последней вкладки
 
-user_pref("extensions.stylish.updatesEnabled", 0); //Отключить обновления стилей дополнения Stylish
+user_pref("extensions.stylish.updatesEnabled", 0); //Отключить АВТО обновления стилей дополнения Stylish
 ```
 
 Пробуем немного ускорить Firefox:  
