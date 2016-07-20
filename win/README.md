@@ -282,6 +282,7 @@ http://www.putty.org/
 	* http://plugins.geany.org/downloads.html
 * Vim - текстовый редактор для программистов с удобными сочетаниями клавиш
 http://www.vim.org/download.php
+* Kate - редактор текста и кода из KDE под Windows https://kate-editor.org/get-it/
 	
 #### Разные
 

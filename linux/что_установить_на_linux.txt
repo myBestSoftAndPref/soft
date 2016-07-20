@@ -148,6 +148,8 @@ sudo apt-get install youtube-dlg
 
 httrack + HTTraQt - скачивание сайтов целиком
 
+filezilla - ftp клиент и сервер
+
 ----------------------
 !!!Архиваторы
 p7zip-full (sudo apt-get install p7zip-rar p7zip-full) - множество типов архивов. Порт 7z под linux
