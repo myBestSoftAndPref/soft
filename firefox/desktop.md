@@ -138,10 +138,8 @@ user_pref("toolkit.telemetry.unified", false);
 /* Ломает Firefox Hello и некоторые сайты. На ваш выбор. (раскоментируйте строки) */
 //user_pref("media.peerconnection.enabled", false); //сайт больше не сможет легко делать p2p сеть (обмена данными, как torrent) и ваш трафик не сможет быстро утечь
 //user_pref("media.block-play-until-visible", true); // Запрещает проигрывание HTML5-медиа в фоновой вкладке до первого переключения на нее. Может сэкономить трафик
-```
 
-Пробуем немного ускорить Firefox:  
-```
+/* Пробуем немного ускорить Firefox: */
 user_pref("network.http.pipelining", true); // Использовать HTTP/1.1 для передачи нескольких файлов, не реконнектясь после каждого.
 user_pref("network.http.pipelining.aggressive", true);
 user_pref("network.http.pipelining.ssl", true);
