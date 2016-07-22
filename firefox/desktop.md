@@ -107,6 +107,7 @@ user_pref("intl.locale.matchOS", false); //Использовать локаль
 user_pref("ui.submenuDelay", 0); //Этот параметр отвечает за задержку перед открытием подменю. Убираем задержку
 user_pref("browser.link.open_newwindow.restriction", 0); //Открывать попапы во вкладках вместо отдельных окон
 user_pref("browser.tabs.closeWindowWithLastTab", false); //Не закрывать Firefox при закрытии последней вкладки
+user_pref("browser.tabs.animate", false); // Отключает притормаживающую на окнах с многими вкладками анимацию открытия и закрытия табов.
 
 user_pref("extensions.stylish.updatesEnabled", 0); //Отключить АВТО обновления стилей дополнения Stylish
 
@@ -117,16 +118,26 @@ user_pref("dom.netinfo.enabled", false); //сайт больше не сможе
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false); //отключаем отправку хэш суммы каждого загружаемого файла в google
+user_pref("network.prefetch-next", false); // Отключает предзагрузку ссылок, на которые по мнению браузера вы собираетесь кликнуть.
+user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
+user_pref("network.http.speculative-parallel-limit", 0);
+user_pref("network.predictor.enabled", false); // Отключает Predictor (бывший Seer)
+user_pref("network.predictor.enable-hover-on-ssl", false);
+user_pref("extensions.getAddons.cache.enabled", false); // Отключает посылку статистики при обновлении аддонов.
+user_pref("security.ssl.errorReporting.automatic", false); // Отключает автоматическую отправку отчетов в Mozilla об ошибках в сертификатах сайтов.
 
 /* Отключаем официальную, теоретически безобидную, телеметрию */
 user_pref("dom.enable_performance", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.healthreport.service.firstRun", false);
 user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
 
 /* Ломает Firefox Hello и некоторые сайты. На ваш выбор. (раскоментируйте строки) */
 //user_pref("media.peerconnection.enabled", false); //сайт больше не сможет легко делать p2p сеть (обмена данными, как torrent) и ваш трафик не сможет быстро утечь
+//user_pref("media.block-play-until-visible", true); // Запрещает проигрывание HTML5-медиа в фоновой вкладке до первого переключения на нее. Может сэкономить трафик
 ```
 
 Пробуем немного ускорить Firefox:  
