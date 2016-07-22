@@ -12,7 +12,7 @@
 <br>
 [Advanced Locationbar](https://addons.mozilla.org/ru/firefox/addon/advanced-locationbar) - быстрый переход по частям ссылки в адресной строке. Удобно для перехода на главную страницу.
 <br>
-[Classic Theme Restorer](https://addons.mozilla.org/ru/firefox/addon/classicthemerestorer) - настройка оформления. Можно уменьшить панели и кнопки.
+[Classic Theme Restorer](https://addons.mozilla.org/ru/firefox/addon/classicthemerestorer) - настройка оформления. Можно уменьшить панели и кнопки. Имеет **множество** опций изменяющих вид и поведение Firefox (например может авто очищать текст строки поиска после запроса)
 <br>
 [Muter](https://addons.mozilla.org/Ru/firefox/addon/muter) - выключение звука от браузера. Нужно только, если в системе нету микшера звука.
 <br>
