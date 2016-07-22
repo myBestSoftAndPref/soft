@@ -95,9 +95,10 @@
 
 #### Настройки для удобства
 
-[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - описаны дополнительные настройки, в том числе для приватности
+Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля ```profile/user.js```.  
+Для Firefox **под Android** можно менять только вручную или использовать дополнения (поиск по тегу [Security & Privacy](https://addons.mozilla.org/en-US/android/extensions/security-privacy/))
 
-Скопировать файл [user.js](user.js) в каталог профиля ```profile/user.js```. Для Firefox под Android можно менять только вручную или использовать дополнения.
+[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - описаны дополнительные настройки, в том числе для приватности
 
 * Другое:
 	* Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
