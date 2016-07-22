@@ -142,12 +142,11 @@ user_pref("toolkit.telemetry.unified", false);
 
 Пробуем немного ускорить Firefox:  
 ```
-user_pref("network.http.pipelining", true); //Pipelining ускоряет загрузку страниц за счет параллельных запросов
+user_pref("network.http.pipelining", true); // Использовать HTTP/1.1 для передачи нескольких файлов, не реконнектясь после каждого.
 user_pref("network.http.pipelining.aggressive", true);
 user_pref("network.http.pipelining.ssl", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.pipelining.max-optimistic-requests", 8);
-user_pref("javascript.options.asyncstack", true); //асинхронные js
 user_pref("network.http.max-connections", 512); //если увеличить количество соединений скорость загрузки обычно увеличивается (особенно у плохих провайдеров)
 ```
 
