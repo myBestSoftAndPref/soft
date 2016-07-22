@@ -80,7 +80,7 @@
 <br>
 [Drag-n-Drop Multiple Files](https://addons.mozilla.org/ru/firefox/addon/drag-n-drop-multiple-files) - позволяет одновременно перетаскивать несколько страницы на Firefox для их открытия (по умолчанию открывается только одна)
 <br>
-[Random Agent Spoofer](https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/) - даёт возможность выбора часового пояса для Firefox, который виден сайту. И позволяет отключать скрытую отправку некоторых данных. А вот случайный профиль для маскировки лучше отключить - это глупость (поставьте Real Profile - реальный профиль).
+[Random Agent Spoofer](https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/) - даёт возможность выбора часового пояса для Firefox, который виден сайту. И позволяет отключать скрытую отправку некоторых данных. Например, можно подменить локальное время компьютера, которое сайт может получить через JavaScript. А вот случайный профиль для маскировки лучше отключить - это глупость (поставьте Real Profile - реальный профиль).
 <br>
 [FireGestures](https://addons.mozilla.org/ru/firefox/addon/firegestures) - можно вешать действия на жесты.
 <br>
@@ -95,7 +95,7 @@
 
 #### Настройки для удобства
 
-[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - описаны настройки
+[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - описаны дополнительные настройки, в том числе для приватности
 
 Скопировать в файл ```profile/user.js```
 ```
@@ -109,23 +109,35 @@ user_pref("browser.link.open_newwindow.restriction", 0); //Открывать п
 user_pref("browser.tabs.closeWindowWithLastTab", false); //Не закрывать Firefox при закрытии последней вкладки
 
 user_pref("extensions.stylish.updatesEnabled", 0); //Отключить АВТО обновления стилей дополнения Stylish
+
+/* Отключаем несколько совсем уж наглых для приватности опций */
+user_pref("dom.battery.enabled", false); //сайт больше не видит уровень заряда батареи
+user_pref("device.sensors.enabled", false); //сайт больше не видит сенсоры вашего устройства
+user_pref("dom.netinfo.enabled", false); //сайт больше не сможет легко получить инфу о вашем соединении с интернетом
+user_pref("browser.safebrowsing.enabled", false);
+user_pref("browser.safebrowsing.malware.enabled", false);
+user_pref("browser.safebrowsing.downloads.enabled", false); //отключаем отправку хэш суммы каждого загружаемого файла в google
+
+/* Отключаем официальную, теоретически безобидную, телеметрию */
+user_pref("dom.enable_performance", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.healthreport.service.firstRun", false);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
+
+/* Ломает Firefox Hello и некоторые сайты. На ваш выбор. (раскоментируйте строки) */
+//user_pref("media.peerconnection.enabled", false); //сайт больше не сможет легко делать p2p сеть (обмена данными, как torrent) и ваш трафик не сможет быстро утечь
 ```
 
 Пробуем немного ускорить Firefox:  
 ```
-user_pref("browser.cache.use_new_backend", 1); //какой-то новый кэш для интерфейсы, меньше лагов
-user_pref("dom.ipc.plugins.asyncInit", true); //асинхронные плагины
 user_pref("network.http.pipelining", true); //Pipelining ускоряет загрузку страниц за счет параллельных запросов
 user_pref("network.http.pipelining.aggressive", true);
 user_pref("network.http.pipelining.ssl", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.pipelining.max-optimistic-requests", 8);
 user_pref("javascript.options.asyncstack", true); //асинхронные js
-user_pref("layers.acceleration.force-enabled", true); //асинхронные что-то, МОГУТ БЫТЬ ПРОБЛЕМЫ с видео
 user_pref("network.http.max-connections", 512); //если увеличить количество соединений скорость загрузки обычно увеличивается (особенно у плохих провайдеров)
-user_pref("browser.tabs.remote.autostart", true); //МОГУТ БЫТЬ ПРОБЛЕМЫ страница каждой вкладке обрабатывается в отдельном потоке
-user_pref("browser.tabs.remote.autostart.1", true);
-user_pref("browser.tabs.remote.autostart.2", true);
 ```
 
 * Другое:
