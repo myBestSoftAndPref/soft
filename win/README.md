@@ -165,9 +165,8 @@ http://www.shotcut.org/bin/view/Shotcut/Download
 #### Редакторы
 
 * Gimp - аналог Photoshop http://www.gimp.org/downloads/
-портативная версия http://portableapps.com/apps/graphics_pictures/gimp_portable
+* krita - рисовалка из KDE https://krita.org/en/download/krita-desktop/
 * Blender - 3d анимация https://www.blender.org/
-портативная версия http://portableapps.com/apps/graphics_pictures/blender_portable
 * Adobe CS6 (в том числе Photoshop CS6) можно скачать свободно и бесплатно,
 но законно использовать их могут только те кто купил ключи
 https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html
@@ -177,8 +176,7 @@ http://librecad.org/cms/home.html
 
 #### Просмотр и конвертация
 
-* XnView - удобна, код закрыт просмотр и конвертация http://www.xnview.com
-портативная версия http://portableapps.com/apps/graphics_pictures/xnview_portable
+* XnView - удобна, код закрыт, просмотр и конвертация http://www.xnview.com
 
 ## Сети
 
@@ -186,7 +184,6 @@ http://librecad.org/cms/home.html
 
 * Firefox https://www.mozilla.org/en-US/firefox/new/
 и ESR версия https://www.mozilla.org/en-US/firefox/organizations/faq/
-и портативная версия http://portableapps.com/apps/internet/firefox_portable
 * Firefox Developer Edition - для разработчиков https://www.mozilla.org/ru/firefox/developer/
 * TorBrowser - обход блокировок, выход в сеть через прокси, отключен сборк статистики
 https://www.torproject.org/
@@ -209,13 +206,10 @@ https://aria2.github.io/
 
 #### Обмен сообщениями
 
-* Pidgin - свободный мессенджер с поддержкой множества форматов,
-с плагином OTR устойчив к прослушиванию https://pidgin.im/download/
-и плагин для OTR https://otr.cypherpunks.ca/index.php#downloads
-(ссылка с этой страницы https://developer.pidgin.im/wiki/ThirdPartyPlugins#OfficialPlugins)
+* Pidgin - свободный мессенджер с поддержкой множества форматов, с плагином OTR устойчив к прослушиванию. Через плагины может работать со Skype в текстовом режиме https://pidgin.im/download/
+	* множество плагинов для поддержки OTR, Skype, Telegram и т.д. https://developer.pidgin.im/wiki/ThirdPartyPlugins#OfficialPlugins
 * Skype - код закрыт, но распостранен очень широко
 http://www.skype.com/en/download-skype/skype-for-computer/
-портативная версия http://portableapps.com/apps/internet/skype_portable
 как вариант можно использовать веб версию
 (в том числе на смартфонах включив "полную версию сайта")
 https://web.skype.com/
@@ -223,7 +217,7 @@ https://web.skype.com/
 * LINE - код закрыт, аналог Skype http://line.me/ru/
 * Tox - видеосвязь, код открыт, шифрование данных https://tox.im/
 	* Antox - его мобильный вариант для Android https://github.com/Antox/Antox
-* Wire - код частично открыт (тот что шифрует). Имеет end-to-end шифрование https://wire.com/
+* Wire - код открыт. Имеет end-to-end шифрование https://wire.com/
 * jitsi - клиент XMPP, SIP, видеосвязь, написан на Java https://jitsi.org/
 * Linphone - SIP клиент http://www.linphone.org/
 * Rambox - одна программа на все мессенджеры (WhatsApp, Messenger, Skype, Telegram и т.д.)
@@ -232,13 +226,12 @@ https://web.skype.com/
 #### Почтовые клиенты
 
 * Thunderbird https://www.mozilla.org/en-US/thunderbird/
-портативная верси http://portableapps.com/apps/internet/thunderbird_portable
 * Claws Mail - легкий почтовый клиент
 http://www.claws-mail.org/downloads.php?section=downloads
 
 #### FTP Клиенты
 
-* FileZilla клиент и сервер для FTP
+* FileZilla - клиент и сервер для FTP
 https://filezilla-project.org/
 
 #### Удаленное управление
@@ -277,7 +270,7 @@ http://www.putty.org/
   Плагины:
   * minimap - карта документа
   * sync-scroll - синхронизация прокрутки окон
-* Geany http://www.geany.org/Download/Releases
+* Geany - аналог Notepad++ http://www.geany.org/Download/Releases
 	Плагины:
 	* http://plugins.geany.org/downloads.html
 * Vim - текстовый редактор для программистов с удобными сочетаниями клавиш
@@ -299,7 +292,6 @@ http://www.sumatrapdfreader.org/free-pdf-reader.html
 https://www.microsoft.com/en-us/evalcenter/evaluate-office-professional-plus-2013
 * LibreOffice - свободный оффисный пакет, но многие формата отображает плохо
 https://www.libreoffice.org/download/libreoffice-fresh/
-портативная версия http://portableapps.com/apps/office/libreoffice_portable
 
 ## Диски и файлы
 
@@ -339,7 +331,6 @@ http://www.daemon-tools.cc/rus/downloads
 #### Работа с cd и образами
 
 * InfraRecorder - запись дисков http://infrarecorder.org/?page_id=5
-портативная версия http://portableapps.com/apps/utilities/infrarecorder_portable
 
 #### Другое
 
@@ -370,13 +361,12 @@ http://www.antp.be/software/renamer
 * GoldenDict - просмотр множества форматов словарей в том числе с произношением
 (подходят словари и от lingvo, на сегодня лучшие для русскоязычных)
 http://goldendict.org/download.php
-портативная версия http://portableapps.com/apps/education/goldendict_portable
 
 * SAS.Planet - просмотр карты из разных источников с возможностью загрузки
 областей и просмотром только кэшированного (оффлайн)
 плюс множество возможностей http://www.sasgis.org/download/ <br>
 Авторы сначало не хотели открывать код, но сам код доступен под GPL v3 (не проверялось) https://bitbucket.org/sas_team/
-* Stellarium планетарий, который создаёт реалистичное трёхмерное небо http://www.stellarium.org/ru/
+* Stellarium - планетарий, который создаёт реалистичное трёхмерное небо http://www.stellarium.org/ru/
 * Celestia - 3D модель космоса, спутников, звезд, планет, комет, галактик http://www.shatters.net/celestia/
 
 ## Система
@@ -390,7 +380,6 @@ https://technet.microsoft.com/en-us/sysinternals/bb963902.aspx
 * HWiNFO - код закрыт, информация о оборудовании http://www.hwinfo.com/download.php
 * CPU-Z - код закрыт, информация о процессоре и смежном оборудовании
 http://www.cpuid.com/softwares/cpu-z.html
-портативная версия http://portableapps.com/apps/utilities/ant_renamer_portable
 * GPU-Z - код закрыт, инфа о видеокарте https://www.techpowerup.com/gpuz/
 * ext2fsd - драйвер для работы с ext2/3/4 под Windows http://www.ext2fsd.com/
 * отключение сбора статистики в Win7-10:
@@ -431,7 +420,7 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 или с загрузочных дисков.
 * Whonix - дистр. для анонимности специально подготовленный для запуска в виртуалке https://www.whonix.org/
 
-* Linux - в linux есть утилита gparted для разметки дисков (никогда не пользуйте разметку в windows!), утилита testdisk для восстановления файлов и систем, fdisk может исправить некоторые ошибки и изменить порядок нумерации разделов при проблемах с ними. Утилитой dd можно забэкапить диски с ошибками (имеют команду игнорирования ошибочных секторов).
+* Linux - в linux есть утилита gparted для разметки дисков (никогда не пользуйте разметку в windows!), утилита testdisk для восстановления файлов и систем, fdisk может исправить некоторые ошибки и изменить порядок нумерации разделов при проблемах с ними. Утилитой dd можно забэкапить диски с ошибками (имеют команду игнорирования ошибочных секторов). Чтобы проверить диск на ошибки после разметки наберите команду: ```sudo fdisk -l```
 	* Kubuntu - самый удобный, но чуть глючный и чуть медленнее http://www.kubuntu.org/getkubuntu
 	* xubuntu x86 - лучшее для LiveCD, запускается хорошо на старых компах
 	* xubuntu x64 - быстрее всех для десктопа
