@@ -210,11 +210,8 @@ https://aria2.github.io/
 
 * Pidgin - свободный мессенджер с поддержкой множества форматов, с плагином OTR устойчив к прослушиванию. Через плагины может работать со Skype в текстовом режиме https://pidgin.im/download/
 	* множество плагинов для поддержки OTR, Skype, Telegram и т.д. https://developer.pidgin.im/wiki/ThirdPartyPlugins#OfficialPlugins
-* Skype - код закрыт, но распостранен очень широко
-http://www.skype.com/en/download-skype/skype-for-computer/
-как вариант можно использовать веб версию
-(в том числе на смартфонах включив "полную версию сайта")
-https://web.skype.com/
+* Skype - код закрыт, но распостранен очень широко http://www.skype.com/en/download-skype/skype-for-computer/
+	* как вариант можно использовать веб версию (в том числе на смартфонах включив "полную версию сайта") https://web.skype.com/
 * Viber - код закрыт, аналог Skype http://www.viber.com/en/
 * LINE - код закрыт, аналог Skype http://line.me/ru/
 * Tox - видеосвязь, код открыт, шифрование данных https://tox.im/
@@ -223,7 +220,18 @@ https://web.skype.com/
 * jitsi - клиент XMPP, SIP, видеосвязь, написан на Java https://jitsi.org/
 * Linphone - SIP клиент http://www.linphone.org/
 * Rambox - одна программа на все мессенджеры (WhatsApp, Messenger, Skype, Telegram и т.д.)
+* Vine - код закрыт, может создавать короткие ролики для их добавления в сообщения, интегрироваться с Twitter (владелец: Twitter)
+* Instagram - код закрыт, для обмена фото и видео (владелец: Facebook)
+* Facebook - код закрыт, для работы с сетью Facebook https://play.google.com/store/apps/details?id=com.facebook.katana
+* ВКонтакте - код закрыт, для работы с сетью ВКонтакте https://play.google.com/store/apps/details?id=com.vkontakte.android
+* WhatsApp Messenger - код закрыт, популярный мессенджер с заявленным частичным шифрованием https://play.google.com/store/apps/details?id=com.whatsapp
+* Telegram - код открыт только для клиента, популярный мессенджер с функциями соц. сети и ботами в чатах, которые могут работать в качестве например торрент сайт. Заявлено шифрование для приватных чатов https://telegram.org/
 
+Онлайн веб-чаты (в том числе видео):
+	* https://room.co
+	* https://talky.io/
+	* https://appear.in/
+	* https://web.skype.com/
 
 #### Почтовые клиенты
 
@@ -441,3 +449,4 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 	* Windows 10 Enterprise LTSB *Evaluation* x64
 	http://care.dlservice.microsoft.com/dl/download/6/2/4/624ECF83-38A6-4D64-8758-FABC099503DC/10240.16384.150709-1700.TH1_CLIENTENTERPRISE_S_EVAL_X64FRE_EN-US.ISO
 	* для восстановление Wi10 Eval может понадобиться оффициальный ключ VTNMT-2FMYP-QCY43-QR9VK-WTVCK
+
