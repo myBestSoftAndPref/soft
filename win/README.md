@@ -29,9 +29,11 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 	* Microsoft Visual C++ 2008 Redistributable Package (x64) https://www.microsoft.com/ru-ru/download/details.aspx?id=15336
 	* Visual C++ для Visual Studio 2013  https://www.microsoft.com/ru-RU/download/details.aspx?id=40784
 
-#### Кодеки
+#### Кодеки и библиотеки
 
-* K-Lite Codec Pack - сборка кодеков http://www.codecguide.com/download_kl.htm
+* K-Lite Codec Pack - код закрыт, сборка кодеков http://www.codecguide.com/download_kl.htm
+* ffmpeg - набор библиотек для конвертации, изменения, сжатия, передачи видео. Нужен для некоторых видеоконвертеров. Но можно и конвертировать просто из командной строки https://ffmpeg.org/download.html
+	* Конвертирование: http://stackoverflow.com/questions/13560852/convert-mp4-to-maximum-mobile-supported-mp4-using-ffmpeg
 
 ## Программирование
 
