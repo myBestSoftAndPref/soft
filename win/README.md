@@ -276,16 +276,17 @@ http://www.putty.org/
   * dspellcheck (установить словари, включить проверку одновременно нескольких языков)
   * TextFx - набор инструментов для преобразования текста в кучу форматов и кодировок, просмотр статистики (количества слов и тд), валидации, вырезания и вставки спец символов, лишних пробелов.
   * цветовая схема для markdown https://github.com/Edditoria/markdown_npp_zenburn
-* Atom - редактор кода от github, множество языков и плагинов https://atom.io/ <br>
+* Atom - редактор кода от github, множество языков и плагинов. В его основе движок браузера от Chrome поэтому занимает много оперативной памяти https://atom.io/ <br>
   Плагины:
   * minimap - карта документа
   * sync-scroll - синхронизация прокрутки окон
-* Geany - аналог Notepad++ http://www.geany.org/Download/Releases
+* Geany - аналог Notepad++ http://www.geany.org/Download/Releases  
 	Плагины:
 	* http://plugins.geany.org/downloads.html
 * Vim - текстовый редактор для программистов с удобными сочетаниями клавиш
 http://www.vim.org/download.php
 * Kate - редактор текста и кода из KDE под Windows https://kate-editor.org/get-it/
+* Sublime Text - код закрыт, редактор кода, очень удобен для javascript, css, html. В бесплатной версии иногда выскакивает реклама https://www.sublimetext.com/
 	
 #### Разные
 
@@ -293,7 +294,7 @@ http://www.vim.org/download.php
 http://www.sumatrapdfreader.org/free-pdf-reader.html
 * WinDjView - быстрый просмотрщик djvu http://windjview.sourceforge.net/
 * WinMerge - сравнение документов в двух панельном окне http://winmerge.org/
-* CoolReader - чтение книг, версия 2 имеет более удобный интерфейс http://www.coolreader.org/
+* CoolReader - чтение книг, версия 2 имеет более удобный и красивый интерфейс http://www.coolreader.org/
 * FBReader - читалка книг https://ru.fbreader.org/
 
 #### Оффисные пакеты
@@ -325,7 +326,7 @@ http://doublecmd.sourceforge.net/
 * UNetbootin создание LiveUSB из Linux образа диска для флэшки  https://unetbootin.github.io/
 * официальная утилита для создания LiveUSB из Win7 http://www.microsoft.com/en-us/download/windows-usb-dvd-download-tool
 * Rufus может создавать установочные LiveUSB в том числе с WinXP https://rufus.akeo.ie/
-* Если нужно сделать загрузочный диск с Windows из под Ubuntu (Linux). Можно использовать этот способ и из под Windows, если установить в неё GRUB http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html
+* GRUB и создание загрузочной Windows флэшки из Ubuntu - Если нужно сделать загрузочный диск с Windows из под Ubuntu (Linux). Можно использовать этот способ и из под Windows, если установить в неё GRUB http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html
 
 #### Восстановление информации
 
@@ -336,7 +337,7 @@ http://www.cgsecurity.org/wiki/TestDisk
 
 * DAEMON Tools Lite - код закрыт, лучший из бесплатных эмуляторов дисководов
 http://www.daemon-tools.cc/rus/downloads
-* libretro - кросс платформенный эмулятор кучи консолей (ROM, т.е. игры нужно качать отдельно) http://www.libretro.com/
+* libretro - кросс платформенный эмулятор кучи консолей (ROM файлы игр, т.е. игры нужно качать отдельно) http://www.libretro.com/
 
 #### Работа с cd и образами
 
@@ -368,9 +369,8 @@ http://www.antp.be/software/renamer
 
 ## Справочники, навигация, энциклопедии, Словари
 
-* GoldenDict - просмотр множества форматов словарей в том числе с произношением
-(подходят словари и от lingvo, на сегодня лучшие для русскоязычных)
-http://goldendict.org/download.php
+* GoldenDict - просмотр множества форматов словарей в том числе с произношением (подходят словари и от lingvo, на сегодня лучшие для русскоязычных) http://goldendict.org/download.php
+	* Подборка словарей для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
 
 * SAS.Planet - просмотр карты из разных источников с возможностью загрузки
 областей и просмотром только кэшированного (оффлайн)
