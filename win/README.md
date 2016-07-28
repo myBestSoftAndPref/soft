@@ -396,7 +396,7 @@ http://www.cpuid.com/softwares/cpu-z.html
 	* https://github.com/10se1ucgo/DisableWinTracking
 	* https://github.com/Nummer/Destroy-Windows-10-Spying
 * Для запуска программ с правами и скриптов администратора http://www.microsoft.com/en-us/download/details.aspx?id=7352
-* DNSCrypt - шифруем DNS чтобы провайдер не вмешивался https://dnscrypt.org/#dnscrypt-windows
+* DNSCrypt - шифруем DNS чтобы провайдер не вмешивался и видел только IP (номер сервера), а не конкретный адрес сайта. Так же провайдер не сможет блокировать сайты просто запретив у себя адрес в DNS https://dnscrypt.org/#dnscrypt-windows
 * Набор системных утилит с закрытым кодом от компании **nirsoft**. Очень известный и популярный. http://www.nirsoft.net/utils/
 	* Подменяет дату в запущенной программе (программа видит подсунутое её время). Например для браузеров. http://www.nirsoft.net/utils/run_as_date.html
 * Chocolatey - пакетный менеджер как apt-get для Windows
