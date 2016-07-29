@@ -25,6 +25,28 @@ user_pref("network.predictor.enabled", false); // Отключает Predictor (
 user_pref("network.predictor.enable-hover-on-ssl", false);
 user_pref("extensions.getAddons.cache.enabled", false); // Отключает посылку статистики при обновлении аддонов.
 user_pref("security.ssl.errorReporting.automatic", false); // Отключает автоматическую отправку отчетов в Mozilla об ошибках в сертификатах сайтов.
+user_pref("browser.selfsupport.url", ""); // Отключает предложения оценить работу Firefox и отправить пожертвования Mozilla. heartbeat
+user_pref("lightweightThemes.recommendedThemes", ""); // Отключает список рекомендуемых тем в Customize -> Themes.
+
+// Запрещает попапам отключать элементы окон браузера.
+user_pref("dom.popup_maximum", 5);
+user_pref("dom.disable_open_during_load", true);
+user_pref("dom.allow_scripts_to_close_windows", false);
+// http://kb.mozillazine.org/JavaScript#JavaScript_settings_in_Firefox_23_and_above
+user_pref("dom.disable_window_move_resize", true);
+user_pref("dom.disable_window_flip", true);
+user_pref("dom.disable_window_status_change", true);
+// http://kb.mozillazine.org/Prevent_websites_from_disabling_new_window_features
+user_pref("dom.disable_window_open_feature.close", true);
+user_pref("dom.disable_window_open_feature.location", true);
+user_pref("dom.disable_window_open_feature.menubar", true);
+user_pref("dom.disable_window_open_feature.minimizable", true);
+user_pref("dom.disable_window_open_feature.personalbar", true);
+user_pref("dom.disable_window_open_feature.resizable", true);
+user_pref("dom.disable_window_open_feature.scrollbars", true);
+user_pref("dom.disable_window_open_feature.status", true);
+user_pref("dom.disable_window_open_feature.titlebar", true);
+user_pref("dom.disable_window_open_feature.toolbar", true);
 
 /* Отключаем официальную, теоретически безобидную, телеметрию */
 user_pref("dom.enable_performance", false);
