@@ -203,13 +203,13 @@ javascript:void((function () {
 
 #### Установка
 
-* [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en)
-* [Pale Moon](https://www.palemoon.org/)
-* [IceCat](http://ftp.gnu.org/gnu/gnuzilla/)
-* [Firefox](https://ftp.mozilla.org/pub/firefox/)
-* [Firefox EME](https://ftp.mozilla.org/pub/firefox/)
-* [Firefox ESR](https://ftp.mozilla.org/pub/firefox/)
-* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/)
+* [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) - максимально анонимная сборка с встроенным постоянным подключением к анонимным прокси
+* [Pale Moon](https://www.palemoon.org/) - по утверждению разработчика сборка собрана с дополнительными оптимизациями, есть оптимизации для CPU Intel Atom. Имеет странную лицензию
+* [IceCat](http://ftp.gnu.org/gnu/gnuzilla/) - с удаленными следящими опциями, на деле не очень качественная, лучше использовать TorBrowser
+* [Firefox](https://ftp.mozilla.org/pub/firefox/) - обычный
+* [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - без автозагрузки встроенных кодеков, может не играть некоторое видео
+* [Firefox ESR](https://ftp.mozilla.org/pub/firefox/) - стабильная версия, обновляется почти раз в год
+* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - с дополнительными инструментами для разработчика
 * [Firefox Unbranded_Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения
 
 #### Разработка стилей CSS для Firefox (и не только)
