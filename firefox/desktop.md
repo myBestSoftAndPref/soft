@@ -210,6 +210,7 @@ javascript:void((function () {
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/)
 * [Firefox ESR](https://ftp.mozilla.org/pub/firefox/)
 * [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/)
+* [Firefox Unbranded_Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения
 
 #### Разработка стилей CSS для Firefox (и не только)
 
