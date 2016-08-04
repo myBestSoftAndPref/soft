@@ -157,12 +157,12 @@ javascript:void((function () {
 		* [Функции логирование](https://getfirebug.com/wiki/index.php/Console_API) <br>
 		* [Команды командной строки](https://getfirebug.com/wiki/index.php/Command_Line_API) через которые можно находить функции, элементы DOM, выполнять скрипт, отслеживать вызов функций, трассировка вызовов, получить всех слушателей события, просматривать содержимое объектов
 * [ColorZilla](https://addons.mozilla.org/en-US/firefox/addon/colorzilla) - инструменты для подборки цветов.
+* [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - много инструментов, от линейки до автоформатирования javascript, отключения куков, css, валидации и др.
 * Устаревшие:
 	* [Tiny JavaScript Debugger](https://addons.mozilla.org/en-US/firefox/addon/tiny-javascript-debugger) - дебагер javascript
 	* [CSS Usage](https://addons.mozilla.org/en-US/firefox/addon/css-usage/) - дополнение для FireBug, просмотр стилей и информации о них.
 	* [FirePath](https://addons.mozilla.org/en-US/firefox/addon/firepath) - дополнение для FireBug, позволяет находить, проверять, редактировать XPath, CSS и JQuery селекторы.
 	* [Javascript Deminifier](https://addons.mozilla.org/en-US/firefox/addon/javascript-deminifier/) - красиво формотирует javascript код.
-	* [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - много инструментов, от линейки до автоформатирования javascript, отключения куков, css, валидации и др.
 	* [FireStorage Plus!](https://addons.mozilla.org/en-US/firefox/addon/firestorage-plus) - дополнение для FireBug для инспекции HTML5 Local Storage и подобного.
 
 #### Дополнения для приватности
