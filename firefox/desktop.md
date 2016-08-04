@@ -138,7 +138,7 @@ javascript:void((function () {
 	alert('test');
 })());
 ```  
-Во время создания код bookmarklet преобразуется в base64 (URI Encoding).
+Во время создания код bookmarklet преобразуется в base64 ([URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI)).
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
