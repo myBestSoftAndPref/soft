@@ -8,6 +8,7 @@ user_pref("browser.link.open_newwindow.restriction", 0); //Открывать п
 user_pref("browser.tabs.closeWindowWithLastTab", false); //Не закрывать Firefox при закрытии последней вкладки
 user_pref("browser.tabs.animate", false); // Отключает притормаживающую на окнах с многими вкладками анимацию открытия и закрытия табов.
 user_pref("dom.webnotifications.enabled", false); //отключаем надоедливые окошки с предложением включить уведомления
+user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
 
 user_pref("extensions.stylish.updatesEnabled", 0); //Отключить АВТО обновления стилей дополнения Stylish
