@@ -102,6 +102,9 @@
 	* Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
 	* В закладки Firefox компания в целях рекламы может добавить подписки RSS и Atom на новости в качестве рекламы. Проверьте их и удалите.
 	* Не устанавливайте темы, они кривые, а легковесные могут и обновление проверять.
+	* [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs) - ссылки на открытие закладок, загрузок и т.д. во вкладках вместо окон
+	* ```Firefox\Browser\chrome\icons\default\main-window.ico``` - меняем иконку Firefox
+
 
 #### Управление
 
@@ -141,11 +144,6 @@ javascript:void((function () {
 Во время создания код bookmarklet преобразуется в base64 ([URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI)).
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
-
-#### Другие настройки
-
-* [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs) - ссылки на открытие закладок, загрузок и т.д. во вкладках вместо окон
-* ```Firefox\Browser\chrome\icons\default\main-window.ico``` - меняем иконку Firefox
 
 #### Разработка
 
