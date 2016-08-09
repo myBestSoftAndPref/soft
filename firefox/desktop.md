@@ -52,7 +52,7 @@
 <br>
 [Toolbar Buttons](https://addons.mozilla.org/ru/firefox/addon/toolbar-buttons/) - набор множества кнопок на разные случаи.
 <br>
-[Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение и другие параметры.
+[Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
 <br>
 [New Plugin Disabler](https://addons.mozilla.org/en-US/firefox/addon/new-plugin-disabler/) - отключает автоустановку плагинов, включить их можно вручную.
 <br>
