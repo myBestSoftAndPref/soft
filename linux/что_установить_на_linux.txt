@@ -264,6 +264,7 @@ Flowblade
 sudo apt-get install openshot openshot-doc
 PiTiVi
 Shotcut - видеоконвертер, нормальный
+Synfig - создание 2D анимации, мультов
 
 --графические редакторы
 gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
