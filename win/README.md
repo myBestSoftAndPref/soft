@@ -294,7 +294,7 @@ http://www.vim.org/download.php
 http://www.sumatrapdfreader.org/free-pdf-reader.html
 * WinDjView - быстрый просмотрщик djvu http://windjview.sourceforge.net/
 * WinMerge - сравнение документов в двух панельном окне http://winmerge.org/
-* CoolReader - чтение книг, версия 2 имеет более удобный и красивый интерфейс http://www.coolreader.org/
+* CoolReader - чтение книг, версия 2 имеет более удобный и красивый интерфейс https://sourceforge.net/projects/crengine
 * FBReader - читалка книг https://ru.fbreader.org/
 
 #### Оффисные пакеты
