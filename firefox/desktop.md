@@ -90,6 +90,7 @@
 [Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
 [Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок  
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)
+[Decentraleyes](https://addons.mozilla.org/ru/firefox/addon/decentraleyes/) - встраивает набор некоторых популярных javascript библиотек в Firefox, так что при открытии страниц библиотеки не загружаются снова из интернета и не происходит проверки на их актуальность (нету лишних запросов в интернет). Экономит трафик, защищает от отслеживания, ускоряет загрузку страниц.
 
 #### Настройки для удобства
 
