@@ -8,6 +8,7 @@
 	* [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций
 * Навигация
 	* [OasmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
+	* [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 * Органайзер
 	* [Alarm Klock](https://github.com/kraigs-android/kraigsandroid-downloads) - будильник
 	* [Timer](https://f-droid.org/repository/browse/?fdfilter=timer&fdid=org.dpadgett.timer) - таймер, много дополнительных функций
@@ -36,7 +37,7 @@
 	* [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный рабочий стол (launcher)
 	* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информации о процессах, соединение, использовании памяти и процессора и т. д.
 	* [Hacker's Keyboard](https://f-droid.org/repository/browse/?fdfilter=hacker&fdid=org.pocketworkstation.pckeyboard) - полноценная клавиатура с ctrl, стрелками, отображением английских символов на русских клавишах и т.д.
-	* [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства
+	* [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
 
 ###### Программы с закрытым кодом
 
@@ -62,13 +63,6 @@ c:\Users\All Users\Microsoft\Packages\
 Photomath  
 Mathpix  
 
-###### Internet
-
-###### Mail
-
-k9 mail
-
 ###### Browser
 
-Firefox  
 Opera  
