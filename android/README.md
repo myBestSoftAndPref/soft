@@ -25,7 +25,7 @@
 * Файлы
 	* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
 * Документы
-	* [920 Text Editor](https://github.com/jecelyin/920-text-editor-v2/releases) - блокнот, просмотр и редактирования множества форматов
+	* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - блокнот, просмотр и редактирования множества форматов
 	* [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка, поддерживает множество форматов и opds онлайн каталоги
 	* [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
 	* [VuDroid](https://f-droid.org/repository/browse/?fdfilter=VuDroid&fdid=org.vudroid) - просмотр PDF с нормальным отображением некоторых символов
