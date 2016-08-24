@@ -18,6 +18,7 @@
 	* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент
 	* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер
 	* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
+	* [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber) поддерживает стойкое к взлому шифрование OTR на стороне клиента
 * Справочники
 	* [QuickDic restored](https://github.com/rdoeffinger/Dictionary/releases) - словарь работающий без интернета
 	* [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
