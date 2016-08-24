@@ -27,7 +27,7 @@
 * Файлы
 	* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
 * Документы
-	* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - блокнот, просмотр и редактирования множества форматов
+	* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - блокнот, просмотр и редактирование множества форматов
 	* [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка, поддерживает множество форматов и opds онлайн каталоги
 	* [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
 	* [VuDroid](https://f-droid.org/repository/browse/?fdfilter=VuDroid&fdid=org.vudroid) - просмотр PDF с нормальным отображением некоторых русских символов
@@ -37,7 +37,7 @@
 	* [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
 	* [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
 	* [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный легкий рабочий стол (launcher)
-	* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информации о процессах, соединение, использовании памяти и процессора и т. д.
+	* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединение, использовании памяти, процессора и т. д.
 	* [Hacker's Keyboard](https://f-droid.org/repository/browse/?fdfilter=hacker&fdid=org.pocketworkstation.pckeyboard) - полноценная клавиатура с ctrl, стрелками, отображением английских символов на русских клавишах и т.д.
 	* [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
 
