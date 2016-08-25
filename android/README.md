@@ -38,6 +38,7 @@
 	* [Orbot](https://guardianproject.info/apps/orbot/) - клиент Tor, бесплатная цепочка анонимных прокси
 * Система
 	* [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
+	* [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление автоповоротом для каждой программы отдельно
 	* [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
 	* [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный легкий рабочий стол (launcher)
 	* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединение, использовании памяти, процессора и т. д.
