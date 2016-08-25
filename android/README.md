@@ -16,7 +16,7 @@
 	* [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
 * Интернет
 	* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент
-	* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер
+	* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата ```.mht```. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/firefox/android.md)
 	* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
 	* [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента
 * Справочники
@@ -42,3 +42,6 @@
 	* [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
 
 ###### Программы с закрытым кодом
+
+* Интернет
+	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер, умеет сжимать трафик

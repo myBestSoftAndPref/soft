@@ -23,7 +23,7 @@ KeePassX - менеджер паролей {
 					https://addons.mozilla.org/en-us/firefox/addon/keefox
 }
 
-pdftk - работа с pdf
+pdftk - работа с pdf, сжатие, распаковка, разделение, объединение и т.д.
 сжатие pdf (после установки pdftk)
 pdf2ps large.pdf very_large.ps
 ps2pdf very_large.ps small.pdf
@@ -146,7 +146,7 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install youtube-dlg
 
-httrack + HTTraQt - скачивание сайтов целиком
+HTTraQt - скачивание сайтов целиком
 
 filezilla - ftp клиент и сервер
 
