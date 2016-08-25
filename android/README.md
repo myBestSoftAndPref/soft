@@ -1,3 +1,5 @@
+Здесь только бесплатные программы. Ссылки даны на официальные сайты. Если прямых ссылок на .apk на официальном сайте нет, то ссылка на F-Droid. Если в F-Droid нету, то ссылка на Google Play. Если на официальном сайте ссылка на .apk ведет на другой сторонний источник (магазин), то ссылка на него.
+
 ###### Программы с открытым кодом
 
 * Источники программ (магазины, репозиторий)
@@ -33,6 +35,7 @@
 	* [VuDroid](https://f-droid.org/repository/browse/?fdfilter=VuDroid&fdid=org.vudroid) - просмотр PDF с нормальным отображением некоторых русских символов
 * Приватность
 	* [KeePassDroid](https://github.com/bpellin/keepassdroid/releases) - менеджер паролей KeePass
+	* [Orbot](https://guardianproject.info/apps/orbot/) - клиент Tor, бесплатная цепочка анонимных прокси
 * Система
 	* [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
 	* [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
@@ -44,4 +47,10 @@
 ###### Программы с закрытым кодом
 
 * Интернет
-	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер, умеет сжимать трафик
+	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер, умеет сжимать трафик, есть встроенная слабая блокировка рекламы
+	* [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
+	* [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
+	* [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - популярный чат, обмен сообщениями
+* Документы
+	* [WPS Office + PDF](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) - офис, для .docx, .xls и других форматов
+	* [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub) - офис, для .docx, .xls и других форматов
