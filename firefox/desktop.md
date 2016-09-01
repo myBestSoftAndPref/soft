@@ -206,7 +206,7 @@ javascript:void((function () {
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - без автозагрузки встроенных кодеков, может не играть некоторое видео
 * [Firefox ESR](https://ftp.mozilla.org/pub/firefox/) - стабильная версия, обновляется почти раз в год
 * [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - с дополнительными инструментами для разработчика
-* [Firefox Unbranded_Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения
+* [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения, нету авто обновления. Вместо этой сборки можно отключить проверку подписей в обычном Firefox [так](http://www.ghacks.net/2016/08/14/override-firefox-add-on-signing-requirement/)
 
 #### Разработка стилей CSS для Firefox (и не только)
 
