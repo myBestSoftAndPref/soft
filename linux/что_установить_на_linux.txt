@@ -265,6 +265,7 @@ sudo apt-get install openshot openshot-doc
 PiTiVi
 Shotcut - видеоконвертер, нормальный
 Synfig - создание 2D анимации, мультов
+Avidemux - простой редактор видео
 
 --графические редакторы
 gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
@@ -318,3 +319,5 @@ md5deep - считалка хэша
 md5sum - считалка хэша
 sha1deep - считалка хэша
 lha и unarj - не найдены
+-----------------------
+LabPlot - построение графиков и анализ

@@ -56,8 +56,6 @@
 <br>
 [New Plugin Disabler](https://addons.mozilla.org/en-US/firefox/addon/new-plugin-disabler/) - отключает автоустановку плагинов, включить их можно вручную.
 <br>
-[Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть группу.
-<br>
 [Tile Tabs](https://addons.mozilla.org/en-us/firefox/addon/tile-tabs/) - можно разбить окно на части и открыть в каждой разные страницы.
 <br>
 [Multifox](https://addons.mozilla.org/En-us/firefox/addon/multifox/) - можно зайти на один и тот же сайт одновременно с разных ников. То есть создаёт отдельный профиль с куки и др. информацией о регистрации.
@@ -86,7 +84,7 @@
 <br>
 [Add Bookmark Here 2](https://addons.mozilla.org/ru/firefox/addon/add-bookmark-here-2) - в каждое меню закладок добавляет кнопку "добавить закладку сюда", что экономит время на добавления (так как Mozilla так и не сделала удобное меню для добавления)
 <br>
-[DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен (особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок).  
+[DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен (особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок). Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.  
 [Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
 [Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок  
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)  
