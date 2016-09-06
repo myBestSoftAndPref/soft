@@ -165,14 +165,14 @@ javascript:void((function () {
 #### Дополнения для приватности
 
 * [Random Agent Spoofer](https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer)
-* [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/)/[Policeman](https://addons.mozilla.org/en-us/firefox/addon/policeman/)/[RequestPolicy Continued](https://addons.mozilla.org/ru/firefox/addon/requestpolicy-continued/)
-* [Advanced Cookie Manager](https://addons.mozilla.org/en-us/firefox/addon/cookie-manager/)/[Cookies Manager+](https://addons.mozilla.org/en-us/firefox/addon/cookies-manager-plus/)/[Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/)/[Cookie Controller](https://addons.mozilla.org/ru/firefox/addon/cookie-controller/)/[Self-Destructing Cookies](https://addons.mozilla.org/ru/firefox/addon/self-destructing-cookies/)
+* [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/)/[Policeman](https://addons.mozilla.org/en-us/firefox/addon/policeman/)/[RequestPolicy Continued](https://addons.mozilla.org/ru/firefox/addon/requestpolicy-continued/) - управление содержимым страницы. Отключение загрузки контента со сторонних ресурсов, отключение скриптов, стилей, изменение поведения скриптов.
+* [Advanced Cookie Manager](https://addons.mozilla.org/en-us/firefox/addon/cookie-manager/)/[Cookies Manager+](https://addons.mozilla.org/en-us/firefox/addon/cookies-manager-plus/)/[Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/)/[Cookie Controller](https://addons.mozilla.org/ru/firefox/addon/cookie-controller/)/[Self-Destructing Cookies](https://addons.mozilla.org/ru/firefox/addon/self-destructing-cookies/) - управление (удаление/добавление/изменение/экспорт/испорт) куками и HTML Local Storage. Удаление по таймеру или при закрытии страницы.
 * [New Plugin Disabler](https://addons.mozilla.org/en-us/firefox/addon/new-plugin-disabler/)
 * [RightToClick](https://addons.mozilla.org/en-US/firefox/addon/righttoclick/)
 * [NoScript Security Suite](https://addons.mozilla.org/en-US/firefox/addon/noscript/)
 * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
 * [BetterPrivacy](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/)
-* [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links/)/[Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/)
+* [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links/)/[Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/) - очистка перенаправления, передачи ссылки с которой перешел пользователь сайту в целях рекламы.
 * [RefControl](https://addons.mozilla.org/en-US/firefox/addon/refcontrol/)
 * [HTTPS Everywhere](https://addons.mozilla.org/en-us/firefox/addon/https-everywhere/)
 * [Firebug](https://addons.mozilla.org/ru/firefox/addon/firebug/)
