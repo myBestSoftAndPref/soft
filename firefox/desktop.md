@@ -22,7 +22,7 @@
 <br>
 [TryAgain](https://addons.mozilla.org/ru/firefox/addon/tryagain) или [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - если страница недоступна пытается грузить её снова. Ссылки на сервисы через которые можно проверить не доступна страница только у вас или у всех.
 <br>
-[uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin)<sub>(лучшая замена AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>__**Настройка подписок:**__ В настройках дополнения отключить подписки: **uBlock filters – Badware risks**, **Malware Domain List‎**, **Malware domains‎**, **Peter Lowe’s Ad server list‎**. Включить подписки: **Anti-Adblock Killer | Reek‎**, **Basic tracking list by Disconnect‎**, RUS: RU AdList. Остальные подписки по умолчанию. </sub>
+[uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin)<sub>(лучшая замена AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub><u>**Настройка подписок:**</u> В настройках дополнения отключить подписки: **uBlock filters – Badware risks**, **Malware Domain List‎**, **Malware domains‎**, **Peter Lowe’s Ad server list‎**. Включить подписки: **Anti-Adblock Killer | Reek‎**, **Basic tracking list by Disconnect‎**, RUS: RU AdList. Остальные подписки по умолчанию. </sub>
 <br>
 [UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения.
 <br>
