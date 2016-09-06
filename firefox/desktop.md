@@ -20,7 +20,7 @@
 <br>
 [Tree Style Tab](https://addons.mozilla.org/ru/firefox/addon/tree-style-tab) или [Tab Tree](https://addons.mozilla.org/en-US/firefox/addon/tab-tree) - вкладки вертикально в виде дерева.
 <br>
-[TryAgain](https://addons.mozilla.org/ru/firefox/addon/tryagain) или [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - если страница недоступна пытается грузить её снова. Ссылки на сервисы через которые можно проверить не доступна страница только у вас или у всех.
+[ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - если страница недоступна пытается грузить её снова. Ссылки на сервисы через которые можно проверить не доступна страница только у вас или у всех.
 <br>
 [uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin)<sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>В связи с тем, что подписки по умолчанию блокируют некоторые сайты используемые многими пользователями далее идет описание правильно настройки _uBlock Origin_. <em>**Настройка подписок:**</em> В настройках дополнения ```отключить подписки```: **1) uBlock filters – Badware risks**, **2) Peter Lowe’s Ad server list‎**, **3) Malware Domain List‎**, **4) Malware domains‎**. ```Включить подписки```: **1) Anti-Adblock Killer | Reek‎**, **2) Basic tracking list by Disconnect‎**, __3) RUS: RU AdList__. Остальные подписки по умолчанию. </sub>
 <br>
@@ -36,7 +36,7 @@
 <br>
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) - менеджер пользовательских скриптов javascript.
 <br>
-[NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page](https://addons.mozilla.org/ru/firefox/addon/zoom-page)- удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
+[NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page](https://addons.mozilla.org/ru/firefox/addon/zoom-page) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
 <br>
 [User Agent Overrider](https://addons.mozilla.org/ru/firefox/addon/user-agent-overrider) - можно притворяться мобильной версией Firefox чтобы смотреть видео на некоторых сайтах без Flash Player.
 <br>
@@ -165,27 +165,19 @@ javascript:void((function () {
 #### Дополнения для приватности
 
 * [Random Agent Spoofer](https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer)
-* [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/)
-* [RequestPolicy Continued](https://addons.mozilla.org/ru/firefox/addon/requestpolicy-continued/)
-* [Policeman](https://addons.mozilla.org/en-us/firefox/addon/policeman/)
-* [Advanced Cookie Manager](https://addons.mozilla.org/en-us/firefox/addon/cookie-manager/)
-* [Cookies Manager+](https://addons.mozilla.org/en-us/firefox/addon/cookies-manager-plus/)
+* [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/)/[Policeman](https://addons.mozilla.org/en-us/firefox/addon/policeman/)/[RequestPolicy Continued](https://addons.mozilla.org/ru/firefox/addon/requestpolicy-continued/)
+* [Advanced Cookie Manager](https://addons.mozilla.org/en-us/firefox/addon/cookie-manager/)/[Cookies Manager+](https://addons.mozilla.org/en-us/firefox/addon/cookies-manager-plus/)/[Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/)/[Cookie Controller](https://addons.mozilla.org/ru/firefox/addon/cookie-controller/)/[Self-Destructing Cookies](https://addons.mozilla.org/ru/firefox/addon/self-destructing-cookies/)
 * [New Plugin Disabler](https://addons.mozilla.org/en-us/firefox/addon/new-plugin-disabler/)
 * [RightToClick](https://addons.mozilla.org/en-US/firefox/addon/righttoclick/)
 * [NoScript Security Suite](https://addons.mozilla.org/en-US/firefox/addon/noscript/)
 * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-* [Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/)
-* [Cookie Controller](https://addons.mozilla.org/ru/firefox/addon/cookie-controller/)
 * [BetterPrivacy](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/)
-* [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links/)
-* [Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/)
+* [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links/)/[Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/)
 * [RefControl](https://addons.mozilla.org/en-US/firefox/addon/refcontrol/)
 * [HTTPS Everywhere](https://addons.mozilla.org/en-us/firefox/addon/https-everywhere/)
 * [Firebug](https://addons.mozilla.org/ru/firefox/addon/firebug/)
-* [FireStorage Plus](https://addons.mozilla.org/en-us/firefox/addon/firestorage-plus/)
 * [UAControl](https://addons.mozilla.org/ru/firefox/addon/uacontrol/)
 * [SSleuth](https://addons.mozilla.org/en-US/firefox/addon/ssleuth/)
-* [Self-Destructing Cookies](https://addons.mozilla.org/ru/firefox/addon/self-destructing-cookies/)
 * [Redirector](https://addons.mozilla.org/ru/firefox/addon/redirector/)
 
 #### Исследование
