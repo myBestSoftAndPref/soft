@@ -36,7 +36,7 @@
 <br>
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) - менеджер пользовательских скриптов javascript.
 <br>
-[NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page](https://addons.mozilla.org/ru/firefox/addon/zoom-page) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
+[NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus), [Zoom Page](https://addons.mozilla.org/ru/firefox/addon/zoom-page), [SlyZoom](https://addons.mozilla.org/ru/firefox/addon/slyzoom) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
 <br>
 [User Agent Overrider](https://addons.mozilla.org/ru/firefox/addon/user-agent-overrider) - можно притворяться мобильной версией Firefox чтобы смотреть видео на некоторых сайтах без Flash Player.
 <br>
@@ -62,7 +62,7 @@
 <br>
 [Print Edit](https://addons.mozilla.org/ru/firefox/addon/print-edit/) - сохранение страницы как .PDF, редактирование перед печатью и настройки параметров печати.
 <br>
-[Nightly Tester Tools](https://addons.mozilla.org/en-Us/firefox/addon/nightly-tester-tools/) - можно принудительно включить совместимость дополнений.
+[Disable Add-on Compatibility Checks (Version 40+)](https://addons.mozilla.org/ru/firefox/addon/checkcompatibility2/) - можно принудительно включить совместимость дополнений.
 <br>
 [English-Russian dictionary](https://addons.mozilla.org/en-us/firefox/addon/english-russian-dict/) - совмещенный словарь англ. + рус.
 <br>
@@ -137,7 +137,7 @@
 
 Это закладка с JavaScript внедряющимся на страницу и выполняющимся в момент нажатия на закладку.
 Для создания bookmarklet нужно создать закладку со скриптом в строке адреса (поле location):
-```
+```javascript
 javascript:void((function () {
 	alert('test');
 })());
