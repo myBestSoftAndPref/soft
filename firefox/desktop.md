@@ -24,7 +24,7 @@
 <br>
 [uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin)<sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>В связи с тем, что подписки по умолчанию блокируют некоторые сайты используемые многими пользователями далее идет описание правильно настройки _uBlock Origin_. <em>**Настройка подписок:**</em> В настройках дополнения ```отключить подписки```: **1) uBlock filters – Badware risks**, **2) Peter Lowe’s Ad server list‎**, **3) Malware Domain List‎**, **4) Malware domains‎**. ```Включить подписки```: **1) Anti-Adblock Killer | Reek‎**, **2) Basic tracking list by Disconnect‎**, __3) RUS: RU AdList__. Остальные подписки по умолчанию. </sub>
 <br>
-[UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения.
+[UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения, отключить сохранение Flash и video/audio.
 <br>
 [FoxyProxy Standard](https://addons.mozilla.org/ru/firefox/addon/foxyproxy-standard) - быстрое и удобное управление прокси.
 <br>
@@ -62,7 +62,7 @@
 <br>
 [Print Edit](https://addons.mozilla.org/ru/firefox/addon/print-edit/) - сохранение страницы как .PDF, редактирование перед печатью и настройки параметров печати.
 <br>
-[Disable Add-on Compatibility Checks (Version 40+)](https://addons.mozilla.org/ru/firefox/addon/checkcompatibility2/) - можно принудительно включить совместимость дополнений.
+[Disable Add-on Compatibility Checks (Version 40+)](https://addons.mozilla.org/ru/firefox/addon/checkcompatibility2/) - можно принудительно включить совместимость дополнений. Дополнения будут работать на разных операционных системах без "проверки совместимости" через интернет. И если они сделаны для старой версии.
 <br>
 [English-Russian dictionary](https://addons.mozilla.org/en-us/firefox/addon/english-russian-dict/) - совмещенный словарь англ. + рус.
 <br>
