@@ -36,7 +36,7 @@
 <br>
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) - менеджер пользовательских скриптов javascript.
 <br>
-[NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus), [Zoom Page](https://addons.mozilla.org/ru/firefox/addon/zoom-page), [SlyZoom](https://addons.mozilla.org/ru/firefox/addon/slyzoom) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
+[NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page](https://addons.mozilla.org/ru/firefox/addon/zoom-page) или [SlyZoom](https://addons.mozilla.org/ru/firefox/addon/slyzoom) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
 <br>
 [User Agent Overrider](https://addons.mozilla.org/ru/firefox/addon/user-agent-overrider) - можно притворяться мобильной версией Firefox чтобы смотреть видео на некоторых сайтах без Flash Player.
 <br>
@@ -89,7 +89,7 @@
 [Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок  
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)  
 [Decentraleyes](https://addons.mozilla.org/ru/firefox/addon/decentraleyes/) - встраивает набор некоторых популярных javascript библиотек в Firefox, так что при открытии страниц библиотеки не загружаются снова из интернета и не происходит проверки на их актуальность (нету лишних запросов в интернет). Экономит трафик, защищает от отслеживания, ускоряет загрузку страниц.  
-[Multi Links Plus](https://addons.mozilla.org/ru/firefox/addon/multi-links-plus/), [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.  
+[Multi Links Plus](https://addons.mozilla.org/ru/firefox/addon/multi-links-plus/) или [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.  
 [YouTube High Definition](https://addons.mozilla.org/ru/firefox/addon/youtube-high-definition/) - настройка youtube, установка качества по умолчанию, отключение авто воспроизведения и другое  
 [Mute Tab](https://addons.mozilla.org/en-US/firefox/addon/mute-tab) - можно отключить звук во всех вкладках по умолчанию и включать только вручную
 
@@ -98,14 +98,17 @@
 Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля ```profile/user.js```.  
 Для Firefox **под Android** можно менять только вручную или использовать дополнения (поиск по тегу [Security & Privacy](https://addons.mozilla.org/en-US/android/extensions/security-privacy/))
 
-[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - описаны дополнительные настройки, в том числе для приватности
+[Fox](https://github.com/The-OP/Fox), [RamiRosenfeld](https://github.com/RamiRosenfeld/Rosenfox), [Список русского форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226), [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - **огромный** сборник настроек, в том числе для приватности
 
 * Другое:
 	* Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
 	* В закладки Firefox компания в целях рекламы может добавить подписки RSS и Atom на новости в качестве рекламы. Проверьте их и удалите.
 	* Не устанавливайте темы, они кривые, а легковесные могут и обновление проверять.
 	* [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs) - ссылки на открытие закладок, загрузок и т.д. во вкладках вместо окон
-	* ```Firefox\Browser\chrome\icons\default\main-window.ico``` - меняем иконку Firefox
+	* ```Firefox\Browser\chrome\icons\default\main-window.ico``` - меняем иконку Firefox <sub>(если каталога или файла нету, то создать)</sub>
+	* ```profile\chrome\userChrome.css``` - стили для UI (интерфейса браузера) <sub>(если каталога или файла нету, то создать)</sub>
+	* ```profile\chrome\userContent.css``` - стили для сайтов <sub>(если каталога или файла нету, то создать)</sub>
+	* [How to override the Firefox Add-on Signing requirement](http://www.ghacks.net/2016/08/14/override-firefox-add-on-signing-requirement/) - отключание проверку подписи дополнений (можно ставить дополнения не только с сайта Mozilla)
 
 
 #### Управление
@@ -156,6 +159,7 @@ javascript:void((function () {
 		* [Команды командной строки](https://getfirebug.com/wiki/index.php/Command_Line_API) через которые можно находить функции, элементы DOM, выполнять скрипт, отслеживать вызов функций, трассировка вызовов, получить всех слушателей события, просматривать содержимое объектов
 * [ColorZilla](https://addons.mozilla.org/en-US/firefox/addon/colorzilla) - инструменты для подборки цветов.
 * [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - много инструментов, от линейки до автоформатирования javascript, отключения куков, css, валидации и др.
+* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - альфа версия Firefox с дополнительными инструментами для разработчика и багами
 * Устаревшие:
 	* [Tiny JavaScript Debugger](https://addons.mozilla.org/en-US/firefox/addon/tiny-javascript-debugger) - дебагер javascript
 	* [CSS Usage](https://addons.mozilla.org/en-US/firefox/addon/css-usage/) - дополнение для FireBug, просмотр стилей и информации о них.
@@ -181,8 +185,9 @@ javascript:void((function () {
 * [SSleuth](https://addons.mozilla.org/en-US/firefox/addon/ssleuth/)
 * [Redirector](https://addons.mozilla.org/ru/firefox/addon/redirector/)
 
-#### Исследование
+#### Исследование безопасности
 
+* [WorldIP - Geo Add-on with Security Features](https://addons.mozilla.org/en-US/firefox/addon/worldip/)
 * [HackBar](https://addons.mozilla.org/de/firefox/addon/hackbar/)
 * [SQL Inject Me](https://addons.mozilla.org/en-US/firefox/addon/sql-inject-me/)
 * [XSS Me](https://addons.mozilla.org/en-US/firefox/addon/xss-me/)
@@ -199,13 +204,13 @@ javascript:void((function () {
 * [Firefox](https://ftp.mozilla.org/pub/firefox/) - обычный Firefox
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - без автозагрузки встроенных кодеков, может не играть некоторое видео
 * [Firefox ESR](https://ftp.mozilla.org/pub/firefox/) - стабильная версия, обновляется почти раз в год
-* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - альфа версия Firefox с дополнительными инструментами для разработчика
+* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - альфа версия Firefox с дополнительными инструментами для разработчика и багами
 * [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения, нету авто обновления. Вместо этой сборки можно отключить проверку подписей в обычном Firefox: [How to override the Firefox Add-on Signing requirement](http://www.ghacks.net/2016/08/14/override-firefox-add-on-signing-requirement/)
 
 #### Разработка стилей CSS для Firefox (и не только)
 
 * [Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) - можно писать и применять стили CSS к интерфейсу и сайтам.
-* [DOM Inspector](https://addons.mozilla.org/en-us/firefox/addon/dom-inspector-6622/)
+* [DOM Inspector](https://addons.mozilla.org/en-us/firefox/addon/dom-inspector-6622/) - поиск элементов
 * [Element Inspector](https://addons.mozilla.org/en-Us/firefox/addon/element-inspector/)
 * [InspectorWidget](https://addons.mozilla.org/en-us/firefox/addon/inspectorwidget/)
 * [Stacked Inspector](https://addons.mozilla.org/en-US/firefox/addon/stacked-inspector/)
@@ -216,5 +221,5 @@ javascript:void((function () {
 	* [дополнительные CSS от Mozilla](https://developer.mozilla.org/en-US/docs/Web/CSS/Mozilla_Extensions)
 	* [Описание userChrome.css](http://kb.mozillazine.org/UserChrome.css) - встроенная функция, файл для применения стилей к браузеру для работы с CSS
 	* [Описание userContent.css](http://kb.mozillazine.org/UserContent.css) - встроенная функция, файл для применения стилей к сайтам для работы с CSS
-	* [Уроки стилистики (CSS)](http://web.archive.org/web/20130928163532/https://forum.mozilla-russia.org/viewtopic.php?id=49078)
+	* [Уроки стилистики (CSS)](http://web.archive.org/web/20130928163532/https://forum.mozilla-russia.org/viewtopic.php?id=49078) - уроки стилей именно для Firefox
 * [Browser Toolbox](https://developer.mozilla.org/en-US/docs/Tools/Browser_Toolbox) - встроенный инструмент Firefox для стилеписания и разработки дополнений
