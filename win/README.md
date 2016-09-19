@@ -33,24 +33,31 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
 * K-Lite Codec Pack - код закрыт, сборка кодеков http://www.codecguide.com/download_kl.htm
 * ffmpeg - набор библиотек для конвертации, изменения, сжатия, передачи видео. Нужен для некоторых видеоконвертеров. Но можно и конвертировать просто из командной строки https://ffmpeg.org/download.html
-	* Конвертирование: http://stackoverflow.com/questions/13560852/convert-mp4-to-maximum-mobile-supported-mp4-using-ffmpeg
+	* Прмер конвертирование: http://stackoverflow.com/questions/13560852/convert-mp4-to-maximum-mobile-supported-mp4-using-ffmpeg
 
 ## Программирование
 
 #### IDE
 
-* Eclipse IDE универсальная среда, преимущественно для Java https://www.eclipse.org/downloads/
+* Eclipse IDE - универсальная среда, преимущественно для Java https://www.eclipse.org/downloads/
+	* В версию Eclipse Java EE включено много плагинов: xml, git, maven и т.д.
+	* Плагины:
+		* FindBugs - поиск багов, в настройках Eclipse > Java передвинуть ползунок до конца
+		* Checkstyle - проверка стиля кода
+		* JD-Eclipse - дизассемблер Java
+		* Ant Visualizer - визуализация Ant файла сборки
+		* WindowBuilder - рисование окошек с помощью редактора
 * Spring Tool Suite - IDE на основе Eclipse от проекта Spring https://spring.io/tools/sts
 * NetBeans IDE универсальная, преимущественно для Java https://netbeans.org/downloads/
 * Android SDK - IDE и утилиты для разработки под Android https://developer.android.com/sdk/index.html
 * MySQL Workbench - разработка SQL баз данных для MySQL http://dev.mysql.com/downloads/workbench/
 * HeidiSQL - разработка SQL баз данных http://www.heidisql.com/download.php
-* Qt Creator - среда программирования на C/C++ и Qt,
-в поставку входят библиотеки и компиляторы gcc или VS
+* Qt Creator - среда программирования на C/C++ и Qt, в поставку входят библиотеки и компиляторы gcc или VS
 https://www.qt.io/download-open-source/
-* http://x64dbg.com - open source дебагер, отладчик программ в ассемблере?
-* IntelliJ IDEA - среды для Java, код открыт только для версии без поддержки Java EE
-https://www.jetbrains.com/idea/
+* http://x64dbg.com - open source дебагер, отладчик программ в ассемблере
+* IntelliJ IDEA - среды для Java, код открыт только для версии без поддержки Java EE https://www.jetbrains.com/idea/
+
+* Eclipse Che - онлайн IDE, рисует интерфейс на HTML. Можно установить на компьютер в Docker (виртуальная машина с Eclipse Che), на облако в сети, есть бесплатный аккаунт, интеграция с Git. Пока возможностей намного меньше чем в Eclipse http://eclipse.org/che
 
 #### Контроль версий
 
