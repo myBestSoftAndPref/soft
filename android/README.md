@@ -18,6 +18,7 @@
 * Интернет
 	* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент
 	* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата ```.mht```. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/firefox/android.md)
+	* [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
 	* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
 	* [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента (для работы нужно зарегистрироваться на любом XMPP сервере)
 * Справочники
