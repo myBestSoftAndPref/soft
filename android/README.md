@@ -8,6 +8,7 @@
 	* [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - плеер
 	* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
 	* [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
+	* [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - запись телефонных разговоров
 * Навигация
 	* [OasmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
 	* [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
@@ -41,7 +42,7 @@
 	* [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление автоповоротом для каждой программы отдельно
 	* [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
 	* [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный легкий рабочий стол (launcher)
-	* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединениях, использовании памяти, процессора и т. д.
+	* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединениях, использовании памяти, процессоре и т. д.
 	* [Hacker's Keyboard](https://f-droid.org/repository/browse/?fdfilter=hacker&fdid=org.pocketworkstation.pckeyboard) - полноценная клавиатура с ctrl, стрелками, отображением английских символов на русских клавишах и т.д.
 	* [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
 
