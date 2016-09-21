@@ -9,6 +9,7 @@
 	* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
 	* [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
 	* [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - запись телефонных разговоров
+	* [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
 * Навигация
 	* [OasmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
 	* [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
@@ -31,7 +32,7 @@
 	* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
 * Документы
 	* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов
-	* [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epubб chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
+	* [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
 	* [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы т другие уникальные функции
 	* [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
 	* [VuDroid](https://f-droid.org/repository/browse/?fdfilter=VuDroid&fdid=org.vudroid) - просмотр PDF с нормальным отображением некоторых русских символов
