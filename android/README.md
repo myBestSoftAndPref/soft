@@ -17,6 +17,7 @@
 	* [Timer](https://f-droid.org/repository/browse/?fdfilter=timer&fdid=org.dpadgett.timer) - таймер, много дополнительных функций
 	* [PalmCalc](http://palmcalc.com) - продвинутый калькулятор, имеет функцию перевода величин в другие, небольшую справку по величинам
 	* [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
+	* [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками
 * Интернет
 	* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент
 	* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата ```.mht```. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/firefox/android.md)
