@@ -414,6 +414,7 @@ http://www.cpuid.com/softwares/cpu-z.html
 	* Подменяет дату в запущенной программе (программа видит подсунутое её время). Например для браузеров. http://www.nirsoft.net/utils/run_as_date.html
 * Chocolatey - пакетный менеджер как apt-get для Windows
 	* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
+* FurMark - код закрыт, тест производительности видеокарты через OpenGL http://www.geeks3d.com/dlz/
 
 ## Компоненты операционных систем
 
