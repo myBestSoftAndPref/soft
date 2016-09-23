@@ -415,6 +415,7 @@ http://www.cpuid.com/softwares/cpu-z.html
 * Chocolatey - пакетный менеджер как apt-get для Windows
 	* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
 * FurMark - код закрыт, тест производительности видеокарты через OpenGL http://www.geeks3d.com/dlz/
+* GPU Caps Viewer - код закрыт, информация о видео карте http://ozone3d.net/gpu_caps_viewer/
 
 ## Компоненты операционных систем
 
