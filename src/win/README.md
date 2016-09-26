@@ -162,9 +162,11 @@ http://spring-projects.ru/projects/spring-boot/
 
 * VLC - аудио/видео плеер, играет сетевые источники, умеет вещать видео в том числе изображение рабочего стола (в том числе в локальную сеть)
 http://www.videolan.org/vlc/download-windows.html
-* SMPlayer - более быстрый и стабильный чем VLC, но с менее удобным интерфейсом
+* SMPlayer - более быстрый и стабильный чем VLC, но с менее удобным интерфейсом (оболочка для mplayer), слегка глючный интерфейс
 * PotPlayer - код закрыт, но работает гораздо быстрее и стабильнее VLC, а интерфейс удобнее
 http://potplayer.daum.net/
+* Media Player Classic - Home Cinema (MPC-HC) - известный и быстрый плеер https://mpc-hc.org/downloads/
+	* Black Edition (MPC-BE) - существует форк, заявлено больше возможностей, но странный, мало информации, мало обзора отличий, хотя тема о нём есть на официальном сайте Media Player Classic - Home Cinema https://sourceforge.net/projects/mpcbe/
 
 #### Видео редакторы и конверторы
 
