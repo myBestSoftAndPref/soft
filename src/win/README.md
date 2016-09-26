@@ -88,6 +88,8 @@ https://www.qt.io/download-open-source/
 #### Локальные сервера
 
 * XAMPP - сборка apache/mysql/perl https://www.apachefriends.org/download.html
+	* Если будут проблемы с установкой в Windows - установить в каталог по умолчанию C:\xampp
+	* Требует Microsoft Visual C++ 2008 Redistributable Package (x86) https://www.microsoft.com/en-us/download/details.aspx?id=29
 * tomcat - контэйнер сервлетов http://tomcat.apache.org/
 * GlassFish (ставится с NetBeans)
 
@@ -200,6 +202,8 @@ https://www.torproject.org/
 * google chrome, код частично закрыт http://portableapps.com/apps/internet/google_chrome_portable
 * Opera - код частично закрыт, зато сжимает трафик, что при тарифах по трафику незаменимо, можно выбрать при установке "установить на USB" и получить портативную версию
 http://www.opera.com
+* Iridium Browser - Chrome с отключенным сбором статистики и дополнительными функциями https://iridiumbrowser.de/
+* UnGoogled Chromium - вырезан сбор статистики, ещё больше чем в Iridium Browser, добавлено больше опций https://github.com/Eloston/ungoogled-chromium/releases
 
 #### Менеджеры загрузок
 

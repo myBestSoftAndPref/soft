@@ -52,6 +52,8 @@ openbox и его компоненты - можно выбирать в каче
 
 Smartmontools - работа со SMART жесткого диска
 
+sudo ubuntu-drivers autoinstall - установка прориетарных драйверов в ubuntu
+
 ----------------------
 Ускорение Ubuntu
 preload + prelink
@@ -189,11 +191,12 @@ xchm + kchm + утилита hh в wine - просмотр формата .chm
 chm2pdf
 fbreader - читалка
 CuneiForm - распознование текста + YAGF (интерфейс) + aspell (проверка орфографии) + ocrodjvu (распознование djvu) + xsane (со сканеров)
-SimpleScan - сканирование
+Simple Scan - сканирование
 gscan2pdf - быстрое создание pdf и djvu из сканированных
 LaTeX - редактор формата .tex, для типографий
 Texmaker - редактор документов LaTeX
 Scribus - верстка как в Adobe InDesign, PDF, призентации и т.д.
+	scribus-template - дополнительные шаблоны
 Gcalctool - калькулятор
 LanguageTool - проверка орфографии (нужна java)
 
@@ -324,8 +327,36 @@ lha и unarj - не найдены
 LabPlot - построение графиков и анализ
 -----------------------
 Настройка Xfce
-	Чтобы работал апплет показывающий скорость соединения на панели:
+
+0. Добавить плагины на панель:
+	переключение языка
+	монитор процессора
+	монитор сети
+	сделать снимок экрана
+	xfce4-mount-plugin - понтирование устройств
+	xfce4-sensors-plugin - инфа с датчиков
+	cameramonitor - слежение за веб камерой
+	xfce4-diskperf-plugin - производительность диска
+	xfce4-cellmodem-plugin - работа с мобильными модемами
+	 
+	
+1. Чтобы работал апплет показывающий скорость соединения на панели:
 		Набрать команду ifconfig -a
 		Выведет список устройств, вписать нужное:
 			wlo - wi-fi
 			eth - проволная сеть
+
+2. Чтобы установить xfce 4.12 в ubuntu 14.04
+	sudo apt-get install qt4-qtconfig
+	qtconfig 
+	установить в настройке оформления тему GTK+
+	Файл > Сохранить
+	
+	 sudo add-apt-repository ppa:xubuntu-dev/xfce-4.12
+	  sudo apt-get update
+	   sudo apt-get dist-upgrade 
+	   
+	 Подключаем доп. репозиторий с плагинами xfce
+		sudo add-apt-repository ppa:xubuntu-dev/extras
+		sudo apt-get update
+
