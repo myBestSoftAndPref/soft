@@ -198,12 +198,13 @@ http://librecad.org/cms/home.html
 * Firefox Developer Edition - для разработчиков https://www.mozilla.org/ru/firefox/developer/
 * TorBrowser - обход блокировок, выход в сеть через прокси, отключен сборк статистики
 https://www.torproject.org/
-* Chromium - на его основе делается Chrome https://download-chromium.appspot.com/?platform=Win&type=snapshots
+* Chromium - на его основе делается Chrome (только x32 версии) https://download-chromium.appspot.com/?platform=Win&type=snapshots
 * google chrome, код частично закрыт http://portableapps.com/apps/internet/google_chrome_portable
 * Opera - код частично закрыт, зато сжимает трафик, что при тарифах по трафику незаменимо, можно выбрать при установке "установить на USB" и получить портативную версию
 http://www.opera.com
-* Iridium Browser - Chrome с отключенным сбором статистики и дополнительными функциями https://iridiumbrowser.de/
-* UnGoogled Chromium - вырезан сбор статистики, ещё больше чем в Iridium Browser, добавлено больше опций (перенесены патчи из Iridium Browser и других проектов) https://github.com/Eloston/ungoogled-chromium/releases
+* Менее официальные браузеры (неизвестно качество)
+	* Iridium Browser - Chromium с отключенным сбором статистики и дополнительными функциями https://iridiumbrowser.de/
+	* UnGoogled Chromium - вырезан сбор статистики, ещё больше чем в Iridium Browser, добавлено больше опций (перенесены патчи из Iridium Browser и других проектов) https://github.com/Eloston/ungoogled-chromium/releases
 
 #### Менеджеры загрузок
 
