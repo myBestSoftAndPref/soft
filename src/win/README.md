@@ -166,7 +166,7 @@ http://www.videolan.org/vlc/download-windows.html
 * PotPlayer - код закрыт, но работает гораздо быстрее и стабильнее VLC, а интерфейс удобнее
 http://potplayer.daum.net/
 * Media Player Classic - Home Cinema (MPC-HC) - известный и быстрый плеер https://mpc-hc.org/downloads/
-	* Black Edition (MPC-BE) - существует форк, заявлено больше возможностей, но странный, мало информации, мало обзора отличий, хотя тема о нём есть на официальном сайте Media Player Classic - Home Cinema https://sourceforge.net/projects/mpcbe/
+	* Black Edition (MPC-BE) - форк, заявлено больше возможностей, но странный, мало информации, мало обзора отличий, хотя тема о нём есть на официальном сайте Media Player Classic - Home Cinema https://sourceforge.net/projects/mpcbe/
 
 #### Видео редакторы и конверторы
 
