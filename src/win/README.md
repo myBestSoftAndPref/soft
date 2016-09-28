@@ -353,11 +353,13 @@ http://doublecmd.sourceforge.net/
 * TestDisk - консольная утилита восстановления удаленных файлов, фактически единственная свободная
 http://www.cgsecurity.org/wiki/TestDisk
 
-#### Эмуляторы
+#### Эмуляторы дисководов и виртуальные диски
 
 * DAEMON Tools Lite - код закрыт, лучший из бесплатных эмуляторов дисководов
 http://www.daemon-tools.cc/rus/downloads
-* libretro - кросс платформенный эмулятор кучи консолей (ROM файлы игр, т.е. игры нужно качать отдельно) http://www.libretro.com/
+* ImDisk Virtual Disk Driver - может создавать виртуальный диск в быстрой оперативной памяти http://www.ltr-data.se/opencode.html/
+	* ImDisk Toolkit - это версия с дополнительными опциями (динамическое подстраивание размера виртуального диска под свободную оперативную память и т.д.) от другого разработчика https://sourceforge.net/projects/imdisk-toolkit/
+* AMD Radeon™ RAMDisk - код закрыт, может создавать виртуальный диск в оперативной памяти, а при выключении сбросывать его содержимое на диск. Из минусов: сама занимает 100 мб в оперативной памяти, диски больше 4Гб только в платной версии
 
 #### Работа с cd и образами
 
@@ -381,11 +383,12 @@ http://www.antp.be/software/renamer
 * о TrueCrypt и форках http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=truecrypt
 * верифицированные код, проектом проводившим аудит TrueCrypt https://github.com/AuditProject/truecrypt-verified-mirror
 
-## Эмуляторы компьютеров и систем
+## Эмуляторы компьютеров, операционных систем, игровых консолей
 
 * VirtualBox - эмулятор компьютера https://www.virtualbox.org/wiki/Downloads
 * дополнение для Google Chrome через которое можно запускать программы от Android (.apk) https://developer.chrome.com/apps/getstarted_arc
 * qemu - эмулятор, который эмулирует железо, разные архитектуры CPU и т.д.
+* libretro - кросс платформенный эмулятор кучи консолей (ROM файлы игр, т.е. игры нужно качать отдельно) http://www.libretro.com/
 
 ## Справочники, навигация, энциклопедии, Словари
 
@@ -399,6 +402,14 @@ http://www.antp.be/software/renamer
 * Google Earth - код закрыт, просмотр карт от google https://support.google.com/earth/answer/168344?hl=ru
 	* существует платная версия Google Earth Pro которая может работать с GPS и показывать распечатки более высокого разрешения
 
+## Мыши, клавиатура, скрипты на жесты и кнопки
+
+* [AutoHotkey](https://autohotkey.com/) - выполняет скрипты для автоматического нажатия мыши и клавиатуры. Есть собственный скриптовый язык. На разных сайтах разбросано множество всевозможных скриптов
+* [MKey](http://www.seriosoft.org/) - код закрыт, переназначение клавиш клавиатуры и мыши, назначение на них программ и других действий, работа с дистанционным пультом
+* [KeyMagic](https://github.com/thantthet/keymagic) - переназначение клавиш клавиатуры, неудобная настройках
+* [SharpKeys](http://sharpkeys.codeplex.com/releases/view/79616) - переназначение клавиш клавиатуры
+
+	
 ## Система
 
 * Process Explorer - менеджер процессов, код закрыт, официальный
@@ -423,6 +434,8 @@ http://www.cpuid.com/softwares/cpu-z.html
 	* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
 * FurMark - код закрыт, тест производительности видеокарты через OpenGL http://www.geeks3d.com/dlz/
 * GPU Caps Viewer - код закрыт, информация о видео карте http://ozone3d.net/gpu_caps_viewer/
+* CrystalDiskInfo - тест скорости записи и чтения на любой наситель http://crystalmark.info/download/index-e.html
+
 
 ## Компоненты операционных систем
 
