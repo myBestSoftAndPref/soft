@@ -47,6 +47,13 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 		* JD-Eclipse - дизассемблер Java
 		* Ant Visualizer - визуализация Ant файла сборки
 		* WindowBuilder - рисование окошек с помощью редактора
+		* Spring Boot плагины https://spring.io/tools/sts/all
+	* Настройка Eclipse
+		* **Создать виртуальный диск** в оперативной памяти и переместить туда Eclipse
+		* Копировать на диск локальный репозиторий maven ```c:\Users\user\.m2\```
+		* Скачать настройку maven https://github.com/apache/maven/blob/master/apache-maven/src/conf/settings.xml
+		* Переместить ```settings.xml``` в ```.m2\``` на виртуальном диске и добавить туда настройку с путём к репозиторию в виртуальной памяти: ```<localRepository>r:\.m2\repository\</localRepository>```
+		* В настройках Eclipse: General > Editor - поставить лимит на количество открытых вкладок (например 3)
 * Spring Tool Suite - IDE на основе Eclipse от проекта Spring https://spring.io/tools/sts
 * NetBeans IDE универсальная, преимущественно для Java https://netbeans.org/downloads/
 * Android SDK - IDE и утилиты для разработки под Android https://developer.android.com/sdk/index.html
