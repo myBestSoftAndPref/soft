@@ -357,8 +357,8 @@ http://www.cgsecurity.org/wiki/TestDisk
 
 * DAEMON Tools Lite - код закрыт, лучший из бесплатных эмуляторов дисководов
 http://www.daemon-tools.cc/rus/downloads
-* ImDisk Virtual Disk Driver - может создавать виртуальный диск в быстрой оперативной памяти http://www.ltr-data.se/opencode.html/
-	* ImDisk Toolkit - это версия с дополнительными опциями (динамическое подстраивание размера виртуального диска под свободную оперативную память и т.д.) от другого разработчика https://sourceforge.net/projects/imdisk-toolkit/
+* ImDisk Toolkit - это версия с дополнительными опциями (динамическое подстраивание размера виртуального диска под свободную оперативную память, синхронизация файлов с диском при отключении, блокировка выгрузки виртуального диска в файл подкачки и т.д.) от другого разработчика https://sourceforge.net/projects/imdisk-toolkit/
+	* ImDisk Virtual Disk Driver - на её основе сделан ImDisk Toolkit, может создавать виртуальный диск в быстрой оперативной памяти http://www.ltr-data.se/opencode.html/
 * AMD Radeon™ RAMDisk - код закрыт, может создавать виртуальный диск в оперативной памяти, а при выключении сбросывать его содержимое на диск. Из минусов: сама занимает 100 мб в оперативной памяти, диски больше 4Гб только в платной версии
 
 #### Работа с cd и образами
@@ -434,7 +434,7 @@ http://www.cpuid.com/softwares/cpu-z.html
 	* ChocolateyGUI - Chocolatey с GUI https://chocolatey.org/packages/ChocolateyGUI
 * FurMark - код закрыт, тест производительности видеокарты через OpenGL http://www.geeks3d.com/dlz/
 * GPU Caps Viewer - код закрыт, информация о видео карте http://ozone3d.net/gpu_caps_viewer/
-* CrystalDiskInfo - тест скорости записи и чтения на любой наситель http://crystalmark.info/download/index-e.html
+* CrystalDiskInfo - тест скорости записи и чтения на любой носитель http://crystalmark.info/download/index-e.html
 
 
 ## Компоненты операционных систем
