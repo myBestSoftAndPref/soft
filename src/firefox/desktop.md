@@ -217,6 +217,7 @@ javascript:void((function () {
 * [Stacked Inspector](https://addons.mozilla.org/en-US/firefox/addon/stacked-inspector/)
 * [Stylish-Custom](https://addons.mozilla.org/ru/firefox/addon/stylish-custom) - дополнительные функции: экспорт/импорт, быстрое отключение/включение и т.д.
 * [Stylish Developer Tool](https://addons.mozilla.org/ru/firefox/addon/stylish-developer-tool/) - добавляет правку стиля Stylish в панель разработчика Firefox
+* [SQLite Manager](https://addons.mozilla.org/ru/firefox/addon/sqlite-manager/) - может пригодится редактор .sqlite файла со стилями в профиле ```stylish.sqlite```, если стиль сделает невозможным работу с UI.
 * Статьи про стилеписание для Firefox:
 	* [wiki для Stylish](https://github.com/JasonBarnabe/stylish/wiki)
 	* [userstyles.org](https://userstyles.org/) - официальный репозиторий с автоудалением вредных стилей (со встроенными скриптами XBL)
