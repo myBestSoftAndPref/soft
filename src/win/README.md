@@ -252,10 +252,13 @@ https://aria2.github.io/
 * Claws Mail - легкий почтовый клиент
 http://www.claws-mail.org/downloads.php?section=downloads
 
-#### FTP Клиенты
+#### FTP, WebDav, SCP Клиенты
 
 * FileZilla - клиент и сервер для FTP
 https://filezilla-project.org/
+* WinSCP - клиент SCP, WebDav, FTP. Удобно пользоваться для WebDav https://winscp.net
+* Сyberduck - клиент FTP, SFTP, WebDAV, S3, Backblaze B2, Azure & OpenStack Swift, Amazon S3, Google Disk https://cyberduck.io/
+	* mountainduck - программа для доп. монтирования дисков, как обычных
 
 #### Удаленное управление
 
@@ -479,4 +482,6 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 	* Windows 10 Enterprise LTSB *Evaluation* x64
 	http://care.dlservice.microsoft.com/dl/download/6/2/4/624ECF83-38A6-4D64-8758-FABC099503DC/10240.16384.150709-1700.TH1_CLIENTENTERPRISE_S_EVAL_X64FRE_EN-US.ISO
 	* для восстановление Wi10 Eval может понадобиться оффициальный ключ VTNMT-2FMYP-QCY43-QR9VK-WTVCK
+	
+	* Win 10 Enterprise Eval, build от числа: 20 September 2016 http://care.dlservice.microsoft.com/dl/download/2/5/4/254230E8-AEA5-43C5-94F6-88CE222A5846/14393.0.160715-1616.RS1_RELEASE_CLIENTENTERPRISEEVAL_OEMRET_X64FRE_EN-US.ISO
 

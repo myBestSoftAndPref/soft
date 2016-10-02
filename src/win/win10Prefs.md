@@ -87,17 +87,27 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\Classes\.ico]
 @="PhotoViewer.FileAssoc.Tiff"
 ```
-* полное отключение Cortana переименованием каталога ```C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy.bak```
+* (могут быть проблемы) полное отключение Cortana переименованием каталога ```C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy.bak```
 * отключить в настройках персонализации авто выбор цвета темы - иначе запускается лишний процесс и жрет память
 * отключить быструю загрузку в настройках питания (чтобы диски ntfs в Linux понтировались правильно)
 * отключить гибернацию ```от админа выполнить: powercfg -h off```
 * отключить ```Setting > System > Offline Map обновление``` (галочка возвращается сама)
 * отключить ```Setting > Privacy > Other Device``` (галочка возвращается сама)
-
+* Отключение Cortana: Press Win + R keyboard accelerator to open Run dialog box.
+	* Type GPedit.msc and hit Enter or OK to open Local Group Policy Editor. Navigate to Local Computer Policy -> Computer Configuration -> Administrative Templates -> Windows Components -> Search -> Allow Cortana
+* в GPedit.msc найти пункт Map и отключить всё
+* Устройства (Devices) > Typing - отключить орфографию
+* в GPedit.msc
+	* Computer Configuration — Administrative Templates — Windows Components — Data Collection - off
+* в GPedit.msc
+	* Computer Configuration — Administrative Templates — Windows Components — Windows Error Reporting — Disable Windows Error Reporting
+* Отключить сервисы Diagnostics Tracking Service (в версии Threshold 2 — Connected User Experiences and Telemetry) и dmwappushsvc в services.msc.
+* сборник чего отключать http://techne.alaya.net/?p=12499
+	
 # Автообновление
 
 * полное отключение
-```Win + R > regedit > перейти в: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows > создать в разделе Windows подраздел WindowsUpdate > создать в разделе WindowsUpdate подраздел AU > теперь настройки можно менять в ветке реейства HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU```
+```Win + R > regedit > перейти в: HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows > создать в разделе Windows подраздел WindowsUpdate > создать в разделе WindowsUpdate подраздел AU > теперь настройки можно менять в ветке реейства, в нём ключ AUOptions (числовой) HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU\AUOptions```
 ```
 1 - отключить обновление полностью
 2 - уведомлять о обновлениях и загрузке
@@ -105,6 +115,8 @@ Windows Registry Editor Version 5.00
 	* Если настройки не примутся, то нажать "Проверить обновление" в меню обновлений после их изменения
 * дополнительные настройки обновления, вроде времени проверки, в политиках (но отключить совсем в этом меню нельзя)
 ```Win + R > gpedit.msc > Computer Configuration > Administrative Tamplates > Windows Components > Windows Update > Configure Automatic Update > значение 2 и можно выбрать время проверки```
+* Control Panel\System and Security\Administrative Tools - в настройках дефрагментации отключить расписание, чтобы не загружало комп
+* В дополнительный настройках клавиатуры > поставить "не собирать данные для обучения ввода"
 
 * А можно просто временно отключать службу обновлений
 
