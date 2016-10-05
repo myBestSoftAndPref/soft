@@ -17,6 +17,8 @@
 Поиск Windows (Windows Search)
 Служба регистрации ошибок Windows
 Клиент отслеживания изменившихся связей
+Отключить Windows Credential Manager - VaultSvc (диспетчер учетных записей) - иначе будут проблемы с ключами в git
+	Как вариант можно отключить: Open “gpedit.msc. Local Computer Policy----Computer Configuration----Windows Settings----Security Settings-----Local Policies----Security Options
 
 Активировать администратора, запустить cmd как админ и: net user administrator /active:yes
 

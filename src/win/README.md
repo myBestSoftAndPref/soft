@@ -57,6 +57,28 @@ https://www.qt.io/download-open-source/
 #### Контроль версий
 
 * git - клиент для git, внутри также есть консольный ssh https://git-scm.com/downloads
+	* Для нормальной установки:
+	```
+	В файле C:\Program Files\Git\mingw64\etc\gitconfig
+	удалить строку: helper = manager
+	
+	и вставить в него
+	[core]
+		askpass =
+	для отключения окна с OpenSSH, ввод будет в консоли
+	
+	Для использования, чтобы не вводить пароли каждый раз:
+	1. git config credential.helper store - хранить пароли постоянно в файле .git-credentials
+	1. git config --global credential.helper store - глобально
+	2. git config --unset credential.helper - сбросить настройки хранения паролей
+	3. git config --global --unset credential.helper - сбросить настройки хранения паролей для всех репозиториев
+	
+	Вместо поролей можно сгенерировать публичный и приватный ключи. Публичный добавить на сервер, а приватный в настройки git на компе.
+	
+	Можно установить пароль и имя, если нужно:
+	git config --global user.name "John Doe"
+	git config --global user.email johndoe@example.com
+	```
 * TortoiseSVN - GUI под SVN для Windows (в контекстном меню) https://tortoisesvn.net/downloads.html
 * TortoiseGit - GUI под Git для Windows (в контекстном меню)  https://tortoisegit.org/
 
