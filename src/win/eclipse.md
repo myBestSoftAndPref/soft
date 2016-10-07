@@ -23,6 +23,8 @@ JRebel - изменение класса без перезагрузки сер�
 	
 ###### Ускоряем Eclipse
 
+* Моя текущая команда для запуска Eclipse: ```sts.exe -Xmn256M -XX:SharedReadOnlySize=128M -XX:+AggressiveOpts -XX:+UseFastAccessorMethods -XX:+UseStringCache -XX:+RewriteFrequentPairs -vm "c:\Program Files\Java\jdk1.8.0_102\jre\bin\server\jvm.dll"```
+
 * Ставим лимит на количество открытых вкладок: Window > Preferences > General > Editor > Number of opened editors
 * Отключаем авто появление тормозящих авто подсказок. В поиске настроек набрать ```Assist```, в пункта ```Content Assist``` снять где надо галочку ```Enable auto activation``
 * Запускаем Eclipse командой: ```eclipse.exe -vm r:\Java\jdk1.8.0_102\jre\bin\server\jvm.dll``` (может требовать чуть больше оперативной памяти)
