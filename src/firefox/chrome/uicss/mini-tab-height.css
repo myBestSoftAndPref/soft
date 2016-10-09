@@ -1,0 +1,227 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+
+
+/* left padding */
+
+#TabsToolbar #tabbrowser-tabs .tabbrowser-arrowscrollbox .arrowscrollbox-scrollbox 
+
+{
+
+  padding-left : 0 !important;
+
+}
+
+
+
+/* tab's height */
+
+#TabsToolbar,
+
+#TabsToolbar #tabbrowser-tabs,
+
+#TabsToolbar tab,
+
+#TabsToolbar tab .tab-stack,
+
+#TabsToolbar tab .tab-stack .tab-background,
+
+#TabsToolbar tab .tab-stack .tab-content,
+
+#TabsToolbar tab .tab-stack .tab-background .tab-background-middle
+
+{
+
+  min-height : 20px !important;
+
+  max-height : 20px !important;
+
+  height : 20px !important;
+
+}
+
+
+
+/* hide tab's left and right decoration */
+
+#TabsToolbar .tabbrowser-tabs tab .tab-background .tab-background-start,
+
+#TabsToolbar .tabbrowser-tabs tab .tab-background .tab-background-end
+
+{
+
+  display: none !important;
+
+}
+
+
+
+/* hide tab's decoration */
+
+#TabsToolbar tab .tab-stack .tab-background,
+
+#TabsToolbar tab .tab-stack .tab-background .tab-background-middle,
+
+#TabsToolbar tab .tab-stack .tab-content,
+
+/* hide icon's decoration */
+
+#TabsToolbar tab .tab-stack .tab-content .tab-icon-image,
+
+#TabsToolbar tab .tab-stack .tab-content .tab-throbber,
+
+#TabsToolbar tab .tab-stack .tab-content .tab-icon-overlay,
+
+#TabsToolbar tab .tab-stack .tab-content .tab-close-button.close-icon,
+
+#TabsToolbar tab .tab-stack .tab-content .tab-icon-sound
+
+{
+
+  margin : 0 !important;
+
+  padding : 0 !important;
+
+  border : none !important;
+
+}
+
+
+
+/* inactive tab background */
+
+#TabsToolbar tab .tab-stack:hover .tab-background
+
+{
+
+  background : none !important;
+
+}
+
+
+
+#TabsToolbar .tabs-newtab-button
+
+{
+
+  padding : 0 !important;
+
+  margin : 0 !important;
+
+  border: 0 !important;
+
+}
+
+
+
+/* border for pretty */
+
+#TabsToolbar tab .tab-stack .tab-content
+
+{
+
+  border-top : 1px solid !important;
+
+  border-bottom : 1px solid !important;
+
+  border-left : 1px solid !important;
+
+  border-right :  1px solid !important;
+
+  border-color : #000000 !important;
+
+  border-style : solid !important;
+
+  
+
+  /* need for fixing border bottom position */
+
+  margin-bottom: 1px !important;
+
+}
+
+
+
+/* tab background color */
+
+#TabsToolbar tab
+
+{
+
+  background-color: #8EB0DB !important;
+
+}
+
+
+
+/* selected tab background color */
+
+#TabsToolbar tab[selected="true"] .tab-background-middle
+
+{
+
+  background-color: #D4D0C8;
+
+}
+
+
+
+#TabsToolbar
+
+{
+
+  background-color: #8EB0DB !important;
+
+}
+
+
+
+/* border or not */
+
+#TabsToolbar tab .tab-stack .tab-content
+
+{
+
+  border-top : none !important;
+
+  border-bottom : none !important;
+
+  border-left : none !important;
+
+  /* right border - yes */
+
+}
+
+
+
+/* background or not */
+
+#TabsToolbar tab
+
+{
+
+  background-color: unset !important;
+
+}
+
+
+
+/* selected tab background color */
+
+#TabsToolbar tab[selected="true"] .tab-background-middle
+
+{
+
+  /* background - yes */
+
+}
+
+
+
+#TabsToolbar
+
+{
+
+  background-color: unset !important;
+
+}

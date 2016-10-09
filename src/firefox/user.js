@@ -10,6 +10,7 @@ user_pref("browser.tabs.animate", false); // Отключает приторма
 user_pref("dom.webnotifications.enabled", false); //отключаем надоедливые окошки с предложением включить уведомления
 user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
+user_pref("browser.fixup.alternate.enabled", false); //отключаем автоподстановку TLD и www, иногда мешает вводу
 
 user_pref("extensions.stylish.updatesEnabled", 0); //Отключить АВТО обновления стилей дополнения Stylish
 
@@ -70,3 +71,12 @@ user_pref("network.http.pipelining.ssl", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.pipelining.max-optimistic-requests", 8);
 user_pref("network.http.max-connections", 512); //если увеличить количество соединений скорость загрузки обычно увеличивается (особенно у плохих провайдеров)
+
+/* Пробуем ускорить отрисовку, может поломать Firefox */
+user_pref("layers.acceleration.disabled", false);
+user_pref("layers.accelerate-all", true);
+user_pref("gfx.direct2d.force-enabled", true);
+user_pref("layers.acceleration.force-enabled", true);
+user_pref("gfx.font_rendering.directwrite.enabled", true);
+user_pref("mozilla.widget.render-mode", 6);
+user_pref("layers.prefer-d3d9", true);
