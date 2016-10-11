@@ -81,4 +81,11 @@ user_pref("gfx.direct2d.force-enabled", true);
 //свои
 user_pref("gfx.font_rendering.directwrite.force-enabled", true); //может сломать шрифты
 //user_pref("layers.prefer-d3d9", true); //принудительное включение DirectX 9, ломает DirectX 11 (и его Direct2d, DirectWrite)
+
 //если будут проблемы с библиотеками драйверов, то очистить значение опции: media.wmf.disable-d3d9-for-dlls
+
+//должна принудительно включать аппаратное ускорение видео, но не работает
+user_pref("media.hardware-video-decoding.force-enabled", true);
+user_pref("media.hardware-video-decoding.failed", true);
+
+//webgl.angle.force-d3d11 - неизвестно что делает
