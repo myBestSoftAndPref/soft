@@ -70,13 +70,15 @@ user_pref("network.http.pipelining.aggressive", true);
 user_pref("network.http.pipelining.ssl", true);
 user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.pipelining.max-optimistic-requests", 8);
-user_pref("network.http.max-connections", 512); //если увеличить количество соединений скорость загрузки обычно увеличивается (особенно у плохих провайдеров)
+user_pref("network.http.max-connections", 512); //(если по умолчанию меньше) если увеличить количество соединений скорость загрузки обычно увеличивается (особенно у плохих провайдеров)
 
 /* Пробуем ускорить отрисовку, может поломать Firefox */
-user_pref("layers.acceleration.disabled", false);
-user_pref("layers.accelerate-all", true);
-user_pref("gfx.direct2d.force-enabled", true);
+//стандартное включение ускорения https://wiki.mozilla.org/Blocklisting/Blocked_Graphics_Drivers
+user_pref("webgl.force-enabled", true);
+user_pref("webgl.msaa-force", true);
 user_pref("layers.acceleration.force-enabled", true);
-user_pref("gfx.font_rendering.directwrite.enabled", true);
-user_pref("mozilla.widget.render-mode", 6);
-user_pref("layers.prefer-d3d9", true);
+user_pref("gfx.direct2d.force-enabled", true);
+//свои
+user_pref("gfx.font_rendering.directwrite.force-enabled", true); //может сломать шрифты
+//user_pref("layers.prefer-d3d9", true); //принудительное включение DirectX 9, ломает DirectX 11 (и его Direct2d, DirectWrite)
+//если будут проблемы с библиотеками драйверов, то очистить значение опции: media.wmf.disable-d3d9-for-dlls
