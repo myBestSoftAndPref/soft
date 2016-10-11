@@ -22,7 +22,7 @@
 <br>
 [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - если страница недоступна пытается грузить её снова. Ссылки на сервисы через которые можно проверить не доступна страница только у вас или у всех.
 <br>
-[uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin)<sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>В связи с тем, что подписки по умолчанию блокируют некоторые сайты используемые многими пользователями далее идет описание правильно настройки _uBlock Origin_. <em>**Настройка подписок:**</em> В настройках дополнения ```отключить подписки```: **1) uBlock filters – Badware risks**, **2) Peter Lowe’s Ad server list‎**, **3) Malware Domain List‎**, **4) Malware domains‎**. ```Включить подписки```: **1) Anti-Adblock Killer | Reek‎**, **2) Basic tracking list by Disconnect‎**, __3) RUS: RU AdList__. Остальные подписки по умолчанию. </sub>
+[uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin)<sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>В связи с тем, что подписки по умолчанию блокируют некоторые сайты используемые многими пользователями далее идет описание правильной настройки _uBlock Origin_. <em>**Настройка подписок:**</em> В настройках дополнения ```отключить подписки```: **1) uBlock filters – Badware risks**, **2) Peter Lowe’s Ad server list‎**, **3) Malware Domain List‎**, **4) Malware domains‎**. ```Включить подписки```: **1) Anti-Adblock Killer | Reek‎**, **2) Basic tracking list by Disconnect‎**, __3) RUS: RU AdList__. Остальные подписки по умолчанию. </sub>
 <br>
 [UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения, отключить сохранение Flash и video/audio.
 <br>
@@ -110,6 +110,9 @@
 	* ```profile\chrome\userChrome.css``` - стили для UI (интерфейса браузера) <sub>(если каталога или файла нету, то создать)</sub>
 	* ```profile\chrome\userContent.css``` - стили для сайтов <sub>(если каталога или файла нету, то создать)</sub>
 	* [How to override the Firefox Add-on Signing requirement](http://www.ghacks.net/2016/08/14/override-firefox-add-on-signing-requirement/) - отключание проверку подписи дополнений (можно ставить дополнения не только с сайта Mozilla)
+	* проверить на странице ```about:support``` включено или нет аппаратное ускорение (даже если в стандартных настройках оно включено). Это поля в разделе **Graphics**: должно стоять ```true``` (не ```false```) и ```Yes``` (не ```No```). Если выключено, то отрисовка страниц, особенно видео и музыка может тормозить. Можно попробовать включить принудительно: [инструкция со списком проблемных видеокарт](https://wiki.mozilla.org/Blocklisting/Blocked_Graphics_Drivers). При включении этого Firefox может сломаться, а может в черный список занесли случайно и всё будет быстрее.
+		* Если ошибка в старых dll: ```Аппаратное декодирование H264: No; D3D9 blacklisted with DLL atiumd64.dll (9.14.10.984)```, то нужно очистить на странице ```about:config``` опцию ```media.wmf.disable-d3d9-for-dlls```
+	* Перед обновлением сохранить резервные копии закладок, потому что может сломаться база sqlite. Дополнение для её починки: [тут](https://addons.mozilla.org/ru/firefox/addon/places-maintenance/versions/)
 
 
 #### Управление
