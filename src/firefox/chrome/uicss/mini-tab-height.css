@@ -225,3 +225,11 @@
   background-color: unset !important;
 
 }
+
+/* fix bad visibility of tab icon background */
+#TabsToolbar tab:not([selected="true"]) > .tab-stack > .tab-content .tab-throbber,
+#TabsToolbar tab:not([selected="true"]) > .tab-stack > .tab-content .tab-icon-image,
+#TabsToolbar tab:not([selected="true"]) > .tab-stack > .tab-content .tab-icon-overlay
+{
+  background-color: #D4D0C8 !important;
+}
