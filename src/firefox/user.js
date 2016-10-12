@@ -72,20 +72,33 @@ user_pref("network.http.proxy.pipelining", true);
 user_pref("network.http.pipelining.max-optimistic-requests", 8);
 user_pref("network.http.max-connections", 512); //(если по умолчанию меньше) если увеличить количество соединений скорость загрузки обычно увеличивается (особенно у плохих провайдеров)
 
+
 /* Пробуем ускорить отрисовку, может поломать Firefox */
 //стандартное включение ускорения https://wiki.mozilla.org/Blocklisting/Blocked_Graphics_Drivers
+
+/* официальные */
 user_pref("webgl.force-enabled", true);
 user_pref("webgl.msaa-force", true);
 user_pref("layers.acceleration.force-enabled", true);
-user_pref("gfx.direct2d.force-enabled", true);
-//свои
-user_pref("gfx.font_rendering.directwrite.force-enabled", true); //может сломать шрифты
-//user_pref("layers.prefer-d3d9", true); //принудительное включение DirectX 9, ломает DirectX 11 (и его Direct2d, DirectWrite)
+user_pref("gfx.direct2d.force-enabled", true); //только для Windows
 
-//если будут проблемы с библиотеками драйверов, то очистить значение опции: media.wmf.disable-d3d9-for-dlls
+/* дальше идут найденные гуглом */
+user_pref("gfx.font_rendering.directwrite.force-enabled", true); //только для Windows, не рекомендуется, на шрифтах могут появиться артефакты
 
-//должна принудительно включать аппаратное ускорение видео, но не работает
+//должны принудительно включать аппаратное ускорение видео, но не работает (см. ниже)
 user_pref("media.hardware-video-decoding.force-enabled", true);
 user_pref("media.hardware-video-decoding.failed", true);
 
-//webgl.angle.force-d3d11 - неизвестно что делает
+//По умолчанию Firefox рисует интерфейс не через OpenGL, а через Angle. Принудительно включает DirectX 11 для Angle. Я эффекта не заметил.
+user_pref("webgl.angle.force-d3d11", true); //только для Windows
+
+//Удаляют черный список видео карт и драйверов. После этого принудительное включение ускорения работает.
+user_pref("media.wmf.skip-blacklist", true); //не работает без опций ниже, для Linux возможно что-то другое надо искать
+user_pref("media.wmf.disable-d3d11-for-dlls", ""); //только для Windows
+user_pref("media.wmf.disable-d3d9-for-dlls", ""); //только для Windows
+
+/* дальше просто занятные настройки */
+
+//принудительно рисует интерфейс через DirectX 11, если у вас было что-то другое (ломает DirectX 11 и его Direct2d, DirectWrite)
+//user_pref("layers.prefer-d3d9", true); //только для Windows
+//user_pref("layers.prefer-opengl", true); //принудительно включает отрисовку через OpenGL, у меня вызвало артефакты
