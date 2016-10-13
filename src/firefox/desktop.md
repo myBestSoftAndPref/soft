@@ -133,7 +133,7 @@ javascript:void((function () {
 * [RightToClick](https://addons.mozilla.org/en-US/firefox/addon/righttoclick/)
 * [NoScript Security Suite](https://addons.mozilla.org/en-US/firefox/addon/noscript/)
 * [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-* [BetterPrivacy](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/)
+* [BetterPrivacy](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/) - управление Flash cookies
 * [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links/)/[Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/) - очистка перенаправления, передачи ссылки с которой перешел пользователь сайту в целях рекламы.
 * [RefControl](https://addons.mozilla.org/en-US/firefox/addon/refcontrol/)
 * [HTTPS Everywhere](https://addons.mozilla.org/en-us/firefox/addon/https-everywhere/)
@@ -151,7 +151,6 @@ javascript:void((function () {
 * [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/)
 * [CryptoFox](https://addons.mozilla.org/en-US/firefox/addon/cryptofox/)
 * [Modify Headers](https://addons.mozilla.org/en-US/firefox/addon/modify-headers/)
-* [WorldIP - Geo Add-on with Security Features](https://addons.mozilla.org/en-US/firefox/addon/worldip/)
 
 #### Установка
 
@@ -168,9 +167,9 @@ javascript:void((function () {
 
 * [Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) - можно писать и применять стили CSS к интерфейсу и сайтам.
 * [DOM Inspector](https://addons.mozilla.org/en-us/firefox/addon/dom-inspector-6622/) - поиск элементов
-* [Element Inspector](https://addons.mozilla.org/en-Us/firefox/addon/element-inspector/)
-* [InspectorWidget](https://addons.mozilla.org/en-us/firefox/addon/inspectorwidget/)
-* [Stacked Inspector](https://addons.mozilla.org/en-US/firefox/addon/stacked-inspector/)
+* [Element Inspector](https://addons.mozilla.org/en-Us/firefox/addon/element-inspector/) - открывает инспектор элементов по shift+click
+* [InspectorWidget](https://addons.mozilla.org/en-us/firefox/addon/inspectorwidget/) - кнопка указатель для выбора элементов
+* [Stacked Inspector](https://addons.mozilla.org/en-US/firefox/addon/stacked-inspector/) - переключение разделения окна вертикальное/горизонтальное
 * [Stylish-Custom](https://addons.mozilla.org/ru/firefox/addon/stylish-custom) - дополнительные функции: экспорт/импорт, быстрое отключение/включение и т.д.
 * [Stylish Developer Tool](https://addons.mozilla.org/ru/firefox/addon/stylish-developer-tool/) - добавляет правку стиля Stylish в панель разработчика Firefox
 * [SQLite Manager](https://addons.mozilla.org/ru/firefox/addon/sqlite-manager/) - может пригодится редактор .sqlite файла со стилями в профиле ```stylish.sqlite```, если стиль сделает невозможным работу с UI.
