@@ -223,8 +223,8 @@ javascript:void((function () {
 **Q1.** Как добавить в Firefox поисковые движки в формате .xml (как в старых версиях)?
 **A1.** 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 4) Запустите Firefox.  
 В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
-_Пример 1_ .xml движка:
-	<code>
+_Пример 1_ .xml движка:  
+	<pre>
 	<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 	<ShortName>Yahoo</ShortName>
 	<Description>Yahoo Search</Description>
@@ -240,8 +240,8 @@ _Пример 1_ .xml движка:
 	</Url>
 	<SearchForm>http://search.yahoo.com/</SearchForm>
 	</SearchPlugin>
-	</code>
-_Пример 2_ .xml движка:
+	</pre>
+_Пример 2_ .xml движка:  
 	```
 	<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 		<ShortName>Google RU</ShortName>
