@@ -225,7 +225,7 @@ javascript:void((function () {
 В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
 _Пример 1_ .xml движка:  
 
-```
+```xml
 
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 <ShortName>Yahoo</ShortName>
