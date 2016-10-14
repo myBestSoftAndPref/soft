@@ -223,9 +223,10 @@ javascript:void((function () {
 **Q1.1.** Как добавить в Firefox поисковые движки в формате .xml (как в старых версиях)?  
 **Q1.2.** Как создать и добавить свой поисковой движок вручную через .xml?  
 **A1.** 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 4) Запустите Firefox.  
-В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.
+В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
+Некоторые сайты используют не GET, а POST запросы. Тогда при создании надо искать параметры в коде и менять .xml
 
-_Пример 1_ .xml движка:  
+<em>Пример 1</em> .xml движка:  
 
 ```xml
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
@@ -245,7 +246,7 @@ _Пример 1_ .xml движка:
 </SearchPlugin>
 ```
 
-_Пример 2_ .xml движка:  
+<em>Пример 2</em> .xml движка:  
 ```xml
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 	<ShortName>Google RU</ShortName>
@@ -257,6 +258,7 @@ _Пример 2_ .xml движка:
 </SearchPlugin>
 ```
 Документация с примерами и описанием: [Creating MozSearch plugins](https://developer.mozilla.org/en-US/docs/Mozilla/Creating_MozSearch_plugins)  
+Описание стандарта .xml для поисковых движков OpenSearch: [Creating OpenSearch plugins for Firefox](https://developer.mozilla.org/en/Add-ons/Creating_OpenSearch_plugins_for_Firefox)  
 **Осторожно.** Формат очень чувствителен к ссылкам и символам в них. Если будет ошибка в .xml, то движок просто не добавится без предупреждения.
 
 * Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
