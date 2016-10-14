@@ -32,7 +32,7 @@
 <br>
 [ExportHTMLFolder](https://addons.mozilla.org/RU/firefox/addon/exporthtmlfolder) - экспорт отдельных каталогов закладок.
 <br>
-[FlashGot Mass Downloader](https://addons.mozilla.org/ru/firefox/addon/flashgot) - выбор стороннего менеджера загрузки файлов. Поиск ссылок на видео. (у FlashGot очень раздражающие сочетания клавиш, которые мешают использовать ```Alt```, их можно отключить в настройках)
+[FlashGot Mass Downloader](https://addons.mozilla.org/ru/firefox/addon/flashgot) - выбор стороннего менеджера загрузки файлов. Поиск ссылок на видео. <sub>(у FlashGot очень раздражающие сочетания клавиш, которые мешают использовать ```Alt```, их можно отключить в настройках)</sub>
 <br>
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) - менеджер пользовательских скриптов javascript.
 <br>
@@ -84,7 +84,7 @@
 <br>
 [Add Bookmark Here 2](https://addons.mozilla.org/ru/firefox/addon/add-bookmark-here-2) - в каждое меню закладок добавляет кнопку "добавить закладку сюда", что экономит время на добавления (так как Mozilla так и не сделала удобное меню для добавления)
 <br>
-[DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен (особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок). Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.  
+[DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен <sub>(особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок)</sub>. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.  
 [Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
 [Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок  
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)  
@@ -92,7 +92,7 @@
 [Multi Links Plus](https://addons.mozilla.org/ru/firefox/addon/multi-links-plus/) или [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.  
 [YouTube High Definition](https://addons.mozilla.org/ru/firefox/addon/youtube-high-definition/) - настройка youtube, установка качества по умолчанию, отключение авто воспроизведения и другое  
 [MuteTab](https://addons.mozilla.org/en-US/firefox/addon/mutetab/) - можно отключить звук во всех вкладках по умолчанию и включать только вручную  
-[Vertical Tabs Reloaded](https://addons.mozilla.org/en-US/firefox/addon/vertical-tabs-reloaded/) - вкладки вертикально, альтернатива глючным дополнениям для древовидных вкладок (оформление настраивается через настройки)
+[Vertical Tabs Reloaded](https://addons.mozilla.org/en-US/firefox/addon/vertical-tabs-reloaded/) - вкладки вертикально, альтернатива глючным дополнениям для древовидных вкладок <sub>(оформление настраивается через настройки)</sub>
 
 #### Bookmarklets
 
@@ -219,6 +219,41 @@ javascript:void((function () {
 * ```ctrl``` + ```F4``` - закрыть текущую вкладку
 
 #### FAQ
+
+Q1. Как добавить в Firefox поисковые движки в формате .xml (как в старых версиях)?
+A1. 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 4) Запустите Firefox.  
+В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```  
+__Пример 1__ .xml движка:
+	```
+	<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+	<ShortName>Yahoo</ShortName>
+	<Description>Yahoo Search</Description>
+	<InputEncoding>UTF-8</InputEncoding>
+	<Image width="16" height="16">data:image/x-icon;base64,R0lGODlhEAAQAJECAP8AAAAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIplI+py+0NogQuyBDEnEd2kHkfFWUamEzmpZSfmaIHPHrRguUm/fT+UwAAOw==</Image>
+	<Url type="application/x-suggestions+json" method="GET"
+		 template="http://ff.search.yahoo.com/gossip?output=fxjson&amp;command={searchTerms}" />
+	<Url type="text/html" method="GET" template="http://search.yahoo.com/search">
+	  <Param name="p" value="{searchTerms}"/>
+	  <Param name="ei" value="UTF-8"/>
+
+	  <MozParam name="fr" condition="pref" pref="yahoo-fr" />
+	</Url>
+	<SearchForm>http://search.yahoo.com/</SearchForm>
+	</SearchPlugin>
+	```
+__Пример 2__ .xml движка:
+	```
+	<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+		<ShortName>Google RU</ShortName>
+		<Description>Google RU</Description>
+		<InputEncoding>UTF-8</InputEncoding>
+		<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVQ4jY2SvWocMRSF70PsA4g8SLgPkBdIEVCT91Dlwl36BBQIdpcmxJ2NmuDgYjs3xpAhDoZ1AjuGxT/M6H4pZlarHf/ggcNwhe53z5EkIgJAOk84nxBNhJgAoGtJqjROQB5KRBi6AR8S4jeiawvkKQA1wPltQHEBNKqPNjeuAujEgQ8VwL8AEOIEUDlITklOtrQBVFnrGHsnw3qMX3BBkVgpKOqV4ARxPhDTZtreSVsOMKSATJsnIHE+4TSgk4NL5wkJ8nRjqACL5T1mhpkVAJZ58+09EpXDyzm9ZQ4v50hUji9O6S1zfHGKOA2Y2fAoJsIyGgO9ZURk+Eed1GP+9Ytcf3WdxwGPAuqGhw76IQ0VICh5C9C1MG4Ywxf7bfN5y1FvmXdfd54DGLfLo1J3q0W5UhHBzMiWS93erdYRNg7+/HwF1hUgwK+rqzJ1rWyZT/MDpN4IRpOU69/7ME46+3vG6w9v+Tj/zmK1pLfMv5trdn/sM5vN+A87zsFFZm6QcAAAAABJRU5ErkJggg==</Image>
+		<Url type="text/html" method="GET" template="https://www.google.ru/search?q={searchTerms}"/>
+		<SearchForm>https://www.google.ru</SearchForm> 
+	</SearchPlugin>
+	```
+Документация с примерами и описанием: [Creating MozSearch plugins](https://developer.mozilla.org/en-US/docs/Mozilla/Creating_MozSearch_plugins)  
+**Осторожно.** Формат очень чувствителен к ссылкам и символам в них. Если будет ошибка в .xml, то движок просто не добавится без предупреждения.
 
 * Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
 * В закладки Firefox компания в целях рекламы может добавить подписки RSS и Atom на новости в качестве рекламы. Проверьте их и удалите.
