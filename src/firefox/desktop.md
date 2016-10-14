@@ -226,7 +226,7 @@ javascript:void((function () {
 В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
 Некоторые сайты используют не GET, а POST запросы. Тогда при создании надо искать параметры в коде и менять .xml
 
-<u>Пример 1</u> .xml движка:  
+__Пример 1__ .xml движка:  
 
 ```xml
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
@@ -246,7 +246,7 @@ javascript:void((function () {
 </SearchPlugin>
 ```
 
-<u>Пример 2</u> .xml движка:  
+__Пример 2__ .xml движка:  
 ```xml
 <SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
 	<ShortName>Google RU</ShortName>
