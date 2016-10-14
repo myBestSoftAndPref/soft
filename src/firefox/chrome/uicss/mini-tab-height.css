@@ -124,11 +124,9 @@
 
   border-bottom : 1px solid !important;
 
-  border-left : 1px solid !important;
+  border-left : 1px #000 solid !important;
 
-  border-right :  1px solid !important;
-
-  border-color : #000000 !important;
+  border-right :  1px #FFF solid !important;
 
   border-style : solid !important;
 
@@ -186,7 +184,6 @@
 
   border-bottom : none !important;
 
-  border-left : none !important;
 
   /* right border - yes */
 
