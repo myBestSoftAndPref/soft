@@ -188,8 +188,8 @@ javascript:void((function () {
 Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля ```profile/user.js```.  
 Для Firefox **под Android** можно менять только вручную или использовать дополнения (поиск по тегу [Security & Privacy](https://addons.mozilla.org/en-US/android/extensions/security-privacy/))
 
-[Fox](https://github.com/The-OP/Fox) - блог с настройками, ориентирован на приватность
-[Список русского mozilla-russia форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226)
+[Fox](https://github.com/The-OP/Fox) - блог с настройками, ориентирован на приватность  
+[Список русского mozilla-russia форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226)  
 [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - **огромный** сборник настроек в виде wiki
 
 #### Управление
@@ -220,7 +220,8 @@ javascript:void((function () {
 
 #### FAQ
 
-**Q1.** Как добавить в Firefox поисковые движки в формате .xml (как в старых версиях)?  
+**Q1.1.** Как добавить в Firefox поисковые движки в формате .xml (как в старых версиях)?  
+**Q1.2.** Как создать и добавить свой поисковой движок вручную через .xml?  
 **A1.** 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 4) Запустите Firefox.  
 В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.
 
