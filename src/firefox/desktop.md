@@ -224,23 +224,27 @@ javascript:void((function () {
 **A1.** 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 4) Запустите Firefox.  
 В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
 _Пример 1_ .xml движка:  
-	<pre>
-	<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-	<ShortName>Yahoo</ShortName>
-	<Description>Yahoo Search</Description>
-	<InputEncoding>UTF-8</InputEncoding>
-	<Image width="16" height="16">data:image/x-icon;base64,R0lGODlhEAAQAJECAP8AAAAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIplI+py+0NogQuyBDEnEd2kHkfFWUamEzmpZSfmaIHPHrRguUm/fT+UwAAOw==</Image>
-	<Url type="application/x-suggestions+json" method="GET"
-		 template="http://ff.search.yahoo.com/gossip?output=fxjson&amp;command={searchTerms}" />
-	<Url type="text/html" method="GET" template="http://search.yahoo.com/search">
-	  <Param name="p" value="{searchTerms}"/>
-	  <Param name="ei" value="UTF-8"/>
 
-	  <MozParam name="fr" condition="pref" pref="yahoo-fr" />
-	</Url>
-	<SearchForm>http://search.yahoo.com/</SearchForm>
-	</SearchPlugin>
-	</pre>
+```
+
+<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Yahoo</ShortName>
+<Description>Yahoo Search</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16">data:image/x-icon;base64,R0lGODlhEAAQAJECAP8AAAAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIplI+py+0NogQuyBDEnEd2kHkfFWUamEzmpZSfmaIHPHrRguUm/fT+UwAAOw==</Image>
+<Url type="application/x-suggestions+json" method="GET"
+	 template="http://ff.search.yahoo.com/gossip?output=fxjson&amp;command={searchTerms}" />
+<Url type="text/html" method="GET" template="http://search.yahoo.com/search">
+  <Param name="p" value="{searchTerms}"/>
+  <Param name="ei" value="UTF-8"/>
+
+  <MozParam name="fr" condition="pref" pref="yahoo-fr" />
+</Url>
+<SearchForm>http://search.yahoo.com/</SearchForm>
+</SearchPlugin>
+
+```
+
 _Пример 2_ .xml движка:  
 	```
 	<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
