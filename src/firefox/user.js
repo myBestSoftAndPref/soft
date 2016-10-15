@@ -87,7 +87,7 @@ user_pref("gfx.font_rendering.directwrite.force-enabled", true); //только 
 
 //должны принудительно включать аппаратное ускорение видео, но не работает (см. ниже)
 user_pref("media.hardware-video-decoding.force-enabled", true);
-user_pref("media.hardware-video-decoding.failed", true);
+user_pref("media.hardware-video-decoding.failed", false);
 
 //По умолчанию Firefox рисует интерфейс не через OpenGL, а через Angle. Принудительно включает DirectX 11 для Angle. Я эффекта не заметил.
 user_pref("webgl.angle.force-d3d11", true); //только для Windows
