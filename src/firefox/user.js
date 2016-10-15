@@ -99,6 +99,6 @@ user_pref("media.wmf.disable-d3d9-for-dlls", ""); //только для Windows
 
 /* дальше просто занятные настройки */
 
-//принудительно рисует интерфейс через DirectX 11, если у вас было что-то другое (ломает DirectX 11 и его Direct2d, DirectWrite)
+//принудительно рисует интерфейс через DirectX 9, если у вас было что-то другое (ломает DirectX 11 и его Direct2d, DirectWrite)
 //user_pref("layers.prefer-d3d9", true); //только для Windows
 //user_pref("layers.prefer-opengl", true); //принудительно включает отрисовку через OpenGL, у меня вызвало артефакты
