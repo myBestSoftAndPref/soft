@@ -34,7 +34,6 @@
 #nav-bar toolbarbutton:not(#back-button):not(#forward-button) > dropmarker > .dropmarker-icon
 {
   margin : 0 !important;
-  /* 2px left and right padding for pretty below. You can set in 0 to minimize space. */
   padding : 0 !important;
   border : none !important;
   min-height : 0px !important;
@@ -145,4 +144,10 @@
 #nav-bar toolbarbutton:not(#back-button):not(#forward-button)
 {
   padding : 0 2px !important;
+}
+
+/* fix xubuntu bookmark dropmarkers */
+#PersonalToolbar #personal-bookmarks #PlacesToolbar .bookmark-item > .toolbarbutton-menu-dropmarker
+{
+  display : none !important;
 }
