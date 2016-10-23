@@ -343,6 +343,7 @@ http://www.sumatrapdfreader.org/free-pdf-reader.html
 https://www.microsoft.com/en-us/evalcenter/evaluate-office-professional-plus-2013
 * LibreOffice - свободный оффисный пакет, но многие формата отображает плохо
 https://www.libreoffice.org/download/libreoffice-fresh/
+* onlyoffice - ещё один открытый оффис, может лучше читать MS Office документы http://www.onlyoffice.com/ru/download-desktop.aspx
 
 ## Диски и файлы
 

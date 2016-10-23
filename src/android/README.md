@@ -1,12 +1,14 @@
-Здесь только бесплатные программы. Ссылки даны на официальные сайты. Если прямых ссылок на .apk на официальном сайте нет, то ссылка на F-Droid. Если в F-Droid нету, то ссылка на Google Play. Если на официальном сайте ссылка на .apk ведет на другой сторонний источник (магазин), то ссылка на него.
+Здесь только бесплатные программы. Ссылки даны на официальные сайты. Если прямых ссылок на .apk на официальном сайте нет, то ссылка на [F-Droid](https://f-droid.org). Если в [F-Droid](https://f-droid.org) нету, то ссылка на [Google Play](https://play.google.com/store). Если на официальном сайте ссылка на .apk ведет на другой сторонний источник (магазин), то ссылка на него.  
+Если по ссылке программа не доступна (ссылка сломана), то ищите программу в [F-Droid](https://f-droid.org).
 
 ###### Программы с открытым кодом
 
 * Источники программ (магазины, репозиторий)
-	* [F-Droid](https://f-droid.org/) - репозиторий программ с открытым кодом (часто версии программ в нём устаревшие, зато проверенные)
+	* [F-Droid](https://f-droid.org/) - репозиторий программ с открытым кодом (часто версии программ в нём устаревшие, зато проверенные). **Предупреждени:** [F-Droid](https://f-droid.org) перекомпилирует приложения, бывает с ошибками. Если программа не работает - пробуйте установить её из других источников, оригинально скомпилированную. Некоторые open source программы могут туда не попасть - у владельцев [F-Droid](https://f-droid.org) просто не хватает знаний на компилирование. Если open source программа использует какую-то несвободную библиотеку, то она тоже может туда не попасть, из-за политики [F-Droid](https://f-droid.org) использовать только open source прогрммы.
 * Медиа
 	* [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - плеер
-	* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
+	* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон, пишет в ```.waw``` формате, с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
+	* [Sound Recorder](https://f-droid.org/repository/browse/?fdfilter=sound+record&fdid=com.danielkim.soundrecorder) - диктофон, пишет в ```.mp4``` формате
 	* [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
 	* [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - запись телефонных разговоров
 	* [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
@@ -19,7 +21,7 @@
 	* [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
 	* [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками (**ОСТОРОЖНО** может вызвать такие проблемы, что телефоном вы сможете пользоваться только после удаления этой программы)
 * Интернет
-	* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент
+	* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент. Для работы с GMail и некоторыми другими сервисами нужно зайти в сервис с браузера и включить возможность доступа программам к почте
 	* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата ```.mht```. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/firefox/android.md)
 	* [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
 	* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
@@ -30,7 +32,7 @@
 	* [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
 	* [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп
 * Файлы
-	* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
+	* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
 * Документы
 	* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов
 	* [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
@@ -51,6 +53,10 @@
 
 ###### Программы с закрытым кодом
 
+* Источники программ (магазины, репозиторий)
+	* [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
+	* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Примая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
+	* 
 * Интернет
 	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер, умеет сжимать трафик, есть встроенная слабая блокировка рекламы
 	* [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
