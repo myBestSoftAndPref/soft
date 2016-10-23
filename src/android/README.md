@@ -10,7 +10,7 @@
 	* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон, пишет в ```.waw``` формате, с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
 	* [Sound Recorder](https://f-droid.org/repository/browse/?fdfilter=sound+record&fdid=com.danielkim.soundrecorder) - диктофон, пишет в ```.mp4``` формате
 	* [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
-	* [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - запись телефонных разговоров
+	* [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - автоматическая запись телефонных разговоров
 	* [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
 * Навигация
 	* [OasmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
@@ -58,7 +58,7 @@
 * Источники программ (магазины, репозиторий)
 	* [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
 	* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, много поддельных, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Примая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
-	* [Amazon Appstore](https://www.amazon.com/getappstore) - магазин от [amazon.com](amazon.com), много поддельных программ. Трудно искать оригинальные.
+	* [Amazon Appstore](https://www.amazon.com/getappstore) - магазин от [amazon.com](http://amazon.com), много поддельных программ. Трудно искать оригинальные.
 * Интернет
 	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер на основе Chromium, умеет сжимать трафик, есть встроенная слабая встроенная блокировка рекламы
 	* [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик
