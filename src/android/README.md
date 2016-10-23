@@ -53,12 +53,15 @@
 
 ###### Программы с закрытым кодом
 
+**Предупреждени:** О Yandex. Был случай когда одно из его приложений записывало все разговоры. С осторожностью относитесь к его программам.
+
 * Источники программ (магазины, репозиторий)
 	* [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
-	* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Примая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
-	* 
+	* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, много поддельных, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Примая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
+	* [Amazon Appstore](https://www.amazon.com/getappstore) - магазин от [amazon.com](amazon.com), много поддельных программ. Трудно искать оригинальные.
 * Интернет
-	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер, умеет сжимать трафик, есть встроенная слабая блокировка рекламы
+	* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер на основе Chromium, умеет сжимать трафик, есть встроенная слабая встроенная блокировка рекламы
+	* [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик
 	* [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
 	* [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
 	* [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - популярный чат, обмен сообщениями
