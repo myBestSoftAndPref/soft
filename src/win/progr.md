@@ -15,3 +15,7 @@
 	1. [autocomplete-java](https://atom.io/packages/autocomplete-java) - авто завершение при вводе Java кода, авто добавление import в файл, сворачивание import строк. Указание classpath для поиска jar используемых в import.
 	2. [java-generator](https://atom.io/packages/java-generator) - создает get, set, construct, toString, builder методы для Java.
 	3. [java-plus](https://atom.io/packages/java-plus) - аналог ```autocomplete-java```, **не совместим с ним**.
+
+* Markdown
+	* [Markdown Preview Plus (MPP)](https://atom.io/packages/markdown-preview-plus) - дополнительные функции редактирования markdown: синхронизация предпросмотра при просмотре, отоброжение изменений при редактировании, редактирование математических формул и другие.
+	* [Markdown TOC](https://atom.io/packages/markdown-toc) - авто генерация TOC, ссылок в содержании вверху домента.
