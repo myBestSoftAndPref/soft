@@ -17,5 +17,6 @@
 	3. [java-plus](https://atom.io/packages/java-plus) - аналог ```autocomplete-java```, **не совместим с ним**.
 
 * Markdown
-	* [Markdown Preview Plus (MPP)](https://atom.io/packages/markdown-preview-plus) - дополнительные функции редактирования markdown: синхронизация предпросмотра при просмотре, отоброжение изменений при редактировании, редактирование математических формул и другие.
+	* [Markdown Preview Plus (MPP)](https://atom.io/packages/markdown-preview-plus) - дополнительные функции редактирования markdown: поддержка стороннего парсера pandoc, отоброжение изменений при редактировании, редактирование математических формул и другие.
 	* [Markdown TOC](https://atom.io/packages/markdown-toc) - авто генерация TOC, ссылок в содержании вверху домента.
+	* [markdown-scroll-sync](https://atom.io/packages/markdown-scroll-sync) - авто scroll прокрутка предпросмотра при редактировании markdown
