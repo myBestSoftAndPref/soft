@@ -41,7 +41,7 @@
   box-shadow : none !important;
 }
 
-/* fix size when elemment draged (bug appears sometimes) */
+/* fix size when element dragged (bug appears sometimes) */
 #PersonalToolbar toolbarbutton,
 #PersonalToolbar #PlacesToolbarDropIndicatorHolder
 {

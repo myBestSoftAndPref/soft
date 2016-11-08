@@ -11,6 +11,9 @@
 		* [minimap-highlight-selected](https://atom.io/packages/minimap-highlight-selected) - подсвечивает выделенный текст на мини карте
 		* [minimap-cursorline](https://atom.io/packages/minimap-cursorline) - показывает на мини карте строку на которой курсор
 		* [minimap-selection](https://atom.io/packages/minimap-selection) - показывает на мини карте выделенные области
+	3. [symbols-tree-view](https://atom.io/packages/symbols-tree-view) - список функций исходного файла в боковом окне (outline)
+	4. [Highlight Selected](https://atom.io/packages/highlight-selected) - подсветка похожего текста по двойному клику на текст
+	5. [Linter](https://atom.io/packages/linter) - подсветка ошибок кода по мере набора
 * Java
 	1. [autocomplete-java](https://atom.io/packages/autocomplete-java) - авто завершение при вводе Java кода, авто добавление import в файл, сворачивание import строк. Указание classpath для поиска jar используемых в import.
 	2. [java-generator](https://atom.io/packages/java-generator) - создает get, set, construct, toString, builder методы для Java.
