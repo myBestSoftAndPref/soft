@@ -20,8 +20,7 @@
 
 Некоторые дополнения могут лагать и не работать с первого раза.
 
-1.1 [uBlock Origin](https://addons.mozilla.org/ru/android/addon/ublock-origin) - аналог AdBlock Plus, но более быстрый и не отправляющий статистику разработчикам. Удобное управление подписками.<br>
-1.2 [AdBlock Plus](https://addons.mozilla.org/ru/android/addon/adblock-plus/) - отключение рекламы. Ставить только если uBlock Origin перестанет разрабатываться, т.к. AdBlock Plus прожорливее и сливает немного статистики.<br>
+1. [uBlock Origin](https://addons.mozilla.org/ru/android/addon/ublock-origin)<sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>В связи с тем, что подписки по умолчанию блокируют некоторые сайты используемые многими пользователями далее идет описание правильной настройки _uBlock Origin_. <em>**Настройка подписок:**</em> В настройках дополнения ```отключить подписки```: **1) uBlock filters – Badware risks**, **2) Peter Lowe’s Ad server list‎**, **3) Malware Domain List‎**, **4) Malware domains‎**. ```Включить подписки```: **1) Anti-Adblock Killer | Reek‎**, **2) Basic tracking list by Disconnect‎**, __3) RUS: RU AdList__. Остальные подписки по умолчанию. ```Отключите встроенные функции Firefox```, который дублируют подписки _uBlock Origin_: **1) В настройках Firefox на вкладке "Защита" (Security) снять галочки с "Блокировать опасные сайты/загрузки", "Защита от мошенничества"**, **2) В настройках Firefox на вкладке "Приватность" (Privacy) снять галочку "Защита от отслеживания в приватном окне".**</sub>
 2. [Save Link Menus](https://addons.mozilla.org/ru/android/addon/save-link-menus/) - добавляет функции "сохранить ссылку", "сохранить выбранную ссылку", "сохранить страницу" (как .html). Сохраняет по умолчанию в стандартную папку загрузок. <br>
 3. [UnMHT](https://addons.mozilla.org/ru/android/addon/unmht/) - сохранение/открытие страниц формата .mht - страница одним файлом. <br>
 4. [Toggle animated GIF's](https://addons.mozilla.org/ru/android/addon/toggle-animated-gifs/) - старт/стоп gif анимации по клику на них, отключение анимации или перезапуск. <br>
@@ -50,6 +49,33 @@
 1. Установить в **browser.download.folderList** значение **2** <br>
 2. Установить в **browser.download.dir** (создать, тип - строка) путь для сохранения (например ```/sdcard/my```). Чтобы подействовала нужно перезапустить Firefox из меню - выйти-зайти (пункт "Выход", а затем включить). <br>
 Если играть методом тыка с настройками, то Firefox может сохранять файлы в разные места. Например, у меня при экспериментах во внутренней памяти телефона создался каталог Pages куда сохранялись страницы. Для Android это важно, так как размер внутренней памяти телефона обычно мал, после экспериментов нужно проверять наличие такого мусора.
+
+**2. Настройка прокси (в том числе Tor):** <br>
+
+Настройки на странице ```about:config```
+
+```network.proxy.type > 1```  
+```network.proxy.socks_remote_dns > true```  
+```network.proxy.no_proxies_on > "localhost, 127.0.0.1"``` - список адресов для которых прокси не используется <sub>(по умолчанию "localhost, 127.0.0.1", кавычки не нужны, это тип "строка")</sub>
+
+Для SOCKS прокси можно устновить только две настройки ниже:  
+```network.proxy.socks > 127.0.0.1```  
+```network.proxy.socks_port > 9050```
+
+Для http:  
+```network.proxy.http > 127.0.0.1```  
+```network.proxy.http_port > 9050```
+
+Для ssl (https):  
+```network.proxy.ssl > 127.0.0.1```  
+```network.proxy.ssl_port > 9050```
+
+Для ftp:  
+```network.proxy.ftp > 127.0.0.1```  
+```network.proxy.ftp_port > 9050```
+
+```signon.autologin.proxy > true``` - если пароль для входа через прокси сохранен, то повторного запроса не будет  
+```network.proxy.share_proxy_settings > true``` - использовать настройки из ```network.proxy.http``` и ```network.proxy.http_port``` для и для всех протоколов.
 
 #### Другое
 
