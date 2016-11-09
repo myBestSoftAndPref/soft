@@ -40,6 +40,7 @@
 18. [Mobile Password Manager](https://addons.mozilla.org/ru/android/addon/mobile-password-manager/) - просмотр и редактирование списка сохранённых паролей. <br>
 19. [Console](https://addons.mozilla.org/ru/android/addon/console/) - консоль ошибок. <br>
 20. [Desktop Mode Add-on](https://addons.mozilla.org/ru/android/addon/desktop-mode-add-on/) - при включении режима отображения версии сайта для настольной версии Firefox сайт отображается один-в-один как на настольной версии (стандартный режим использует другой способ и параметры отрисовки). Полезно для сайтов, которые криво отображаются на мобильой версии. <br>
+21. [Decentraleyes](https://addons.mozilla.org/ru/android/addon/decentraleyes/) - встраивает набор некоторых популярных javascript библиотек в Firefox, так что при открытии страниц библиотеки не загружаются снова из интернета и не происходит проверки на их актуальность (нету лишних запросов в интернет). Экономит трафик, защищает от отслеживания, ускоряет загрузку страниц.
 
 #### Настройки
 
