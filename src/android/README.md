@@ -55,6 +55,11 @@
 * [KeePassDroid](https://github.com/bpellin/keepassdroid/releases) - менеджер паролей KeePass
 * [Orbot](https://guardianproject.info/apps/orbot/) - клиент Tor, бесплатная цепочка анонимных прокси
 
+###### Игры
+
+* [RetroArch](http://buildbot.libretro.com/stable/) - эмулятор множества консолей (SEGA, PlayStation и других). Если будут проблемы с интерфейсом - пробуйте старые версии. У этого эмулятора неочевидная настройка джойстика, нужно зайти в настройках в пункт Overlays и выбрать определенный под вашу консоль.
+* [PPSSPP](http://www.ppsspp.org/downloads.html) - эмулятор консоли PlayStation Portable
+
 ###### Система
 * [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
 * [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление авто поворотом для каждой программы отдельно
