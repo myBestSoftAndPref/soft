@@ -64,11 +64,12 @@
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
 
 ###### Документы
-* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов
+* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
 * [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
 * [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы т другие уникальные функции
 * [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
 * [VuDroid](https://f-droid.org/repository/browse/?fdfilter=VuDroid&fdid=org.vudroid) - просмотр PDF с нормальным отображением некоторых русских символов
+* [VIMTouch](https://f-droid.org/repository/browse/?fdfilter=vim&fdid=net.momodalo.app.vimtouch) - текстовый редактор, подсветка синтаксисов, старается в некоторой степени следовать стилю компьютерного редактора VIM
 
 ###### Приватность
 * [KeePassDroid](https://github.com/bpellin/keepassdroid/releases) - менеджер паролей KeePass
