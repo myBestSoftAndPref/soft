@@ -66,7 +66,7 @@
 
 ##### Программы с закрытым кодом
 
-**Предупреждени:** О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой **официальный** источник программ для Andoird - это [Amazon Appstore](https://www.amazon.com/getappstore)
+**Предупреждени:** О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой **официальный** источник программ для Android - это [Amazon Appstore](https://www.amazon.com/getappstore)
 
 ###### Источники программ (магазины, репозиторий)
 * [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
