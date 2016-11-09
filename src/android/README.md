@@ -1,23 +1,3 @@
-<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
-				- [Программы с открытым кодом](#-)
-					- [Источники программ (магазины, репозиторий)](#-)
-					- [Медиа](#)
-					- [Навигация](#)
-					- [Органайзер](#)
-					- [Интернет](#)
-					- [Справочники](#)
-					- [Файлы](#)
-					- [Документы](#)
-					- [Приватность](#)
-					- [Система](#)
-				- [Программы с закрытым кодом](#-)
-					- [Источники программ (магазины, репозиторий)](#-)
-					- [Интернет](#)
-					- [Документы](#)
-
-<!-- /TOC -->
-
 Здесь только бесплатные программы. Ссылки даны на официальные сайты. Если прямых ссылок на .apk на официальном сайте нет, то ссылка на [F-Droid](https://f-droid.org). Если в [F-Droid](https://f-droid.org) нету, то ссылка на [Google Play](https://play.google.com/store). Если на официальном сайте ссылка на .apk ведет на другой сторонний источник (магазин), то ссылка на него.  
 Если по ссылке программа не доступна (ссылка сломана), то ищите программу в [F-Droid](https://f-droid.org).
 
@@ -61,12 +41,12 @@
 * [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (грамму в пинты, килограммы, футы в метры и так далее)
 
 ###### Файлы
-* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка WebDav, Box, SFTP, Samba, Google Drive, Dropbox
+* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox
 
 ###### Документы
 * [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
 * [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
-* [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы т другие уникальные функции
+* [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы и другие уникальные функции
 * [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
 * [VuDroid](https://f-droid.org/repository/browse/?fdfilter=VuDroid&fdid=org.vudroid) - просмотр PDF с нормальным отображением некоторых русских символов
 * [VIMTouch](https://f-droid.org/repository/browse/?fdfilter=vim&fdid=net.momodalo.app.vimtouch) - текстовый редактор, подсветка синтаксисов, старается в некоторой степени следовать стилю компьютерного редактора VIM
@@ -77,7 +57,7 @@
 
 ###### Система
 * [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
-* [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление автоповоротом для каждой программы отдельно
+* [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление авто поворотом для каждой программы отдельно
 * [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
 * [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный легкий рабочий стол (launcher)
 * [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединениях, использовании памяти, процессоре и т. д.
@@ -86,11 +66,11 @@
 
 ##### Программы с закрытым кодом
 
-**Предупреждени:** О Yandex. Был случай когда одно из его приложений записывало все разговоры. С осторожностью относитесь к его программам.
+**Предупреждени:** О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой официальный источник программ для Andoird - это [Amazon Appstore](https://www.amazon.com/getappstore)
 
 ###### Источники программ (магазины, репозиторий)
 * [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
-* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, много поддельных, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Примая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
+* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, много поддельных, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Прямая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
 * [Amazon Appstore](https://www.amazon.com/getappstore) - магазин от [amazon.com](http://amazon.com), много поддельных программ. Трудно искать оригинальные.
 
 ###### Интернет
