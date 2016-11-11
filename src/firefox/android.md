@@ -10,10 +10,6 @@
 [android-api-11](https://ftp.mozilla.org/pub/mobile/tinderbox-builds/mozilla-release-android-api-11/) - для Android 3.0 и выше. <br>
 [android-x86](https://ftp.mozilla.org/pub/mobile/tinderbox-builds/mozilla-release-android-x86/) - для Android устройств с процессором x86
 
-[IceCat для Android](https://ftp.gnu.org/gnu/gnuzilla/) - это форк Firefox версии ESR с отключенными излишествами (Social API, проверка безопасности сайтов через сервисы Google и т.д.). Но он не позволяет выполнять javascript с несвободными лицензиями, а это делает его непригодным на многих сайтах. Поэтому блокировку несвободных скриптов в нём нужно отключить (отключить дополнение LibreJS). <br>
-В отличии от настольной версии на мобильной Firefox очень трудно настроить, поэтому всегда лучше ставить IceCat, а не Firefox. Если конечно он нормально работает с нужными вам сайтами или дополнениями. <br>
-Описание IceCat можно найти [тут](https://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=icecat)
-
 ###### Обязательные
 
 1. [uBlock Origin](https://addons.mozilla.org/ru/android/addon/ublock-origin)<sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики. <sub>В связи с тем, что подписки по умолчанию блокируют некоторые сайты используемые многими пользователями далее идет описание правильной настройки _uBlock Origin_. <em>**Настройка подписок:**</em> В настройках дополнения ```отключить подписки```: **1) uBlock filters – Badware risks**, **2) Peter Lowe’s Ad server list‎**, **3) Malware Domain List‎**, **4) Malware domains‎**. ```Включить подписки```: **1) Anti-Adblock Killer | Reek‎**, **2) Basic tracking list by Disconnect‎**, __3) RUS: RU AdList__. Остальные подписки по умолчанию. ```Отключите встроенные функции Firefox```, который дублируют подписки _uBlock Origin_: **1) В настройках Firefox на вкладке "Защита" (Security) снять галочки с "Блокировать опасные сайты/загрузки", "Защита от мошенничества"**, **2) В настройках Firefox на вкладке "Приватность" (Privacy) снять галочку "Защита от отслеживания в приватном окне".**</sub><br>
@@ -44,6 +40,12 @@
 ###### Настройки
 
 Настройки из статьи о минимальной настройки Firefox актуальны и для мобильной версии Firefox. Дополнительные описаны здесь.
+
+**0. Отключаем наглый сбор статистики:** <br>
+1. **dom.battery.enabled** > **false** <br>
+2. **browser.safebrowsing.enabled** > **false** <br>
+3. **browser.safebrowsing.malware.enabled** > **false** <br>
+4. **browser.safebrowsing.downloads.enabled** > **false** <br>
 
 **1. Чтобы изменить каталог сохранения по умолчанию на мобильном [firefox]:** <br>
 1. Установить в **browser.download.folderList** значение **2** <br>
