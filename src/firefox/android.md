@@ -32,7 +32,6 @@
 14. [Fennec Screenshot](https://addons.mozilla.org/ru/android/addon/fennec-screenshot/) - создание скриншотов страницы (в том числе всей, а не только видимой в данный момент области). В настройках можно поставить JPEG формат для сохранения, по умолчанию формат PNG. <br>
 15. [PageInfo Viewer](https://addons.mozilla.org/ru/android/addon/pageinfo-viewer/) - показ информации о странице (аналог клика по значку до адреса сайта и "подробнее"). <br>
 16. [Save As TXT](https://addons.mozilla.org/ru/android/addon/save-as-txt/) - сохранение страницы, как текста. <br>
-17. [RememberPass](https://addons.mozilla.org/ru/android/addon/rememberpass/) - авто-сохранение паролей даже на сайтах на которых оно отключено самими сайтами. <br>
 19. [Console](https://addons.mozilla.org/ru/android/addon/console/) - консоль ошибок. <br>
 20. [Desktop Mode Add-on](https://addons.mozilla.org/ru/android/addon/desktop-mode-add-on/) - при включении режима отображения версии сайта для настольной версии Firefox сайт отображается один-в-один как на настольной версии (стандартный режим использует другой способ и параметры отрисовки). Полезно для сайтов, которые криво отображаются на мобильой версии. <br>
 
