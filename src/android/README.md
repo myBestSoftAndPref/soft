@@ -8,7 +8,7 @@
 
 ###### Медиа
 * [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - плеер
-* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон, пишет в ```.waw``` формате, с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
+* [Urecord](https://f-droid.org/repository/browse/?fdfilter=urecord&fdid=cc.co.eurdev.urecorder) - диктофон, пишет в ```.wav``` формате, с возможностью выбора качества записи (в некоторых телефонах по умолчанию оно низкое)
 * [Sound Recorder](https://f-droid.org/repository/browse/?fdfilter=sound+record&fdid=com.danielkim.soundrecorder) - диктофон, пишет в ```.mp4``` формате
 * [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
 * [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - автоматическая запись телефонных разговоров
