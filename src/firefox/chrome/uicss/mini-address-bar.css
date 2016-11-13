@@ -1,0 +1,61 @@
+/**
+ * Minimize address' panel size and elements
+ */
+
+/* Accept only to UI */
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+/* navigation (address) panel (bar) rules */
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button),
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button) > .toolbarbutton-icon,
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button) > .toolbarbutton-multiline-text,
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button) > .toolbarbutton-multiline-text *,
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button) > .toolbarbutton-badge-stack,
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button) > dropmarker,
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button) > dropmarker > .dropmarker-icon
+{
+  margin : 0 !important;
+  padding : 0 !important;
+  border : none !important;
+  min-height : 0px !important;
+  min-width : 0px !important;
+  box-shadow : none !important;
+}
+
+/* 2. Back and Forward buttons fix */
+#back-button .toolbarbutton-icon,
+#forward-button .toolbarbutton-icon
+{
+  padding-top : 0 !important;
+  padding-bottom: 0 !important;
+}
+
+#forward-button .toolbarbutton-icon
+{
+  margin-top : 0px !important;
+  margin-bottom: 0px !important;
+}
+
+#back-button .toolbarbutton-icon
+{
+  padding-top : 1.6px !important;
+  padding-bottom: 1.6px !important;
+}
+
+#back-button,
+#forward-button
+{
+  padding: 0 !important;
+}
+
+/* 1px padding for pretty, you can set in 0 */
+#nav-bar
+{
+  padding-top: 1px !important;
+}
+
+/* 3. button padding for pretty */
+#nav-bar toolbarbutton:not(#back-button):not(#forward-button)
+{
+  padding : 0 2px !important;
+}
