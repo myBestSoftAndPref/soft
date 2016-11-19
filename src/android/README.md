@@ -82,7 +82,7 @@
 * [APKMirror](http://www.apkmirror.com) - **не рекомендуется**. Онлайн сервис через который можно скачать .apk загруженные в него с Google Play. Не имеет репутации, может быть опасен.
 
 ###### Интернет
-* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер на основе Chromium, умеет сжимать трафик, есть встроенная слабая встроенная блокировка рекламы
+* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер на основе Chromium, умеет сжимать трафик, есть встроенная слабая встроенная блокировка рекламы, умеет сохранять страницы одним файлов в формате .mht (.mhtml)
 * [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик
 * [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
 * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
