@@ -87,7 +87,17 @@
 * [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
 * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
 * [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - популярный чат, обмен сообщениями
+* [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - популярный чат, обмен сообщениями
+
+###### Справочники
+* [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия для компьютера с открытым кодом, но для Android версии код закрыт.
+	* Подборка словарей Lingvo для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки в GoldenDict просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
+
+###### Файлы
+* [7Zipper](https://play.google.com/store/apps/details?id=org.joa.zipperplus7) или [7Zipper 2.0](https://play.google.com/store/apps/details?id=org.joa.zipperplus7v2) - архиватор. Распаковка zip, alz, egg, tar, tar.gz, tar.bz2, gz, bz2, rar, jar, 7z, lzh поддержка разделенных ZIP архивов (Z01, Z02 ..., zip.001, zip.002 .. ). Работа с архивами 7z, ZIP. Hex-Viewer. FTP-клиент и сервер.
+* [ZArchiver](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver) - архиватор. Создавать архивы: 7z (7zip), zip, bzip2 (bz2), gzip (gz), XZ, tar; Распаковывать архивы: 7z (7zip), zip, rar, rar5, bzip2, gzip, xz, iso, tar, arj, cab, lzh, lha, lzma, xar, tgz, tbz, Z, deb, rpm, zipx, mtz, chm, dmg, cpio, cramfs, img (fat, ntfs, ubf), wim, ecm, arc (freearc); Просматривать содержимое архивов: 7z (7zip), zip, rar, rar5, bzip2, gzip, xz, iso, tar, arj, cab, lzh, lha, lzma, xar, tgz, tbz, Z, deb, rpm, zipx, mtz, chm, dmg, cpio, cramfs, img (fat, ntfs, ubf), wim, ecm, arc (freearc);
+* [Total Commander](https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander) - двух панельный файловый менеджер. Может открывать и архивировать zip.
 
 ###### Документы
 * [WPS Office + PDF](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) - офис, для .docx, .xls и других форматов
-* [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub) - офис, для .docx, .xls и других форматов
+* [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub) - офис, для .docx, .xls и других форматов. Список самих программ от Microsoft (Word, Excel, PowerPoint) есть по этой [ссылке](https://play.google.com/store/apps/dev?id=6720847872553662727)
