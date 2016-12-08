@@ -17,7 +17,7 @@
 * [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
 
 ###### Навигация
-* [OasmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
+* [OsmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ###### Органайзер
