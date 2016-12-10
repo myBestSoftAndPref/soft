@@ -273,6 +273,7 @@ Shotcut - видеоконвертер, нормальный
 Synfig - создание 2D анимации, мультов
 Avidemux - простой редактор видео
 Cinelerra - видео и аудио редактор
+Kdenlive - нелинейный видео редактор
 
 --графические редакторы
 gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
