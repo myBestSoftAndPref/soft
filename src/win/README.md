@@ -213,7 +213,7 @@ http://librecad.org/cms/home.html
 #### Браузеры
 
 * Firefox https://www.mozilla.org/en-US/firefox/new/ и ESR версия с длительным сроком поддержки https://www.mozilla.org/en-US/firefox/organizations/faq/
-* Firefox Developer Edition - для разработчиков https://www.mozilla.org/ru/firefox/developer/
+* Firefox Developer Edition - для разработчиков https://www.mozilla.org/en-US/firefox/developer/all/
 * TorBrowser - обход блокировок, выход в сеть через прокси, отключен сборк статистики
 https://www.torproject.org/
 * Chromium - на его основе делается Chrome (только x32 версии) https://download-chromium.appspot.com/?platform=Win&type=snapshots
