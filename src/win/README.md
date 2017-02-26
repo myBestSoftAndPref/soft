@@ -51,6 +51,7 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 https://www.qt.io/download-open-source/
 * http://x64dbg.com - open source дебагер, отладчик программ в ассемблере
 * IntelliJ IDEA - среды для Java, код открыт только для версии без поддержки Java EE https://www.jetbrains.com/idea/
+* Microsoft Visual Studio Code - код открыт, хороша для JavaScript https://code.visualstudio.com/
 
 * Eclipse Che - онлайн IDE, рисует интерфейс на HTML. Можно установить на компьютер в Docker (виртуальная машина с Eclipse Che), на облако в сети, есть бесплатный аккаунт, интеграция с Git. Пока возможностей намного меньше чем в Eclipse http://eclipse.org/che
 
@@ -212,7 +213,8 @@ http://librecad.org/cms/home.html
 
 #### Браузеры
 
-* Firefox https://www.mozilla.org/en-US/firefox/new/ и ESR версия с длительным сроком поддержки https://www.mozilla.org/en-US/firefox/organizations/faq/
+* Firefox https://www.mozilla.org/en-US/firefox/new/
+* Firefox ESR - версия с длительным сроком поддержки https://www.mozilla.org/en-US/firefox/organizations/faq/
 * Firefox Developer Edition - для разработчиков https://www.mozilla.org/en-US/firefox/developer/all/
 * TorBrowser - обход блокировок, выход в сеть через прокси, отключен сборк статистики
 https://www.torproject.org/
@@ -465,6 +467,8 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 * исправление долгого обновления Win7
 	* для x32 https://www.microsoft.com/en-us/download/details.aspx?id=49542
 	* для x64 https://www.microsoft.com/en-us/download/details.aspx?id=49540
+	
+* на самом деле дополнительный Direct X для Win 7 устанавливается по этой ссылке: https://www.microsoft.com/ru-ru/download/details.aspx?displaylang=ru&id=35
 
 * сглаживание шрифтов для Win XP https://www.microsoft.com/typography/ClearTypePowerToy.mspx
 * драйвер файловой системы exFAT для Win XP https://www.microsoft.com/ru-RU/download/details.aspx?id=19364
@@ -477,6 +481,8 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 		* http://www.overclock.net/t/1587577/windows-7-updates-list-descriptions-windows-7-8-telemetry-preparation
 		* http://techne.alaya.net/?p=12499
 		* http://www.dslreports.com/forum/r30348398-WIN7-Win-7-updates-to-avoid-or-be-careful-with
+		
+* Platform Update for Windows 7 - обновление нужно для улучшения работы GPU и некоторых программ. Оно не входит в комулятивный набор обновлений (описан выше) - https://www.microsoft.com/en-us/download/details.aspx?id=36805
 
 ## Операционные системы
 
