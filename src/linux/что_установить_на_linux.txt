@@ -5,6 +5,7 @@ sudo apt-get install GDebi (установка deb) + sudo dpkg -i /home/user/so
 i-nex (аналог everest) - просмотр инфы о программах
 testdisk - востановление файлов (единственная прогрмма под linux)
 powertop - инфа о питании компаd
+htop
 DOSBox - эмуль DOS
 i2p
 TorBrowser
@@ -55,6 +56,14 @@ sudo ubuntu-drivers autoinstall - установка прориетарных д
 
 KAddressBook - хранение и просмотр адресов
 KNotes - липкие заметки на рабочем столе
+
+scalpel - тоже какая-то программа для восстановления файлов
+
+Так можно обновить ядро Ubuntu 16.04.1 на 16.04.2 с ядра 4.4 на 4.8
+sudo apt-get install --install-recommends xserver-xorg-hwe-16.04
+
+dns crypt - перенаправляет и шифрует dns, использует сервера интузиастов, нет цензуры, провайдер не видит запросы
+    https://dnscrypt.org/#dnscrypt-proxy
 
 ----------------------
 Ускорение Ubuntu
@@ -381,4 +390,22 @@ LabPlot - построение графиков и анализ
 	 Подключаем доп. репозиторий с плагинами xfce
 		sudo add-apt-repository ppa:xubuntu-dev/extras
 		sudo apt-get update
+		
+3. В настройках можно установить скрытие заголовков окна в окнах на весь экран
+-----------------------
+Настройка KDE
+
+В kubuntu можно установить новые версии KDE из официального ppa репозитория
+от kubuntu (Backports репозиторий)
+Обычно можно поискать о том как ставить и номера новых доступных версий на
+https://www.kubuntu.org/news/
+(на текущий момент написания обновлять лучше на версию KDE5 4.8 LTS)
+
+Установить Win + D на показ рабочего стола можно в настройках глобальных клавишь
+
+Фактически НУЖНО обновить, т.к. установленная версия KDE5 по умолчанию кривая.
+
+1. sudo apt-add-repository ppa:kubuntu-ppa/backports
+2. sudo apt update
+3. sudo apt full-upgrade -y
 

@@ -74,6 +74,13 @@ patch -p1 < patch-3.12.4-pf
 8. Собираем ядро командой
 	CONCURRENCY_LEVEL=`getconf _NPROCESSORS_ONLN` fakeroot make-kpkg --initrd kernel_image kernel_headers
 
+	или
+	fakeroot make deb-pkg -j 3 --initrd --append-to-version=-custom1 kernel_image kernel_headers
+
+fakeroot make-kpkg --initrd --append-to-version=-custom kernel_image kernel_headers  -j `getconf _NPROCESSORS_ONLN`
+
+Just run make deb-pkg instead.
+
 9. Если выйти из каталога ядра там будут .deb пакеты которые
 надо установить, это и есть ядро
 
