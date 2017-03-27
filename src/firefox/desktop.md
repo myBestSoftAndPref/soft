@@ -64,7 +64,7 @@
 <br>
 [Disable Add-on Compatibility Checks (Version 40+)](https://addons.mozilla.org/ru/firefox/addon/checkcompatibility2/) - можно принудительно включить совместимость дополнений. Дополнения будут работать на разных операционных системах без "проверки совместимости" через интернет. И если они сделаны для старой версии.
 <br>
-[English-Russian dictionary](https://addons.mozilla.org/en-us/firefox/addon/english-russian-dict/) - совмещенный словарь англ. + рус.
+[Объединённый словарь русской орфографии](https://addons.mozilla.org/en-US/firefox/addon/unified-russian-english-spell/) - совмещенный словарь англ. + рус. <sub>При выборе словаря (клик правой кнопкой мыши на поле ввода) этот словарь имеет название "русский" хотя проверяет на двух языках сразу.</sub>
 <br>
 [StylRRR ](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/) - можно писать и применять стили CSS к интерфейсу и сайтам. <sub>(не путайте с [Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) - это когда-то хорошее дополнение может самовольно проверять обновления или отправлять статистику, сейчас оно ненадежно и к тому же хранит стили в .sqlite формате, что сильно затрудняет их редактирование при искажение интерфейса браузера)</sub>
 <br>
