@@ -18,7 +18,7 @@
 <br>
 [Tab Mix Plus](https://addons.mozilla.org/ru/firefox/addon/tab-mix-plus) - управление поведением вкладок. Можно установить принудительный одноконный режим (всё только во вкладках). Функция перезагрузки вкладки по таймеру, переименование вкладок, горячие клавиши, прогресс загрузки для каждой вкладки отдельно, множество других функций.
 <br>
-[Tree Style Tab](https://addons.mozilla.org/ru/firefox/addon/tree-style-tab) или [Tab Tree](https://addons.mozilla.org/en-US/firefox/addon/tab-tree) - вкладки вертикально в виде дерева.
+[Tree Style Tab](https://addons.mozilla.org/ru/firefox/addon/tree-style-tab) или [Tab Tree](https://addons.mozilla.org/en-US/firefox/addon/tab-tree) - вкладки вертикально в виде дерева. Оба часто имеют баги или могут ломаться с обновлениями.
 <br>
 [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - если страница недоступна пытается грузить её снова. Ссылки на сервисы через которые можно проверить не доступна страница только у вас или у всех.
 <br>
@@ -66,7 +66,7 @@
 <br>
 [English-Russian dictionary](https://addons.mozilla.org/en-us/firefox/addon/english-russian-dict/) - совмещенный словарь англ. + рус.
 <br>
-[Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) - можно писать и применять стили CSS к интерфейсу и сайтам.
+[StylRRR ](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/) - можно писать и применять стили CSS к интерфейсу и сайтам. **(не путайте с [Stylish](https://addons.mozilla.org/ru/firefox/addon/stylish/) - это когда-то хорошее дополнение может самовольно проверять обновления или отправлять статистику, сейчас оно ненадежно и к тому же хранит стили в .sqlite формате, что сильно затрудняет их редактирование при искажение интерфейса браузера)**
 <br>
 [tabTooltip](https://addons.mozilla.org/ru/firefox/addon/tabtooltip/) - при наведении на вкладку показывает её адрес.
 <br>
@@ -86,7 +86,7 @@
 <br>
 [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен <sub>(особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок)</sub>. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.  
 [Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
-[Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) - переключение между группами вкладок  
+[Simplified Tab Groups](https://addons.mozilla.org/EN-us/firefox/addon/tab-groups) - переключение между группами вкладок. **(Существует также более развитое и удобное дополнение [Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/), но в связи с переходом Firefox на WebExtensions API для создания дополнений автор этого дополнения официально объявил о его закрытии, что настораживает так как на новом API реализовать его достаточно просто)**  
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)  
 [Decentraleyes](https://addons.mozilla.org/ru/firefox/addon/decentraleyes/) - встраивает набор некоторых популярных javascript библиотек в Firefox, так что при открытии страниц библиотеки не загружаются снова из интернета и не происходит проверки на их актуальность (нету лишних запросов в интернет). Экономит трафик, защищает от отслеживания, ускоряет загрузку страниц.  
 [Multi Links Plus](https://addons.mozilla.org/ru/firefox/addon/multi-links-plus/) или [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.  

@@ -64,6 +64,13 @@ sudo apt-get install --install-recommends xserver-xorg-hwe-16.04
 
 dns crypt - перенаправляет и шифрует dns, использует сервера интузиастов, нет цензуры, провайдер не видит запросы
     https://dnscrypt.org/#dnscrypt-proxy
+    http://www.webupd8.org/2014/08/encrypt-dns-traffic-in-ubuntu-with.html
+    https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv
+    
+    /usr/share/dnscrypt-proxy/dnscrypt-resolvers.csv
+    
+sudo apt-get install dnscrypt-proxy
+sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
 
 ----------------------
 Ускорение Ubuntu
@@ -409,3 +416,4 @@ https://www.kubuntu.org/news/
 2. sudo apt update
 3. sudo apt full-upgrade -y
 
+Возможно придется доустановить QApt - какая-то зависимость
