@@ -1,0 +1,135 @@
+@namespace url(http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul);
+
+
+
+/* compact */
+
+#tabbrowser-tabs .tabbrowser-tab
+
+{
+
+  border-left : none !important;
+
+}
+
+
+
+#tabbrowser-tabs .tab-content,
+
+#tabbrowser-tabs tab
+
+{
+
+  padding : 0 !important;
+
+  margin : 0 !important;
+
+}
+
+
+
+#tabbrowser-tabs tab
+
+{
+
+  min-height: 16px !important;
+
+  max-height: 16px !important;
+
+}
+
+
+
+#tabbrowser-tabs .tab-content .tab-icon-image,
+
+#tabbrowser-tabs .tab-content .tab-throbber,
+
+#tabbrowser-tabs .tab-content .tab-icon-overlay
+
+{
+
+  padding : 0 !important;
+
+  margin : 0 !important;
+
+  
+
+  min-height: 16px !important;
+
+  min-width: 16px !important;
+
+}
+
+
+
+#tabbrowser-tabs .tab-content .tab-icon-sound,
+
+#tabbrowser-tabs .tab-content .tab-close-button.close-icon
+
+{
+
+  margin-top : 0 !important;
+
+  margin-bottom: 0 !important;
+
+}
+
+
+
+
+
+#tabbrowser-tabs .tab-stack .tab-background,
+
+#tabbrowser-tabs .tab-stack .tab-background .tab-background-middle
+
+{
+
+  margin : 0 !important;
+
+  border : none !important;
+
+}
+
+
+
+#tabbrowser-tabs tab.tabbrowser-tab .tab-text.tab-label
+
+{
+
+}
+
+
+
+/* Block for pretty, can be delete */
+
+#tabbrowser-tabs tab.tabbrowser-tab .tab-text.tab-label
+
+{
+
+  padding-left: 1px !important;
+
+}
+
+
+
+#tabbrowser-tabs tab
+
+{
+
+  min-height: 20px !important;
+
+  max-height: 20px !important;
+
+}
+
+
+
+#tabbrowser-tabs .tab-stack
+
+{
+
+  padding-top: 0px !important;
+
+  padding-bottom: 0px !important;
+
+}
