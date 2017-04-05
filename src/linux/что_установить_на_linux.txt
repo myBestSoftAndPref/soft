@@ -59,19 +59,31 @@ KNotes - липкие заметки на рабочем столе
 
 scalpel - тоже какая-то программа для восстановления файлов
 
+----------------------
 Так можно обновить ядро Ubuntu 16.04.1 на 16.04.2 с ядра 4.4 на 4.8
 sudo apt-get install --install-recommends xserver-xorg-hwe-16.04
 
+----------------------
 dns crypt - перенаправляет и шифрует dns, использует сервера интузиастов, нет цензуры, провайдер не видит запросы
     https://dnscrypt.org/#dnscrypt-proxy
     http://www.webupd8.org/2014/08/encrypt-dns-traffic-in-ubuntu-with.html
-    https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv
     
-    /usr/share/dnscrypt-proxy/dnscrypt-resolvers.csv
+    Тут взять список прокси: https://github.com/jedisct1/dnscrypt-proxy/blob/master/dnscrypt-resolvers.csv
+    Скопировать содержимое сюда: /usr/share/dnscrypt-proxy/dnscrypt-resolvers.csv
+    Столбец имя - вводить в команде, чтобы подключиться, например dnscrypt.eu-dk
     
 sudo apt-get install dnscrypt-proxy
 sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
 
+    В ubuntu 16.04 есть баг в этой программе. ЧТобы исправить:
+        1. Открыть: sudo systemctl edit --full dnscrypt-proxy.service
+        2. После строки: After=network.target iptables.service firewalld.service
+            Вставить строку: Before=nss-lookup.target
+            Нажать ctrl + o, enter, ctrl + x
+        3. Открыть: sudo systemctl edit --full dnscrypt-proxy.socket
+            Удалть строку: After=network.target
+            Нажать ctrl + o, enter, ctrl + x
+        4. Можно перезагрузиться
 ----------------------
 Ускорение Ubuntu
 preload + prelink
@@ -200,6 +212,7 @@ HeidiSQL (в wine)
 Найти способ установить lingoes (в wine или virtualbox)
 Найти способ установить photoshop (в wine или virtualbox)
 
+Wine Staging - версия Wine с дополнительными функциями, может работать немного лучше стандартного wine
 ----------------------
 !!!Офис
 
@@ -417,3 +430,5 @@ https://www.kubuntu.org/news/
 3. sudo apt full-upgrade -y
 
 Возможно придется доустановить QApt - какая-то зависимость
+
+Чтобы появилась проверка орфографии русского нужно установить aspell-ru или myspell, ispell

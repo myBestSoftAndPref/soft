@@ -87,3 +87,15 @@ Just run make deb-pkg instead.
 	sudo  dpkg -i linux-*
 
 (делать sudo update-grub вконце не нужно)
+
+
+------------
+Посмотреть планировщик
+cat /sys/block/sda/queue/scheduler
+
+Переключиться
+echo bfq > /sys/block/sda/queue/scheduler
+
+На старых ядрах можно отключить поддержку
+sysctl kernel.unprivileged_userns_clone=0   (????)
+чтобы не было уязвимости
