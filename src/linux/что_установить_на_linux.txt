@@ -103,6 +103,12 @@ sudo apt-get install xfce4-goodies - все плагины
 virtualbox (+ guest iso для него)
 qemu - эмулятор компьютера
 
+!!!Android эмуляторы
+Anbox http://anbox.io/
+Shashlik http://www.shashlik.io/
+Genimobile https://www.genymobile.com/
+
+
 ----------------------
 Marble - программа карта-глобус с поддержкой OpenStreetMap
 Kalzium - таблца хим элементов
