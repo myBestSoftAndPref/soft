@@ -323,7 +323,7 @@ Avidemux - простой редактор видео
 Cinelerra - видео и аудио редактор
 Kdenlive - нелинейный видео редактор
 HandBrake - видеоконвертер
-Lightworks - аналог Apple FinalCut, Avid Media Composer и Pinnacle Studio
+Lightworks - код закрыт, аналог Apple FinalCut, Avid Media Composer и Pinnacle Studio
 
 --графические редакторы
 gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
