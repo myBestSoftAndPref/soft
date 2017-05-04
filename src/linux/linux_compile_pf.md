@@ -99,3 +99,16 @@ echo bfq > /sys/block/sda/queue/scheduler
 На старых ядрах можно отключить поддержку
 sysctl kernel.unprivileged_userns_clone=0   (????)
 чтобы не было уязвимости
+
+Чтобы поменять планимровщик по умолчанию
+сменить в файле /etc/default/grub
+строку
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+на
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash elevator=noop"
+
+Планировщики
+CFQ - стандарный
+noop - для SSD
+deadline
+BFQ - быстрейший

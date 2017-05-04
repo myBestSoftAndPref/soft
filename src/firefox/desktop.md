@@ -107,51 +107,6 @@ javascript:void((function () {
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
-#### Разработка
-
-* ```ctrl + shift + i``` - встроенные инструменты разработчика Firefox на сегодня имеют почти все возможности устаревших дополнений и большей части FireBug.
-* [FireBug](https://addons.mozilla.org/en-US/firefox/addon/firebug) - основной инструмент, инспекция html, javascript, css, консоль, cookie и др. хранилищ, запросов. Множество [дополнений для FireBug](http://getfirebug.com/wiki/index.php/Firebug_Extensions)
-	* У консоли FireBug есть дополнительные возможности:
-		* [Функции логирование](https://getfirebug.com/wiki/index.php/Console_API) <br>
-		* [Команды командной строки](https://getfirebug.com/wiki/index.php/Command_Line_API) через которые можно находить функции, элементы DOM, выполнять скрипт, отслеживать вызов функций, трассировка вызовов, получить всех слушателей события, просматривать содержимое объектов
-* [ColorZilla](https://addons.mozilla.org/en-US/firefox/addon/colorzilla) - инструменты для подборки цветов.
-* [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/) - много инструментов, от линейки до автоформатирования javascript, отключения куков, css, валидации и др.
-* [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - альфа версия Firefox с дополнительными инструментами для разработчика и багами
-* Устаревшие:
-	* [Tiny JavaScript Debugger](https://addons.mozilla.org/en-US/firefox/addon/tiny-javascript-debugger) - дебагер javascript
-	* [CSS Usage](https://addons.mozilla.org/en-US/firefox/addon/css-usage/) - дополнение для FireBug, просмотр стилей и информации о них.
-	* [FirePath](https://addons.mozilla.org/en-US/firefox/addon/firepath) - дополнение для FireBug, позволяет находить, проверять, редактировать XPath, CSS и JQuery селекторы.
-	* [Javascript Deminifier](https://addons.mozilla.org/en-US/firefox/addon/javascript-deminifier/) - красиво формотирует javascript код.
-	* [FireStorage Plus!](https://addons.mozilla.org/en-US/firefox/addon/firestorage-plus) - дополнение для FireBug для инспекции HTML5 Local Storage и подобного.
-
-#### Дополнения для приватности
-
-* [Random Agent Spoofer](https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer)
-* [uMatrix](https://addons.mozilla.org/ru/firefox/addon/umatrix/)/[Policeman](https://addons.mozilla.org/en-us/firefox/addon/policeman/)/[RequestPolicy Continued](https://addons.mozilla.org/ru/firefox/addon/requestpolicy-continued/) - управление содержимым страницы. Отключение загрузки контента со сторонних ресурсов, отключение скриптов, стилей, изменение поведения скриптов.
-* [Advanced Cookie Manager](https://addons.mozilla.org/en-us/firefox/addon/cookie-manager/)/[Cookies Manager+](https://addons.mozilla.org/en-us/firefox/addon/cookies-manager-plus/)/[Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/)/[Cookie Controller](https://addons.mozilla.org/ru/firefox/addon/cookie-controller/)/[Self-Destructing Cookies](https://addons.mozilla.org/ru/firefox/addon/self-destructing-cookies/) - управление <sub>(удаление/добавление/изменение/экспорт/испорт)</sub> куками и HTML Local Storage. Удаление по таймеру или при закрытии страницы.
-* [New Plugin Disabler](https://addons.mozilla.org/en-us/firefox/addon/new-plugin-disabler/)
-* [RightToClick](https://addons.mozilla.org/en-US/firefox/addon/righttoclick/)
-* [NoScript Security Suite](https://addons.mozilla.org/en-US/firefox/addon/noscript/)
-* [uBlock Origin](https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/)
-* [BetterPrivacy](https://addons.mozilla.org/en-US/firefox/addon/betterprivacy/) - управление Flash cookies
-* [Clean Links](https://addons.mozilla.org/en-US/firefox/addon/clean-links/)/[Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/) - очистка перенаправления, передачи ссылки с которой перешел пользователь сайту в целях рекламы.
-* [RefControl](https://addons.mozilla.org/en-US/firefox/addon/refcontrol/)
-* [HTTPS Everywhere](https://addons.mozilla.org/en-us/firefox/addon/https-everywhere/)
-* [Firebug](https://addons.mozilla.org/ru/firefox/addon/firebug/)
-* [UAControl](https://addons.mozilla.org/ru/firefox/addon/uacontrol/)
-* [SSleuth](https://addons.mozilla.org/en-US/firefox/addon/ssleuth/)
-* [Redirector](https://addons.mozilla.org/ru/firefox/addon/redirector/)
-
-#### Исследование безопасности
-
-* [WorldIP - Geo Add-on with Security Features](https://addons.mozilla.org/en-US/firefox/addon/worldip/)
-* [HackBar](https://addons.mozilla.org/de/firefox/addon/hackbar/)
-* [SQL Inject Me](https://addons.mozilla.org/en-US/firefox/addon/sql-inject-me/)
-* [XSS Me](https://addons.mozilla.org/en-US/firefox/addon/xss-me/)
-* [Tamper Data](https://addons.mozilla.org/en-US/firefox/addon/tamper-data/)
-* [CryptoFox](https://addons.mozilla.org/en-US/firefox/addon/cryptofox/)
-* [Modify Headers](https://addons.mozilla.org/en-US/firefox/addon/modify-headers/)
-
 #### Установка
 
 * [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) - максимально анонимная сборка с встроенным постоянным подключением через анонимные прокси
@@ -194,29 +149,8 @@ javascript:void((function () {
 
 #### Управление
 
-**Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют дополнения! Все сочетания клавиш можно посмотреть на [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)<br>
+**Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют дополнения [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)<br>
 **Note!** Некоторые дополнения могут блокировать или менять стандартные сочетания клавиш.
-
-* ```alt``` + ```зажатая левая клавиша мыши``` - выделять куски ссылок или элементов которые перетаскиваются (не работает если копирование блокировано скриптами или на блок с текстом наложен сверху прозрачный блок)
-* ```shift``` + ```правая кнопка мыши``` - вызвать блокированное скриптом контекстное меню
-* Сохранить страницу в виде изображения можно поставив галочку в настройках панели разработчика (```ctrl``` + ```shift``` + ```I```)
-* ```alt``` - вызвать скрытую панель меню
-* ```ctrl``` + ```протащите вкладку по панели вкладок``` - клонировать вкладку
-* ```F5``` - обновить вкладку
-* ```F7``` - каретка на любом содержимом сайта включается и выключается (не работает если копирование блокировано скриптами или на блок с текстом наложен сверху прозрачный блок)
-* Чтобы открыть адрес или результаты поиска в новой вкладке нажмите ```alt``` + ```enter```
-* ```ctrl``` + ```клик по ссылке``` - открыть новую вкладку, работает и на закладках
-* Если значка для управления установленным дополнением не видно ни в панели значков, ни на открытых панелях, то проверьте скрытые панели (откройте их). Панели можно открыть/закрыть кликнув правой кнопкой мыши по любой панели (не текстовому полю или значку)
-* ```средней кнопкой мыши на вкладке``` - закрыть вкладку
-* Если в Firefox сохранено несколько паролей, то кликнув 2 раза по текстовой строке для ввода логина можно выбрать любой из них
-* ```2 раза кликнув по звездочке```  (или ```ctrl``` + ```D```) - выбрать в каком каталоге сохранится закладка
-* ```Правая кнопка мыши``` на иконки ```стрелки вперед/назад``` - можно сразу перейти на любую страницу из истории переходов
-* ```ctrl``` + ```F``` - можно открыть панель поиска по странице
-* Найти ссылку на любое проигрываемое видео/аудио можно через раздел "Сеть" в панели разработчика: ```ctrl``` + ```shift``` + ```I```
-* Старайтесь не набирать важный текст в текстовых полях, используйте блокнот, а затем копируйте текст
-* ```ctrl``` + ```удерживать Левая Клавиша Мыши``` - выделять таблицы
-* ```ctrl``` + ```T``` - открыть новую вкладку
-* ```ctrl``` + ```F4``` - закрыть текущую вкладку
 
 #### FAQ
 
@@ -303,24 +237,11 @@ __Пример 2__ .xml движка:
 3.3) Можно попробовать использовать OpenGL для интерфейса: ```layers.prefer-opengl``` > ```true```  
 3.4) (Только для Windows) Отрисовка шрифтов через DirectWrite может быть быстрее: ```gfx.font_rendering.directwrite.force-enabled``` > ```true```  
 
-#### Все что ниже - Черновик
+**Q5.1.** Как открыть во вкладках разные страницы Firefox вместо отдельны окон?  
+**A5.1.** Тут список нужных адресов [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs)
 
-* Установить через дополнение ```Classic Theme Restorer``` строку поиска в виде списка (старый вид поисковой строки). Иначе названий поисковиков в панели поиска не будет и вам придется запоминать иконки.
-* В закладки Firefox компания в целях рекламы может добавить подписки RSS и Atom на новости в качестве рекламы. Проверьте их и удалите.
-* Не устанавливайте темы, они кривые, а легковесные могут и обновление проверять.
-* [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs) - ссылки на открытие закладок, загрузок и т.д. во вкладках вместо окон
-* ```Firefox\Browser\chrome\icons\default\main-window.ico``` - меняем иконку Firefox <sub>(если каталога или файла нету, то создать)</sub>
-* ```profile\chrome\userChrome.css``` - стили для UI (интерфейса браузера) <sub>(если каталога или файла нету, то создать)</sub>
-* ```profile\chrome\userContent.css``` - стили для сайтов <sub>(если каталога или файла нету, то создать)</sub>
-* [How to override the Firefox Add-on Signing requirement](http://www.ghacks.net/2016/08/14/override-firefox-add-on-signing-requirement/) - отключание проверку подписи дополнений (можно ставить дополнения не только с сайта Mozilla)
-* Запускать разные профилей командой: ```"c:\firefox.exe" -no-remote -profile "d:\путь_к_профилю_\myProfile"``` <sub>В Linux создайте пустой каталог до запуска</sub>
+**Q6.1.** Как запустить отдельный профиль Firefox
+**A6.1.** Командой ```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
 
-#### Проблемы
-
-* проверить на странице ```about:support``` включено или нет аппаратное ускорение (даже если в стандартных настройках оно включено). Это поля в разделе **Graphics**: должно стоять ```true``` (не ```false```) и ```Yes``` (не ```No```). Если выключено, то отрисовка страниц, особенно видео и музыка может тормозить. Можно попробовать включить принудительно: [инструкция со списком проблемных видеокарт](https://wiki.mozilla.org/Blocklisting/Blocked_Graphics_Drivers). При включении этого Firefox может сломаться, а может в черный список занесли случайно и всё будет быстрее.
-	* Если ошибка в старых dll: ```Аппаратное декодирование H264: No; D3D9 blacklisted with DLL atiumd64.dll (9.14.10.984)```, то нужно очистить на странице ```about:config``` опцию ```media.wmf.disable-d3d9-for-dlls```
-* Перед обновлением сохранить резервные копии (закладок, паролей), потому что может сломаться база sqlite (создастся файл в профиле с поврежденной базой ```.sqlite.corrupt```). Дополнение для её починки: [тут](https://addons.mozilla.org/ru/firefox/addon/places-maintenance/versions/)
-* [Включение поддержки MP4 (H.264 + AAC) HTML5-видео на Windows XP](https://forum.mozilla-russia.org/viewtopic.php?id=69941)
-* Если Firefox будет часто падать поставить ```layers.offmainthreadcomposition.enabled``` в ```false``` и отключить аппаратное ускорение поставив ```layers.acceleration.disabled``` в ```true```
-* Разные настройки аппаратного ускорения. Иногда в Firefox отключено ускорение, хотя работает оно нормально. Или DirectX9 оказывается быстрее чем DirectX11. Или с DirectX9 меньше проблем. Тогда помогает принудительное включение или отключение настроек. Пробуем включить аппаратное ускорение:
-	* 
+**Q7.1.** Как изменить иконку Firefox на панели
+**A7.1.** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
