@@ -1,0 +1,41 @@
+Общая инструкция:
+https://forum.manjaro.org/t/howto-power-savings-setup-update-20170319/1445
+
+Суть:
+ACPI у разных производителей разное, что-то заточено под разные версии Windows, что-то под Linux.
+Опция acpi_osi дает команду работать как одна из версий Windows или Linux, или изменить стандартное поведение.
+
+Редактировать файл: sudo kate /etc/default/grub
+Изменить опцияю: GRUB_CMDLINE_LINUX_DEFAULT
+Обновить после сохранения файла: sudo update-grub
+
+Команда которая может избавить от лагов при пробуждении от hibernation:
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_osi='!Windows 2013' acpi_osi='!Windows 2012'"
+
+Добавление этого может улучшить работу подсветки монитора. Например сделать больше вариантов уменьшения/увеличения.
+(может и сломать подсветку)
+    acpi_backlight=vendor
+
+Если совсем не работает подсветка на ноутбуке, то можно оставить опцию пустой
+    acpi_osi=
+
+Опция может убрать перегрев ноутбука, если он был. И вообще сделать его холоднее и батарея будет меньше садиться.
+ASPM (Active-State Power Management) - система энергосбережения.
+(если ноут не поддерживает этот режим могут быть проблемы с оборудованием)
+    pcie_aspm=force
+Такой командой можно узнать состояние ASPM (Active-State Power Management):
+    sudo lspci -vv | grep ASPM.*abled\;
+ВНИМАНИЕ. Эта опция может ПЛОХО повлиять, например наоборот отключить что-то.
+    
+Политика охлаждения ASPM устанавливается в:
+    /sys/module/pcie_aspm/parameters/policy
+Доступны варианты: default, powersave, performance
+
+Можно попробовать такую команду:
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor acpi_osi='!Windows 2015' acpi_osi='!Windows 2013' acpi_osi='!Windows 2012'"
+
+И такую:
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor acpi_osi='!Windows 2015' acpi_osi='!Windows 2013' acpi_osi='!Windows 2012' acpi_osi=Linux acpi=force"
+
+И такую:
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi_backlight=vendor acpi_osi='!Windows 2015' acpi_osi='!Windows 2013' acpi_osi='!Windows 2012' acpi_osi=Linux acpi=force pcie_aspm=force"

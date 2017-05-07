@@ -441,3 +441,15 @@ https://www.kubuntu.org/news/
 3. sudo apt full-upgrade -y
 
 Возможно придется доустановить QApt - какая-то зависимость
+
+
+-------------
+Как удалить определенное ядро
+
+Смотрим список
+dpkg --get-selections | grep linux  
+
+Удаляем
+sudo apt-get purge linux-headers-4.2.0-34 linux-headers-4.2.0-34-generic linux-image-4.2.0-34-generic linux-image-extra-4.2.0-34-generic linux-signed-image-4.2.0-34-generic
+
+sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-generic linux-image-4.11.0-041100-generic
