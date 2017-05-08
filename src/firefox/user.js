@@ -11,3 +11,7 @@ user_pref("dom.webnotifications.enabled", false); //отключаем надо�
 user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
 user_pref("browser.fixup.alternate.enabled", false); //отключаем автоподстановку TLD и www, иногда мешает вводу
+
+//отдельно отключаем отправку хэшей загружаемых файлов, хотя по идеи она и так должна быть отключена при отключении browser.safebrowsing через стандартные настройки
+user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
