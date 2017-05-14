@@ -235,6 +235,7 @@ Notepadqq - клон Notepad++
 libreoffice +
  sudo apt-get install libreoffice-style-sifr + Tools > Options > LibreOffice > View and select "Sifr" under "Icon size and style"
  + librecad
+FreeCAD - CAD система
 ONLYOFFICE - новый офис, неплохо совместим с MS Office
  
 Calligra Suite - оффисный пакет KDE, редактор графики, PDF, таблиц и т.д.
