@@ -92,7 +92,8 @@
 [Multi Links Plus](https://addons.mozilla.org/ru/firefox/addon/multi-links-plus/) или [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.  
 [YouTube High Definition](https://addons.mozilla.org/ru/firefox/addon/youtube-high-definition/) - настройка youtube, установка качества по умолчанию, отключение авто воспроизведения и другое  
 [MuteTab](https://addons.mozilla.org/en-US/firefox/addon/mutetab/) - можно отключить звук во всех вкладках по умолчанию и включать только вручную  
-[Vertical Tabs Reloaded](https://addons.mozilla.org/en-US/firefox/addon/vertical-tabs-reloaded/) - вкладки вертикально, альтернатива глючным дополнениям для древовидных вкладок <sub>(оформление настраивается через настройки)</sub>
+[Vertical Tabs Reloaded](https://addons.mozilla.org/en-US/firefox/addon/vertical-tabs-reloaded/) - вкладки вертикально, альтернатива глючным дополнениям для древовидных вкладок <sub>(оформление настраивается через настройки)</sub>  
+[Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/) - чистит ссылки в поисковиках Google, Yandex от переадресации. На деле приватность не защищает, но убирает раздражающую переадресацию и переход по ссылке станет быстрее.
 
 #### Bookmarklets
 
