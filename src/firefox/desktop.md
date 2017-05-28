@@ -104,7 +104,7 @@ javascript:void((function () {
 	alert('test');
 })());
 ```  
-Во время создания код bookmarklet преобразуется в [URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI).
+Во время создания код bookmarklet преобразуется в [URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI). Различные функции JavaScript связанные с переадресацией страницы могут быть запрещены политиками сайта, так что заменить расширения в этом плане не получится, так как подобные функции будут работать только на части сайтов.
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
