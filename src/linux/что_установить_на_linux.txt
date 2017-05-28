@@ -263,6 +263,15 @@ phpmyadmin
 qtcreator (с сайта) - IDE для C/C++ и Qt
 Android SDK (с сайта)
 geany + geany-plugins - аналог Notepad++
+	sudo add-apt-repository ppa:geany-dev/ppa - новая версия в ppa
+	
+	- если будут проблемы с сохранением настроект geany:
+		1. удалить программу
+		1. Удалить содержимое каталога /home/user/.config/geany/
+		2. Изменить права /home/user/.config/geany/
+			на 775
+			владелец: user, группа: user
+		3. Установить
 
 --компиляторы и библиотеки, базы, сервера
 openjdk (пакеты icedtea-plugin, default-jdk, default-jre, default-jdk-doc)
