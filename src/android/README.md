@@ -5,7 +5,7 @@
 
 ###### Источники программ (магазины, репозиторий)
 * [F-Droid](https://f-droid.org/) - репозиторий программ с открытым кодом (часто версии программ в нём устаревшие, зато проверенные). В настройках программы можно включить дополнительный источник программ от [Guardian Project](https://guardianproject.info/) (Tor, приватные мессенджеры и так далее).
-	* **Предупреждени:** [F-Droid](https://f-droid.org) перекомпилирует приложения, бывает с ошибками. Если программа не работает - пробуйте установить её из других источников, оригинально скомпилированную. Некоторые open source программы могут туда не попасть - у владельцев [F-Droid](https://f-droid.org) просто не хватает знаний на компилирование. Если open source программа использует какую-то несвободную библиотеку, то она тоже может туда не попасть, из-за политики [F-Droid](https://f-droid.org) использовать только open source прогрммы.
+	* **Предупреждение:** [F-Droid](https://f-droid.org) перекомпилирует приложения, бывает с ошибками. Если программа не работает - пробуйте установить её из других источников, оригинально скомпилированную. Некоторые open source программы могут туда не попасть - у владельцев [F-Droid](https://f-droid.org) просто не хватает знаний на компилирование. Если open source программа использует какую-то несвободную библиотеку, то она тоже может туда не попасть, из-за политики [F-Droid](https://f-droid.org) использовать только open source программы.
 * [Aptoide](https://www.aptoide.com/) - формально код открыт, но на деле приложения хранятся онлайн на сайте aptoide.com, каждый пользователь может создать свой репозиторий. В результате - много поддельных вредоносных приложений, что-то стоящее найти очень трудно. **Не рекомендуется**, если вы не хотите сделать свой собственный репозиторий.
 * [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore) - программа может напрямую качать .apk из Google Play, обновлять и т.д.
 
@@ -40,7 +40,7 @@
 * [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
 * [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
 * [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп
-* [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (грамму в пинты, килограммы, футы в метры и так далее)
+* [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (граммы в пинты, килограммы, футы в метры и так далее)
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
 
 ###### Файлы
