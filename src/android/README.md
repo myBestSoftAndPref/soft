@@ -73,11 +73,11 @@
 
 ##### Программы с закрытым кодом
 
-**Предупреждени:** О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все окружающие разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой **официальный** источник программ для Android - это [Amazon Appstore](https://www.amazon.com/getappstore)
+**Предупреждение:** О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все окружающие разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой **официальный** источник программ для Android - это [Amazon Appstore](https://www.amazon.com/getappstore)
 
 ###### Источники программ (магазины, репозиторий)
 * [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
-* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, много поддельных, проверка на вредоносность хуже. Достоверно обновляются и надежны только прогарммы от самого Yandex. Прямая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
+* [Yandex.Store](https://store.yandex.by/) - попытка Yandex сделать аналог [Google Play](https://play.google.com/store). Приложений мало, много поддельных, проверка на вредоносность хуже. Достоверно обновляются и надежны только программы от самого Yandex. Прямая ссылка [тут](https://m.soft.yandex.ru/download/appstore/appstore-android.apk)
 * [Amazon Appstore](https://www.amazon.com/getappstore) - магазин от [amazon.com](http://amazon.com), много поддельных программ. Трудно искать оригинальные.
 * [1Mobile Market](http://market.1mobile.com/) - **не рекомендуется**. Магазин бесплатных .apk, в магазин загружаются и приложения с Google Play (они отмечены специальным значком). В этом магазине бывают косяки, загруженные программы могут работать с ошибками. Сам магазин доверия не внушает, репутации не имеет. Есть шанс, что он вредоносный или может распостранять вредоносные программы.
 * [APKMirror](http://www.apkmirror.com) - **не рекомендуется**. Онлайн сервис через который можно скачать .apk загруженные в него с Google Play. Не имеет репутации, может быть опасен.
@@ -93,6 +93,7 @@
 ###### Справочники
 * [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия с открытым кодом для обычных компьютеров, но для Android версии код закрыт.
 	* Подборка словарей Lingvo для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки в GoldenDict просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
+* [Sound Meter](https://play.google.com/store/apps/details?id=kr.sira.sound&hl=en) - шумометр, меряет уровень шума. Из-за встроенных фильтров Android подавляющих шум может работать неточно. Таблицу вредности шумов можно найти в интернете, например [тут](http://chchearing.org/noise/common-environmental-noise-levels/)
 
 ###### Файлы
 * [7Zipper](https://play.google.com/store/apps/details?id=org.joa.zipperplus7) или [7Zipper 2.0](https://play.google.com/store/apps/details?id=org.joa.zipperplus7v2) - архиватор. Распаковка zip, alz, egg, tar, tar.gz, tar.bz2, gz, bz2, rar, jar, 7z, lzh поддержка разделенных ZIP архивов (Z01, Z02 ..., zip.001, zip.002 .. ). Работа с архивами 7z, ZIP. Hex-Viewer. FTP-клиент и сервер.
