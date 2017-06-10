@@ -10,7 +10,7 @@
 * [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore) - программа может напрямую качать .apk из Google Play, обновлять и т.д.
 
 ###### Медиа
-* [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - универсальный плеер для аубио и видео, играет почти все существующие форматы
+* [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - универсальный плеер для аудио и видео, играет почти все существующие форматы
 * [Audio Recorder](https://f-droid.org/repository/browse/?fdfilter=Audio+Recorder&fdid=com.github.axet.audiorecorder) - диктофон, пишет в форматах .ogg, .wav, .flac, .m4a, .mka, .mp3. Есть настройка качества записи, паузы во время разговора по телефону, выбор каталога.
 * [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
 * [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - автоматическая запись телефонных разговоров
