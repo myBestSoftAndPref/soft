@@ -15,7 +15,7 @@
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
 	* Для нормальной установки добавить переменные среды:
 	```
-		В конец Path добавить: %JAVA_HOME%\bin;%JDK_HOME%\bin;%JRE_HOME%\bin
+		В конец Path добавить: %JAVA_HOME%\bin
 		
 		Создать новые переменные среды:
 		JAVA_HOME = c:\Program Files\Java\jdk1.8.0_77
@@ -85,7 +85,7 @@ https://www.qt.io/download-open-source/
 
 #### Сборщики
 
-* maven - сборщик и репозиторий библиотек для java https://archive.apache.org/dist/maven/binaries/
+* maven - сборщик и репозиторий библиотек для java https://archive.apache.org/dist/maven/maven-3/
 	* Для нормальной установки добавить переменные среды:
 	```
 		В переменную Path в конец добавить: %M2_HOME%\bin
