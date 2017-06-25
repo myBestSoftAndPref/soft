@@ -76,8 +76,7 @@
 <br>
 [Drag-n-Drop Multiple Files](https://addons.mozilla.org/ru/firefox/addon/drag-n-drop-multiple-files) - позволяет одновременно перетаскивать несколько страницы на Firefox для их открытия (по умолчанию открывается только одна)
 <br>
-[Random Agent Spoofer](https://addons.mozilla.org/en-US/firefox/addon/random-agent-spoofer/) - даёт возможность выбора часового пояса для Firefox, который виден сайту. И позволяет отключать скрытую отправку некоторых данных. Например, можно подменить локальное время компьютера, которое сайт может получить через JavaScript. А вот случайный профиль для маскировки лучше отключить - это глупость (поставьте Real Profile - реальный профиль).
-<br>
+```Тут раньше было описание дополнения Random Agent Spoofer, теперь удалено т.к. страница ориентирована на удобство. А никакой средний пользователь не сможет его нормально настроить. У него была полезная функция сокрытия локального времени (и другие). Но это все полумеры. Пользуйтесь TorBrowser. Со временем это сообщение будет удалено.```
 [FireGestures](https://addons.mozilla.org/ru/firefox/addon/firegestures) или [Mouse Gestures Suite](https://addons.mozilla.org/ru/firefox/addon/mouse-gestures-suite) - можно вешать действия на жесты.
 <br>
 [Hide Caption Titlebar Plus](https://addons.mozilla.org/ru/firefox/addon/hide-caption-titlebar-plus-sma/) - прячет заголовок окна (экономит место), делает панель меню появляющуюся по ```Alt``` выпадающей и страница не прыгает при её открытии. Под многими дистрибутивами Linux это единственно удобный способ скрыть заголовок окна.
