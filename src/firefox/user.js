@@ -16,3 +16,6 @@ user_pref("browser.urlbar.decodeURLsOnCopy", true); //ссылки на русс
 //отдельно отключаем отправку хэшей загружаемых файлов, хотя по идеи она и так должна быть отключена при отключении browser.safebrowsing через стандартные настройки
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+
+//к сожалению в моду вошла накрутка просмотров роликов на youtube, поэтому отключаем auto play для видео
+user_pref("media.autoplay.enabled", false);
