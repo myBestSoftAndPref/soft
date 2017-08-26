@@ -425,6 +425,7 @@ http://www.antp.be/software/renamer
 * Celestia - 3D модель космоса, спутников, звезд, планет, комет, галактик http://www.shatters.net/celestia/
 * Google Earth - код закрыт, просмотр карт от google https://support.google.com/earth/answer/168344?hl=ru
 	* существует платная версия Google Earth Pro которая может работать с GPS и показывать распечатки более высокого разрешения
+* NASA’s Eyes - Нечто вроде Google Earth, программа от NASA показывает температуру Земли, глубину морей, льды, углекислый газ, информацию о спутниках и солнечной системе и многое другое: https://eyes.nasa.gov
 
 ## Мыши, клавиатура, скрипты на жесты и кнопки
 
