@@ -355,6 +355,7 @@ https://www.libreoffice.org/download/libreoffice-fresh/
 * 7zip - архиватор 7z, zip, tar и др. http://www.7-zip.org/
 * Universal Extractor - поддерживает множество форматов http://legroom.net/software/uniextract
 * PeaZip - свободный архиватор, множество форматов http://www.peazip.org/
+* Lessmsi - распаковывает .msi файлы https://github.com/activescott/lessmsi
 
 #### Файловые менеджеры
 
