@@ -120,7 +120,7 @@ KCharSelect - выбор разных спец. символов и emoji из �
 !!!Шифрование
 TrueCrypt 7a - проект закрыт
 VeraCrypt - шифрование дисков, создание виртуальных шифрованных дисков с двойным дном.
-	для решения проблемы с работой на Ubuntu 16.04 нужно установить утилиту dmsetup
+	для решения проблемы с работой на Ubuntu 16.04 нужно установить утилиту dmsetup и xterm
 CipherShed - форк TrueCrypt совместимый с TrueCrypt
 
 KGpg
@@ -465,3 +465,16 @@ dpkg --get-selections | grep linux
 sudo apt-get purge linux-headers-4.2.0-34 linux-headers-4.2.0-34-generic linux-image-4.2.0-34-generic linux-image-extra-4.2.0-34-generic linux-signed-image-4.2.0-34-generic
 
 sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-generic linux-image-4.11.0-041100-generic
+---------------
+установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla
+
+1. Качаем Firefox
+2. Распаковываем в /opt/my_firefox
+3. Создаем ссылку
+    sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox
+4. Создаем каталог профиля
+    /home/user/my_firefox_profile
+5. Запускаем и указываем профиль (чтобы не затереть стандартный) 
+    my_firefox -no-remote -profile /home/user/my_firefox_profile
+6. Чтобы обновить из меню "О программе" запускаем firefox через sudo
+    sudo my_firefox -no-remote -profile /home/user/my_firefox_profile
