@@ -108,6 +108,7 @@ javascript:void((function () {
 
 * [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) - максимально анонимная сборка с встроенным постоянным подключением через анонимные прокси
 * [Pale Moon](https://www.palemoon.org/) - по утверждению разработчика сборка собрана с дополнительными оптимизациями, есть оптимизации для CPU Intel Atom. Имеет странную лицензию
+* [Waterfox](https://www.waterfoxproject.org/) - аналогично Pale Moon, со своими оптимизациями
 * [IceCat](http://ftp.gnu.org/gnu/gnuzilla/) - с удаленными следящими опциями, на деле не очень качественная, лучше использовать TorBrowser
 * [Firefox](https://ftp.mozilla.org/pub/firefox/) - обычный Firefox
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - без автозагрузки встроенных кодеков, может не играть некоторое видео
