@@ -300,6 +300,10 @@ sudo apt-get install nodejs (npm с некоторой версии интегр
 --контроль версий
 svn (subversion)
 git
+RabbitVCS - GUI для git и SVN
+git-cola - GUI для git
+
+dolphin-plugins - в KDE набор плагинов в том числе для Git (доступны в файловом менеджере)
 
 --сборщики
 make
@@ -478,3 +482,22 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     my_firefox -no-remote -profile /home/user/my_firefox_profile
 6. Чтобы обновить из меню "О программе" запускаем firefox через sudo
     sudo my_firefox -no-remote -profile /home/user/my_firefox_profile
+
+--------------
+Как добавить в систему, Kate, KDE, geany в Ubuntu и в другие текстовые редакторы одновременную проверку на: русский и англ. язык одновременно
+
+0. Установить в систему русский язык, чтобы система автоматически скачала русский словарь орфографии (по крайней мере kubuntu делает это автоматически)
+0.2 Если система не скачала словарь автоматически, то установить вручную: sudo apt-get install hunspell-ru
+0.3 Заодно смотрим статью о руссификации http://help.ubuntu.ru/wiki/русификация_ubuntu
+1. Скачать готовый объединенный словарь: https://github.com/myBestSoftAndPref/soft/tree/master/src/linux/hunspell_en_ru_dict/
+2. И заменить им файлы русского словаря в системе: /usr/share/hunspell/
+3. Если после обновления система скачает русский словарь и заменит им ваш, то проделать операции выше снова
+4. Так при выборе в системе или текстовом редакторе (Kate, geany etc) словаря "Русский" проверка будет идти по 2-ум языкам сразу
+
+Заметка: поискать способ не заменять словарь, а добавить в систему свой новый, чтобы при обновлении он не заменялся на старый вариант
+
+Можно самому объединить словари, свежей версии:
+    https://github.com/arty-name/hunspell-merge
+    https://alekseydurachenko.github.io/2015/03/22/kate-spell-checker-rus-and-eng.html
+    http://mozilla-russia.org/projects/dictionary/hunspell.html
+    
