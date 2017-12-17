@@ -567,3 +567,17 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     2.3 добавить строку GRUB_RECORDFAIL_TIMEOUT и установить равное значению из GRUB_TIMEOUT
     2.4 выполнить sudo update-grub
         
+----------------
+Добавление Vulkan API к видеодрайверу
+
+1. Подключить официальный репозиторий со свежими драйверами видео
+    sudo add-apt-repository ppa:ubuntu-x-swat/updates
+    sudo apt-get update
+2. Установить
+    sudo apt install mesa-vulkan-drivers vulkan-utils libvulkan1
+3. Запустить для информации о vulkan: 
+    vulkaninfo
+4. Некоторые программы и игры можно запускать с командой -vulkan для включения
+
+Заметка:
+    установить opencl по тому же принципу

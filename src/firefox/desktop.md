@@ -82,7 +82,7 @@
 <br>
 [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен <sub>(особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок)</sub>. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.  
 [Auto Unload Tab](https://addons.mozilla.org/ru/firefox/addon/auto-unload-tab/) - может выгружать вкладки по таймеру, экономит ресурсы.  
-[Simplified Tab Groups](https://addons.mozilla.org/EN-us/firefox/addon/tab-groups) - переключение между группами вкладок. <sub>(Существует также более развитое и удобное дополнение [Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/), но в связи с переходом Firefox на WebExtensions API для создания дополнений автор этого дополнения официально объявил о его закрытии, что настораживает так как на новом API реализовать его достаточно просто)</sub>  
+[Tab Groups](https://addons.mozilla.org/ru/firefox/addon/tab-groups-panorama/) или [Simplified Tab Groups](https://addons.mozilla.org/EN-us/firefox/addon/tab-groups) - переключение между группами вкладок.
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)  
 [Decentraleyes](https://addons.mozilla.org/ru/firefox/addon/decentraleyes/) - встраивает набор некоторых популярных javascript библиотек в Firefox, так что при открытии страниц библиотеки не загружаются снова из интернета и не происходит проверки на их актуальность (нету лишних запросов в интернет). Экономит трафик, защищает от отслеживания, ускоряет загрузку страниц.  
 [Multi Links Plus](https://addons.mozilla.org/ru/firefox/addon/multi-links-plus/) или [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/SnapLinksPlus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.  
@@ -90,6 +90,15 @@
 [MuteTab](https://addons.mozilla.org/en-US/firefox/addon/mutetab/) - можно отключить звук во всех вкладках по умолчанию и включать только вручную  
 [Vertical Tabs Reloaded](https://addons.mozilla.org/en-US/firefox/addon/vertical-tabs-reloaded/) - вкладки вертикально, альтернатива глючным дополнениям для древовидных вкладок <sub>(оформление настраивается через настройки)</sub> У этого дополнения может проявляться баг со скрытием заголовка окна, исправляется использованием дополнения [Hide Caption Titlebar Plus](https://addons.mozilla.org/ru/firefox/addon/hide-caption-titlebar-plus-sma/)  
 [Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/) - чистит ссылки в поисковиках Google, Yandex от переадресации. На деле приватность не защищает, но убирает раздражающую переадресацию и переход по ссылке станет быстрее.
+
+#### Список дополнений, стилей и настроек для Firefox 57 и новее (тестовый вариант)
+
+Пока дополнения для новых версий Firefox не стабильны (и возможно никогда не станут).
+
+[Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/) - позволяет сохранять страницы одним файлом и открывать их (включая изображения, скрипты etc). Поддерживает формат .maff, не поддерживает .mht. <br>
+[Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную. <br>
+[Tile Tabs WE](https://addons.mozilla.org/en-US/firefox/addon/tile-tabs-we/) - может делить окно браузера на несколько частей, чтобы просматривать несколько сайтов одновременно. На деле новое API не позволяет дополнениям разграничивать окно, поэтому открываются новые окна, что очень неудобно. <br>
+[Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок. Из отличий от других подобных дополнений - очень удобное встроенное управление группами вкладок. <br>
 
 #### Bookmarklets
 
