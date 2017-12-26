@@ -510,26 +510,40 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
 Включение hibernation в Ubuntu 17.10 (в системах Ubuntu с swap файлом вместо swap раздела)
 
 1. Увеличиваем размер swap файла. Он должен быть не меньше размера вашей оперативной памяти
+    1.0 Проверяем наличие swap и видит ли его система ( одна из строк вывода должна начинаться со Swap: )
+        free -m
     1.1 swap файл расположен в /swapfile
-    1.2 Увеличим размер:
+    1.2.1 Какой размер swap для hibernation выбрать
+        <= 2 Gb в 3 раза больше размера swap
+        >  2 Gb - 8 Gb в 2 раза больше размера swap
+        >  8 Gb - 64 Gb в 1.5 раза больше размера swap
+        >  64 Gb - равное размеру swap
+        Источник: https://askubuntu.com/a/420079
+    1.2.2 Увеличим размер:
         swapoff -a
         sudo fallocate -l 9G /swapfile - в примере увеличено до 9 Gb (лучше поставить размер на 2 Gb больше размера RAM, т.к. у меня образ памяти определяет на 1.5 Gb больше занятого размера RAM)
         sudo chmod 600 /swapfile
         sudo mkswap /swapfile
         sudo swapon /swapfile
         sudo swapon --show - смотрим что создалось
-    1.3 Отредавтируем файл автоматинтирования при загрузке, чтобы указать там наш swapfile.
+    1.3 Отредактируем файл автоматинтирования при загрузке, чтобы указать там наш swapfile.
         Программа geany - тектовый редактор, подойдет любой:
         sudo geany /etc/fstab
-    1.4 Вставить строку ниже в fstab или заменить, если swapfile уже существует, но имеет другие опции монтирования
+    1.4 Вставить строку ниже в fstab или заменить, если swapfile уже существует, но имеет другие опции монтирования (одну из тех что ниже)
         /swapfile swap swap defaults 0 0 - новая строка
         /swapfile none swap sw 0 0 - строка по умолчанию
+        /swapfile swap swap sw 0 0 - возможно лучше такое
     1.5 Установить какую-то странную программу
         sudo apt install uswsusp
     1.6 Проверить состояние swap
         sudo findmnt -no SOURCE,UUID -T /swapfile
     1.7 Настроить uswsusp
-        sudo dpkg-reconfigure -pmedium uswsusp - Нужно выборать /swapfile (у меня сработало)
+        sudo dpkg-reconfigure -pmedium uswsusp - Нужно выбрать /swapfile (у меня сработало)
+    1.7.2 (ОСТОРОЖНО НА ЭТОМ ШАГЕ, ВОЗМОЖНО ПРИДЕТСЯ ПРОБОВАТЬ РАЗНЫЕ ОПЦИИ УЖЕ ПОСЛЕ ТОГО КАК ПРОДЕЛАЕТЕ ВСЕ ШАГИ)
+        В открывшемся меню по шагам:
+        1. No
+        2. Выбрать: /swapfile
+        3. No
     1.8 Создать или открыть файл
         sudo geany /etc/initramfs-tools/conf.d/resume
     1.9 Посмотреть UUID
@@ -539,8 +553,6 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     1.11 выполнить
         sudo update-initramfs -u
     1.12 Перезагружаемся
-    1.13 Тестируем hibernation. Если что-то не получилось, то перечитать инструкцию внимательно или искать в интернете другую
-        sudo s2disk
     1.14 Подключаем s2disk к systemd
         sudo cp /lib/systemd/system/systemd-hibernate.service /etc/systemd/system/
         sudo geany /etc/systemd/system/systemd-hibernate.service
@@ -558,6 +570,8 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
         найти внизу этих пунктов ResultActive
         и поставить значение ResultActive=yes
     1.18 перезагрузиться
+    1.19 Тестируем hibernation
+        sudo s2disk
     
     2. Устанавливаем время загрузки системы при пробуждении в случае проблем (чтобы не ждать долго)
         sudo geany /etc/default/grub
