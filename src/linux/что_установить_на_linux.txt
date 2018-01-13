@@ -76,6 +76,7 @@ dns crypt - перенаправляет и шифрует dns, использу
     Столбец имя - вводить в команде, чтобы подключиться, например dnscrypt.eu-dk
     
 sudo apt-get install dnscrypt-proxy
+sudo apt install dnscrypt-proxy-plugins
 sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
 
     В ubuntu 16.04 есть баг в этой программе. ЧТобы исправить:
@@ -87,6 +88,20 @@ sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
             Удалть строку: After=network.target
             Нажать ctrl + o, enter, ctrl + x
         4. Можно перезагрузиться
+        
+    В Ubuntu 17.10
+        1. sudo geany /etc/dnscrypt-proxy/dnscrypt-proxy.conf
+            1.2 Сменить 'ResolverName fvz-anyone' на 'ResolverName cisco'
+        2. sudo dnscrypt-proxy -d -a 127.0.2.1:53 -R dnscrypt.eu-dk
+            2.1 Для справки. Настройки этого IP находятся в файле
+                sudo geany /lib/systemd/system/dnscrypt-proxy.socket
+        3. Перезагружаем демонов
+            3.1 sudo systemctl daemon-reload
+            3.2 sudo systemctl stop dnscrypt-proxy.socket
+            3.3 sudo systemctl start dnscrypt-proxy
+        4. В настройках сети указать: Автоматически (только адрес
+        4.1 Вписать в поле DNS: 127.0.2.1
+        4.2 Переподключиться
 ----------------------
 Ускорение Ubuntu
 preload + prelink
@@ -96,6 +111,9 @@ preload + prelink
 muon в KDE
     Заметка: в muon очень долго существует баг, некоторые пакеты он не находит или находит после нескольких перезапусков.
     Возможно лучше использовать Synaptic и в KDE (у него нет в зависимостях GTK)
+        Быстрый поиск в Synaptic
+            sudo apt-get install apt-xapian-index
+            sudo update-apt-xapian-index -vf
 
 Synaptic в GTK
 
@@ -594,9 +612,35 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
 4. Некоторые программы и игры можно запускать с командой -vulkan для включения
 
 Заметка:
-    установить opencl по тому же принципу
+    установить opencl по тому же принципу (для Intel в основном)
+    https://askubuntu.com/questions/850281/opencl-on-ubuntu-16-04-intel-sandy-bridge-cpu
 ----------------
 Проблема в Kubuntu (возможно и в Ubuntu)
 
 Если назначить на клавиши ctrl + shift что-то (например переключение языка), то все клавиши в которых используются ctrl + shift перестанут нормально работать
 Например: ctrl + shift + f, ctrl + shift + стрелки и т.д.
+----------------
+Проверяем и исправляет EFI после установками ubuntu
+
+0. Проверить используется ли EFI
+    [ -d /sys/firmware/efi ] && echo "EFI boot on HDD" || echo "Legacy boot on HDD"
+    
+    должно вывести:
+        should return "EFI boot on HDD".
+    
+1. Набрать команду
+    efibootmgr
+2. Если вместо аккуратного списка непонятные надписи, то EFI неисправен
+2. Смотнтировать раздел с EFI (если каталога efi нет, то создать)
+    sudo mount /dev/sda1 /boot/efi
+3. Если не исправен. Установить утилиту
+    sudo apt-get install --reinstall grub-efi
+4. Переустановить EFI
+    sudo grub-install /dev/sda
+5. Обновить GRUB
+    sudo update-grub
+6. Набрать снова чтобы перепроверить
+    efibootmgr
+    
+Полная инструкция: https://wiki.debian.org/GrubEFIReinstall
+----------------
