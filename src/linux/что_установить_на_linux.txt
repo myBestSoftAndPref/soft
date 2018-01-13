@@ -105,6 +105,9 @@ sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
         5. Проверить DNS на сайте https://browserleaks.com/ip
         6.  Посмотреть демоны dnscrypt и какие адреса он слушает
             sudo lsof -i -n
+            
+            6.1 Можно уточнить команду, чтобы показывала только dnscrypt
+                sudo lsof -i -n | grep -i dnscrypt
 ----------------------
 Ускорение Ubuntu
 preload + prelink
