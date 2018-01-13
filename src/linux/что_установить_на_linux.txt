@@ -103,6 +103,8 @@ sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
         4.1 Вписать в поле DNS: 127.0.2.1
         4.2 Переподключиться
         5. Проверить DNS на сайте https://browserleaks.com/ip
+        6.  Посмотреть демоны dnscrypt и какие адреса он слушает
+            sudo lsof -i -n
 ----------------------
 Ускорение Ubuntu
 preload + prelink
