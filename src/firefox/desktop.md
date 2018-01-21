@@ -2,7 +2,7 @@
 
 Минимальны набор дополнений, стилей и настроек для **release** версии Firefox.
 <br>
-Старую версию для дополнений на XUL для Firefox 52 ESR можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md)
+**Старую версию** для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md)
 <br>
 Если дополнение не совместимо с вашей версией Firefox можно поискать совместимую старую версию:
 <br>
