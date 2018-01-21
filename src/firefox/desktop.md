@@ -54,7 +54,7 @@
 [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/snaplinksplus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.
 <br>
 
-#### Список дополнений для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
+#### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
 ```-``` - нету даже приблизительных аналогов и WebExtensions API не позволяет их реализовать <br>
 ```+``` - есть аналог или может появиться в будущем, или дополнение мало значимо <br>
@@ -77,8 +77,8 @@
 
 #### Программы (для работы с Firefox)
 
-ShareX (Windows) или Spectacle (Ubuntu, KDE) - для скриншотов, чтобы сделать скриншот всей страницы, а не только видимой части можно использовать инструменты Firefox
-uGet <sub>(не путать с неудобной kGet, uGet свободно работает и в KDE)</sub> - менеджер загрузок
+* [ShareX](https://getsharex.com/downloads/) (Windows) или [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (часть KDE, Kubuntu) - для скриншотов. Чтобы сделать скриншот всей страницы, а не только видимой части можно использовать инструменты Firefox
+* [uGet](http://ugetdm.com/downloads) <sub>(не путать с неудобной kGet, uGet свободно работает и в KDE)</sub> - менеджер загрузок
 
 #### Bookmarklets
 
@@ -174,3 +174,13 @@ __Пример 2__ .xml движка:
 
 **Q7.1.** Как изменить иконку Firefox на панели  
 **A7.1.** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
+
+**Q7.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla
+**A7.1.**
+    0. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно
+    1. Качаем Firefox
+    2. Распаковываем в ```/opt/my_firefox```
+    3. Создаем ссылку ```sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox```
+    4. Создаем каталог профиля ```/home/user/my_firefox_profile```
+    5. Запускаем и указываем профиль (чтобы не затереть стандартный): ```my_firefox -no-remote -profile /home/user/my_firefox_profile```
+    6. Чтобы обновить из меню "О программе" запускаем firefox через sudo: ```sudo my_firefox -no-remote -profile /home/user/my_firefox_profile```
