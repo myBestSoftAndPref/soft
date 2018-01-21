@@ -180,7 +180,10 @@ __Пример 2__ .xml движка:
 1. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно
 2. [Качаем Firefox](https://www.mozilla.org/en-US/firefox/new/)
 3. Распаковываем в ```/opt/my_firefox```
-4. Создаем ссылку ```sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox```
+4. Создаем ссылку
+    ```
+        sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox
+    ```
 5. Создаем каталог профиля ```/home/user/my_firefox_profile```
 6. Запускаем и указываем профиль (чтобы не затереть стандартный): ```my_firefox -no-remote -profile /home/user/my_firefox_profile```
 7. Чтобы обновить из меню "О программе" запускаем firefox через sudo: ```sudo my_firefox -no-remote -profile /home/user/my_firefox_profile```
