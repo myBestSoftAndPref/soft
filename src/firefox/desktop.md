@@ -178,7 +178,7 @@ __Пример 2__ .xml движка:
 **Q7.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
 **A7.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
 1. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно
-2. Качаем Firefox
+2. [Качаем Firefox](https://www.mozilla.org/en-US/firefox/new/)
 3. Распаковываем в ```/opt/my_firefox```
 4. Создаем ссылку ```sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox```
 5. Создаем каталог профиля ```/home/user/my_firefox_profile```
