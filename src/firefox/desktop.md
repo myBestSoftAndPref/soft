@@ -175,12 +175,12 @@ __Пример 2__ .xml движка:
 **Q7.1.** Как изменить иконку Firefox на панели  
 **A7.1.** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
 
-**Q7.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla
-**A7.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней.
-    0. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно
-    1. Качаем Firefox
-    2. Распаковываем в ```/opt/my_firefox```
-    3. Создаем ссылку ```sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox```
-    4. Создаем каталог профиля ```/home/user/my_firefox_profile```
-    5. Запускаем и указываем профиль (чтобы не затереть стандартный): ```my_firefox -no-remote -profile /home/user/my_firefox_profile```
-    6. Чтобы обновить из меню "О программе" запускаем firefox через sudo: ```sudo my_firefox -no-remote -profile /home/user/my_firefox_profile```
+**Q7.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
+**A7.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
+0. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно
+1. Качаем Firefox
+2. Распаковываем в ```/opt/my_firefox```
+3. Создаем ссылку ```sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox```
+4. Создаем каталог профиля ```/home/user/my_firefox_profile```
+5. Запускаем и указываем профиль (чтобы не затереть стандартный): ```my_firefox -no-remote -profile /home/user/my_firefox_profile```
+6. Чтобы обновить из меню "О программе" запускаем firefox через sudo: ```sudo my_firefox -no-remote -profile /home/user/my_firefox_profile```
