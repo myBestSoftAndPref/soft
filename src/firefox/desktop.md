@@ -18,7 +18,7 @@
 <br>
 [Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок и группы вкладок. Из отличий от других подобных дополнений - очень удобное встроенное управление группами вкладок.
 <br>
-[Drag-Select Link Text](https://addons.mozilla.org/en-US/firefox/addon/drag-select-link-text/) - позволяет выделять текст ссылок (без зажатия Alt)
+[Drag-Select Link Text](https://addons.mozilla.org/en-US/firefox/addon/drag-select-link-text/) - позволяет выделять текст ссылок без зажатия ```Alt```
 <br>
 [Grab Any Media](https://addons.mozilla.org/en-US/firefox/addon/grab-any-media/) - поиск ссылок на audio и video файлы на странице (слабый аналог FlashGot)
 <br>
@@ -177,8 +177,8 @@ __Пример 2__ .xml движка:
 **Q7.1.** Как изменить иконку Firefox на панели  
 **A7.1.** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
 
-**Q7.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
-**A7.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
+**Q8.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
+**A8.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
 1. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно. Имя пользователя ```<user_name>``` заменить на свое.
 2. [Качаем Firefox](https://www.mozilla.org/en-US/firefox/new/)
 3. Распаковываем в
