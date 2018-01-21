@@ -60,7 +60,7 @@
 
 1. ```-``` [FindBar Tweak](https://addons.mozilla.org/ru/firefox/addon/findbar-tweak) - удобный поиск по странице с отметками найденного на полосе прокрутки.
 2. ```+``` [Add to Search Bar](https://addons.mozilla.org/RU/firefox/addon/add-to-search-bar) - добавления любой строки в панель поиска.
-3. [Advanced Locationbar](https://addons.mozilla.org/ru/firefox/addon/advanced-locationbar) - быстрый переход по частям ссылки в адресной строке. Удобно для перехода на главную страницу.
+3. ```-``` [Advanced Locationbar](https://addons.mozilla.org/ru/firefox/addon/advanced-locationbar) - быстрый переход по частям ссылки в адресной строке. Удобно для перехода на главную страницу.
 4. ```+``` [Resurrect Pages](https://addons.mozilla.org/ru/firefox/addon/resurrect-pages) или [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - можно быстро получить ссылки на страницу в веб архиве и кэше поисковиков.
 5. ```-``` [Tab Mix Plus](https://addons.mozilla.org/ru/firefox/addon/tab-mix-plus) - Можно установить принудительный одноконный режим (всё только во вкладках). Функция перезагрузки вкладки по таймеру, переименование вкладок, горячие клавиши, прогресс загрузки для каждой вкладки отдельно, множество других функций.
 6. ```+``` [UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения, отключить сохранение Flash и video/audio.
