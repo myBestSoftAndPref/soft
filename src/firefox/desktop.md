@@ -177,7 +177,7 @@ __Пример 2__ .xml движка:
 
 **Q7.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
 **A7.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
-1. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно
+1. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно. Имя пользователя ```<user_name>``` заменить на свое.
 2. [Качаем Firefox](https://www.mozilla.org/en-US/firefox/new/)
 3. Распаковываем в
     ```
@@ -193,9 +193,9 @@ __Пример 2__ .xml движка:
     ```
 6. Запускаем и указываем профиль (чтобы не затереть стандартный):
     ```
-    my_firefox -no-remote -profile /home/user/my_firefox_profile
+    my_firefox -no-remote -profile /home/<user_name>/my_firefox_profile
     ```
 7. Чтобы обновить из меню "О программе" запускаем firefox через sudo:
     ```
-    sudo my_firefox -no-remote -profile /home/user/my_firefox_profile
+    sudo my_firefox -no-remote -profile /home/<user_name>/my_firefox_profile
     ```
