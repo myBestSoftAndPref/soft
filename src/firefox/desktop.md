@@ -2,11 +2,7 @@
 
 Минимальны набор дополнений, стилей и настроек для **release** версии **Firefox 57+**.
 <br>
-**Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md)
-<br>
-Если дополнение не совместимо с вашей версией Firefox можно поискать совместимую старую версию:
-<br>
-<img src="ver.png" alt="Addon's version" width="320" height="160" />
+**Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>позже ссылка будет удалена</sub>
 
 #### Дополнения
 
@@ -42,7 +38,7 @@
 <br>
 [Double-click Image Downloader](https://addons.mozilla.org/en-US/firefox/addon/double-click-image-download/) - быстрое сохранение изображений (по клику, перетаскиванию, сочетанием клавиш). Можно сохранить все изображения на странице.
 <br>
-[NoScript](https://addons.mozilla.org/ru/firefox/addon/noscript) <sub>не рекомендуется обычным пользователям, излишне сложен</sub> - можно отключить видео/аудио на сайтах, что в дороге при дорогом и медленном трафике сотовых операторов сильно помогает. Скрипты конечно нужно включить, без них сегодня половина сайтов работать не будет. Если на некоторых сайтах будет тормозить отключите обнаружение XSS атак.
+[NoScript](https://addons.mozilla.org/ru/firefox/addon/noscript) и [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) <sub>не рекомендуется обычным пользователям, излишне сложено</sub> - можно отключить видео/аудио на сайтах, полезно например в дороге при дорогом и медленном трафике сотовых операторов.
 <br>
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)<br>
 [Foxy Gestures](https://addons.mozilla.org/en-US/firefox/addon/foxy-gestures/) - можно вешать действия на жесты.
@@ -51,6 +47,11 @@
 <br>
 [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/snaplinksplus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.
 <br>
+[Minimap Scroller](https://addons.mozilla.org/en-US/firefox/addon/minimap-scroller-sidebar/) - отображает сайт в виде mini map (уменьшенной копии), так что его можно увидеть целиком не прокручивая страницу.
+<br>
+[SiteDelta Watch](https://addons.mozilla.org/en-US/firefox/addon/sitedelta-watch/) и [SiteDelta Highlight](https://addons.mozilla.org/en-US/firefox/addon/sitedelta-highlight/) - мониторинг сайтов на изменения, подсветка измененных областей и др. функции.
+<br>
+[Temporary Containers](https://addons.mozilla.org/ru/firefox/addon/temporary-containers/) - создавает изолированные контейнеры для вкладок. Можно в каждом из контейнеров войти на один и тот же сайт под разными именами. Дополнение имеет ограничение, история посещений (отпечаток браузера) не полностью изолированна, как это сделано в "приватный режим", но и этого должно быть достаточно <sub>каждая будет иметь свою копию **cookies** и **localStorage**</sub>
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
@@ -71,7 +72,6 @@
 11. ```+``` [Add Bookmark Here 2](https://addons.mozilla.org/ru/firefox/addon/add-bookmark-here-2) - в каждое меню закладок добавляет кнопку "добавить закладку сюда", что экономит время на добавления (так как Mozilla так и не сделала удобное меню для добавления)
 12. ```+``` [Hide Caption Titlebar Plus](https://addons.mozilla.org/ru/firefox/addon/hide-caption-titlebar-plus-sma/) - прячет заголовок окна (экономит место), делает панель меню появляющуюся по ```Alt``` выпадающей и страница не прыгает при её открытии. Под многими дистрибутивами Linux это единственно удобный способ скрыть заголовок окна.
 13. ```?``` [Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
-14. ```?``` [Multifox](https://addons.mozilla.org/En-us/firefox/addon/multifox/) - можно зайти на один и тот же сайт одновременно с разных ников. То есть создаёт отдельный профиль с куки и др. информацией о регистрации.
 
 #### Программы (для работы с Firefox)
 
