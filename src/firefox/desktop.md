@@ -53,7 +53,7 @@
 <br>
 [Temporary Containers](https://addons.mozilla.org/ru/firefox/addon/temporary-containers/) - создавает изолированные контейнеры для вкладок. Можно в каждом из контейнеров войти на один и тот же сайт под разными именами. Дополнение имеет ограничение, история посещений (отпечаток браузера) не полностью изолированна, как это сделано в "приватный режим", но и этого должно быть достаточно <sub>каждая будет иметь свою копию **cookies** и **localStorage**</sub>
 <br>
-[Proxy Toggle](https://addons.mozilla.org/en-US/firefox/addon/proxy-toggle/) - кнопка быстрого включения и отключения прокси указанного в настройках
+[FoxyProxy Standard](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) - удобное управление настройками proxy
 <br>
 [Domain in Title](https://addons.mozilla.org/en-US/firefox/addon/domain-in-title/) - добавляет адрес страницы в заголовок окна и всплывающую подсказку с заголовком окна
 

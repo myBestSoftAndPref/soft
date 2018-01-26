@@ -562,7 +562,7 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
         sudo apt install uswsusp
     1.6 Проверить состояние swap
         sudo findmnt -no SOURCE,UUID -T /swapfile
-    1.7 Настроить uswsusp
+    1.7 Настроить uswsusp (перед выполнением команды ниже может понадобиться ПЕРЕЗАГРУЗКА, чтобы заработал swap файл)
         sudo dpkg-reconfigure -pmedium uswsusp - Нужно выбрать /swapfile (у меня сработало)
     1.7.2 (ОСТОРОЖНО НА ЭТОМ ШАГЕ, ВОЗМОЖНО ПРИДЕТСЯ ПРОБОВАТЬ РАЗНЫЕ ОПЦИИ УЖЕ ПОСЛЕ ТОГО КАК ПРОДЕЛАЕТЕ ВСЕ ШАГИ)
         В открывшемся меню по шагам:
