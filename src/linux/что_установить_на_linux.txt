@@ -234,6 +234,7 @@ Akregator - агрегатор и просмотр лент rss и Atom
 p7zip-full (sudo apt-get install p7zip-rar p7zip-full) - множество типов архивов. Порт 7z под linux
 PeaZip
 sudo aptitude install rar unrar p7zip-full
+sudo apt install liblz4-tool - для lz4 формата
 
 ----------------------
 !!!В wine

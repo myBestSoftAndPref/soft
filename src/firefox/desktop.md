@@ -136,7 +136,7 @@ javascript:void((function () {
 
 #### FAQ
 
-**Q1.1.** Как добавить в Firefox поисковые движки в формате .xml в поисковую панель (как в старых версиях)?  
+**Q1.1.** (ВОЗМОЖНО СПОСОБ УЖЕ НЕ РАБОЧИЙ) Как добавить в Firefox поисковые движки в формате .xml в поисковую панель (как в старых версиях)?  
 **Q1.2.** Как создать и добавить свой поисковой движок вручную через .xml?  
 **A1.** 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 5) Запустите Firefox.  
 В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
@@ -213,4 +213,34 @@ __Пример 2__ .xml движка:
 7. Чтобы обновить из меню "О программе" запускаем firefox через sudo:
     ```
     sudo my_firefox -no-remote -profile /home/<user_name>/my_firefox_profile
+    ```
+
+**Q8.2.** Как распаковать или запаковать файл ```.mozlz4``` из профиля Firefox?
+<br>
+1. На странице ```about:config``` установить параметр ```devtools.chrome.enabled``` в значение ```true```
+2. Открыть блокнот нажав ```shift``` + ```F4``` и вводить команды, которые ниже
+3. Распаковать ```.mozlz4```
+    ```js
+        (function uncompress() {
+            // путь к файлу
+            var file = "/home/user/.mozilla/firefox/x7ai90jx.default/search.json.mozlz4";
+            
+            OS.File.read(file, { compression: "lz4" }).then(bytes => {
+                OS.File.writeAtomic(file + ".uncompressed", JSON.stringify(JSON.parse(new TextDecoder().decode(bytes)),null,2))
+            }); 
+        })();
+    ```
+3. Запаковать ```.mozlz4```
+    ```js
+        (async function compress() {
+            // путь к распакованному файлу
+            var path1 = "/home/user/.mozilla/firefox/x7ai90jx.default/search.json.mozlz4.uncompressed";
+            
+            // путь к файлу в который будет запакован распакованный файл с путем выше
+            var path2 = "/home/user/.mozilla/firefox/x7ai90jx.default/search.json.mozlz4.compressed";
+
+            let file = await OS.File.read(path1);
+
+            let bytes = await OS.File.writeAtomic(path2, file, { compression: "lz4" });
+        })();
     ```
