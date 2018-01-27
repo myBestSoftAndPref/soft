@@ -54,6 +54,8 @@
 [FoxyProxy Standard](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) - удобное управление настройками proxy
 <br>
 [Domain in Title](https://addons.mozilla.org/en-US/firefox/addon/domain-in-title/) - добавляет адрес страницы в заголовок окна и всплывающую подсказку с заголовком окна
+<br>
+[Resurrect Pages](https://addons.mozilla.org/ru/firefox/addon/resurrect-pages) - можно быстро получить ссылки на страницу в веб архиве и кэше поисковиков.
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
@@ -64,7 +66,7 @@
 1. ```-``` [FindBar Tweak](https://addons.mozilla.org/ru/firefox/addon/findbar-tweak) - удобный поиск по странице с отметками найденного на полосе прокрутки.
 2. ```+``` [Add to Search Bar](https://addons.mozilla.org/RU/firefox/addon/add-to-search-bar) - добавления любой строки в панель поиска.
 3. ```-``` [Advanced Locationbar](https://addons.mozilla.org/ru/firefox/addon/advanced-locationbar) - быстрый переход по частям ссылки в адресной строке. Удобно для перехода на главную страницу.
-4. ```+``` [Resurrect Pages](https://addons.mozilla.org/ru/firefox/addon/resurrect-pages) или [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - можно быстро получить ссылки на страницу в веб архиве и кэше поисковиков.
+4. ```+``` [TryAgain](https://addons.mozilla.org/en-US/firefox/addon/tryagain/) или [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - изменяет страницу ошибки соединения, позволяет постоянно пытаться ее загрузить по таймеру, добавляет на нее ссылки на ее копию в веб архиве, кэше поисковиков, сервисы для проверки на ее доступность по всему миру.
 5. ```-``` [Tab Mix Plus](https://addons.mozilla.org/ru/firefox/addon/tab-mix-plus) - Можно установить принудительный одноконный режим (всё только во вкладках). Функция перезагрузки вкладки по таймеру, переименование вкладок, горячие клавиши, прогресс загрузки для каждой вкладки отдельно, множество других функций.
 6. ```+``` [UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения, отключить сохранение Flash и video/audio.
 7. ```+``` [FoxyProxy Standard](https://addons.mozilla.org/ru/firefox/addon/foxyproxy-standard) - быстрое и удобное управление прокси.
