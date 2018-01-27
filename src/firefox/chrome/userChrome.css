@@ -126,3 +126,9 @@ box-shadow: inset 0px 0px 82px -53px rgba(0,0,0,0.75);
   min-width: 28px !important;
   max-width: 28px !important;
 }
+
+#identity-icon-labels {
+  height: 18px !important;
+  min-height: 18px !important;
+  max-height: 18px !important;
+}

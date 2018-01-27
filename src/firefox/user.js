@@ -10,6 +10,7 @@ user_pref("dom.webnotifications.enabled", false); //отключаем надо�
 user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
 user_pref("browser.fixup.alternate.enabled", false); //отключаем автоподстановку TLD и www, иногда мешает вводу
+user_pref("layout.spellcheckDefault", 2); // включить проверку орфографии во всех полях ввода
 
 // ссылки на русском будут копироваться как есть, без кодирования
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
