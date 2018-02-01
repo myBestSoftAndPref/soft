@@ -1,0 +1,46 @@
+/* minimize bookmarkbar */
+#PersonalToolbar {
+    padding : 0 !important;
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item {
+    padding: 0 !important;
+    margin: 0 1px 0 0 !important;
+    min-width : 28px !important;
+    border-radius: 0 !important;
+}
+
+#PlacesToolbar toolbarbutton {
+    box-shadow: inset 0px 0px 82px -53px rgba(0,0,0,0.75);
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    text-align: left !important;
+    padding-left: 2px !important;
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item[type="menu"] > .toolbarbutton-icon {
+    display: none !important;
+}
+
+#PersonalToolbar,
+#PlacesToolbar toolbarbutton.bookmark-item,
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    height: 13px !important;
+    min-height: 13px !important;
+    max-height: 13px !important;
+
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    font-size : 12px !important;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    margin-top: -6px !important;
+}
+
+.bookmark-item > menupopup menuitem.bookmark-item {
+
+}

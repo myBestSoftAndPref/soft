@@ -1,0 +1,36 @@
+#nav-bar {
+    padding-top: 4px !important;
+}
+
+#nav-bar toolbarbutton {
+    margin-right: 3px !important;
+}
+
+#nav-bar toolbarbutton:last-child {
+    margin: 0 !important;
+}
+
+#nav-bar toolbarbutton,
+#nav-bar toolbarbutton > .toolbarbutton-badge-stack,
+#nav-bar toolbarbutton .toolbarbutton-icon {
+    padding: 0 !important;
+    height: 20px !important;
+    min-height: 20px !important;
+    max-height: 20px !important;
+    border-radius: 0 !important;
+}
+
+#nav-bar toolbarbutton > .toolbarbutton-badge-stack {
+    padding: 6px 5px 0px 5px !important;
+}
+
+/* ************************ */
+/* fixes */
+/* ************************ */
+
+/* 1. stop reload button width fix */
+#stop-reload-button {
+    width: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+}

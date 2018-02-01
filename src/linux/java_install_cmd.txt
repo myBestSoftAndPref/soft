@@ -1,0 +1,22 @@
+sudo update-alternatives --install /usr/bin/java java /opt/jdk1.8.0_162/bin/java 1
+sudo update-alternatives --install /usr/bin/javac javac /opt/jdk1.8.0_162/bin/javac 1
+sudo update-alternatives --install /usr/bin/javaws javaws /opt/jdk1.8.0_162/bin/javaws 1
+
+sudo update-alternatives --install /usr/bin/javah javah /opt/jdk1.8.0_162/bin/javah 1
+sudo update-alternatives --install /usr/bin/jar jar /opt/jdk1.8.0_162/bin/jar 1
+sudo update-alternatives --install /usr/bin/jconsole jconsole /opt/jdk1.8.0_162/bin/jconsole 1
+
+sudo update-alternatives --install /usr/bin/jvisualvm jvisualvm /opt/jdk1.8.0_162/bin/jvisualvm 1
+sudo update-alternatives --install /usr/bin/jmc jmc /opt/jdk1.8.0_162/bin/jmc 1
+
+
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+sudo update-alternatives --config javaws
+
+sudo update-alternatives --config javah
+sudo update-alternatives --config jar
+sudo update-alternatives --config jconsole
+
+sudo update-alternatives --config jvisualvm
+sudo update-alternatives --config jmc

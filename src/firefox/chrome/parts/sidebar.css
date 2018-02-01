@@ -1,0 +1,18 @@
+/* hide sidebar-header in compact mode */
+#main-window[sizemode="maximized"][uidensity="compact"] #tab-view-deck #sidebar-header {
+    visibility: collapse !important;
+}
+
+/* unrestricted sidebar width */
+#sidebar,
+#sidebar-header,
+#sidebar-box {
+    overflow: hidden !important;
+    min-width: 0px !important;
+    max-width: 9999px !important;
+}
+
+#sidebar-splitter {
+    width: 0px !important;
+    border-right: 1px inset black !important;
+}
