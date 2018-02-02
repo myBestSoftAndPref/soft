@@ -248,3 +248,9 @@ __Пример 2__ .xml движка:
             let bytes = await OS.File.writeAtomic(path2, file, { compression: "lz4" });
         })();
     ```
+
+**Q** Как добавить в Firefox открытие ```magnet``` ссылок на торренты.
+<br>
+**A** Иногда Firefox не добавляет связи программ с ```magnet``` ссылками. Нужно добавить вручную:
+    1. Открыть страницу ```about:config```
+    2. Создать опцию ```network.protocol-handler.expose.magnet``` типа ```boolean``` (```логическое```) с значением ```false```
