@@ -616,7 +616,7 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     2.4 выполнить sudo update-grub
     
     3. Если есть проблемы, то можно попробовать установить другие версии ядер. Более новые, или LTS.
-        У меня лично проблемы были на ядре linux 4.13 (по умолчанию в Ubuntu 17.10), но исчезли с установкой ядра linux 4.14.14
+        У меня лично проблемы были на ядре linux 4.13 (по умолчанию в Ubuntu 17.10), но исчезли с установкой ядра linux 4.15
         Ядра можно ставить отсюда: http://kernel.ubuntu.com/~kernel-ppa/mainline/
         
     4. Некоторые программы могут иметь версии модулей несовместимые с новыми ядрами.
@@ -685,3 +685,12 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     
 Полная инструкция: https://wiki.debian.org/GrubEFIReinstall
 ----------------
+Если некоторые программы не запускаются или не имеют права сохранить настройки
+Фикс ВОЗМОЖНО НЕ БЕЗОПАСНЫЙ ДЛЯ ПРИВАТНОСТИ
+
+sudo chown -R <user_name>:<user_group> ~/.config
+sudo chown -R <user_name>:<user_group> ~
+
+Чтобы посмотреть user_name: команда whoami
+Чтобы посмотреть user_group: команда groups <username>
+    (в user_group вписать одну группу относящуюся к user)
