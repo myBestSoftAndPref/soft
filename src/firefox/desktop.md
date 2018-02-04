@@ -64,6 +64,8 @@
 [Page Hacker](https://addons.mozilla.org/en-US/firefox/addon/page-hacker/) - позволяет редактировать страницу прямо в Firefox
 <br>
 [Copy Link Text](https://addons.mozilla.org/ru/firefox/addon/copy-link-text-webextension/) - можно копировать текст ссылки
+<br>
+[Screengrab!](https://addons.mozilla.org/en-US/firefox/addon/screengrab-fix-version/) - более функциональное создание скриншотов, чем встроенный инструмент. Может создавать скриншоты в форматах ```png```, ```jpeg``` (с указанием качества), ```bmp```; может автоматически загружать их на различные ресурсы, именовать по шаблону, имеет свой собственный алгоритм получения скриншота с какими-то преимуществами
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
@@ -131,7 +133,8 @@ javascript:void((function () {
 
 #### Управление
 
-**Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют дополнения [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)<br>
+**Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют функции дополнений [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)
+<br>
 **Note!** Некоторые дополнения могут блокировать или менять стандартные сочетания клавиш.
 
 #### FAQ
@@ -255,3 +258,10 @@ __Пример 2__ .xml движка:
 <br>
 1. Открыть страницу ```about:config```
 2. Создать опцию ```network.protocol-handler.expose.magnet``` типа ```boolean``` (```логическое```) с значением ```false```
+
+**Q** Дополнения не работают на страницах сайта [mozilla.com](mozilla.com). Как заставить их работать на этих сайтах?
+<br>
+**A** Работа дополнений на этих сайтах отключена в целях безопасности. Для включения работы дополнений на этих сайтах:
+<br>
+1. Открыть страницу ```about:config```
+2. Создать опцию ```privacy.resistFingerprinting.block_mozAddonManager``` типа ```boolean``` (```логическое```) с значением ```true```
