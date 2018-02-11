@@ -152,7 +152,8 @@ javascript:void((function () {
     1. На странице ```about:config``` установить параметр ```devtools.chrome.enabled``` в значение ```true```
     <br>
     2. Открыть блокнот нажав ```shift``` + ```F4```. В меню блокнота выбрать: ```Environment``` > ```Browser``` (```Среда``` > ```Браузер```). Вводить команды ниже.
-        ```
+    <br>
+        ```js
             (function uncompress() {
                 Services.search.addEngine("file:///<путь_к_файлу>/GoogleRU.xml", null, null, false);
             })();
