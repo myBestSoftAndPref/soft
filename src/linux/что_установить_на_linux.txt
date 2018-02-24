@@ -356,6 +356,7 @@ recordMyDesktop - запись происходящего на экране + gt
 arista - видеоконвертер
 gThumb - просмотр графики и видео
 EasyTag - редактор MP3 тегов в адио записях, исправление проблем с кодировкой тегов
+Kid3 - редактор тегов в KDE
 Mixxx - программа для диджеев, сведение звука в реальном времени
 Kodi (бывшее название - XBMC) - медиацентр для кучи форматов, онлайн медиа, youtube, виджеты и т.д.
 Shotwell - менеджер фото и картинок
@@ -363,6 +364,9 @@ digiKam - менеджер фото и картинок
 
 --Кодеки и плагины
 xubuntu-restricted-extras - набор всех кодеков + flashplayer
+    после установки данного пакета можно удалить ненужный в современном интернете и уязвимый Adobe Flash Player
+        смотрим название пакета, команда: dpkg --get-selections | grep -v deinstall | grep flash | awk '{ print $1 }'
+        удаляем: sudo apt-get purge package-name
 
 --плеера
 smplayer - более быстрый
@@ -644,7 +648,7 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
 ----------------
 Добавление Vulkan API к видеодрайверу
 
-1. Подключить официальный репозиторий со свежими драйверами видео
+1. (опционально для свежей версии) Подключить официальный репозиторий со свежими драйверами видео
     sudo add-apt-repository ppa:ubuntu-x-swat/updates
     sudo apt-get update
 2. Установить
@@ -653,9 +657,22 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     vulkaninfo
 4. Некоторые программы и игры можно запускать с командой -vulkan для включения
 
-Заметка:
+----------------
+Добавление Open CL к видеодрайверу
     установить opencl по тому же принципу (для Intel в основном)
     https://askubuntu.com/questions/850281/opencl-on-ubuntu-16-04-intel-sandy-bridge-cpu
+    
+    sudo apt install clinfo
+    
+    набрать clinfo чтобы увидеть состояние opencl
+    sudo apt install libclc-amdgcn mesa-opencl-icd
+        libclc-amdgcn - видимо только если у вас видеокарта amd и технология gcn в ней, для других технологий (напр. r600) карт AMD наберите в поиске libclc
+    sudo apt install beignet opencl-headers
+        beignet - для intel
+    ocl-icd-opencl-dev - наверное можно еще эту установить???
+    
+    Полня команда установки OpenCL на PC с intel + AMD
+        sudo apt install libclc-amdgcn mesa-opencl-icd beignet opencl-headers ocl-icd-opencl-dev
 ----------------
 Проблема в Kubuntu (возможно и в Ubuntu)
 
@@ -695,3 +712,18 @@ sudo chown -R <user_name>:<user_group> ~
 Чтобы посмотреть user_name: команда whoami
 Чтобы посмотреть user_group: команда groups <username>
     (в user_group вписать одну группу относящуюся к user)
+------------------
+устранение tearing в xfce
+
+установить compton
+установить compton-conf (графический конфигуратор)
+
+в файле ~/.config/compton.conf поменять опции
+--backend glx
+--paint-on-overlay
+--vsync opengl-swc
+
+добавить в автозапуск команду:
+	compton -b чтобы запустить как демона
+
+Примечание: поискать настройки получше, эти могут быть неоптимальны

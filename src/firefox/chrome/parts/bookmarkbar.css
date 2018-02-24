@@ -48,3 +48,9 @@
 #PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
     margin-inline-end: 0px !important;
 }
+
+/* KDE 5.8 fix */
+
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    padding-top: 3px;
+}
