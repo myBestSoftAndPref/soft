@@ -1,6 +1,9 @@
 #toolbar-menubar[autohide="true"] {
     position: absolute !important;
+    z-index: 4 !important;
+}
+
+#toolbar-menubar[autohide="true"] > #menubar-items {
     background: rgba(245, 246, 247, 0.9) !important;
-    z-index: 3 !important;
     box-shadow: inset 2px 2px 24px -6px rgba(0, 0, 0, 0.75);
 }
