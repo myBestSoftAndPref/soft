@@ -332,7 +332,7 @@ sudo apt-get update
 sudo apt-get install nodejs (npm с некоторой версии интегрирована)
 	sudo npm install -g express
 	
-
+adb - набор утилит для android
 
 --контроль версий
 svn (subversion)
