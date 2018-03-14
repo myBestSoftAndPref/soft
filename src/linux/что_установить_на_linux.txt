@@ -56,6 +56,7 @@ sudo ubuntu-drivers autoinstall - установка прориетарных д
 
 KAddressBook - хранение и просмотр адресов
 KNotes - липкие заметки на рабочем столе
+KRuler - экранная линейка
 
 scalpel - тоже какая-то программа для восстановления файлов
 
@@ -120,6 +121,7 @@ muon в KDE
         Быстрый поиск в Synaptic
             sudo apt-get install apt-xapian-index
             sudo update-apt-xapian-index -vf
+    если поиск перестал нормально работать, то использовать команду: sudo update-apt-xapian-index -vf
 
 Synaptic в GTK
 
@@ -131,6 +133,13 @@ sudo apt-get install xfce4-goodies - все плагины
 ----------------------
 !!!эмуляторы компьютеров
 virtualbox (+ guest iso для него)
+    свежая версия 
+        sudo apt-add-repository "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
+        wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+        sudo apt-get update
+        sudo apt-get install virtualbox-5.2
+        
+
 qemu - эмулятор компьютера
 
 !!!Android эмуляторы
@@ -199,6 +208,9 @@ wireshark - снифер
 
 --торренты
 qbittorrent - аналог uTorrent
+    установить свежую версию из официального ppa https://www.qbittorrent.org/download.php
+        (ссылка внизу страницы в разделе Other Binary Packages)
+        
 
 
 --качалки
@@ -370,6 +382,11 @@ xubuntu-restricted-extras - набор всех кодеков + flashplayer
 
 --плеера
 smplayer - более быстрый
+    установить свежую версию из официального ppa
+        sudo add-apt-repository ppa:rvm/smplayer 
+        sudo apt-get update 
+        sudo apt-get install smplayer smplayer-themes smplayer-skins 
+
 vlc
 
 --видеоредакторы
