@@ -145,76 +145,21 @@ javascript:void((function () {
 
 #### FAQ
 
-**Q1.1.** Как добавить в Firefox поисковые движки в формате .xml в поисковую панель (как в старых версиях)?  
-**Q1.2.** Как создать и добавить свой поисковой движок вручную через .xml?  
-**A1.** 1) Создать в каталоге профиля каталог ```searchplugins```, 2) Скопировать туда .xml файлы поисковиков, 3) Закрыть Firefox, 4) Удалить из каталога профиля файл ```search.json.mozlz4```, 5) Запустите Firefox.  
-В результате список поисковых движков станет: стандартные (которые были при установке Firefox) + те что были в каталоге ```searchplugins```.  
-Некоторые сайты используют не GET, а POST запросы. Тогда при создании надо искать параметры в коде и менять .xml
-<br>
-6) Начиная с Firefox 57 способ перестал работать. Но это можно обойти.
-Недостаточно просто перезапустить Firefox.
-В качестве временного решения можно добавить через скрипт движка браузера
-    <br>
-    1. На странице ```about:config``` установить параметр ```devtools.chrome.enabled``` в значение ```true```
-    <br>
-    2. Открыть блокнот нажав ```shift``` + ```F4```. В меню блокнота выбрать: ```Environment``` > ```Browser``` (```Среда``` > ```Браузер```). Вводить команды ниже.
-    <br>
-```js
-    (function uncompress() {
-        Services.search.addEngine("file:///<путь_к_файлу>/GoogleRU.xml", null, null, false);
-    })();
-```
+**Q** Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов?  
+**Q** Как сделать русские сайты в английской версии Firefox?  
+**A** При загрузке Firefox передает серверу список языков вашей версии Firefox. На ее основе делается выбор версии языка сайта. Изменить язык можно на странице ```about:config```. Для русского языка на сайтах установить: ```intl.accept_languages``` > ```ru-RU, ru, en-US, en```. Для английского языка: ```en-US, en```
 
-__Пример 1__ .xml движка:  
+**Q** Как открыть во вкладках разные страницы Firefox вместо отдельны окон?  
+**A** Тут список нужных адресов [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs)
 
-```xml
-<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-<ShortName>Yahoo</ShortName>
-<Description>Yahoo Search</Description>
-<InputEncoding>UTF-8</InputEncoding>
-<Image width="16" height="16">data:image/x-icon;base64,R0lGODlhEAAQAJECAP8AAAAAAP///wAAACH5BAEAAAIALAAAAAAQABAAAAIplI+py+0NogQuyBDEnEd2kHkfFWUamEzmpZSfmaIHPHrRguUm/fT+UwAAOw==</Image>
-<Url type="application/x-suggestions+json" method="GET"
-	 template="http://ff.search.yahoo.com/gossip?output=fxjson&amp;command={searchTerms}" />
-<Url type="text/html" method="GET" template="http://search.yahoo.com/search">
-  <Param name="p" value="{searchTerms}"/>
-  <Param name="ei" value="UTF-8"/>
+**Q** Как запустить отдельный профиль Firefox  
+**A** Командой ```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
 
-  <MozParam name="fr" condition="pref" pref="yahoo-fr" />
-</Url>
-<SearchForm>http://search.yahoo.com/</SearchForm>
-</SearchPlugin>
-```
+**Q** Как изменить иконку Firefox на панели  
+**A** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
 
-__Пример 2__ .xml движка:  
-```xml
-<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-	<ShortName>Google RU</ShortName>
-	<Description>Google RU</Description>
-	<InputEncoding>UTF-8</InputEncoding>
-	<Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVQ4jY2SvWocMRSF70PsA4g8SLgPkBdIEVCT91Dlwl36BBQIdpcmxJ2NmuDgYjs3xpAhDoZ1AjuGxT/M6H4pZlarHf/ggcNwhe53z5EkIgJAOk84nxBNhJgAoGtJqjROQB5KRBi6AR8S4jeiawvkKQA1wPltQHEBNKqPNjeuAujEgQ8VwL8AEOIEUDlITklOtrQBVFnrGHsnw3qMX3BBkVgpKOqV4ARxPhDTZtreSVsOMKSATJsnIHE+4TSgk4NL5wkJ8nRjqACL5T1mhpkVAJZ58+09EpXDyzm9ZQ4v50hUji9O6S1zfHGKOA2Y2fAoJsIyGgO9ZURk+Eed1GP+9Ytcf3WdxwGPAuqGhw76IQ0VICh5C9C1MG4Ywxf7bfN5y1FvmXdfd54DGLfLo1J3q0W5UhHBzMiWS93erdYRNg7+/HwF1hUgwK+rqzJ1rWyZT/MDpN4IRpOU69/7ME46+3vG6w9v+Tj/zmK1pLfMv5trdn/sM5vN+A87zsFFZm6QcAAAAABJRU5ErkJggg==</Image>
-	<Url type="text/html" method="GET" template="https://www.google.ru/search?q={searchTerms}"/>
-	<SearchForm>https://www.google.ru</SearchForm> 
-</SearchPlugin>
-```
-Документация с примерами и описанием: [Creating MozSearch plugins](https://developer.mozilla.org/en-US/docs/Mozilla/Creating_MozSearch_plugins)  
-Описание стандарта .xml для поисковых движков OpenSearch: [Creating OpenSearch plugins for Firefox](https://developer.mozilla.org/en/Add-ons/Creating_OpenSearch_plugins_for_Firefox)  
-**Осторожно.** Формат очень чувствителен к ссылкам и символам в них. Если будет ошибка в .xml, то движок просто не добавится без предупреждения.
-
-**Q3.1.** Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов?  
-**Q3.2.** Как сделать русские сайты в английской версии Firefox?  
-**A3.** При загрузке Firefox передает серверу список языков вашей версии Firefox. На ее основе делается выбор версии языка сайта. Изменить язык можно на странице ```about:config```. Для русского языка на сайтах установить: ```intl.accept_languages``` > ```ru-RU, ru, en-US, en```. Для английского языка: ```en-US, en```
-
-**Q5.1.** Как открыть во вкладках разные страницы Firefox вместо отдельны окон?  
-**A5.1.** Тут список нужных адресов [Chrome_URLs](http://kb.mozillazine.org/Chrome_URLs)
-
-**Q6.1.** Как запустить отдельный профиль Firefox  
-**A6.1.** Командой ```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
-
-**Q7.1.** Как изменить иконку Firefox на панели  
-**A7.1.** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
-
-**Q8.1.** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
-**A8.1.** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
+**Q** Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla <br>
+**A** Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. <br>
 1. Названия ```my_firefox``` и ```my_firefox_profile``` - можно заменить на что угодно. Имя пользователя ```<user_name>``` заменить на свое.
 2. [Качаем Firefox](https://www.mozilla.org/en-US/firefox/new/)
 3. Распаковываем в
