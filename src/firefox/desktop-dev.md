@@ -25,3 +25,5 @@
 [WebAssembly Detector](https://addons.mozilla.org/en-US/firefox/addon/webassembly-detector/)
 <br>
 [WebSitePulse Test Tools ](https://addons.mozilla.org/en-US/firefox/addon/websitepulse-test-tools/)
+<br>
+[List Sources](https://addons.mozilla.org/en-US/firefox/addon/list-sources/)
