@@ -1,5 +1,5 @@
 /* hide sidebar-header in compact mode */
-#main-window[sizemode="maximized"][uidensity="compact"] #tab-view-deck #sidebar-header {
+#main-window[sizemode="maximized"][uidensity="compact"] #sidebar-header {
     visibility: collapse !important;
 }
 

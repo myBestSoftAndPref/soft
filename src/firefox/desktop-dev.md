@@ -10,3 +10,18 @@
 <br>
 [RESTer](https://addons.mozilla.org/ru/firefox/addon/rester/)
 <br>
+[Open Pesticide](https://addons.mozilla.org/en-US/firefox/addon/open-pesticide/)
+<br>
+[Display #Anchors](https://addons.mozilla.org/en-US/firefox/addon/display-_anchors/)
+<br>
+[Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/)
+<br>
+[aXe Developer Tools](https://addons.mozilla.org/en-US/firefox/addon/axe-devtools/)
+<br>
+[DevTools Media Panel](https://addons.mozilla.org/en-US/firefox/addon/devtools-media-panel/)
+<br>
+[WebSocket Detector](https://addons.mozilla.org/en-US/firefox/addon/websocket-detector/)
+<br>
+[WebAssembly Detector](https://addons.mozilla.org/en-US/firefox/addon/webassembly-detector/)
+<br>
+[WebSitePulse Test Tools ](https://addons.mozilla.org/en-US/firefox/addon/websitepulse-test-tools/)

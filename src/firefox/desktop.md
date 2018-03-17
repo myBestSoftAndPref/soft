@@ -65,7 +65,13 @@
 <br>
 [Screengrab!](https://addons.mozilla.org/en-US/firefox/addon/screengrab-fix-version/) - более функциональное создание скриншотов, чем встроенный инструмент. Может создавать скриншоты в форматах ```png```, ```jpeg``` (с указанием качества), ```bmp```; может автоматически загружать их на различные ресурсы, именовать по шаблону, имеет свой собственный алгоритм получения скриншота с какими-то преимуществами
 <br>
-[Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь дополнения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: **search.json.mozlz4**
+[Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь дополнения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл search.json.mozlz4
+<br>
+[Save In…](https://addons.mozilla.org/en-US/firefox/addon/save-in/) - пункт контекстного меню (по правой кнопке мыши) который позволяет сохранять сразу в предопределенный каталог
+<br>
+[Open in Browser](https://addons.mozilla.org/en-US/firefox/addon/open-in-browser/) - дополнительное меню при сохранении файлов, позволяет открывать файлы внутри браузера (например можно проиграть видео внутри браузера встроенным плеером вместо его скачивания)
+<br>
+[Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) - иконка RSS и Atom в адресной строке
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
