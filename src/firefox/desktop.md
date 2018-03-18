@@ -3,6 +3,8 @@
 Минимальны набор дополнений, стилей и настроек для **release** версии **Firefox 57+**.
 <br>
 **Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>позже ссылка будет удалена</sub>
+<br>
+Подборку дополнений для программистов можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/desktop-dev.md)
 
 #### Дополнения
 
@@ -70,6 +72,8 @@
 [Save In…](https://addons.mozilla.org/en-US/firefox/addon/save-in/) - пункт контекстного меню (по правой кнопке мыши) который позволяет сохранять сразу в предопределенный каталог
 <br>
 [Open in Browser](https://addons.mozilla.org/en-US/firefox/addon/open-in-browser/) - дополнительное меню при сохранении файлов, позволяет открывать файлы внутри браузера (например можно проиграть видео внутри браузера встроенным плеером вместо его скачивания)
+<br>
+[mozlz4-edit](https://addons.mozilla.org/ru/firefox/addon/mozlz4-edit/) - позволяет добавлять поисковые системы Firefox вручную. Сам список поисковых систем в каталоге профиля Firefox, файл: search.json.mozlz4. <sub>После редактирования нужно перезапустить Firefox</sub>. Может просматривать файлы оканчивающиеся на "lz4" (backup закладок, сессий, отчетов об ошибках и др.)
 <br>
 [Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) - иконка RSS и Atom в адресной строке
 
@@ -183,41 +187,6 @@ javascript:void((function () {
     sudo my_firefox -no-remote -profile /home/<user_name>/my_firefox_profile
     ```
 
-**Q** Как распаковать или запаковать файл ```.mozlz4``` из профиля Firefox? <sub>как добавить плагин поискового движка в этот файл вручную смотрите ниже в другом разделе</sub>
-<br>
-**A** Формат ```mozlz4``` создан Mozilla на основе ```lz4``` формата.
-Обычными утилитами для ```lz4``` с ним работать не получиться.
-Для работы с ```mozlz4``` нужно использовать функции движка браузера Firefox.
-Другие способы распаковки: [на WebExtensions](https://stackoverflow.com/a/46382080), [на python](https://gist.github.com/Tblue/62ff47bef7f894e92ed5)
-<br>
-1. На странице ```about:config``` установить параметр ```devtools.chrome.enabled``` в значение ```true```
-2. Открыть блокнот нажав ```shift``` + ```F4```. В меню блокнота выбрать: ```Environment``` > ```Browser``` (```Среда``` > ```Браузер```). Вводить команды ниже.
-3. Распаковать ```.mozlz4```
-    ```js
-        (function uncompress() {
-            // путь к файлу
-            var file = "/home/user/.mozilla/firefox/x7ai90jx.default/search.json.mozlz4";
-            
-            OS.File.read(file, { compression: "lz4" }).then(bytes => {
-                OS.File.writeAtomic(file + ".uncompressed", JSON.stringify(JSON.parse(new TextDecoder().decode(bytes)),null,2))
-            }); 
-        })();
-    ```
-3. Запаковать ```.mozlz4```
-    ```js
-        (async function compress() {
-            // путь к распакованному файлу
-            var path1 = "/home/user/.mozilla/firefox/x7ai90jx.default/search.json.mozlz4.uncompressed";
-            
-            // путь к файлу в который будет запакован распакованный файл с путем выше
-            var path2 = "/home/user/.mozilla/firefox/x7ai90jx.default/search.json.mozlz4.compressed";
-
-            let file = await OS.File.read(path1);
-
-            let bytes = await OS.File.writeAtomic(path2, file, { compression: "lz4" });
-        })();
-    ```
-
 **Q** Как добавить в Firefox открытие ```magnet``` ссылок на торренты.
 <br>
 **A** Иногда Firefox не добавляет связи программ с ```magnet``` ссылками. Нужно добавить вручную:
@@ -233,9 +202,3 @@ javascript:void((function () {
 2. Создать опцию ```privacy.resistFingerprinting.block_mozAddonManager``` типа ```boolean``` (```логическое```) с значением ```true```
 
 **Note!** В некоторых дополнениях есть проверка на активацию дополнения для сайт [https://mozilla.com](https://mozilla.com). Даже с опцией выше такие дополнения могут отказаться работать на [https://mozilla.com](https://mozilla.com), в этом случае нужно писать разработчику дополнения, чтобы он исправил это и позволил дополнению работать на [https://mozilla.com](https://mozilla.com)
-
-**Q** Как отредактировать файл ```search.json.mozlz4``` и добавить поисковые плагины вручную?
-<br>
-**A** Распакуйте файл ```mozlz4``` как описано выше или любым другим. Затем скопируйте и отредактируйте новую запись, как на скриншоте ниже
-<br>
-<img src="example.search.json.mozlz4.uncompressed.png" width="350"/>
