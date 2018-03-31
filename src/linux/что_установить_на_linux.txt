@@ -762,21 +762,102 @@ sudo chown -R <user_name>:<user_group> ~
         Section "Device"
             Identifier  "Intel Graphics"
             Driver      "intel"
-            #Option      "AccelMethod"  "sna"
+            Option      "AccelMethod"  "sna"
             Option      "TearFree"    "true" 
-            Option      "DRI"    "3" 
+            #Option      "DRI"    "3" 
         EndSection
     4. Перезагрузиться
-    5. Если не сработает убрать знак # перед AccelMethod и добавить # перед DRI
+    5. Если не сработает убрать знак # перед DRI и добавить # перед AccelMethod
         Если и в этом случае не сработает, то заменить параметр с DRI на: Option "DRI" "False"
         Если и в этом случае не сработает, то добавить параметр: Option "NoAccel" "True"
         Как вариант можно поменять DRI на: Option "DRI" "2"
         Если с sna тоже будут проблемы, то можно попробовать поменять на: Option      "AccelMethod"  "uxa"
         Более подробно тут: https://wiki.archlinux.org/index.php/intel_graphics#DRI3_issues
+        
+    6. Если в системе несколько видеокарт, то вторую после этого нельзя будет запустить через DRI_PRIME=1 (ниже пример для дискретной AMD)
+    
+        Как определить amdgpu или radeon ваша карта тут
+            https://help.ubuntu.com/community/AMDGPU-Driver
+            
+        1. Смотрим какой драйвер в системе (поле Kernel driver in use: )
+            lspci -k | grep -EA3 'VGA|3D|Display' 
+    
+        2. Для просто AMD (драйвер radeon)
+            Чтобы решить эту проблему, создать файл /etc/X11/xorg.conf.d/20-radeon.conf
+            
+    
+        3. Для новых AMD (драйвер amdgpu)
+            Чтобы решить эту проблему, создать файл /etc/X11/xorg.conf.d/20-amdgpu.conf
+            Section "Device"
+                Identifier "Radeon"
+                Driver "radeon"
+                Option "DRI" "3"
+            EndSection
+        
+    7. Для теста:
+        После перезагрузки проверь (набери в терминале) с отключенной вертикальной синхронизацией:
+        vblank_mode=0 DRI_PRIME=1 glxgears -info
+        Будут два окна. В одном будут крутиться шестеренки, в другом текст, пролистай его в начало. Там будет твой драйвер.
+        То же сделай без DRI_PRIME=1- должен быть Intel.
+        
+        Также смотрим инфу:
+            DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
+            
+    Список опций драйвера AMD (драйвер amdgpu)
+        https://jlk.fjfi.cvut.cz/arch/manpages/man/amdgpu.4
+        http://manpages.ubuntu.com/manpages/xenial/man4/amdgpu.4.html
 
 Устранение мерцания и дерганье в KDE:
     1. Чтобы в KDE исчезли мерцания и дерганье нужно в: Параметры > Экран > Эффекты
         Поменять OpenGL на XRender
         С xrender не будет работать вертикальная синхронизация видеокарты (vsync) для устранения тиринга.
         Но для Intel с включенной TearFree - будет.
+-------------------
+Включение нового amdgpu (не путать с amdgpu-pro от самой компании AMD) вместо старого драйвера radeon
+
+Внимание! Могут возникнуть проблемы! Например с HDMI
+Заметка: в сети много сравнений radeon vs amdgpu
+
+0. Определяем семейство (si) Southern Islands или (cik) Sea Islands
+    дописать
+
+>> Способ 1
+
+1. Смотрим какой драйвер в системе (поле Kernel driver in use: )
+    lspci -k | grep -EA3 'VGA|3D|Display' 
+2. Если там radeon, то будем переключаться на amdgpu
+
+1. Добавить в /etc/default/grub внутрь GRUB_CMDLINE_LINUX_DEFAULT
+    Для si (кодовое имя видеокарты Southern Islands, GCN Gen. 1)
+        amdgpu.si_support=1 radeon.si_support=0
+
+    Для CIK (кодовое имя видеокарты Sea Islands, GCN Gen. 2)
+        amdgpu.cik_support=1 radeon.cik_support=0
+        
+1.2 Пример
+    GRUB_CMDLINE_LINUX_DEFAULT="radeon.cik_support=0 amdgpu.cik_support=1"
+
+2. Выполнить и перезагрузиться 
+    sudo update-grub
     
+>> Способ 2
+
+1. Добавить в черный список grub
+    modprobe.blacklist=radeon
+1.2 Пример
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash modprobe.blacklist=radeon"
+2. Выполнить и перезагрузиться
+    sudo update-grub
+
+        
+-------------------
+Установка видеокарты по умолчанию (не проверял)
+
+Смотрим какие видеокарты есть
+xrandr --listproviders
+
+Меняем местами относительно того какая будет первичной (по умолчанию) по имени (имена берем из вывода команды выше, пункт "name:")
+xrandr --setprovideroutputsource radeon Intel
+
+Меняем местами кодам (коды берем из вывода выше)
+xrandr --setprovideroutputsource 0x7d 0x56
