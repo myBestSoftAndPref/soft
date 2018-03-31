@@ -759,13 +759,15 @@ sudo chown -R <user_name>:<user_group> ~
     1. Создать (если нету каталог): /etc/X11/xorg.conf.d/
     2. Создать текстовый файл: /etc/X11/xorg.conf.d/20-intel.conf
     3. В текстовый файл вставить:
-        Section "Device"
-            Identifier  "Intel Graphics"
-            Driver      "intel"
-            Option      "AccelMethod"  "sna"
-            Option      "TearFree"    "true" 
-            #Option      "DRI"    "3" 
-        EndSection
+    
+        Вариант 1
+            Section "Device"
+                Identifier  "Intel Graphics"
+                Driver      "intel"
+                Option      "AccelMethod"  "sna"
+                Option      "TearFree"    "true"
+            EndSection
+            
     4. Перезагрузиться
     5. Если не сработает убрать знак # перед DRI и добавить # перед AccelMethod
         Если и в этом случае не сработает, то заменить параметр с DRI на: Option "DRI" "False"
@@ -784,13 +786,18 @@ sudo chown -R <user_name>:<user_group> ~
     
         2. Для просто AMD (драйвер radeon)
             Чтобы решить эту проблему, создать файл /etc/X11/xorg.conf.d/20-radeon.conf
+            Section "Device"
+                Identifier "Radeon"
+                Driver "radeon"
+                Option "DRI" "3"
+            EndSection
             
     
         3. Для новых AMD (драйвер amdgpu)
             Чтобы решить эту проблему, создать файл /etc/X11/xorg.conf.d/20-amdgpu.conf
             Section "Device"
-                Identifier "Radeon"
-                Driver "radeon"
+                Identifier "AMD"
+                Driver "amdgpu"
                 Option "DRI" "3"
             EndSection
         
@@ -803,15 +810,28 @@ sudo chown -R <user_name>:<user_group> ~
         Также смотрим инфу:
             DRI_PRIME=1 glxinfo | grep "OpenGL renderer"
             
-    Список опций драйвера AMD (драйвер amdgpu)
+    Список опций драйвера amdgpu
         https://jlk.fjfi.cvut.cz/arch/manpages/man/amdgpu.4
         http://manpages.ubuntu.com/manpages/xenial/man4/amdgpu.4.html
+    
+    Список опций драйвера radeon
+        http://manpages.ubuntu.com/manpages/xenial/man4/radeon.4.html
 
 Устранение мерцания и дерганье в KDE:
     1. Чтобы в KDE исчезли мерцания и дерганье нужно в: Параметры > Экран > Эффекты
         Поменять OpenGL на XRender
         С xrender не будет работать вертикальная синхронизация видеокарты (vsync) для устранения тиринга.
         Но для Intel с включенной TearFree - будет.
+-------------------
+Проверяем включена ли поддержка DRI3
+
+cat /var/log/Xorg.0.log | grep -i DRI
+
+Если не включена, то нужно добавить строку
+    Option "DRI" "3"
+по аналогии выше, для Intel не работает с опцией ниже (нужно выбрать другой метод)
+    Option      "AccelMethod"  "sna"
+
 -------------------
 Включение нового amdgpu (не путать с amdgpu-pro от самой компании AMD) вместо старого драйвера radeon
 
