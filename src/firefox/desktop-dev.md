@@ -12,7 +12,7 @@
 <br>
 [Open Pesticide](https://addons.mozilla.org/en-US/firefox/addon/open-pesticide/)
 <br>
-[Display #Anchors](https://addons.mozilla.org/en-US/firefox/addon/display-_anchors/)
+[Display #Anchors](https://addons.mozilla.org/en-US/firefox/addon/display-_anchors/) или [Anchors reveal](https://addons.mozilla.org/ru/firefox/addon/anchors-reveal/)
 <br>
 [Web Developer](https://addons.mozilla.org/en-US/firefox/addon/web-developer/)
 <br>
@@ -29,3 +29,7 @@
 [List Sources](https://addons.mozilla.org/en-US/firefox/addon/list-sources/)
 <br>
 [Quantum Hackbar](https://addons.mozilla.org/ru/firefox/addon/quantum-hackbar/)
+<br>
+[Empty Cache Button](https://addons.mozilla.org/ru/firefox/addon/empty-cache-button/)
+<br>
+[devtools-highlighter](https://addons.mozilla.org/ru/firefox/addon/devtools-highlighter/)
