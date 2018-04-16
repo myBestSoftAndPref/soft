@@ -357,7 +357,8 @@ adb - набор утилит для android
 
 --контроль версий
 svn (subversion)
-git
+git - лучше ставить обновленную версия с официального PPA, там поддержка libsecret (хранение паролей для отдельных репозиториев)
+    https://git-scm.com/download/linux
 RabbitVCS - GUI для git и SVN
 git-cola - GUI для git
 

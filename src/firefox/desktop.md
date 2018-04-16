@@ -39,7 +39,7 @@
 [NoScript](https://addons.mozilla.org/ru/firefox/addon/noscript) и [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) <sub>не рекомендуется обычным пользователям, излишне сложно</sub> - можно отключить видео/аудио на сайтах, полезно например в дороге при дорогом и медленном трафике сотовых операторов.
 <br>
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)<br>
-[Foxy Gestures](https://addons.mozilla.org/en-US/firefox/addon/foxy-gestures/) - можно вешать действия на жесты.
+[Foxy Gestures](https://addons.mozilla.org/en-US/firefox/addon/foxy-gestures/) и [Gesturefy](https://addons.mozilla.org/en-US/firefox/addon/gesturefy/) - можно вешать действия на жесты.
 <br>
 [Print Edit WE](https://addons.mozilla.org/en-US/firefox/addon/print-edit-we/) - сохранение страницы как .PDF, редактирование перед печатью и настройки параметров печати.
 <br>
@@ -76,23 +76,18 @@
 [mozlz4-edit](https://addons.mozilla.org/ru/firefox/addon/mozlz4-edit/) - позволяет добавлять поисковые системы Firefox вручную. Сам список поисковых систем в каталоге профиля Firefox, файл: search.json.mozlz4. <sub>После редактирования нужно перезапустить Firefox</sub>. Может просматривать файлы оканчивающиеся на "lz4" (backup закладок, сессий, отчетов об ошибках и др.)
 <br>
 [Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) - иконка RSS и Atom в адресной строке
+<br>
+[Exodify](https://addons.mozilla.org/en-US/firefox/addon/exodify/) - для сайта Google Play, показывает сервисы которым отправляет статистику конкретное приложение
+<br>
+[Ageless for YouTube](https://addons.mozilla.org/en-US/firefox/addon/ageless/) - снимает ограничение роликов youtube по возросту
+<br>
+[Bookmark Tab Here](https://addons.mozilla.org/en-US/firefox/addon/bookmark-tab-here/) - удобное добавление закладок через меню по правой кнопке мыши на или в каталоге закладок
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
-```-``` - нету даже приблизительных аналогов и WebExtensions API не позволяет их реализовать <br>
-```+``` - есть аналог или может появиться в будущем, или дополнение мало значимо <br>
-```?``` - не известно
-
-1. ```-``` [FindBar Tweak](https://addons.mozilla.org/ru/firefox/addon/findbar-tweak) - удобный поиск по странице с отметками найденного на полосе прокрутки.
-2. ```+``` [Add to Search Bar](https://addons.mozilla.org/RU/firefox/addon/add-to-search-bar) - добавления любой строки в панель поиска.
-3. ```+``` [TryAgain](https://addons.mozilla.org/en-US/firefox/addon/tryagain/) или [ErrorZilla Plus](https://addons.mozilla.org/ru/firefox/addon/errorzilla-plus) - изменяет страницу ошибки соединения, позволяет постоянно пытаться ее загрузить по таймеру, добавляет на нее ссылки на ее копию в веб архиве, кэше поисковиков, сервисы для проверки на ее доступность по всему миру.
-4. ```-``` [Tab Mix Plus](https://addons.mozilla.org/ru/firefox/addon/tab-mix-plus) - Можно установить принудительный одноконный режим (всё только во вкладках). Функция перезагрузки вкладки по таймеру, переименование вкладок, горячие клавиши, прогресс загрузки для каждой вкладки отдельно, множество других функций.
-5. ```+``` [UnMHT](https://addons.mozilla.org/ru/firefox/addon/unmht) - сохранение страницы одним файлом в формате .mht. Сохраняются и скрипты. На выбор: можно отключить диалоги во время сохранения, отключить сохранение Flash и video/audio.
-6. ```+``` [ExportHTMLFolder](https://addons.mozilla.org/RU/firefox/addon/exporthtmlfolder) - экспорт отдельных каталогов закладок.
-7. ```-``` [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен <sub>(особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок)</sub>. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.
-8. ```+``` [Add Bookmark Here 2](https://addons.mozilla.org/ru/firefox/addon/add-bookmark-here-2) - в каждое меню закладок добавляет кнопку "добавить закладку сюда", что экономит время на добавления (так как Mozilla так и не сделала удобное меню для добавления)
-9. ```+``` [Hide Caption Titlebar Plus](https://addons.mozilla.org/ru/firefox/addon/hide-caption-titlebar-plus-sma/) - прячет заголовок окна (экономит место), делает панель меню появляющуюся по ```Alt``` выпадающей и страница не прыгает при её открытии. Под многими дистрибутивами Linux это единственно удобный способ скрыть заголовок окна.
-10. ```?``` [Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
+1. [FindBar Tweak](https://addons.mozilla.org/ru/firefox/addon/findbar-tweak) - удобный поиск по странице с отметками найденного на полосе прокрутки.
+7. [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен <sub>(особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок)</sub>. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.
+10. [Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
 
 #### Словари
 
