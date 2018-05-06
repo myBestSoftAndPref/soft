@@ -335,6 +335,9 @@ geany + geany-plugins - аналог Notepad++
 			на 775
 			владелец: user, группа: user
 		3. Установить
+	
+	для geany есть множество плагинов: проверка орфографии, карта документа и т.д.
+		(в geany они называются модули, а карта документа называется overview)
 
 --компиляторы и библиотеки, базы, сервера
 openjdk (пакеты icedtea-plugin, default-jdk, default-jre, default-jdk-doc)
@@ -599,6 +602,7 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     1.2.2 Увеличим размер:
         swapoff -a
         sudo fallocate -l 9G /swapfile - в примере увеличено до 9 Gb (лучше поставить размер на 2 Gb больше размера RAM, т.к. у меня образ памяти определяет на 1.5 Gb больше занятого размера RAM)
+        sudo chown root:root /swapfile
         sudo chmod 600 /swapfile
         sudo mkswap /swapfile
         sudo swapon /swapfile

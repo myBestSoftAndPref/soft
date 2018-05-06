@@ -101,9 +101,19 @@
 
 [Объединённый словарь русской орфографии](https://addons.mozilla.org/en-US/firefox/addon/unified-russian-english-spell/) - совмещенный словарь англ. + рус. <sub>При выборе словаря (клик правой кнопкой мыши на поле ввода) этот словарь имеет название "русский" хотя проверяет на двух языках сразу.</sub>
 
-#### Программы (для работы с Firefox)
+#### Программы (замена дополнения, которые невозможно реализовать на WebExtensions API)
 
-* [ShareX](https://getsharex.com/downloads/) (Windows) или [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (часть KDE, Kubuntu) - для скриншотов. Чтобы сделать скриншот всей страницы, а не только видимой части можно использовать инструменты Firefox
+* [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р.
+* [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты
+* [peek](https://github.com/peek/peek) (ubuntu) - запись экрана в виде git
+* [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (ubuntu) - запись экрана
+* [KRuler](https://www.kde.org/applications/graphics/kruler/) - линейка
+* [Color Picker](https://userbase.kde.org/Plasma/ColorPicker) и [KColorChooser](https://www.kde.org/applications/graphics/kcolorchooser/) (Kubuntu) - выбор цвета
+* [qBittorrent](https://www.qbittorrent.org) - торрент клиент
+* [HTTrack](https://www.httrack.com) - копирование сайтов целиком
+* [FileZilla](https://filezilla-project.org) - клиент FTP
+* [Pidgin](https://pidgin.im) - мессенджер, поддерживает многие протоколы, особенно с плагинами
+* [Thunderbird](https://www.thunderbird.net) - почтовый клиент
 * [uGet](http://ugetdm.com/downloads) <sub>(не путать с неудобной kGet, uGet свободно работает и в KDE)</sub> - менеджер загрузок
 
 #### Bookmarklets
