@@ -357,6 +357,12 @@ python
 mono - sudo apt-get install mono-complete
 LAMP (php + apache + mysql)
 mysql + gui для него + mysql-workbench-community + скачать mysql connector
+
+Осторожно! Лучше не устанавливать! Может удалять пакеты среды из-за того что версия mysql будет несовпадать!!!
+Тут deb пакет который сам устанавливает официальные репозитории mysql и его утилит
+    Запускать этот deb нужно ТОЛЬКО из консоли (НЕ встроенными инсталяторами deb среды)
+    https://dev.mysql.com/downloads/repo/apt/
+
 sqlitebrowser - gui для sqlite БД
 tomcat
 g++
