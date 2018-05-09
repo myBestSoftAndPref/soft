@@ -1,5 +1,7 @@
 alien (конвертер в deb или rpm и обратно)
 exfat-util, exfat-fuse - драйвера exfat файловой системы для флешек
+    sudo mkfs.exfat -n LABEL /dev/sdXn - форматируем диск в exfat
+    sudo fsck.exfat /dev/sdXn - проверяем что формат exfat
 wine - эмуль Win API
 sudo apt-get install GDebi (установка deb) + sudo dpkg -i /home/user/soft/*.deb - установка группы пакетов
 i-nex (аналог everest) - просмотр инфы о программах
@@ -68,11 +70,19 @@ scalpel - тоже какая-то программа для восстанов�
 
 retroarch - эмулятор консолей
     sudo add-apt-repository ppa:libretro/stable && sudo apt-get update && 
-sudo apt-get install retroarch libretro-*
+sudo apt-get install retroarch libretro-* (лучше установить из ppa)
     или 
         sudo snap install retroarch
         sudo snap connect retroarch:raw-usb
         sudo snap connect retroarch:joystick
+        
+        
+sudo apt install inxi - консольная утилита с инфой и оборудовании и системе
+inxi -F - можно запустить так (выводит достаточно понятный и правильный список оборудования)
+
+
+sudo apt install evtest - консольная, показывает список событий оборудования (на события можно поставить выполнения скриптов)
+sudo evtest - запуск
 ----------------------
 Так можно обновить ядро Ubuntu 16.04.1 на 16.04.2 с ядра 4.4 на 4.8
 sudo apt-get install --install-recommends xserver-xorg-hwe-16.04
