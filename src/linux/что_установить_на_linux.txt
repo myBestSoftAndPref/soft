@@ -443,6 +443,7 @@ Lightworks - код закрыт, аналог Apple FinalCut, Avid Media Compos
 
 --графические редакторы
 gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
+GrafX2 - графический редактор картинок 256 цветов (изображений в стиле старых компьютеров и консолей)
 sudo apt-get install pinta
 Inkscape - векторный графический редактор
 krita - рисовалка для KDE

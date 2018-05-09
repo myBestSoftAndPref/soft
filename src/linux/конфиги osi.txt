@@ -1,3 +1,9 @@
+Устанавливаем утилиту для того чтобы вытащить программу acpi
+
+sudo apt install acpica-tools
+sudo cat /sys/firmware/acpi/tables/DSDT > dsdt.dat - сохранит dsdt.dat в home
+iasl -d dsdt.dat - сконвертит dsdt.dat в dsdt.dsl, который можно открыть в блокноте (именно там искать версию Windows которую подставлять)
+
 Общая инструкция:
 https://forum.manjaro.org/t/howto-power-savings-setup-update-20170319/1445
 
