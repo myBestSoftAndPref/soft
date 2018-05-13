@@ -772,6 +772,18 @@ sudo chown -R <user_name>:<user_group> ~/.config
 sudo chown -R <user_name>:<user_group> ~
 sudo chown -R $USER:$(id -gn $USER) /home/user/.config
 
+Сброс прав на домашний каталог
+    sudo chown -R $USER:$(id -gn $USER) /home
+    
+Создаем свой каталог в home разделе. Допустим перебрсываем из ntfs системы и права сбрасываются на полные.
+Теперь нужно разрешить работать с ним только текущему пользователю, остальным только на чтение.
+Выполнять файлы запретить. Выполнять каталоги разрешить (чтобы можно было их открыть)
+    sudo chown -R $USER:$(id -gn $USER) /home   -   даем права текущему пользователю
+    sudo chmod -R ugo=rwx /home/user/0_all  - даем все права всем на все
+    sudo chmod -R ugo-x /home/user/0_all    - отнимаем право на выполнение у всех
+    sudo chmod -R go-w /home/user/0_all     - отнимаем права на запись у всех кроме текущего пользователя
+    sudo chmod -R ugo+X /home/user/0_all    - даем выполнять (открывать) только каталоги, но не файлы всем
+
 Чтобы посмотреть user_name: команда whoami
 Чтобы посмотреть user_group: команда groups <username>
     (в user_group вписать одну группу относящуюся к user)
