@@ -93,7 +93,9 @@
 <br>
 [Session Boss](https://addons.mozilla.org/ru/firefox/addon/session-boss/) - сохранение и восстановление сессий (вкладок)
 <br>
-[]() - 
+[Panorama View](https://addons.mozilla.org/en-US/firefox/addon/panorama-view/) - визуальные группы вкладок, для работы на странице ```about:config``` установить ```extensions.webextensions.tabhide.enabled = true```, это временное решение, с выходом новых версий браузеров это опция будет включена по умолчанию.
+<br>
+[FoxyTab](https://addons.mozilla.org/en-US/firefox/addon/foxytab/) - набор операций для вкладок, доступных через меню вкладок: закрыть дубли, закрыть слев, перезагрузить каждые N сек, переместить, сортировать по параметру и т.д.
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 

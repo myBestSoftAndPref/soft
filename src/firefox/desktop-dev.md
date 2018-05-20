@@ -35,3 +35,5 @@
 [Empty Cache Button](https://addons.mozilla.org/ru/firefox/addon/empty-cache-button/)
 <br>
 [devtools-highlighter](https://addons.mozilla.org/ru/firefox/addon/devtools-highlighter/)
+<br>
+[Live editor for CSS and LESS](https://addons.mozilla.org/en-US/firefox/addon/live-editor-for-css-and-less/) - редактор css и less в браузере, подсветка синтаксиса, автоформатирование, минимизация и др.
