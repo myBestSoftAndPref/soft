@@ -92,6 +92,8 @@
 [Video Speed Controller](https://addons.mozilla.org/ru/firefox/addon/videospeed/) - добавляет дополнительные ярлыки (hot keys) настройки скорости видео на сайтах
 <br>
 [Session Boss](https://addons.mozilla.org/ru/firefox/addon/session-boss/) - сохранение и восстановление сессий (вкладок)
+<br>
+[]() - 
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
