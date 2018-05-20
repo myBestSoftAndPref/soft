@@ -1,0 +1,41 @@
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #alltabs-button,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #new-tab-button,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs tab .tab-background .tab-line,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs .tabs-newtab-button,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs tab .tab-close-button {
+    display: none !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar .tab-content {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-text.tab-label,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+    min-height: 15px !important;
+    height: 15px !important;
+    max-height: 15px !important;
+
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab {
+    font-size: 12px !important;
+    border-left: 2px solid black !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[selected="true"] * {
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-icon-image {
+    background-color: #EFF0F1 !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-text.tab-label {
+    line-height: 12px !important;
+}

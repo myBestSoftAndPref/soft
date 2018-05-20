@@ -1,6 +1,8 @@
 #### Что это?
 
-Дополнения для программистов, web разработки, разработки для Firefox
+Дополнения и инструменты для программистов, web разработки, разработки для Firefox
+
+[Awesome WebExtensions](https://github.com/bfred-it/Awesome-WebExtensions) - набор ссылок на инструменты для разработки дополнений
 
 [Extension source viewer](https://addons.mozilla.org/en-US/firefox/addon/crxviewer/) - можно посмотреть код дополнения Firefox прямо на странице его установки на addons.mozilla.org
 <br>
