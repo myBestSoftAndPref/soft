@@ -21,7 +21,6 @@
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ###### Органайзер
-* [PalmCalc](https://f-droid.org/repository/browse/?fdfilter=palmcalc&fdid=com.cybrosys.palmcalc) - продвинутый калькулятор, имеет функцию перевода величин в другие, небольшую справку по величинам. Версия на Google Play намного новее: [тут](http://palmcalc.com)
 * [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
 * [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками (**ОСТОРОЖНО** может вызвать такие проблемы, что телефоном вы сможете пользоваться только после удаления этой программы)
 
