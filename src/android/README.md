@@ -17,11 +17,10 @@
 * [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
 
 ###### Навигация
-* [OsmAnd](http://download.osmand.net/releases/) - показывает карты OpenStreetMap без интернета
+* [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть ограничение на количество используемых карт, версия F-Droid пересобрана без этих ограничений) 
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ###### Органайзер
-* [Timer](https://f-droid.org/repository/browse/?fdfilter=timer&fdid=org.dpadgett.timer) - таймер, много дополнительных функций
 * [PalmCalc](https://f-droid.org/repository/browse/?fdfilter=palmcalc&fdid=com.cybrosys.palmcalc) - продвинутый калькулятор, имеет функцию перевода величин в другие, небольшую справку по величинам. Версия на Google Play намного новее: [тут](http://palmcalc.com)
 * [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
 * [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками (**ОСТОРОЖНО** может вызвать такие проблемы, что телефоном вы сможете пользоваться только после удаления этой программы)
@@ -32,7 +31,7 @@
 * [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
 * [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
 * [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
-* [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) - торрент клиент
+* [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) или [Torrent Client](https://f-droid.org/packages/com.github.axet.torrentclient/) - торрент клиент
 
 ###### Справочники
 * [QuickDic restored](https://github.com/rdoeffinger/Dictionary/releases) - словарь иностранных слов, работает без интернета
@@ -42,9 +41,10 @@
 * [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп
 * [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (граммы в пинты, килограммы, футы в метры и так далее)
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
+* [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
 
 ###### Файлы
-* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox
+* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины)
 
 ###### Документы
 * [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
@@ -52,6 +52,7 @@
 * [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы и другие уникальные функции
 * [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
 * [VIMTouch](https://f-droid.org/repository/browse/?fdfilter=vim&fdid=net.momodalo.app.vimtouch) - текстовый редактор, подсветка синтаксисов, старается в некоторой степени следовать стилю компьютерного редактора VIM
+* [LibreOffice](https://www.libreoffice.org/download/android-viewer/) - аналог Microsoft Office, пока еще нестабильный, но уже может работать с многими форматами
 
 ###### Приватность
 * [KeePassDroid](https://github.com/bpellin/keepassdroid/releases) - менеджер паролей KeePass
@@ -70,6 +71,9 @@
 * [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединениях, использовании памяти, процессоре и т. д.
 * [Hacker's Keyboard](https://github.com/klausw/hackerskeyboard/releases) - полноценная клавиатура с ctrl, стрелками, отображением английских символов на русских клавишах и т.д. Словари языков почему-то есть только в Google Play.
 * [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
+* [SD Scanner](https://f-droid.org/en/packages/com.gmail.jerickson314.sdscanner/) - для многих относительно старых систем Android список файлов не обновляется при подключении к компьютеру и новые файлы не видны сразу. Эта программа обновляет состояние.
+* [androidVNC](https://f-droid.org/packages/android.androidVNC/) - удаленное управление (например компьютером) по vnc
+* [Save For Offline](https://f-droid.org/packages/jonas.tool.saveForOffline/) - добавляет в меню "поделиться" (share) возможность сохранить файл, например так можно сохранять файлы в Mozilla Firefox
 
 ##### Программы с закрытым кодом
 
@@ -91,7 +95,7 @@
 * [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - популярный чат, обмен сообщениями
 
 ###### Справочники
-* [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия с открытым кодом для обычных компьютеров, но для Android версии код закрыт.
+* [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь, бесплатная версия имеет ограничение по количеству подключенных словарей. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия с открытым кодом для обычных компьютеров, но для Android версии код закрыт.
 	* Подборка словарей Lingvo для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки в GoldenDict просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
 * [Sound Meter](https://play.google.com/store/apps/details?id=kr.sira.sound&hl=en) - шумометр, меряет уровень шума. Из-за встроенных фильтров Android подавляющих шум может работать неточно. Таблицу вредности шумов можно найти в интернете, например [тут](http://chchearing.org/noise/common-environmental-noise-levels/)
 
@@ -103,3 +107,7 @@
 ###### Документы
 * [WPS Office + PDF](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) - офис, для .docx, .xls и других форматов
 * [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub) - офис, для .docx, .xls и других форматов. Список самих программ от Microsoft (Word, Excel, PowerPoint) есть по этой [ссылке](https://play.google.com/store/apps/dev?id=6720847872553662727)
+
+###### Система
+* [Volume control - Vollynx](https://play.google.com/store/apps/details?id=com.loadlynx_jp.vollynx.free) - очень удобный регулятор громкости для всех типов звука (будильник, оповещение, bluetooth, наушники, звонок и т.д.)
+* [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) - удобное управление вращением экрана и запретами вращения из шторки телефона

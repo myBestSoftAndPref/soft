@@ -1,0 +1,10 @@
+lsblk - чтобы посмотреть список устройств
+
+sudo dd if=/dev/zero of=/dev/sdc bs=512 count=1 - стереть mbr, где sdc это флэшка
+
+выполнить по очереди команды (где sdc это флэшка)
+sudo hdparm -I /dev/sdс
+sudo hdparm --user-master u --security-set-pass llformat /dev/sdс
+sudo hdparm -I /dev/sdс
+sudo hdparm --user-master u --security-erase llformat /dev/sdс
+sudo hdparm -I /dev/sdс

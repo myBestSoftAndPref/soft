@@ -23,7 +23,7 @@
 
 #main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab {
     font-size: 12px !important;
-    border-left: 2px solid black !important;
+    border-right: 2px solid black !important;
 }
 
 #main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[selected="true"] * {

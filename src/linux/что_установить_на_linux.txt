@@ -99,9 +99,8 @@ dns crypt - перенаправляет и шифрует dns, использу
     Скопировать содержимое сюда: /usr/share/dnscrypt-proxy/dnscrypt-resolvers.csv
     Столбец имя - вводить в команде, чтобы подключиться, например dnscrypt.eu-dk
     
-sudo apt-get install dnscrypt-proxy
-sudo apt install dnscrypt-proxy-plugins
-sudo dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
+sudo apt install dnscrypt-proxy dnscrypt-proxy-plugins
+dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
 
     В ubuntu 16.04 есть баг в этой программе. ЧТобы исправить:
         1. Открыть: sudo systemctl edit --full dnscrypt-proxy.service
