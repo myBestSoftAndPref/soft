@@ -218,7 +218,7 @@ aptitude - менеджер пакетов
 !!!Сети и Интернет
 --связь и обмен сообщениями
 Skype
-pidgin - месенджер + pidgin-otr плагин для шифрования
+pidgin - месенджер + pidgin-otr плагин для шифрования + pidgin-skype (только текст чат скайпа)
 Kopete - месенджер от KDE, умеет otr
 
 --Удаленное управление
@@ -423,7 +423,7 @@ xubuntu-restricted-extras - набор всех кодеков + flashplayer
         удаляем: sudo apt-get purge package-name
 
 --плеера
-smplayer - более быстрый
+smplayer - более быстрый (в ppa версия с рекламой, поэтому возможно лучше оставить ту что идет по умолчанию с ubuntu)
     установить свежую версию из официального ppa
         sudo add-apt-repository ppa:rvm/smplayer 
         sudo apt-get update 
