@@ -243,7 +243,10 @@ javascript:void((function () {
 
 **Q** Как сменить локализацию Firefox? Как изменить язык интерфейса Firefox?
 <br>
-**A** На странице ```about:config``` изменить значение ```general.useragent.locale``` поставить значение 1) ```en-US``` - для английского языка или
+**A**
+Установите со страницы [Dictionaries and Language Packs](https://addons.mozilla.org/en-US/firefox/language-tools/) нужную локализацию <sub>Для старых версий Firefox на странице есть кнопка "просмотреть все версии"</sub>
+<br>
+На странице ```about:config``` изменить значение ```general.useragent.locale``` поставить значение 1) ```en-US``` - для английского языка или
 2) ```ru-RU``` - для русского языка.
 <br>
 При этом параметр ```intl.locale.matchOS``` должен стоять в ```false```
