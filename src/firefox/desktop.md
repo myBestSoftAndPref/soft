@@ -2,7 +2,9 @@
 
 Минимальны набор дополнений, стилей и настроек для **release** версии **Firefox 57+**.
 <br>
-**Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>позже ссылка будет удалена</sub>
+**Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>ссылка пока не будет удалена</sub>
+<br>
+[тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch) архив некоторых дополнений на xul для Firefox 52, которые Mozilla видимо удалит со своего сайта
 <br>
 Подборку дополнений для программистов можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/desktop-dev.md)
 
