@@ -110,8 +110,10 @@
 3. [Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
 4. [FlashGot Mass Downloader](https://addons.mozilla.org/ru/firefox/addon/flashgot/) - поиск ссылок на видео, файлы и интеграция с любым менеджером загрузок
 
-#### Словари
+#### Словари и локализации
 
+[Dictionaries and Language Packs](https://addons.mozilla.org/en-US/firefox/language-tools/) - официальные словари и локализации
+<br>
 [Объединённый словарь русской орфографии](https://addons.mozilla.org/en-US/firefox/addon/unified-russian-english-spell/) - совмещенный словарь англ. + рус. <sub>При выборе словаря (клик правой кнопкой мыши на поле ввода) этот словарь имеет название "русский" хотя проверяет на двух языках сразу.</sub>
 
 #### Программы (замена дополнения, которые невозможно реализовать на WebExtensions API)
@@ -185,7 +187,7 @@ javascript:void((function () {
 **Q** Как запустить отдельный профиль Firefox  
 **A** Командой ```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
 
-**Q** Как изменить иконку Firefox на панели  
+**Q** **(С переходом на Firefox 60 не работает!)** Как изменить иконку Firefox на панели  
 **A** Создать каталог и скопировать нужную иконку по этому пути: ```Firefox\Browser\chrome\icons\default\main-window.ico```
 <br>
 В linux системах файл должен иметь имя ```main-window.xpm```
@@ -236,3 +238,10 @@ javascript:void((function () {
 2. Создать опцию ```privacy.resistFingerprinting.block_mozAddonManager``` типа ```boolean``` (```логическое```) с значением ```true```
 
 **Note!** В некоторых дополнениях есть проверка на активацию дополнения для сайт [https://mozilla.com](https://mozilla.com). Даже с опцией выше такие дополнения могут отказаться работать на [https://mozilla.com](https://mozilla.com), в этом случае нужно писать разработчику дополнения, чтобы он исправил это и позволил дополнению работать на [https://mozilla.com](https://mozilla.com)
+
+**Q** Как сменить локализацию Firefox? Как изменить язык интерфейса Firefox?
+<br>
+**A** На странице ```about:config``` изменить значение ```general.useragent.locale``` поставить значение 1) ```en-US``` - для английского языка или
+2) ```ru-RU``` - для русского языка.
+<br>
+При этом параметр ```intl.locale.matchOS``` должен стоять в ```false```
