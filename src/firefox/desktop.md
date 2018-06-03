@@ -101,8 +101,7 @@
 <br>
 [Change Timezone (Time Shift)](https://addons.mozilla.org/en-US/firefox/addon/change-timezone-time-shift/)
 или
-[Spoof Timezone](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/)
-- смена часового пояса браузера, который видят сайты
+[Spoof Timezone](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/) - смена часового пояса браузера, который видят сайты
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
