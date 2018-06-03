@@ -96,6 +96,13 @@
 [Panorama View](https://addons.mozilla.org/en-US/firefox/addon/panorama-view/) - визуальные группы вкладок, для работы на странице ```about:config``` установить ```extensions.webextensions.tabhide.enabled = true```, это временное решение, с выходом новых версий браузеров это опция будет включена по умолчанию.
 <br>
 [FoxyTab](https://addons.mozilla.org/en-US/firefox/addon/foxytab/) - набор операций для вкладок, доступных через меню вкладок: закрыть дубли, закрыть слев, перезагрузить каждые N сек, переместить, сортировать по параметру и т.д.
+<br>
+[Undo Close Tab](https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/) - кнопка открытие недавно закрытых вкладок и список недавно закрытых вкладок по клику правой кнопкой мыши
+<br>
+[Change Timezone (Time Shift)](https://addons.mozilla.org/en-US/firefox/addon/change-timezone-time-shift/)
+или
+[Spoof Timezone](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/)
+- смена часового пояса браузера, который видят сайты
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
@@ -112,7 +119,7 @@
 
 * [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р.
 * [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты
-* [peek](https://github.com/peek/peek) (ubuntu) - запись экрана в виде git
+* [peek](https://github.com/peek/peek) (ubuntu) - запись экрана в виде gif
 * [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (ubuntu) - запись экрана
 * [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - линейка
 * [Color Picker](https://userbase.kde.org/Plasma/ColorPicker) и [KColorChooser](https://www.kde.org/applications/graphics/kcolorchooser/) (Kubuntu) - выбор цвета
