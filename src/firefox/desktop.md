@@ -1,6 +1,6 @@
 #### Что это?
 
-Минимальны набор дополнений, стилей и настроек для **release** версии **Firefox 57+**.
+Минимальны набор дополнений, стилей и настроек для **release** версии **Firefox**.
 <br>
 **Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>ссылка пока не будет удалена</sub>
 <br>
@@ -156,7 +156,7 @@ javascript:void((function () {
 * [Waterfox](https://www.waterfoxproject.org/) - аналогично Pale Moon, со своими оптимизациями
 * [IceCat](http://ftp.gnu.org/gnu/gnuzilla/) - с удаленными следящими опциями, на деле не очень качественная, лучше использовать TorBrowser
 * [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - альфа версия Firefox с дополнительными инструментами для разработчика и багами
-* [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения, нету авто обновления. Вместо этой сборки можно отключить проверку подписей в обычном Firefox: [How to override the Firefox Add-on Signing requirement](http://www.ghacks.net/2016/08/14/override-firefox-add-on-signing-requirement/)
+* [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения, нету авто обновления.
 
 #### Настройки для удобства
 
