@@ -1019,3 +1019,17 @@ latte-doc - крутая док панель kde
 3. если не сработало, то заменить строку выше на и перезагрузить систему
     export KWIN_TRIPLE_BUFFER=0
 4. если и это не помогло, то удалить строку, перезагрузиться и искать другое решение
+------------------
+отключаем сервис apport (надоедливые предложения отправить отчеты об ошибках, еще и CPU грузит)
+
+Смотрим статус
+    systemctl status apport.service
+Отключаем
+    sudo systemctl stop apport.service
+    sudo systemctl disable apport.service
+Если это не сработает, то использовать
+    systemctl mask apport.service
+    
+Чтобы включить:
+    systemctl unmask apport.service # if you masked it
+    sudo systemctl enable apport.service
