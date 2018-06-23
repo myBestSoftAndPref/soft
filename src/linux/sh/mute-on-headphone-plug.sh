@@ -1,10 +1,11 @@
 #!/bin/bash
+amixer -D pulse set Master 0% mute
 acpi_listen | while IFS= read -r line;
 do
-    if [ "$line" == "jack/headphone HEADPHONE plug" ]
+    if [ "$line" = "jack/headphone HEADPHONE plug" ]
     then
        amixer -D pulse set Master 0% mute
-    elif [ "$line" == "jack/headphone HEADPHONE unplug" ]
+    elif [ "$line" = "jack/headphone HEADPHONE unplug" ]
     then
        amixer -D pulse set Master 0% mute
     fi

@@ -1,0 +1,8 @@
+#tabbrowser-tabpanels .browserContainer findbar {
+    border: 1px solid black !important;
+    position: fixed !important;
+    opacity: 0.8 !important;
+    -moz-box-ordinal-group: 0 !important;
+}
+
+#tabbrowser-tabpanels .browserContainer findbar > .findbar-closebutton {}
