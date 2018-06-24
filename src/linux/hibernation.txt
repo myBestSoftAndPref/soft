@@ -11,6 +11,7 @@
     Инструкция для ubuntu: https://askubuntu.com/a/914202
     Инструкция для debian, более надежный источник: https://wiki.debian.org/Hibernation/Hibernate_Without_Swap_Partition
     FAQ: https://help.ubuntu.com/community/SwapFaq
+    Подробное и простое объяснение как работает hibernation, почему может не работать, с ссылками на ответы: https://askubuntu.com/a/1038856
 
 Для редактирования файлов конфигурации я использую редактор geany. Чтобы его установить можно выполнить:
     sudo apt install geany
