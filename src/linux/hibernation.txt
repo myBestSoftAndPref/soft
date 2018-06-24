@@ -52,7 +52,7 @@
     Команда МОЖЕТ не сработать с первого раза как надо, не все шаги появятся. Тогда запустить ее еще раз.
         sudo dpkg-reconfigure -pmedium uswsusp
         
-    4.1 В появившеся окне выполнять по шагам:
+    4.1 В появившемся окне выполнять по шагам:
         "Continue without a valid swap space?" ответить Да
         "Swap space to resume from:" - выбрать именно РАЗДЕЛ на котором swapfile создан (а не путь к файлу, т.е. выбрать /dev/sda1)
         "Encrypt snapshot?" - лучше ответить нет
@@ -84,28 +84,17 @@
     Если при выходе из hibernation система загружается как при включении, и не восстанавливает свое состояние.
     То uswsusp не видит файл подкачки при загрузке. Чтобы исправить это читаем далее.
     
-    6.1 Выполнить и получить UUID
-        sudo swaplabel /swapfile
-    6.2 Открыть sudo geany /etc/initramfs-tools/conf.d/resume
+    6.1 Выполнить и получить UUID раздела на котором расположен /swapfile
+            sudo findmnt -no SOURCE,UUID -T /swapfile
+    6.2 Открыть
+            sudo geany /etc/initramfs-tools/conf.d/resume
     6.3 Вставить строку в виде: RESUME=UUID=81bb07cd-d495-4733-be81-3447f9161f33
-        Где 81bb07cd-d495-4733-be81-3447f9161f33 это номер, который вывелся в пункте 6.1
+        Где 81bb07cd-d495-4733-be81-3447f9161f33 это номер РАЗДЕЛА на котором расположен swap (а не сам UUID самого swapfile)
     6.4 Выполнить, чтобы обновить конфигурацию (при выполнении может появиться предупреждение, что swap не найден, не обращать в внимание)
             sudo update-initramfs -u
     6.5 Выполнить для теста команду:
             sudo s2disk
     6.6 Если resume device = /dev/sda2 из файла /etc/uswsusp.conf не сработал, то удалять его всеравно нельзя, иначе будет ругаться.
-    
-7.  Как вариант вместо пункта 6 можно сделать так.
-    ТАКЖЕ это поможет быстрее загружаться, если hibernation работает, но загрузка медленнее из-за ошибки "Gave up waiting for suspend/resume device", которая может появиться из-за каких-то проблем со способом в пункте 6.
-    
-    Примечание: поискать решение ошибки "Gave up waiting for suspend/resume device"
-    
-    7.1 Открыть файл
-            sudo geany /etc/default/grub
-    7.2 ДОБАВИТЬ к тому что там уже есть в "GRUB_CMDLINE_LINUX_DEFAULT" строку "resume=/dev/sda1" (не забывайте что у вас может быть что-то другое вместо sda1)
-            Пример: GRUB_CMDLINE_LINUX_DEFAULT="resume=/dev/sda1"
-    7.3 Выполнить 
-            sudo update-grub
     
 7. Заменяем стандартную функцию hibernation утилитой uswsusp
     1.  Копируем настройки
