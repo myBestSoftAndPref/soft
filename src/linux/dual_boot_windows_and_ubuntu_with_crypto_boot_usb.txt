@@ -1,0 +1,1 @@
+https://askubuntu.com/questions/226969/how-do-i-create-a-multiboot-environment-using-lvm-for-your-buntu-operating-syst

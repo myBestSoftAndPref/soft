@@ -240,6 +240,7 @@ javascript:void((function () {
 <br>
 1. Открыть страницу ```about:config```
 2. Создать опцию ```privacy.resistFingerprinting.block_mozAddonManager``` типа ```boolean``` (```логическое```) с значением ```true```
+3. Открыть страницу ```about:config?filter=extensions.webextensions.restrictedDomains``` удалить все значения
 
 **Note!** В некоторых дополнениях есть проверка на активацию дополнения для сайт [https://mozilla.com](https://mozilla.com). Даже с опцией выше такие дополнения могут отказаться работать на [https://mozilla.com](https://mozilla.com), в этом случае нужно писать разработчику дополнения, чтобы он исправил это и позволил дополнению работать на [https://mozilla.com](https://mozilla.com)
 

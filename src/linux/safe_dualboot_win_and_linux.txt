@@ -1,0 +1,7 @@
+1. crypt ubuntu system partion only with pass
+2. move grub (boot partion) and efi partion to usb flash
+3. take out usb flash
+4. install windows
+5. to boot to ubuntu you need to put in usb flash, boot from the usb flash, enter the password
+6. to boot to windows you need ti iake out usb flash, and boot from hdd
+7. if usb will be damaged then we need to reinstall grub and uefi to usb flash
