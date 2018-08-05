@@ -5,7 +5,7 @@
 
 1. (не работает с ```Windows```)  
 Набираем: ```sudo fdisk -l``` и угадываем путь к флэшке (пример: ```/dev/sdb```)  
-Записываем: ```sudo dd if=/usr/home/ubuntu.iso of=/dev/sdb bs=8MB;sync```
+Записываем: ```sudo dd if=/usr/home/ubuntu.iso of=/dev/sdb status=progress bs=8MB;sync```
 
 2. (не работает с ```Windows```)  
 Программой ```Unetbootin```
