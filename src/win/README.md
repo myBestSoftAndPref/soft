@@ -400,6 +400,7 @@ http://www.antp.be/software/renamer
 #### Менеджеры паролей
 
 * KeePassX https://www.keepassx.org/
+* KeePassXC Password Manager - более новая версия KeePassX от других авторов https://keepassxc.org
 
 #### Шифрование дисков
 
