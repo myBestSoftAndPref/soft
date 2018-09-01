@@ -150,7 +150,7 @@ javascript:void((function () {
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
-#### Установка
+#### Официальные и сторонние сборки Firefox
 
 * [Firefox](https://ftp.mozilla.org/pub/firefox/) - обычный Firefox
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - без автозагрузки встроенных кодеков, может не играть некоторое видео
@@ -169,10 +169,14 @@ javascript:void((function () {
 
 [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
 
-#### Ссылки
+#### Что нужно знать о приватности (сборе статистики компанией Mozilla)
 
-[Fox](https://github.com/The-OP/Fox) - блог с настройками, ориентирован на приватность  
-[Список русского mozilla-russia форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226)  
+В **Mozilla Firefox** встроены функции для сбора статиски. Она собирается и явно, и неявно. Собираются данные о окружающий Wi-Fi точках вокруг, гео данные и многие другие. Отключать их долго и искать информацию о них долго. Универсального решения нет. Поэтому в данном блоге они не описаны. Самый простой вариант это использовать **Tor Browser**, но в нем отключена часть функций двойного назначения, они и могут собирать статистику, и нужны для работы некоторых функций сайта. Поэтому использовать его трудно.<br>
+**Google Chrome** собирает намного больше статистики, и присваивает каждому пользователю уникальный номер. 
+
+#### Ссылки
+ 
+[Список русского mozilla-russia форума](https://forum.mozilla-russia.org/viewtopic.php?id=36226)<br>
 [mozillazine.org](http://kb.mozillazine.org/Firefox_:_FAQs_:_About:config_Entries) - **огромный** сборник настроек в виде wiki
 
 #### Управление
@@ -242,7 +246,7 @@ javascript:void((function () {
 <br>
 1. Открыть страницу ```about:config```
 2. Создать опцию ```privacy.resistFingerprinting.block_mozAddonManager``` типа ```boolean``` (```логическое```) с значением ```true```
-3. Открыть страницу ```about:config?filter=extensions.webextensions.restrictedDomains``` удалить все значения
+3. Открыть страницу ```about:config?filter=extensions.webextensions.restrictedDomains``` удалить все значения данной опции
 
 **Note!** В некоторых дополнениях есть проверка на активацию дополнения для сайт [https://mozilla.com](https://mozilla.com). Даже с опцией выше такие дополнения могут отказаться работать на [https://mozilla.com](https://mozilla.com), в этом случае нужно писать разработчику дополнения, чтобы он исправил это и позволил дополнению работать на [https://mozilla.com](https://mozilla.com)
 
