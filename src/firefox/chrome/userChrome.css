@@ -1,8 +1,12 @@
 @import "parts/titlebar.css";
 @import "parts/tabbar-mini.css";
+@import "parts/tabbar-mini-tab-states-indication.css";
 
 /* uncomment to hide tab bar */
-/* @import "parts/tabbar.css"; */
+/* @import "parts/tabbar-hidden.css"; */
+
+/* uncomment to fix top paddings of tab bar when title bar is hidden by Firefox itself (NOT trough the tabbar-hidden.css style) */
+/* @import "parts/title-bar-no-title-height-fix.css"; */
 
 @import "parts/sidebar.css";
 @import "parts/urlbar.css";
@@ -11,3 +15,4 @@
 @import "parts/bookmarkbar.css";
 @import "parts/menu-bar.css";
 @import "parts/findbar.css";
+@import "parts/fixes.css";

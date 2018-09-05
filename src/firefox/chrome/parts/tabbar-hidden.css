@@ -1,0 +1,4 @@
+/* hide tab bar when Firefox has compact mode */
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar {
+    visibility: collapse !important;
+}

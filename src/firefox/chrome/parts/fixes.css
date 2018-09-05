@@ -1,0 +1,13 @@
+/* 2. fix of top window padding (for Win7) */
+@media (-moz-os-version: windows-win10) {
+  #main-window {
+    padding-top: 7px !important;
+  }
+}
+
+/* 2. fix of top nav-bar padding (for Win7) */
+@media (-moz-os-version: windows-win7) {
+	#nav-bar {
+		padding-top: 4px !important;
+	}
+}
