@@ -30,17 +30,6 @@
     display: none !important;
 }
 
-#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab * {
-    background-color: white !important;
-    color: black !important;
-}
-
-#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[selected="true"] * {
-    background-color: black !important;
-    color: white !important;
-    font-weight: bold !important;
-}
-
 #main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-icon-image {
     background-color: #EFF0F1 !important;
 }

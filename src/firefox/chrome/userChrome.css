@@ -1,11 +1,15 @@
 @import "parts/titlebar.css";
 @import "parts/tabbar-mini.css";
+
+/* it can brake compatibility with skins, comment it if you want to use skins */
+/* @import "parts/tabbar-mini-highlight.css"; */
+
 @import "parts/tabbar-mini-tab-states-indication.css";
 
 /* uncomment to hide tab bar */
 /* @import "parts/tabbar-hidden.css"; */
 
-/* uncomment to fix top paddings of tab bar when title bar is hidden by Firefox itself (NOT trough the tabbar-hidden.css style) */
+/* uncomment to fix top paddings of tab bar when title bar is hidden by Firefox itself (NOT through the tabbar-hidden.css style) */
 /* @import "parts/title-bar-no-title-height-fix.css"; */
 
 @import "parts/sidebar.css";
