@@ -46,7 +46,9 @@
             /swapfile   swap    swap    defaults        0       0
         
             Примечание: рассмотреть возможность замены defaults на sw (права доступа)
-        3.3 Перезагрузиться (возможно не нужно)
+        3.3 Перезагрузиться (возможно не нужно).
+            Как вариант можно попробовать комманду
+                sudo mount -a                   # перемантирует диски из fstab, если там не стоит noauto
         
 4.  Настраиваем утилиту uswsusp.
     Команда МОЖЕТ не сработать с первого раза как надо, не все шаги появятся. Тогда запустить ее еще раз.
@@ -60,10 +62,10 @@
             sudo geany /etc/uswsusp.conf
         4.2.1   Если одна из строк
                     resume device = /swapfile
-                то значение неверно, т.к. путь к файлу должен быть в виде /dev/sda1/swapfile (или /dev/sda2/swapfile если у вас UEFI)
+                то значение неверно, т.к. путь к файлу должен быть в виде /dev/sda1/swapfile (или /dev/sda2/swapfile если у вас UEFI). Все это если у вас стандартная разметка.
                 А значит верный путь это: resume device = /dev/sda1
         4.2.2   Смотрим раздел на котором расположен /swapfile, результат должен быть в виде /dev/sdaN
-                    sudo findmnt -no SOURCE,UUID -T /swapfile
+                    sudo findmnt -no SOURCE,UUID -T /swapfile (в случае LUKS + LVM путь будет другим, см раздел ниже про настройку для LUKS + LVM)
         4.2.3   После редактирования /etc/uswsusp.conf нужно запустить команду
                     sudo update-initramfs -u
     4.3 Указываем утилите uswsusp положение swap файла
@@ -94,6 +96,27 @@
             sudo s2disk
     6.6 Если resume device = /dev/sda2 из файла /etc/uswsusp.conf не сработал, то удалять его всеравно нельзя, иначе будет ругаться.
     
+6.2 Если у вас LUKS + LVM (шифрованный системный диск).
+    1.  Команда:
+            sudo findmnt -no SOURCE,UUID -T /swapfile
+        выведет текст:
+            /dev/mapper/local-root 5ff24bbe-d819-4dab-ae73-c179b65a5794
+        где local - это группа LVM, а root - это имя раздела в этой группе
+    2.  После этого откройте файл:
+            sudo geany /etc/uswsusp.conf
+        в нем значение параметра 'resume device' установить (соотв. примеру выше):
+            resume device = /dev/mapper/local-root
+    3.  Затем отрыть файл:
+            sudo geany /etc/initramfs-tools/conf.d/resume
+        вставить туда текст:
+            RESUME=UUID=5ff24bbe-d819-4dab-ae73-c179b65a5794
+        где 5ff24bbe-d819-4dab-ae73-c179b65a5794 это UUID который вывела команда sudo findmnt -no SOURCE,UUID -T /swapfile
+    4.  Выполнить команду:
+            sudo update-initramfs -u
+        при выполнении этой команды на предупреждения внимания не обращайте
+    5.  Значение параметра 'resume offset = 34816' из файла '/etc/uswsusp.conf'
+        установить таким же как в инструкции для диска без LUKS + LVM (по крайней мере в моем случае)
+        
 7. Заменяем стандартную функцию hibernation утилитой uswsusp
     1.  Копируем настройки
             sudo cp /lib/systemd/system/systemd-hibernate.service /etc/systemd/system/

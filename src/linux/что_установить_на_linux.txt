@@ -364,7 +364,7 @@ openjdk (пакеты icedtea-plugin, default-jdk, default-jre, default-jdk-doc)
 oracle java
 perl
 python
-mono - sudo apt-get install mono-complete
+mono - sudo apt install mono-complete
 LAMP (php + apache + mysql)
 mysql + gui для него + mysql-workbench-community + скачать mysql connector
 DBeaver - может работать с разными БД, установка из PPA
@@ -699,6 +699,8 @@ sudo chown -R $USER:$(id -gn $USER) /home/user/.config
     sudo chmod -R ugo-x /home/user/0_all    - отнимаем право на выполнение у всех
     sudo chmod -R go-w /home/user/0_all     - отнимаем права на запись у всех кроме текущего пользователя
     sudo chmod -R ugo+X /home/user/0_all    - даем выполнять (открывать) только каталоги, но не файлы всем
+    
+Одной коммандой: sudo chown -R $USER:$(id -gn $USER) /home
 
 Чтобы посмотреть user_name: команда whoami
 Чтобы посмотреть user_group: команда groups <username>
