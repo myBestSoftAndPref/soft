@@ -1,5 +1,3 @@
-НЕЗАКОНЧЕНО!
-
 Суть:
 	Если использовать 2 системы на одном компьютере, то, например, вирус заразивший первую систему (Windows) может изменить файлы второй системы (linux).
 	
@@ -27,124 +25,70 @@
 	
 Шаг за шагом
 	0. Предполагается, что вы создали отдельный раздел /boot обычным способом через инстолятор (ниже его монтируем в chroot /mnt чтобы изменить конфиг)
+       В данной инструкции предлагается сделать /boot на флэшке.
+       То есть нужно создать на флэшке с DOS (не GPT) таблицей раздел в 1 Gb, первичный, и поставить ему флаг boot. Это будет /boot
 	1. Создать luks раздел через менеджер дисков (gparted или kde partion manager, или менеджер дисков в инстоляторе). И задать ему пароль.
-	2. Создать на нем раздел LVM (где cryptlinux это имя luks контейнера, которое вы задали)
-		2.1 Создаем lvm
-			sudo pvcreate /dev/mapper/cryptlinux
-		2.2 Создаем внутри LVM группу (local это ее имя)
-			sudo vgcreate local /dev/mapper/cryptlinux
-		2.3 Создаем внутри группы обычный раздел, на который установим Ubuntu (root имя раздела, а 100%FREE отдает все место под него)
-			sudo lvcreate -l 100%FREE -n root local
-		2.4 Форматируем в ext4
-			sudo mkfs.ext4 /dev/mapper/local-root
-	3. Теперь просто нужно установить Ubuntu обычным способом указав раздел root из LVM как корень /
-        Перед установкой спросит отмантировать разделы, отвтить НЕТ,
-        форматировать до этого в менеджере разделов, а в инстоляторе просто нзначить точки монтирования
-        ПРОБЛЕМЫ. Если установка зависла, на "Определение файловых систем", то проблема в установочной флэшке. Попробуйте записать ее методом dd, или через grub.
+       Очевиднее создавать luks контейнер не через менеджер дисков, а командами:
+            1. создать любой раздел любого формата (можно через менеджер дисков)
+            2. Отформатировать его как luks
+                sudo cryptsetup luksFormat /dev/sda3
+            3. Открыть его (с именем cryptlinux)
+                sudo cryptsetup luksOpen /dev/sda3 cryptlinux
+            4. Создать на нем lvm
+                sudo pvcreate /dev/mapper/cryptlinux
+            5. Создать на нем группу (с именем local)
+                sudo vgcreate local /dev/mapper/cryptlinux
+            6. Создать в группе раздел (с именем root, а 100%FREE отдает все место под него)
+                sudo lvcreate -l 100%FREE -n root local
+            7. Отформатировать этот раздел в ext4
+                sudo mkfs.ext4 /dev/local/root
+            8. Посмотреть что получилось:
+                sudo lvs    # где колонка LV - это раздел, а VG - это группа
+	3. Теперь просто нужно установить Ubuntu обычным способом указав раздел root из LVM как корень / (в инстоляторе он будет виден как отдельный диск)
+        Перед установкой спросит отмантировать разделы, ответить НЕТ (или ДА если будут проблемы с установкой).
+        
+        ПРОБЛЕМЫ.
+            Если установка зависла, на "Определение файловых систем", то проблема в установочной флэшке.
+            Попробуйте записать ее методом dd, или через grub. Или ответить ДА на вопрос об отмонтировании дисков перед установкой.
 	4. После установки. Запишем номер UUID шифрованного раздела в конфиг, чтобы система знала откуда нужно грузиться
 		4.1 Монтируем разделы установленной системы в chroot, чтобы можно было менять ее конфиги
-			sudo mount /dev/mapper/local-root /mnt
-			sudo mount /dev/sda2 /mnt/boot
-			sudo mount --bind /dev /mnt/dev
-			sudo chroot /mnt
+                sudo mount /dev/mapper/local-root /mnt
+                sudo mount /dev/sda2 /mnt/boot       # где sda2 это /boot, например на флэшке (то есть скорее всего имя будет sdb1 или sdc1)
+                sudo mount --bind /dev /mnt/dev
+                sudo chroot /mnt
 		4.2 Откроется строка консоли от sudo, через нее тоже монтируем часть устройств
-			> mount -t proc proc /proc
-			> mount -t sysfs sys /sys
-			> mount -t devpts devpts /dev/pts
+                > mount -t proc proc /proc
+                > mount -t sysfs sys /sys
+                > mount -t devpts devpts /dev/pts
 		4.3 Создаем файл конфигов (можно от того же sudo без /mht ???? c /mnt это от обычного sudo)
-			sudo touch /mnt/etc/crypttab
+                sudo touch /mnt/etc/crypttab
 		4.4 Смотрим UUID (где sda3 это раздел luks)
-			sudo blkid /dev/sda3
+                sudo blkid /dev/sda3
 		4.4 Вставляем в /mnt/etc/crypttab текст (где UUID из пункта выше):
-			# <target name> <source device> <key file> <options>
-			cryptlinux UUID=8b80b3a7-6a33-4db3-87ce-7f126545c74af none luks,retry=1,lvm=local
+                # <target name> <source device> <key file> <options>
+                cryptlinux UUID=8b80b3a7-6a33-4db3-87ce-7f126545c74af none luks,retry=1,lvm=local
 		4.5 Генерируем файл инициализации (запускать от того же chroot sudo что и выше)
-			update-initramfs -k all -c
+                update-initramfs -k all -c
         4.6 Система готова, в нее можно загрузиться
-	5. Устанавливаем /boot раздел с grub на флэшку
-        5.1 Добавить GRUB_ENABLE_CRYPTODISK=y в файл /etc/default/grub при этом update-grub можно НЕ выполнять
-        5.2 Монтируем и входим в chroot, где /dev/sdb это флэшка. Раздел /dev/sdb1 может быть 512 кб или 1 Гб, файловая система например FAT32
-            sudo mount /dev/mapper/local-root /mnt
-            sudo mount /dev/sdb1 /mnt/boot
-            for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-            sudo chroot /mnt
-        5.3 Устанавливаем на флэшку /dev/sdb (внутри chroot)
-            grub-install /dev/sdb
-            update-grub
-            update-initramfs -k all -c
-            
-Восстановление grub для LVM и отдельных разделов /boot и /boot/efi
-В инструкции ниже /dev/sda2 это /boot, а /dev/sda1 это /boot/efi,
-'local-root' это группа-раздел из LVM
-    sudo cryptsetup luksOpen /dev/sda3 cryptlinux
-    sudo mount /dev/mapper/local-root /mnt
-    sudo mount /dev/sda2 /mnt/boot
-    sudo mount /dev/sda1 /mnt/boot/efi
-    for i in /dev /dev/pts /proc /sys /run; do sudo mount -B $i /mnt$i; done
-    sudo chroot /mnt
-    grub-install --efi-directory=/boot/efi
-    update-grub
-			
-1. create luks container
-    sudo cryptsetup luksFormat /dev/sda3
-    sudo cryptsetup luksOpen /dev/sda3 cryptlinux
-2. create lvm disk on luks container
-    sudo pvcreate /dev/mapper/cryptlinux
-3. create lvm group on lvm disk
-    sudo vgcreate local /dev/mapper/cryptlinux
-4. create partion inside lvm group (100%FREE is full length)
-    sudo lvcreate -l 100%FREE -n root local
-5. format lvm partion (is local-root default label??)
-    sudo mkfs.ext4 /dev/mapper/local-root
-        OR
-    sudo mkfs.ext4 /dev/local/root ???
-6. Find the UUID of the LUKS partitions
-    sudo blkid /dev/sda3
-7. Mount the appropriate devices to the appropriate locations in /mnt, and chroot into it:
-    sudo mount /dev/mapper/local-root /mnt
-    sudo mount /dev/sda4 /mnt/boot
-    sudo mount --bind /dev /mnt/dev
-    sudo chroot /mnt
-> mount -t proc proc /proc
-> mount -t sysfs sys /sys
-> mount -t devpts devpts /dev/pts
-8. create /etc/crypttab in /mnt
- # <target name> <source device> <key file> <options>
-cryptcherries UUID=8b80b3a7-6a33-4db3-87ce-7f126545c74af none luks,retry=1,lvm=local
-9. Run the following command in the chrooted environment:
-        update-initramfs -k all -c
-
-https://askubuntu.com/questions/226969/how-do-i-create-a-multiboot-environment-using-lvm-for-your-buntu-operating-syst
-
-other commands:
-    1. see additional info:
-        sudo vgdisplay <group name>
-    2. see lvm info:
-        sudo lvs
-    3. format lvm group partions as other formats:
-        sudo mkfs.ext4 /dev/local/root
-        sudo mkswap -f /dev/local/swap
-    4. IF you use NON-system partions you can switch off system info for these partions:
-        sudo tune2fs -r 0 /dev/local/home
-    5. activate all groups:
-        sudo vgchange -a y
-    6. remove partion:
-        sudo lvremove /dev/local/root
-    7. remove group:
-        sudo vgremove /dev/local
-    8. create lvm partion with specific size
-        sudo lvcreate -n root -L 7.5g vgcherries
-    9. lsblk --fs
-    10. mount | grep mapper
-
-1. create new partion, /dev/sda6 for example
-2. init the partion with lvm:
-    sudo pvcreate /dev/sda6
-3. create lvm volume group:
-    sudo vgcreate local /dev/sda6
-4. create partion in the lvm group (partion name is 'root', will be created on the 'local' lvm group):
-    sudo lvcreate -l 100%FREE -n root local
-5. format the 'root' partion as ext4:
-    sudo mkfs.ext4 /dev/local/root
-6. set beautiful partion label
-    sudo tune2fs -L root /dev/local/root
+    5. Устанавливаем /boot раздел с grub на флэшку (только для DOS разметок! НЕ GPT!)
+        0.  Не выходя из chroot выше! Если вышли, то выполнить пункт 4 со входом в chroot (до пункта редактирования /mnt/etc/crypttab)
+        1.  Если зашифрованный диск закрыт, то монтировать его снова коммандой:
+                sudo cryptsetup luksOpen /dev/sda3 cryptlinux   # где sda3 это luks контейнер (который можно увидеть в редакторе разделов kde или gtk)
+        2.  Добавить
+                GRUB_ENABLE_CRYPTODISK=y
+                GRUB_CRYPTODISK_ENABLE=y
+            в /etc/default/grub
+        3.  Установить не из chroot, а из обычной консоли (где sdc это флэшка на которой /boot)
+                sudo grub-install --root-directory=/mnt /dev/sdc --recheck --no-floppy
+        4.  выполнить из chroot
+                update-grub
+        5.  выполнить из chroot
+                update-initramfs -k all -c
+    6.  Готово. Чтобы случайно не загрузиться с вставленной флэшкой в Windows,
+        то например можно изменить порядок загрузки в BIOS и поставить приоритет для usb flash.
+        В некоторых BIOS диски UEFI всегда идут перед DOS дисками, и загрузка с них всегда будет в приоритете.
+        В некоторых системах можно грузиться с SD карточки, это часто удобно.
+    7. Чтобы загрузиться в систему нужно загрузиться с флэшки на которой /boot раздел
+        Если с флэшкой что-то случиться, то придется выполнить пункт 5 еще раз и установить /boot раздел туда заново
+        
+        ПРОБЛЕМА. На флэшку grub может установиться не полностью, тогда нужно гуглить.
