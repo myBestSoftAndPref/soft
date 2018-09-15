@@ -435,11 +435,19 @@ xubuntu-restricted-extras - набор всех кодеков + flashplayer
 smplayer - более быстрый (в ppa версия с рекламой, поэтому возможно лучше оставить ту что идет по умолчанию с ubuntu)
     установить свежую версию из официального ppa
         sudo add-apt-repository ppa:rvm/smplayer 
-        sudo apt-get update 
-        sudo apt-get install smplayer smplayer-themes smplayer-skins 
+        sudo apt update 
+        sudo apt install smplayer smplayer-themes smplayer-skins 
+
+        Чтобы отключить надоедливое окошко с предложение Пожертвовать:
+            1. sudo geany /home/user/.config/smplayer/smplayer.ini
+            2. Найти секцию [reminder] и добавить туда:
+                [reminder]
+                action=1
+                show=0
 
 vlc
     sudo apt install vlc browser-plugin-vlc
+    Официальный PPA НЕ РАБОТАЕТ, он тут https://nightlies.videolan.org
 
 --видеоредакторы
 Flowblade
