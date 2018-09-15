@@ -365,6 +365,9 @@ oracle java
 perl
 python
 mono - sudo apt install mono-complete
+    Новая версия из официального PPA:
+        https://www.mono-project.com/download/stable/#download-lin-ubuntu
+
 LAMP (php + apache + mysql)
 mysql + gui для него + mysql-workbench-community + скачать mysql connector
 DBeaver - может работать с разными БД, установка из PPA
@@ -390,8 +393,11 @@ adb - набор утилит для android
 svn (subversion)
 git - лучше ставить обновленную версия с официального PPA, там поддержка libsecret (хранение паролей для отдельных репозиториев)
     https://git-scm.com/download/linux
+    git apt install git git-gui git-extras gist
+    
 RabbitVCS - GUI для git и SVN
 git-cola - GUI для git
+GitExtensions - gui на mono (вроде качественное)
 
 dolphin-plugins - в KDE набор плагинов в том числе для Git (доступны в файловом менеджере)
 
