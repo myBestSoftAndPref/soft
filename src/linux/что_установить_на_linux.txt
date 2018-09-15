@@ -442,7 +442,7 @@ smplayer - более быстрый (в ppa версия с рекламой, �
             1. sudo geany /home/user/.config/smplayer/smplayer.ini
             2. Найти секцию [reminder] и добавить туда:
                 [reminder]
-                action=1
+                action=7
                 show=0
 
 vlc
