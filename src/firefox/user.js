@@ -20,3 +20,5 @@ user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 user_pref("network.proxy.socks_remote_dns", true); // dns через прокси
+
+user_pref("toolkit.telemetry.coverage.opt-out", true); // отключаем особый вид телеметрии, который не зависит от обычных настроек
