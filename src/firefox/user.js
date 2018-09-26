@@ -10,6 +10,12 @@ user_pref("dom.webnotifications.serviceworker.enabled", false); //без это�
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
 user_pref("browser.fixup.alternate.enabled", false); //отключаем автоподстановку TLD и www, иногда мешает вводу
 user_pref("layout.spellcheckDefault", 2); // включить проверку орфографии во всех полях ввода
+user_pref("devtools.screenshot.audio.enabled", false); //Отключает звук затвора фотоаппарата при снятии скриншота в через Developer Tools.
+
+// Отключает обнаружение captive portal - подмены всех запрашиваемых пользователем страниц на страницы провайдера
+user_pref("network.captive-portal-service.enabled", false);
+user_pref("captivedetect.canonicalURL", "");
+user_pref("captivedetect.maxRetryCount", 0);
 
 // ссылки на русском будут копироваться как есть, без кодирования
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
@@ -19,6 +25,18 @@ user_pref("browser.urlbar.decodeURLsOnCopy", true);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
+// Отключает посылку статистики при обновлении аддонов.
+user_pref("extensions.getAddons.cache.enabled", false);
+
 user_pref("network.proxy.socks_remote_dns", true); // dns через прокси
 
 user_pref("toolkit.telemetry.coverage.opt-out", true); // отключаем особый вид телеметрии, который не зависит от обычных настроек
+user_pref("extensions.fxmonitor.enabled", false); // отключаем отправку хэшей почты для проверки на взломанность в разные сервисы
+
+// отключение различных обновлений
+user_pref("app.update.auto", false);
+user_pref("lightweightThemes.update.enabled", false);
+user_pref("lightweightThemes.getMoreURL", "");
+user_pref("lightweightThemes.recommendedThemes", "");
+user_pref("extensions.update.enabled", false);
+user_pref("browser.search.update", false);
