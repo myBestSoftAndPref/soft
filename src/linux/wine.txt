@@ -1,0 +1,68 @@
+Полезная статья:
+    https://wiki.archlinux.org/index.php/Wine
+    https://wiki.winehq.org/FAQ
+    
+Важно:
+    WINE не изолирует софт. Поэтому вредоносные там запускать нельзя.
+    Чтобы изолировать можно использовать AppArmor, SELinux или создать отдельного пользователя (хотя возможно отдельный пользователь плохая защита)
+    
+Песочница. На самом деле это слабая изоляция приложений. Скрипт удаляет доступ к /home разделу и интеграцию в DE. От вирусов это защищает мало.
+После использования запустить exe из wine программы можно будет только положив его вручную в /.wine-steam/drive_c
+    WINEPREFIX=~/.wine-steam winetricks sandbox
+
+WINEPREFIX=~/.wine-steam wine
+
+WINEPREFIX=~/.wine-steam winecfg - настройка wine (лучше запустить перед установкой программ)
+WINEPREFIX=~/.wine-steam control - панель управления
+WINEPREFIX=~/.wine-steam winetricks - скрипт winetricks для установки компонентов и настройки (обновленная версия на официальном сайте)
+WINEPREFIX=~/.wine-steam regedit - редактор реестра
+WINEPREFIX=~/.wine-steam wineboot -r - перезагрузить wine
+WINEPREFIX=~/.wine-steam wineboot -k - закрыть все программы
+
+WINEARCH=win32 WINEPREFIX=~/.wine-steam winecfg - запустить в win32 (по умолчанию win64)
+WINEPREFIX=~/.wine-steam winetricks corefonts allfonts fontsmooth-rgb - установка базовых шрифтов
+WINEPREFIX=~/.wine-steam winetricks dlls - gui для установки библиотек (сразу этот пункт открывается)
+
+Если мешают окошки с ошибками wine можно их отключить:
+WINEPREFIX=~/.wine-steam winetricks nocrashdialog
+
+Графический интерфейс winetricks (ПРИМЕЧАНИЕ. Если версия winetricks старая, то могут быть проблемы с gui)
+WINEPREFIX=~/.wine-steam winetricks --gui
+    Если будут проблемы с локалью использовать команду (env -u LANGUAGE LC_ALL=en_US.UTF-8):
+        env -u LANGUAGE LC_ALL=en_US.UTF-8 WINEARCH=win32 WINEPREFIX=~/.wine-steam winetricks --gui
+
+Запуск на дискретной видео карте:
+DRI_PRIME=1 WINEPREFIX=~/.wine-steam soft.exe
+
+Для дискретной видекарты обязательно установить количество видеопамяти (должно быть равно количеству видеопамяти на видеокарте):
+WINEPREFIX=~/.wine-steam winetricks videomemorysize=1024
+DRI_PRIME=1 WINEPREFIX=~/.wine-steam winetricks videomemorysize=1024 - на всякий случай устанавливаем количество памяти для дискретки, ПРОВЕРИТь нужно ли это)
+
+Без winetricks
+1. HKCU>Software>Wine>Direct3d - ручное установка видео памяти
+2. удалить из winecfg ссылки на все диски кроме drive_c
+3.  Сглаженный шрифт
+    REGEDIT4
+
+    [HKEY_CURRENT_USER\Control Panel\Desktop]
+    "FontSmoothing"="2"
+    "FontSmoothingGamma"=dword:00000578
+    "FontSmoothingOrientation"=dword:00000001
+    "FontSmoothingType"=dword:00000002
+4. Отключения Окошка с ошибками wine
+    [HKEY_CURRENT_USER\Software\Wine\WineDbg]
+"ShowCrashDialog"=dword:00000000
+
+Запуск стим будет выглядеть так:
+DRI_PRIME=1 WINEPREFIX=~/.wine-steam wine "/home/user/.wine-steam/drive_c/Program Files (x86)/Steam/Steam.exe"
+
+
+Список важных пакетов:
+1. corefonts
+2. font fix (не пакет, из настроек)
+3. fontsmooth rgb (не пакет, из настроек)
+4. wsh56js
+5. allfonts (может не скачаться, если старя версия winetricks)
+
+ПРОБЛЕМЫ.
+    Некоторые программы могут неккоректно работать в win64, но работать в win32.

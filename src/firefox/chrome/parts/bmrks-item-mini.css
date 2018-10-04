@@ -1,0 +1,32 @@
+
+#PlacesToolbarItems > toolbarbutton.bookmark-item > menupopup .bookmark-item {
+  --urlbar-icon-padding: 0px !important;
+  --toolbarbutton-outer-padding: 0px !important;
+  --toolbarbutton-inner-padding: 0 !important;
+  --toolbarbutton-border-radius: 0px;
+  --toolbarbutton-vertical-text-padding:0 !important;
+  --arrowpanel-padding: 0px !important;
+  padding: 0 !important;
+  display: block !important;
+  position: relative !important;
+  
+
+  overflow: hidden !important;
+  
+  height: 15px !important;
+  min-height: 15px !important;
+  max-height: 15px !important;
+  
+  font-size: 10px !important;
+  line-height: 10px !important;
+  
+}
+
+#PlacesToolbarItems > toolbarbutton.bookmark-item > menupopup .bookmark-item .menu-iconic-text {
+  line-height: 10px !important;
+}
+
+#PlacesToolbarItems > toolbarbutton.bookmark-item > menupopup .bookmark-item .menu-iconic-left .menu-iconic-icon {
+  border: 1px solid black !important;
+  line-height: 10px !important;
+}
