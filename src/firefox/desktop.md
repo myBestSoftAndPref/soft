@@ -126,7 +126,7 @@
 
 * [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р.
 * [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты
-* [peek](https://github.com/peek/peek) (ubuntu) - запись экрана в виде gif
+* [peek](https://github.com/phw/peek) (ubuntu) - запись экрана в виде gif
 * [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (ubuntu) - запись экрана
 * [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - линейка
 * [Color Picker](https://userbase.kde.org/Plasma/ColorPicker) и [KColorChooser](https://www.kde.org/applications/graphics/kcolorchooser/) (Kubuntu) - выбор цвета
