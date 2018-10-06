@@ -12,9 +12,18 @@ DOSBox - эмуль DOS
 i2p
 TorBrowser
 
+-----------------
 sudo apt install ppa-purge - чтобы удалять ppa
     само удаление: sudo ppa-purge ppa:ubuntu-x-swat/x-updates
+    или: sudo apt-add-repository --remove ppa:kernel-ppa/ppa
+ЕСЛИ удалить ppa просто из списка репозиториев, то ключ этого PPA не удалится, поэтому нужно использовать комманды ниже.
 
+ПОСЛЕ удаления:
+    1. посмотреть какие ключи от ppa остались:
+        apt-key list
+    2. удалить лишние:
+        sudo apt-key del 790B C727 7767 219C 42C8  6F93 3B4F E6AC C0B2 1F32
+-------------------
 Grub Customizer (в GTK) или sudo apt-get install kde-config-grub2 (в KDE)
 	- конфигуратор загрузки операционных систем
 	
@@ -1003,7 +1012,7 @@ latte-doc - крутая док панель kde
 Есть возможность использовать разные доки на разных рабочих столах (или комнатах?).
 ------------------
 отключаем сервис apport (надоедливые предложения отправить отчеты об ошибках, еще и CPU грузит)
-В KDE в меню Диагностика отключения отправления статистики НЕ ОТКЛЮЧАЕТ это окно
+В KDE в меню Диагностика отключения отправления статистики НЕ ОТКЛЮЧАЕТ это окно ПОЛНОСТЬЮ (видимо только часть отправки статистики)
 
 Смотрим статус
     systemctl status apport.service
@@ -1016,6 +1025,13 @@ latte-doc - крутая док панель kde
 Чтобы включить:
     systemctl unmask apport.service # if you masked it
     sudo systemctl enable apport.service
+    
+1. sudo geany /etc/default/apport
+2. поставить enabled=0
+3. sudo service apport stop
+
+Можно еще удалить
+    sudo apt purge apport
 ------------------
 доп. утилиты для ядра.
 В том числе
