@@ -2,7 +2,7 @@
 @import "parts/tabbar-mini.css";
 
 /* it can brake compatibility with skins, comment it if you want to use skins */
-/* @import "parts/tabbar-mini-highlight.css"; */
+@import "parts/tabbar-mini-highlight.css";
 
 @import "parts/tabbar-mini-tab-states-indication.css";
 
