@@ -296,6 +296,8 @@ chromium-browser + pepperflashplugin-nofree  -- Inox Browser - форк, но т
 
 --почтовый клиент
 thunderbird - поставить не из репозитория, под sudo обновлять можно быстрее
+    Устанавливать лучше вручную с сайта, а не из списка Mozilla (см. раздел про Firefox о том как установить)
+    ЭТО ВАЖНО. Из репозитория Ubuntu старый thunderbird может не успевать за изменениями в сервисах и все будет ломаться.
 Claws Mail - быстрый, но возможностей меньше чем в thunderbird, могут быть глюки
 KMail
 
@@ -663,6 +665,22 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
 ---------------
 установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla
 
+Из-за проблем с некрасивым курсором в snap ПОКА НЕ Рекомендовано устанавливать Firefox из snap:
+    1. Удалить стандартный Firefox:
+        1. sudo apt-get --purge autoremove firefox
+        2. удалить /usr/lib/firefox/
+        3. удалить /usr/lib/firefox-addons/
+        4. удалить (перед удалением профиль можно перенести) /home/user/.mozilla/
+    2. Установить
+        sudo snap install firefox
+    3. Установить ESR
+        sudo snap install firefox --channel=esr/stable
+    5. После этого путь к Firefox будет таким (смотреть пример в свойствах ярлыка из меню программ):
+        env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/firefox_firefox.desktop /snap/bin/firefox %U
+    6. Профиль по умолчанию будет лежать тут:
+        /home/user/snap/firefox/common/.mozilla/firefox/x051yux7.default
+        
+Ручная установка:
 1. Качаем Firefox
 2. Распаковываем в /opt/my_firefox
 3. Создаем ссылку
@@ -673,6 +691,7 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     my_firefox -no-remote -profile /home/user/my_firefox_profile
 6. Чтобы обновить из меню "О программе" запускаем firefox через sudo
     sudo my_firefox -no-remote -profile /home/user/my_firefox_profile
+7. Бонус для KDE при таком методе установки: если вы используете иконку-меню в строке заголовка, то установленный таким образом Firefox ее использовать не будет, и можно по Alt открывать всплывающее меню. Если CSS стилем установить ему position:absolute то и окно при этом дергаться не будет.
 
 --------------
 Как добавить в систему, Kate, KDE, geany в Ubuntu и в другие текстовые редакторы одновременную проверку на: русский и англ. язык одновременно

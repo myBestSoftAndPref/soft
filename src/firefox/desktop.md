@@ -1,9 +1,9 @@
 #### Что это?
 
 Минимальны набор дополнений, стилей и настроек для **release** версии **Firefox**.
-<br>
+
 **ПРЕДУПРЕЖДЕНИЕ!** Я не проверяю код дополнений на сбор статистики и показ рекламы. Дополнения не добавляются на страницу только если они собирают статистику или показывают рекламу слишком нагло. Часть дополнений может открывать свою домашнюю страницу при первом запуске или обновлении.
-<br>
+
 **Старую версию** этой статьи для дополнений на **XUL** для **Firefox 52 ESR** можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>ссылка пока не будет удалена</sub>
 <br>
 **Архив некоторых дополнений на xul** для Firefox 52, которые Mozilla видимо удалит со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
@@ -120,6 +120,10 @@
 [Default Bookmark Folder](https://addons.mozilla.org/ru/firefox/addon/default-bookmark-folder) - можно установить каталог для закладок по умолчанию, добавление закладок в адресную строку, позицию закладки при добавлении (верх/низ каталога) etc
 <br>
 [Copy PlainText](https://addons.mozilla.org/en-US/firefox/addon/copy-plaintext) - добавляет в контекстное меню пункт для копирования текста без форматирования
+<br>
+[Discard Tab](https://addons.mozilla.org/en-US/firefox/addon/discard-tab/) - добавляет пункт меню в контекстное меню вкладки для выгрузки вкладки из памяти
+<br>
+[Tab Unloader](https://addons.mozilla.org/en-US/firefox/addon/tab-unloader-we/) - добавляет подпункт в контекстное меню вкладки для групповых действий с выгрузкой вкладок
 
 #### Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
@@ -271,3 +275,7 @@ javascript:void((function () {
 2) ```ru-RU``` - для русского языка.
 <br>
 При этом параметр ```intl.locale.matchOS``` должен стоять в ```false```
+
+**Q** Команда ```-no-remote``` не работает. Команда ```-profile``` не работает. Появляется сообщение ошибки, что ```Firefox``` или ```Thunderbird``` уже запущен. Английский вариант: ```Firefox is already running, but is not responding...```.
+<br>
+**A** Причина - [старый баг Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
