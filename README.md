@@ -1,3 +1,8 @@
+Никакой материал отсюда не претендует на полноценную статью. Это личные заметки.
+Если кому-то статьи полезны, то хорошо. Если нет, то нет.
+<br>
+Я исправляю ошибки в статье и дополняю когда есть желание. Я знаю об ошибка в статьях, но исправляю только по мере **моей** надобности.
+
 Статьи:
 * [Firefox](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/desktop.md)
 * [Firefox для Android](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/android.md)
