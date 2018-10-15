@@ -4,7 +4,7 @@
 
 **ПРЕДУПРЕЖДЕНИЕ!** Я не проверяю код дополнений на сбор статистики и показ рекламы. Дополнения не добавляются на страницу только если они собирают статистику или показывают рекламу слишком нагло. Часть дополнений может открывать свою домашнюю страницу при первом запуске или обновлении.
 
-**Старую версию** этой статьи для дополнений на [XUL](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL)<sub>XUL это старый API для дополнений, более развитый, многие пользователи недовольны, что его удалили и выкинули много дополнений на нем</sub> для **Firefox 52** [ESR](https://www.mozilla.org/en-US/firefox/organizations/) можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>ссылка пока не будет удалена</sub>
+**Старую версию** этой статьи для старых дополнений на [XUL](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL) для **Firefox 52** [ESR](https://www.mozilla.org/en-US/firefox/organizations/) можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md) <sub>ссылка пока не будет удалена</sub>
 <br>
 **Архив некоторых дополнений на xul** для Firefox 52, которые Mozilla видимо удалит со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
 <br>
