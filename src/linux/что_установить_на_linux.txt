@@ -35,11 +35,7 @@ GoldenDict -  форк StarDict, словари ABBYY Lingvo, StarDict, Babylon,
 gparted (gtk) или partion manager (kde) - редактор разделов жесткого диска, лучше всегда использовать gparted (он не глючен)
 	sudo fdisk -l - проверка состояния разделов
 
-KeePassX - менеджер паролей {
-	плагины firefox https://addons.mozilla.org/en-us/firefox/addon/passifox/
-					https://addons.mozilla.org/en-us/firefox/addon/keefox
-}
-KeePassXC - более современная версия
+KeePassXC - менеджер паролей
 
 ddresсue - востановление файлов в ubuntu (нету в официальном репе?)
 
@@ -130,9 +126,6 @@ stellarium - графическая среда для астрономии (зв
 celestia - виртуальный космос с просмотром звезд, галактик, планет, комет, астероидов, спутников и т.д.
 
 Systemback - сторонняя утилита, может создавать live образы текущей системы и имеет различные инструменты для бэкапа
-
-Чтобы устанавливать пакеты flatpack нужно установить менеджер
-    https://flatpak.org/setup/Ubuntu/
 ----------------------
 Так можно обновить ядро Ubuntu 16.04.1 на 16.04.2 с ядра 4.4 на 4.8
 sudo apt-get install --install-recommends xserver-xorg-hwe-16.04
@@ -180,33 +173,28 @@ dnscrypt-proxy -d -a 127.0.0.2:53 -R dnscrypt.eu-dk
                 sudo lsof -i -n | grep -i dnscrypt
 ----------------------
 Ускорение Ubuntu
-preload + prelink
+preload + prelink - кэширование программ (аналог prefetch в Windows)
 
 ----------------------
 !!!Менеджеры пакетов
+ВНИМАНИЕ!
+    Процесс apt-xapian может несколько минут висеть в процессах обновлять кэш поиска программ и прилично нагружать CPU, нужно подождать пока он завершит работу.
+
 muon в KDE
-    Заметка: в muon очень долго существует баг, некоторые пакеты он не находит или находит после нескольких перезапусков.
-    Возможно лучше использовать Synaptic и в KDE (у него нет в зависимостях GTK)
-        Быстрый поиск в Synaptic
-            sudo apt-get install apt-xapian-index
-            sudo update-apt-xapian-index -vf
     если поиск перестал нормально работать, то использовать команду: sudo update-apt-xapian-index -vf
 
 Synaptic в GTK
-
-----------------------
-!!!xfce
-sudo apt-get install xfce4-goodies - все плагины
-
-
+    Чтобы появилась строка поиска программ на лету нужно установить пакет:
+        sudo apt-get install apt-xapian-index
+        sudo update-apt-xapian-index -vf
 ----------------------
 !!!эмуляторы компьютеров
 virtualbox (+ guest iso для него)
     свежая версия 
         sudo apt-add-repository "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib"
         wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-        sudo apt-get update
-        sudo apt-get install virtualbox-5.2
+        sudo apt update
+        sudo apt install virtualbox-5.2
         
 
 qemu - эмулятор компьютера
@@ -223,11 +211,8 @@ Kalzium - таблца хим элементов
 KCharSelect - выбор разных спец. символов и emoji из таблиц символов
 ----------------------
 !!!Шифрование
-TrueCrypt 7a - проект закрыт
 VeraCrypt - шифрование дисков, создание виртуальных шифрованных дисков с двойным дном.
 	для решения проблемы с работой на Ubuntu 16.04 нужно установить утилиту dmsetup и xterm
-CipherShed - форк TrueCrypt совместимый с TrueCrypt
-
 KGpg
 
 ----------------------
@@ -259,7 +244,6 @@ xfe - двух панельный менеджер xfce, так себе
 sudo apt-get install w3m w3m-img - браузер
 Links - браузер
 mc - файловый менеджер midnight commander
-aptitude - менеджер пакетов
 
 ----------------------
 !!!Сети и Интернет
@@ -284,7 +268,7 @@ qbittorrent - аналог uTorrent
 
 
 --качалки
-(нормальных нету, только дополнение DownloadThemAll в Firefox)
+(нормальных нету)
 curl
 aria2
 Uget
@@ -362,10 +346,20 @@ glogg - для просмотра больших текстовых файлов
 --просмотр документов
 libreoffice +
  sudo apt-get install libreoffice-style-sifr + Tools > Options > LibreOffice > View and select "Sifr" under "Icon size and style"
+ sudo apt install libreoffice-kde - для интеграции в kde
+ также посмотреть по необходимости другие пакеты libreoffice (напр. редактор формул и т.д.)
  свежую версию можно установить:
     sudo apt-get remove --purge libreoffice*
     sudo snap install libreoffice
  чтобы запустить snap версию: /snap/bin/libreoffice
+ Решение бага с не появляющимся меню в KDE при использовании кнопки Application Menu:
+    Экспортировать переменную export SAL_USE_VCLPLUGIN=gtk3_kde5 в консоли,
+        можно добавить ее в файл /etc/environment без export вначале SAL_USE_VCLPLUGIN="gtk3_kde5" чтобы она действовала постоянно
+Есть 2 версии libreoffice:
+    fresh - экспериментальная
+    still - стабильная (может быть в репозитории Ubuntu по умолчанию)
+Если используете AppImage можно открыть отдельный компонент так
+    libreoffice --writer
  
  + librecad
 FreeCAD - CAD система
@@ -483,7 +477,7 @@ Kodi (бывшее название - XBMC) - медиацентр для куч
 Shotwell - менеджер фото и картинок
 digiKam - менеджер фото и картинок
 
-SimpleScreenRecorder - из стороннего ppa, запись экрана, с ubuntu 17 есть в ойициальном репе
+SimpleScreenRecorder - из стороннего ppa, запись экрана, с ubuntu 17 есть в официальном репе
 peek - запись экрана в виде gif, из стороннего ppa
 
 --Кодеки и плагины
@@ -524,16 +518,18 @@ Synfig - создание 2D анимации, мультов
 Avidemux - простой редактор видео
 Cinelerra - видео и аудио редактор
 Kdenlive - нелинейный видео редактор
+    Скачать AppImage с официального сайта, в Ubuntu старая версия
 HandBrake - видеоконвертер
 Lightworks - код закрыт, аналог Apple FinalCut, Avid Media Composer и Pinnacle Studio
 
 --графические редакторы
 gimp + sudo apt-get install gimp-data-extras + sudo apt-get install gimp-plugin-registry
+    Устанавливать flatpak с официального сайта, в Ubuntu старая версия
 GrafX2 - графический редактор картинок 256 цветов (изображений в стиле старых компьютеров и консолей)
 sudo apt-get install pinta
 Inkscape - векторный графический редактор
     В ppa новейшая версия: https://code.launchpad.net/~inkscape.dev/+archive/ubuntu/stable
-    Или snap: sudo snap install inkscape
+    Но лучше установить flatpak с официального сайта
 krita - рисовалка для KDE
     лучше установить новую версию из PPA: https://krita.org/en/download/krita-desktop/
 Darktable - редактов фото, аналог Adobe Lightroom и Apple Aperture
@@ -555,26 +551,6 @@ Kwave
 
 --3d редактор
 Blender
-
------------------------
-GNOME Disk или MountManager
-опции монтирования - писать в свойствах диска
-nosuid,nodev,nofail,exec,x-gvfs-show   - для ntfs
-defaults,user,exec - для ext4
-
------------------------
-Дополнительные библиотеки
-sudo dpkg --add-architecture i386 (добавить поддержку 32 бит архитектуры?)
-Набрать sudo apt-get install ia32-libs и выдаст чем его можно заменить
-sudo apt-get install lib32stdc++6
-sudo apt-get install lib32z1
-sudo apt-get install lib32ncurses5
-sudo apt-get install lib32bz2-1.0
-Для разрешения зависимостей в конце набрать sudo apt-get -f install
-
-Ускорение видео в vlc
-Установить xvba-va-driver (для проприетарных amd)
-затем в vlc Настройки → Ввод и кодеки → Использовать видеоускоритель включаем
 -----------------------
 Утилиты которые использует Krusader
 krename - групповое переименование
@@ -595,49 +571,12 @@ unrar-free
 -----------------------
 LabPlot - построение графиков и анализ
 -----------------------
-Настройка Xfce
-
-0. Добавить плагины на панель:
-	переключение языка
-	монитор процессора
-	монитор сети
-	сделать снимок экрана
-	xfce4-mount-plugin - понтирование устройств
-	xfce4-sensors-plugin - инфа с датчиков
-	cameramonitor - слежение за веб камерой
-	xfce4-diskperf-plugin - производительность диска
-	xfce4-cellmodem-plugin - работа с мобильными модемами
-	 
-	
-1. Чтобы работал апплет показывающий скорость соединения на панели:
-		Набрать команду ifconfig -a
-		Выведет список устройств, вписать нужное:
-			wlo - wi-fi
-			eth - проволная сеть
-
-2. Чтобы установить xfce 4.12 в ubuntu 14.04
-	sudo apt-get install qt4-qtconfig
-	qtconfig 
-	установить в настройке оформления тему GTK+
-	Файл > Сохранить
-	
-	 sudo add-apt-repository ppa:xubuntu-dev/xfce-4.12
-	  sudo apt-get update
-	   sudo apt-get dist-upgrade 
-	   
-	 Подключаем доп. репозиторий с плагинами xfce
-		sudo add-apt-repository ppa:xubuntu-dev/extras
-		sudo apt-get update
-		
-3. В настройках можно установить скрытие заголовков окна в окнах на весь экран
------------------------
 Настройка KDE
 
 В kubuntu можно установить новые версии KDE из официального ppa репозитория
 от kubuntu (Backports репозиторий)
 Обычно можно поискать о том как ставить и номера новых доступных версий на
 https://www.kubuntu.org/news/
-(на текущий момент написания обновлять лучше на версию KDE5 4.8 LTS)
 
 Установить Win + D на показ рабочего стола можно в настройках глобальных клавишь
 
@@ -662,37 +601,6 @@ dpkg --get-selections | grep linux
 sudo apt-get purge linux-headers-4.2.0-34 linux-headers-4.2.0-34-generic linux-image-4.2.0-34-generic linux-image-extra-4.2.0-34-generic linux-signed-image-4.2.0-34-generic
 
 sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-generic linux-image-4.11.0-041100-generic
----------------
-установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla
-
-Из-за проблем с некрасивым курсором в snap ПОКА НЕ Рекомендовано устанавливать Firefox из snap:
-    1. Удалить стандартный Firefox:
-        1. sudo apt-get --purge autoremove firefox
-        2. удалить /usr/lib/firefox/
-        3. удалить /usr/lib/firefox-addons/
-        4. удалить (перед удалением профиль можно перенести) /home/user/.mozilla/
-    2. Установить
-        sudo snap install firefox
-    3. Установить ESR
-        sudo snap install firefox --channel=esr/stable
-    5. После этого путь к Firefox будет таким (смотреть пример в свойствах ярлыка из меню программ):
-        env BAMF_DESKTOP_FILE_HINT=/var/lib/snapd/desktop/applications/firefox_firefox.desktop /snap/bin/firefox %U
-    6. Профиль по умолчанию будет лежать тут:
-        /home/user/snap/firefox/common/.mozilla/firefox/x051yux7.default
-        
-Ручная установка:
-1. Качаем Firefox
-2. Распаковываем в /opt/my_firefox
-3. Создаем ссылку
-    sudo ln -s /opt/my_firefox/firefox /usr/bin/my_firefox
-4. Создаем каталог профиля
-    /home/user/my_firefox_profile
-5. Запускаем и указываем профиль (чтобы не затереть стандартный) 
-    my_firefox -no-remote -profile /home/user/my_firefox_profile
-6. Чтобы обновить из меню "О программе" запускаем firefox через sudo
-    sudo my_firefox -no-remote -profile /home/user/my_firefox_profile
-7. Бонус для KDE при таком методе установки: если вы используете иконку-меню в строке заголовка, то установленный таким образом Firefox ее использовать не будет, и можно по Alt открывать всплывающее меню. Если CSS стилем установить ему position:absolute то и окно при этом дергаться не будет.
-
 --------------
 Как добавить в систему, Kate, KDE, geany в Ubuntu и в другие текстовые редакторы одновременную проверку на: русский и англ. язык одновременно
 
@@ -714,12 +622,6 @@ sudo apt-get purge  linux-headers-4.11.0-041100 linux-headers-4.11.0-041100-gene
     https://github.com/arty-name/hunspell-merge
     https://alekseydurachenko.github.io/2015/03/22/kate-spell-checker-rus-and-eng.html
     http://mozilla-russia.org/projects/dictionary/hunspell.html
-----------------
-Если будут проблемы с русскими символами в консоли, то это результат неправильной установки кодировки.
-Случается при удалении/установки языков в настройках Ubuntu.
-Решение искать в интернете для конкретных случаев.
-
-Как правило сводится к ручной правке конфигурационных файлов.
 ----------------
 Добавление Vulkan API к видеодрайверу
 
@@ -797,27 +699,20 @@ sudo chown -R $USER:$(id -gn $USER) /home/user/.config
     sudo chmod -R go-w /home/user/0_all     - отнимаем права на запись у всех кроме текущего пользователя
     sudo chmod -R ugo+X /home/user/0_all    - даем выполнять (открывать) только каталоги, но не файлы всем
     
-Одной коммандой: sudo chown -R $USER:$(id -gn $USER) /home
+Одной коммандой:
+    sudo chown -R $USER:$(id -gn $USER) /home
+    sudo chmod -R ugo=rwx,ugo-x,go-w,ugo+X /home
+    
+ВАЖНО! Некоторые программы при установке на каждый файл своих конфигураций ставят разные права доступа! Например: Firefox. Без понятия как их все дублировать в случае сброса прав доступа.
 
 Чтобы посмотреть user_name: команда whoami
 Чтобы посмотреть user_group: команда groups <username>
     (в user_group вписать одну группу относящуюся к user)
+    
+stat myFile - просмотр всех прав на файл или каталог в том числе в цифровом виде
 ------------------
-устранение tearing в xfce
+>>> Для меня эта заметка уже не актуальна, мерцание окон в KDE для моей видеокарты пофикшено.
 
-установить compton
-установить compton-conf (графический конфигуратор)
-
-в файле ~/.config/compton.conf поменять опции
---backend glx
---paint-on-overlay
---vsync opengl-swc
-
-добавить в автозапуск команду:
-	compton -b чтобы запустить как демона
-
-Примечание: поискать настройки получше, эти могут быть неоптимальны
-------------------
 Для видеокарт Intel
 
 Решение проблемы тиринга (tearing) в KDE.
@@ -1024,7 +919,7 @@ latte-doc - крутая док панель kde
 Примечание: если повозиться с настройкой latte-dock и поставить тип layout как extended, то она будет практически 1 в 1 как стандартная панель + доп. настройки (напр. скрытие)
 
 На текущий момент может ломать что-то, напр клавиши звука, если ее использовать вместо панели.
-Чтобы работал нужно добавить в latte-dock аплет звука (значек динамика)
+Чтобы работал нужно добавить в latte-dock аплет звука (значок динамика)
 
 Функция Не группировать программы появится только с версией 0.8 (официально пока не в ubuntu 18.04)
 
