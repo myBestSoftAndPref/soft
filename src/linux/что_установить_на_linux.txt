@@ -6,7 +6,7 @@ wine - эмуль Win API
 sudo apt-get install GDebi (установка deb) + sudo dpkg -i /home/user/soft/*.deb - установка группы пакетов
 i-nex (аналог everest) - просмотр инфы о программах
 testdisk - востановление файлов (единственная прогрмма под linux)
-powertop - инфа о питании компаd
+powertop - инфа о питании компа
 htop
 DOSBox - эмуль DOS
 i2p
@@ -16,7 +16,7 @@ TorBrowser
 sudo apt install ppa-purge - чтобы удалять ppa
     само удаление: sudo ppa-purge ppa:ubuntu-x-swat/x-updates
     или: sudo apt-add-repository --remove ppa:kernel-ppa/ppa
-ЕСЛИ удалить ppa просто из списка репозиториев, то ключ этого PPA не удалится, поэтому нужно использовать комманды ниже.
+ЕСЛИ удалить ppa просто из списка репозиториев, то ключ этого PPA не удалится, поэтому нужно использовать команды ниже.
 
 ПОСЛЕ удаления:
     1. посмотреть какие ключи от ppa остались:
@@ -699,7 +699,7 @@ sudo chown -R $USER:$(id -gn $USER) /home/user/.config
     sudo chmod -R go-w /home/user/0_all     - отнимаем права на запись у всех кроме текущего пользователя
     sudo chmod -R ugo+X /home/user/0_all    - даем выполнять (открывать) только каталоги, но не файлы всем
     
-Одной коммандой:
+Одной командой:
     sudo chown -R $USER:$(id -gn $USER) /home
     sudo chmod -R ugo=rwx,ugo-x,go-w,ugo+X /home
     
