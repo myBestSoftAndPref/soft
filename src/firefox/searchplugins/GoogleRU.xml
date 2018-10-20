@@ -1,8 +1,0 @@
-﻿<SearchPlugin xmlns="http://www.mozilla.org/2006/browser/search/">
-    <ShortName>Google RU</ShortName>
-    <Description>Google RU</Description>
-    <InputEncoding>UTF-8</InputEncoding>
-    <Image width="16" height="16">data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABe0lEQVQ4jY2SvWocMRSF70PsA4g8SLgPkBdIEVCT91Dlwl36BBQIdpcmxJ2NmuDgYjs3xpAhDoZ1AjuGxT/M6H4pZlarHf/ggcNwhe53z5EkIgJAOk84nxBNhJgAoGtJqjROQB5KRBi6AR8S4jeiawvkKQA1wPltQHEBNKqPNjeuAujEgQ8VwL8AEOIEUDlITklOtrQBVFnrGHsnw3qMX3BBkVgpKOqV4ARxPhDTZtreSVsOMKSATJsnIHE+4TSgk4NL5wkJ8nRjqACL5T1mhpkVAJZ58+09EpXDyzm9ZQ4v50hUji9O6S1zfHGKOA2Y2fAoJsIyGgO9ZURk+Eed1GP+9Ytcf3WdxwGPAuqGhw76IQ0VICh5C9C1MG4Ywxf7bfN5y1FvmXdfd54DGLfLo1J3q0W5UhHBzMiWS93erdYRNg7+/HwF1hUgwK+rqzJ1rWyZT/MDpN4IRpOU69/7ME46+3vG6w9v+Tj/zmK1pLfMv5trdn/sM5vN+A87zsFFZm6QcAAAAABJRU5ErkJggg==</Image>
-    <Url type="text/html" method="GET" template="https://www.google.ru/search?q={searchTerms}"/>
-    <SearchForm>https://www.google.ru</SearchForm> 
-</SearchPlugin>
