@@ -263,9 +263,11 @@ javascript:void((function () {
     my_firefox -no-remote -profile /home/<user_name>/my_firefox_profile
     ```
 7. Чтобы обновить из меню "О программе" запускаем firefox через sudo:
-    ```
-    sudo my_firefox -no-remote -profile /home/<user_name>/my_firefox_profile
-    ```
+    1. Скачайте [скрипт](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/update-firefox-as-sudo.sh)
+    2. В свойствах файла в любом файловом менеджере поставьте право на запуск. <sub>(при этом скрипт должен быть сохранен на диск с файловой системой поддерживающей права доступа, например ```ext4```)</sub>.
+    3. Запустите командой (где ```/opt/my_firefox/firefox``` это путь к вашему Firefox):
+        ```/home/<user_name>/update-firefox-as-sudo.sh /opt/my_firefox/firefox```
+    4. Теперь зайдите в меню "О программе" и обновите. Для обновления Firefox будет создан временный профиль, который авто удалится после закрытия Firefox.
 
 **Q** Как добавить в Firefox открытие ```magnet``` ссылок на торренты.
 <br>
