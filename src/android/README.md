@@ -1,5 +1,10 @@
-Здесь только бесплатные программы. Ссылки даны на официальные сайты. Если прямых ссылок на .apk на официальном сайте нет, то ссылка на [F-Droid](https://f-droid.org). Если в [F-Droid](https://f-droid.org) нету, то ссылка на [Google Play](https://play.google.com/store). Если на официальном сайте ссылка на .apk ведет на другой сторонний источник (магазин), то ссылка на него.  
-Если по ссылке программа не доступна (ссылка сломана), то ищите программу в [F-Droid](https://f-droid.org).
+Здесь только бесплатные программы.
+<br>
+Ссылки даны на официальные сайты. Если прямых ссылок на .apk на официальном сайте нет, то ссылка на [Google Play](https://play.google.com/store). Если в [Google Play](https://play.google.com/store) нету, то ссылка на [F-Droid](https://f-droid.org). Если на официальном сайте ссылка на ```.apk``` ведет на другой сторонний источник (магазин), то ссылка на него.(Почему приоритет у **Google Play**, а не у **F-Droid**? Потому что в **F-Droid** обновления задерживаются, а программы бывает пересобираются с ошибками. И потому что из **Google Play** можно выкачать программу напрямую через [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore).)
+<br>
+Если по ссылке программа не доступна (ссылка сломана), то ищите программу сами.
+
+Чего не хватает в этом списке: 1) Нормального текстового редактора с подсветкой кода, 2) Таймера с большим количеством настроек, 3) Словаря с поддержкой словарей Lingvo, но без ограничений на количество словарей, 
 
 ##### Программы с открытым кодом
 
@@ -11,13 +16,13 @@
 
 ###### Медиа
 * [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - универсальный плеер для аудио и видео, играет почти все существующие форматы
-* [Audio Recorder](https://f-droid.org/repository/browse/?fdfilter=Audio+Recorder&fdid=com.github.axet.audiorecorder) - диктофон, пишет в форматах .ogg, .wav, .flac, .m4a, .mka, .mp3. Есть настройка качества записи, паузы во время разговора по телефону, выбор каталога.
+* [Audio Recorder](https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder) - диктофон, пишет в форматах .ogg, .wav, .flac, .m4a, .mka, .mp3. Есть настройка качества записи, паузы во время разговора по телефону, выбор каталога.
 * [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
 * [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - автоматическая запись телефонных разговоров
 * [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
 
 ###### Навигация
-* [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть ограничение на количество используемых карт, версия F-Droid пересобрана без этих ограничений) 
+* [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть ограничение на количество используемых карт, версия F-Droid пересобрана без этих ограничений). <sub>**Вы должны понимать, что не смотря на все плюсы данные карты не заменят **```Google Maps``` или ```Yandex Maps```**</sub>
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ###### Органайзер
@@ -26,7 +31,7 @@
 
 ###### Интернет
 * [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент. Для работы с GMail и некоторыми другими сервисами нужно зайти в сервис с браузера и включить возможность доступа программам к почте
-* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата ```.mht```. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/android.md)
+* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата etc. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/android.md)
 * [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
 * [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
 * [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
@@ -41,12 +46,13 @@
 * [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (граммы в пинты, килограммы, футы в метры и так далее)
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
 * [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
+* [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) - карта звездного неба (созвездия, астрономические данные и т.д.)
 
 ###### Файлы
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины)
 
 ###### Документы
-* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
+* [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - **Осторожно.** Некоторые моменты вроде того что автор не позаботился даже о нормальном переводе на английский выглядят сомнительно, но удалять из списка пока не буду. Удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
 * [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
 * [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы и другие уникальные функции
 * [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
