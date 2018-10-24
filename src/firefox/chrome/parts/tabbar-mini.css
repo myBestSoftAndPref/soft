@@ -32,6 +32,7 @@
 
 #main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-icon-image {
     background-color: #EFF0F1 !important;
+    margin: 0 !important;
 }
 
 #main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-text.tab-label {
