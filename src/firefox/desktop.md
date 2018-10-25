@@ -182,8 +182,10 @@ javascript:void((function () {
 
 #### Настройки для удобства
 
-Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля ```profile/user.js``` и перезапустить Firefox.  
+Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля Firefox ```profile/user.js``` и перезапустить Firefox.  
 Для Firefox **для Android** можно менять только вручную или получить [root права](https://4pda.ru/2013/05/11/99836/)
+
+Скопировать файл [policies.json](policies.json) с настройками политик в каталог установленного Firefox<sub>(Не профиля)</sub>. Это просто еще один вид настроек, начиная с **Firefox 63** только через них можно отключить проверку обновлений. В этих настройках проверка обновлений отключена, если хотите сгенерировать свои настройки используйте [Enterprise Policy Generator](https://addons.mozilla.org/firefox/addon/enterprise-policy-generator/). Обновляемый список опций политик можно найти [тут](https://github.com/mozilla/policy-templates/blob/master/README.md)
 
 [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
 
