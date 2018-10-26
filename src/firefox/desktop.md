@@ -192,9 +192,9 @@ javascript:void((function () {
 [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
 
 Если хотите больше настроек:
-1. Неофициальная подборка настроек - (pyllyukko/user.js)[https://github.com/pyllyukko/user.js]
-2. Неофициальная подборка настроек, развивается быстрее всего - (ghacks-user.js)[https://github.com/ghacksuserjs/ghacks-user.js] и wiki - [ghacks-user.js/wiki](https://github.com/ghacksuserjs/ghacks-user.js/wiki)
-3. Еще один тип настроек Firefox, которые не меняется ни через ```user.js```, ни через ```distribution/policies.json``` это (AutoConfig)[https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig]
+1. Неофициальная подборка настроек - [pyllyukko/user.js](https://github.com/pyllyukko/user.js)
+2. Неофициальная подборка настроек, развивается быстрее всего - [ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js) и wiki - [ghacks-user.js/wiki](https://github.com/ghacksuserjs/ghacks-user.js/wiki)
+3. Еще один тип настроек Firefox, которые не меняется ни через ```user.js```, ни через ```distribution/policies.json``` это [AutoConfig](https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig)
 4. Статья со списком некоторых опция сбора телеметрии - [Telemetry](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/index.html)
 и отдельно [Telemetry » Internals](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/internals/index.html)
 5. Еще одна статья о телеметрии - [How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections)
