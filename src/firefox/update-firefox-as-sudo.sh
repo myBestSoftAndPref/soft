@@ -72,7 +72,7 @@ PATH_TO_FF_POLICY="$PATH_TO_FF_POLICY_DIR/policies.json"
 PATH_TO_FF_POLICY_BACKUP=$PATH_TO_FF_POLICY.$MY_SCRIPT_UNIQUE_DIR
 
 echo "${green}${underline}STEP 5${reset}"
-echo "${green}Checking if Firefox ${bold}policy${reset}${green} file is existed. There are ${green}${bold}policy${reset}${green} backup files, maybe it's result of the script halting and you want to rename one of theme to '${magenta}policies.json${reset}${green}':${reset}"
+echo "${green}Checking if Firefox ${bold}policy${reset}${green} file is existed. There are ${green}${bold}policy${reset}${green} backup files, maybe it's result of the script halting and you want to rename one of them to '${magenta}policies.json${reset}${green}':${reset}"
 echo -n -e "\\n${red}"
 find $PATH_TO_FF_POLICY_DIR -maxdepth 1 -type f -regex "^$PATH_TO_FF_POLICY.+"
 echo -n "5${reset}"
