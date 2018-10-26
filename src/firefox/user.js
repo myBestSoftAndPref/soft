@@ -9,6 +9,7 @@ user_pref("dom.webnotifications.enabled", false); //отключаем надо�
 user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
 user_pref("browser.fixup.alternate.enabled", false); //отключаем автоподстановку TLD и www, иногда мешает вводу
+user_pref("browser.urlbar.trimURLs", false); // показывать протоколы в адресах сайтов
 user_pref("layout.spellcheckDefault", 2); // включить проверку орфографии во всех полях ввода
 user_pref("devtools.screenshot.audio.enabled", false); //Отключает звук затвора фотоаппарата при снятии скриншота в через Developer Tools.
 user_pref("browser.sessionstore.max_tabs_undo", 25); //Устанавливаем максимальное количество истории закрытых табов в 25
@@ -18,6 +19,7 @@ user_pref("browser.aboutHomeSnippets.updateUrl", ""); // отключаем ре
 user_pref("browser.startup.homepage_override.mstone", "ignore"); // отключаем пока страницы "What's new" после обновления
 
 user_pref("app.normandy.enabled", false); //отключаем статистику https://wiki.mozilla.org/Firefox/Shield/Heartbeat
+user_pref("app.normandy.api_url", "");
 user_pref("app.shield.optoutstudies.enabled", false); //отключаем статистику https://wiki.mozilla.org/Firefox/Shield/Shield_Studies
 
 user_pref("geo.wifi.uri", ""); //пытаемся отключить использование wifi для geo location
@@ -26,6 +28,9 @@ user_pref("geo.wifi.uri", ""); //пытаемся отключить испол�
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("captivedetect.canonicalURL", "");
 user_pref("captivedetect.maxRetryCount", 0);
+
+user_pref("browser.library.activity-stream.enabled", false); //отключаем статистику с нового таба https://wiki.mozilla.org/Firefox/Activity_Stream
+user_pref("browser.onboarding.enabled", false); //отключаем надоедливый тур по возможностям Firefox который еще и собирает статистику
 
 // ссылки на русском будут копироваться как есть, без кодирования
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
