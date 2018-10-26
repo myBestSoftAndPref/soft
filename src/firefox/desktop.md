@@ -182,12 +182,22 @@ javascript:void((function () {
 
 #### Настройки для удобства
 
-Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля Firefox ```profile/user.js``` и перезапустить Firefox.  
-Для Firefox **для Android** можно менять только вручную или получить [root права](https://4pda.ru/2013/05/11/99836/)
+**Предупреждение.** Если вы ищите настройки Firefox и находите серьезно выглядящие списки на ```github``` (в том числе по ссылкам из этой статьи), то **НЕ ОТНОСИТЕСЬ К НИМ С ДОВЕРИЕМ**. Доверять описанию опций можно только с сайтах ```mozilla.com``` и ```bugzilla.mozilla.org```. Нужно помнить, что смотреть нужно ```английские``` версии этих статей, потому что русские версиях дополняются хуже.
 
-Скопировать файл [policies.json](policies.json) с настройками политик в каталог установленного Firefox<sub>(Не профиля)</sub>. Это просто еще один вид настроек, начиная с **Firefox 63** только через них можно отключить проверку обновлений. В этих настройках проверка обновлений отключена, если хотите сгенерировать свои настройки используйте [Enterprise Policy Generator](https://addons.mozilla.org/firefox/addon/enterprise-policy-generator/). Обновляемый список опций политик можно найти [тут](https://github.com/mozilla/policy-templates/blob/master/README.md)
+Скопировать файл [user.js](user.js) с моими настройками для удобства в каталог профиля Firefox ```profile/user.js``` и перезапустить Firefox.  
+Для Firefox **для Android** можно менять только вручную или получить [root права](https://4pda.ru/2013/05/11/99836/). В нем отключены некоторые опции, что может сломать некоторые сайты, но ничего особо критичного.
+
+Скопировать файл [policies.json](policies.json) с настройками политик по пути ```distribution/policies.json``` в каталог установленного Firefox<sub>(не профиля)</sub>. Это просто еще один вид настроек, начиная с **Firefox 63** только через них можно отключить проверку обновлений. В этих настройках проверка обновлений отключена, если хотите сгенерировать свои настройки используйте [Enterprise Policy Generator](https://addons.mozilla.org/firefox/addon/enterprise-policy-generator/). Обновляемый список опций политик можно найти [тут](https://github.com/mozilla/policy-templates/blob/master/README.md)
 
 [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
+
+Если хотите больше настроек:
+1. Неофициальная подборка настроек - (pyllyukko/user.js)[https://github.com/pyllyukko/user.js]
+2. Неофициальная подборка настроек, развивается быстрее всего - (ghacks-user.js)[https://github.com/ghacksuserjs/ghacks-user.js] и wiki - [ghacks-user.js/wiki](https://github.com/ghacksuserjs/ghacks-user.js/wiki)
+3. Еще один тип настроек Firefox, которые не меняется ни через ```user.js```, ни через ```distribution/policies.json``` это (AutoConfig)[https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig]
+4. Статья со списком некоторых опция сбора телеметрии - [Telemetry](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/index.html)
+и отдельно [Telemetry » Internals](https://firefox-source-docs.mozilla.org/toolkit/components/telemetry/telemetry/internals/index.html)
+5. Еще одна статья о телеметрии - [How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections)
 
 #### Что нужно знать о приватности (сборе статистики компанией Mozilla)
 

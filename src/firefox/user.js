@@ -18,6 +18,7 @@ user_pref("devtools.aboutdebugging.showSystemAddons", true); //разрешае�
 user_pref("browser.aboutHomeSnippets.updateUrl", ""); // отключаем рекламу на странице about:home
 user_pref("browser.startup.homepage_override.mstone", "ignore"); // отключаем пока страницы "What's new" после обновления
 
+user_pref("network.allow-experiments", false); //отключаем эксперименты Mozilla над пользователями
 user_pref("app.normandy.enabled", false); //отключаем статистику https://wiki.mozilla.org/Firefox/Shield/Heartbeat
 user_pref("app.normandy.api_url", "");
 user_pref("app.shield.optoutstudies.enabled", false); //отключаем статистику https://wiki.mozilla.org/Firefox/Shield/Shield_Studies
