@@ -280,8 +280,8 @@ javascript:void((function () {
     2. Скачайте [скрипт](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/update-firefox-as-sudo.sh)
     3. Закройте запущенный Firefox
     4. В свойствах файла в любом файловом менеджере поставьте право на запуск. <sub>(при этом скрипт должен быть сохранен на диск с файловой системой поддерживающей права доступа, например ```ext4```)</sub>.
-    5. Запустите командой: <sub>(где ```/opt/my_firefox``` это путь к каталогу в котором Firefox)</sub>
-        * ```/home/<user_name>/update-firefox-as-sudo.sh /opt/my_firefox```
+    5. Запустите командой: <sub>(скрипт работает и для Thunderbird)</sub>
+        * ```/home/<user_name>/update-firefox-as-sudo.sh /opt/my_firefox/firefox```
     6. Теперь зайдите в меню ```О программе``` и обновите. Для обновления Firefox будет создан временный профиль, который авто удалится после закрытия Firefox. Если вы используете файл политик ```distribution/policies.json```, то он будет временно отключен <sub>(его имя будет изменено)</sub> чтобы обновить Firefox в случае, если политика запрещает обновление.
 
 **Q** Как добавить в Firefox открытие ```magnet``` ссылок на торренты.
