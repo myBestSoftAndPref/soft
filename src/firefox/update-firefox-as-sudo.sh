@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Pass path to Firefox HOME directory, directory that contents firefox binary file.
-# Example: update-firefox-as-sudo.sh /opt/firefoxSocial
+# Example: update-firefox-as-sudo.sh /opt/thunderbird/thunderbird
 
 red=`tput setaf 1`
 green=`tput setaf 2`
@@ -16,10 +16,11 @@ if [ -z $1 ]; then
     exit 1
 fi
 
-MY_PATH_TO_FF=$1
+MY_PATH_TO_FF_BIN=$1
+MY_PATH_TO_FF=$(echo $MY_PATH_TO_FF_BIN | sed -r "s/(^\/.*\/).*|./\1/g" | sed 's/\/$//')
 
 echo "${green}${underline}STEP 1${reset}"
-echo -e "${green}The script is started. The script will run '$MY_PATH_TO_FF/firefox' as the 'sudo' to let you update Firefox.\\n${reset}"
+echo -e "${green}The script is started. The script will run '$MY_PATH_TO_FF_BIN' as the 'sudo' to let you update Firefox.\\n${reset}"
 
 MY_USERNAME_HOME=$HOME
 MY_SCRIPT_UNIQUE_DIR="firefox-root-QWEIFJDAJD123"
@@ -72,10 +73,10 @@ PATH_TO_FF_POLICY="$PATH_TO_FF_POLICY_DIR/policies.json"
 PATH_TO_FF_POLICY_BACKUP=$PATH_TO_FF_POLICY.$MY_SCRIPT_UNIQUE_DIR
 
 echo "${green}${underline}STEP 5${reset}"
-echo "${green}Checking if Firefox ${bold}policy${reset}${green} file is existed. There are ${green}${bold}policy${reset}${green} backup files, maybe it's result of the script halting and you want to rename one of them to '${magenta}policies.json${reset}${green}':${reset}"
+echo "${green}Checking if Firefox ${bold}policy${reset}${green} file is existed. There are ${green}${bold}policy${reset}${green} backup files, maybe it's result of the script halting and you want to rename one of theme to '${magenta}policies.json${reset}${green}':${reset}"
 echo -n -e "\\n${red}"
 find $PATH_TO_FF_POLICY_DIR -maxdepth 1 -type f -regex "^$PATH_TO_FF_POLICY.+"
-echo -n "5${reset}"
+echo -n "${reset}"
 if [ -d "$PATH_TO_FF_POLICY_DIR" ] && [ -f "$PATH_TO_FF_POLICY" ]; then
     echo "${green}Firefox ${magenta}${underline}$PATH_TO_FF_POLICY ${reset}${green}${bold}policy${reset}${green} file is found! The Firefox ${bold}policy${reset}${green} can blocking Firefox updating. The Firefox ${bold}policy${reset}${green} file will be moved to ${magenta}${underline}$PATH_TO_FF_POLICY_BACKUP ${reset}${green}to prevent the potential update blocking."
     echo -e "${green}Creating of temporary ${bold}policy${reset}${green} file to let Firefox to be updated in case ${bold}policy${reset}${green} blocks updating.\\n${reset}"
@@ -86,7 +87,7 @@ fi
 echo -e "\\n${green}${underline}STEP 6${reset}"
 echo "${green}Starting to run Firefox... Now ${underline}you can update Firefox${reset}${green} through ${bold}About${reset}${green} (e.g. Firefox, Thunderbird and so on) menu.${reset}"
 echo -e ${green}"Please ${bold}DON NOT${reset}${green} use ${magenta}${underline}CONTROL + C${reset}${green} keys to close Firefox! In that case temporary Firefox profile directory ${bold}WILL NOT${reset}${green} be deleted!\\n${reset}"
-bash -c "HOME=$MY_ROOT_FF_DIR_PATH XAUTHORITY=$MY_ROOT_FF_DIR_PATH/.Xauthority $MY_PATH_TO_FF/firefox"
+bash -c "HOME=$MY_ROOT_FF_DIR_PATH XAUTHORITY=$MY_ROOT_FF_DIR_PATH/.Xauthority $MY_PATH_TO_FF_BIN"
 
 echo -e "\\n${green}${underline}STEP 7${reset}"
 echo "${green}Deleting temporary Firefox profile folder ${magenta}$MY_ROOT_FF_DIR_PATH ${reset}${green}to clear up.${reset}"
@@ -95,7 +96,7 @@ echo -e "${green}The temporary Firefox directory${magenta} '$MY_ROOT_FF_DIR_PATH
 
 if [ -d "$PATH_TO_FF_POLICY_DIR" ] && [ -f "$PATH_TO_FF_POLICY_BACKUP" ]; then
     echo "${green}${underline}STEP 8${reset}"
-    echo -e "${green}Reverting Firefox policy in case if it is replaced to let Firefox update.\\n${reset}"
+    echo -e "${green}Reverting Firefox policy in case it was replaced to let Firefox update.\\n${reset}"
     
     mv $PATH_TO_FF_POLICY_BACKUP $PATH_TO_FF_POLICY
 fi
