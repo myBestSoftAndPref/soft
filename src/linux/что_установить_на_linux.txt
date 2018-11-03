@@ -1030,3 +1030,27 @@ sudo systemctl disable snapd.refresh.timer
 -------------------
 Иногда в процессах можно заметить процесс ubuntu-apt-xapi
 Это процесс который обновляет кэш списка программ для репозиториев. Он по умолчанию стоит в Kubuntu для muon и в некоторых других дистрибутивах для Synaptic. Как правило запускается он после обновления состояния репозиториев из менеджера программ или muon. Он звершится сам, когда обновит кэш. Скорость его работы до завершения зависит от скорости компьютера.
+-------------------
+Решение мерцания для KDE на intel добавить в sudo geany /etc/default/grub
+опцию i915.enable_psr=0 она отключит Panel Self Refresh (PSR)
+
+Пример: GRUB_CMDLINE_LINUX="quiet splash scsi_mod.use_blk_mq=1 i915.enable_psr=0"
+-------------------
+Посмотреть с какими параметрами запущено ядро:
+    dmesg | grep "Command line"
+    или
+    cat /proc/cmdline
+-------------------
+разница между GRUB_CMDLINE_LINUX_DEFAULT и GRUB_CMDLINE_LINUX
+
+GRUB_CMDLINE_LINUX_DEFAULT - работает только в обычном режиме
+GRUB_CMDLINE_LINUX - работает и в обычном и в recovery режиме
+-------------------
+Один из вариантов фикса настроек FPS в KDE
+
+1. geany /home/<user>/.config/kwinrc
+2. Добавить в блок [Compositing] опцию MaxFPS=144.0 (свое число)
+3. Пример:
+    [Compositing]
+    MaxFPS=144.0
+Возможно нужно перезагрузиться
