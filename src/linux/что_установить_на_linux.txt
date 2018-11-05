@@ -312,6 +312,7 @@ WinDjView (в wine)
 Notepad++ (в wine)
 SAS Планета (в wine)
 HeidiSQL (в wine)
+x64dbg (в wine) - дебагер софта для Windows
 cool reader 2 - читалка fb2 с удобным интерфесом
 cool reader 3 - читалка разных форматов книг, не такая удобная как версия 2, но новее
 Найти способ установить FineReader или аналог (в wine или virtualbox)
@@ -389,6 +390,8 @@ ReText - редактор markdown с предпросмотром
 --среды
 eclipse (с сайта)
 netbeans (с сайта)
+idea (с сайта)
+Spring Tool Suite (STS) (с сайта)
 phpmyadmin
 qtcreator (с сайта) - IDE для C/C++ и Qt
 Android SDK (с сайта)
@@ -432,7 +435,7 @@ g++
 gcc
 gcc-doc
 clang
-xampp - для linux, аналог lamp и Denver, с gui
+xampp - для linux, аналог lamp и Denver, с gui (имею свою СУБД mysql которую удобно использовать отдельно)
 
 -node.js
 	
@@ -1045,12 +1048,41 @@ sudo systemctl disable snapd.refresh.timer
 
 GRUB_CMDLINE_LINUX_DEFAULT - работает только в обычном режиме
 GRUB_CMDLINE_LINUX - работает и в обычном и в recovery режиме
--------------------
-Один из вариантов фикса настроек FPS в KDE
 
+Пометка: Для настройки ядра можно использовать GRUB_CMDLINE_LINUX_DEFAULT, она не хуже.
+-------------------
+Частота обновления экрана и проблемы.
+Может случится так, что частота ниже из-за бага в X.org или ядре.
+
+Проверить командой:
+    xrandr
+Появится список частоты обновления доступной для каждого разрешения. Активный вариант отмечен.
+Норма как минимум 60 Hz, 40 Hz вызывает лаги.
++ отметка для предпочтения
+* для текущего
+
+Опции xrandr в том числе создание разных режимов (в том числе для HDMI) и их применение:
+    https://wiki.archlinux.org/index.php/xrandr
+
+Один из вариантов фикса настроек FPS в KDE:
 1. geany /home/<user>/.config/kwinrc
 2. Добавить в блок [Compositing] опцию MaxFPS=144.0 (свое число)
 3. Пример:
     [Compositing]
     MaxFPS=144.0
 Возможно нужно перезагрузиться
+
+Еще вариант для KDE:
+    [Compositing]
+    MaxFPS=144.0
+    RefreshRate=144.0
+-------------------
+Для фикса некоторых багов в CPU intel Haswell можно использовать некоторые из опций в параметрах ядра:
+(возможно это подойдет и для других CPU)
+
+drm.debug=0 drm.vblankoffdelay=1 i915.semaphores=0
+i915.modeset=1 i915.use_mmio_flip=1 i915.powersave=1
+i915.enable_ips=1 i915.disable_power_well=1
+i915.enable_hangcheck=1 i915.enable_cmd_parser=1
+i915.fastboot=0 i915.enable_ppgtt=1 i915.reset=0
+i915.lvds_use_ssc=0 i915.enable_psr=0

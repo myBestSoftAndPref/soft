@@ -9,8 +9,6 @@
 
 Программы нужные для выполнения других программ.
 
-#### Среды
-
 * JDK и JRE от ORACLE.
 http://www.oracle.com/technetwork/java/javase/downloads/index.html
 	* Для нормальной установки добавить переменные среды:
@@ -34,145 +32,6 @@ http://www.oracle.com/technetwork/java/javase/downloads/index.html
 * K-Lite Codec Pack - код закрыт, сборка кодеков http://www.codecguide.com/download_kl.htm
 * ffmpeg - набор библиотек для конвертации, изменения, сжатия, передачи видео. Нужен для некоторых видеоконвертеров. Но можно и конвертировать просто из командной строки https://ffmpeg.org/download.html
 	* Прмер конвертирование: http://stackoverflow.com/questions/13560852/convert-mp4-to-maximum-mobile-supported-mp4-using-ffmpeg
-
-## Программирование
-
-#### IDE
-
-* Eclipse IDE - универсальная среда, преимущественно для Java https://www.eclipse.org/downloads/
-	* В версию Eclipse Java EE включено много плагинов: xml, git, maven и т.д.
-	* Ускорение и настройка Eclipse [тут](eclipse.md)
-* Spring Tool Suite - IDE на основе Eclipse от проекта Spring https://spring.io/tools/sts
-* NetBeans IDE универсальная, преимущественно для Java https://netbeans.org/downloads/
-* Android SDK - IDE и утилиты для разработки под Android https://developer.android.com/sdk/index.html
-* MySQL Workbench - разработка SQL баз данных для MySQL http://dev.mysql.com/downloads/workbench/
-* HeidiSQL - разработка SQL баз данных http://www.heidisql.com/download.php
-* Qt Creator - среда программирования на C/C++ и Qt, в поставку входят библиотеки и компиляторы gcc или VS
-https://www.qt.io/download-open-source/
-* http://x64dbg.com - open source дебагер, отладчик программ в ассемблере
-* IntelliJ IDEA - среды для Java, код открыт только для версии без поддержки Java EE https://www.jetbrains.com/idea/
-* Microsoft Visual Studio Code - код открыт, хороша для JavaScript https://code.visualstudio.com/
-
-* Eclipse Che - онлайн IDE, рисует интерфейс на HTML. Можно установить на компьютер в Docker (виртуальная машина с Eclipse Che), на облако в сети, есть бесплатный аккаунт, интеграция с Git. Пока возможностей намного меньше чем в Eclipse http://eclipse.org/che
-
-#### Контроль версий
-
-* git - клиент для git, внутри также есть консольный ssh https://git-scm.com/downloads
-	* Для нормальной установки:
-	```
-	В файле C:\Program Files\Git\mingw64\etc\gitconfig
-	удалить строку: helper = manager
-	
-	и вставить в него
-	[core]
-		askpass =
-	для отключения окна с OpenSSH, ввод будет в консоли
-	
-	Для использования, чтобы не вводить пароли каждый раз:
-	1. git config credential.helper store - хранить пароли постоянно в файле .git-credentials
-	1. git config --global credential.helper store - глобально
-	2. git config --unset credential.helper - сбросить настройки хранения паролей
-	3. git config --global --unset credential.helper - сбросить настройки хранения паролей для всех репозиториев
-	
-	Вместо поролей можно сгенерировать публичный и приватный ключи. Публичный добавить на сервер, а приватный в настройки git на компе.
-	
-	Можно установить пароль и имя, если нужно:
-	git config --global user.name "John Doe"
-	git config --global user.email johndoe@example.com
-	```
-* TortoiseSVN - GUI под SVN для Windows (в контекстном меню) https://tortoisesvn.net/downloads.html
-* TortoiseGit - GUI под Git для Windows (в контекстном меню)  https://tortoisegit.org/
-
-#### Сборщики
-
-* maven - сборщик и репозиторий библиотек для java https://archive.apache.org/dist/maven/maven-3/
-	* Для нормальной установки добавить переменные среды:
-	```
-		В переменную Path в конец добавить: %M2_HOME%\bin
-	
-		Создать переменные среды:
-		M2_HOME = d:\apache-maven-3.2.2
-		MAVEN_HOME = d:\apache-maven-3.2.2
-	```
-* ant - сборщик с уклоном в Java https://archive.apache.org/dist/ant/binaries/
-	* Для нормальной установки добавить переменные среды:
-	```
-		В переменную Path в конец добавить: %ANT_HOME%\bin
-		
-		Создать переменные среды:
-		ANT_HOME = C:\apache-ant-1.9.4
-	```
-
-#### Локальные сервера
-
-* XAMPP - сборка apache/mysql/perl https://www.apachefriends.org/download.html
-	* Если будут проблемы с установкой в Windows - установить в каталог по умолчанию C:\xampp
-	* Требует Microsoft Visual C++ 2008 Redistributable Package (x86) https://www.microsoft.com/en-us/download/details.aspx?id=29
-* tomcat - контэйнер сервлетов http://tomcat.apache.org/
-* GlassFish (ставится с NetBeans)
-
-#### CMS
-
-* Joomla http://www.joomla.org/
-* WordPress https://wordpress.org/
-
-#### JavaScript библиотеки, фреймворки, библиотеки CSS
-
-* CSS
-	* Bootstrap http://getbootstrap.com/
-
-* jQuery https://jquery.com/
-
-* unit тесты для js
-	* QUnit http://qunitjs.com/
-	* jqunit https://code.google.com/archive/p/jqunit/
-
-* шаблонизаторы
-	* Underscore.js http://underscorejs.org
-	* lodash https://lodash.com/
-
-* полифилы (реализация новых стандартов js для старых браузеров)
-	* https://github.com/inexorabletash/polyfill
-	* сборник полифилов https://cdn.polyfill.io/v1/docs/examples
-
-* фрэймворки для построения страниц (M + VC)
-	* Backbone.js http://backbonejs.org/
-	* AngularJS https://angularjs.org/
-	* ReactJS - V из MVC
-		* https://facebook.github.io/react/downloads.html
-	
-* оптимизаторы и минимизаторы для javascript
-	* jar программа для оптимизации js https://developers.google.com/closure/
-		* есть и веб версия https://closure-compiler.appspot.com/home
-	* TinyMCE - WYSIWYG редактор на страницу с возможностью выбора доступных пользователю тегов в настройках https://www.tinymce.com/download/
-	
-#### Java библиотеки, фреймворки
-
-* Hibernate (можно использовать Criteria API) http://hibernate.org/orm/
-* Hibernate Validator http://hibernate.org/validator/
-* log4j - логирование http://logging.apache.org/log4j/
-* тестирование
-	* JUnit http://junit.org/
-	* Mockito https://github.com/mockito/mockito
-* Thymeleaf - более красивые наборы тэгов для построения страниц
-* Project Lombok - библиотека дающая аннотации, которые автогенерирует getters и setters
-* хороший список фрэймворков с рассуждением что и как https://habrahabr.ru/post/244531/
-
-* Spring
-	* Spring http://repo.spring.io/release/org/springframework/spring/
-	* Spring MVC http://repo.spring.io/release/org/springframework/spring-webmvc/
-	* Spring Security http://maven.springframework.org/release/org/springframework/security/spring-security/
-	* Spring Data JPA - реализация стандартных функций DAO, дополнительные можно добавлять самому http://docs.spring.io/spring-data/data-jpa/docs/current/reference/html/
-	* spring-test-mvc - фрэймворк для тестов, в том числе UI (страниц)?
-	* Spring Loaded - можно изменять классы без перезагрзки сервера
-		* https://github.com/spring-projects/spring-loaded
-		* инструкция Eclipse + Spring Loaded https://www.youtube.com/watch?v=GTrNkhVnJBU
-	* Spring Boot - каркас для веб-приложений уже содержащий нужные библиотеки и втроенный tomcat
-http://spring-projects.ru/projects/spring-boot/
-		* Также можно составить свою конфигурацию для Boot онлайн на start.spring.io
-		* HikariCP - быстрый пулл соединений, глянуть если что
-		* инструкция по настройке https://habrahabr.ru/post/257223/
-	* Spring Data REST - пример использования https://spring.io/guides/tutorials/react-and-spring-data-rest/
 		
 ## Видео/Аудио
 
@@ -181,7 +40,7 @@ http://spring-projects.ru/projects/spring-boot/
 * VLC - аудио/видео плеер, играет сетевые источники, умеет вещать видео в том числе изображение рабочего стола (в том числе в локальную сеть)
 http://www.videolan.org/vlc/download-windows.html
 * SMPlayer - более быстрый и стабильный чем VLC, но с менее удобным интерфейсом (оболочка для mplayer), слегка глючный интерфейс
-* PotPlayer - код закрыт, но работает гораздо быстрее и стабильнее VLC, а интерфейс удобнее
+* PotPlayer - код закрыт, но работает гораздо быстрее и стабильнее VLC, а интерфейс удобнее. Он красивее чем SMPlayer
 http://potplayer.daum.net/
 * Media Player Classic - Home Cinema (MPC-HC) - известный и быстрый плеер https://mpc-hc.org/downloads/
 	* Black Edition (MPC-BE) - форк, заявлено больше возможностей, но странный, мало информации, мало обзора отличий, хотя тема о нём есть на официальном сайте Media Player Classic - Home Cinema https://sourceforge.net/projects/mpcbe/
@@ -190,6 +49,8 @@ http://potplayer.daum.net/
 
 * Shotcut видеоредактор
 http://www.shotcut.org/bin/view/Shotcut/Download
+* kdenlive
+https://kdenlive.org/en/download/
 
 ## Графика
 
@@ -203,7 +64,6 @@ http://www.shotcut.org/bin/view/Shotcut/Download
 https://helpx.adobe.com/x-productkb/policy-pricing/cs6-product-downloads.html
 * LibreCAD - свободная программа для создание чертежей
 http://librecad.org/cms/home.html
-* LICEcap - сделать анимированный GIF с записью экрана http://www.cockos.com/licecap/
 
 #### Просмотр и конвертация
 
@@ -221,11 +81,10 @@ https://www.torproject.org/
 * Chromium - на его основе делается Chrome (только x32 версии) https://download-chromium.appspot.com/?platform=Win&type=snapshots
 * google chrome, код частично закрыт http://portableapps.com/apps/internet/google_chrome_portable
 * Opera - код частично закрыт, зато сжимает трафик, что при тарифах по трафику незаменимо, можно выбрать при установке "установить на USB" и получить портативную версию http://www.opera.com
-* Vivaldi - код частично закрыт, много настроект (вкладки вертикально сбоку, поведение и т.д.) https://vivaldi.com/
+* Vivaldi - код частично закрыт, много настроек (вкладки вертикально сбоку, поведение и т.д.) https://vivaldi.com/
 
 * Менее официальные браузеры (неизвестно качество):
-	* Iridium Browser - Chromium с отключенным сбором статистики и дополнительными функциями https://iridiumbrowser.de/
-	* UnGoogled Chromium - вырезан сбор статистики, ещё больше чем в Iridium Browser, добавлено больше опций (перенесены патчи из Iridium Browser и других проектов) https://github.com/Eloston/ungoogled-chromium/releases
+	* UnGoogled Chromium - вырезан сбор статистики https://github.com/Eloston/ungoogled-chromium/releases
 
 #### Менеджеры загрузок
 
@@ -295,6 +154,7 @@ https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphk
 	* дополнительно устанавливается программа на сервер
 * PuTTY - SSH клиент с расширенными возможностями
 http://www.putty.org/
+* KiTTY - более функциональный аналог PuTTY
 
 
 #### Другое
@@ -328,7 +188,7 @@ http://www.putty.org/
 	* http://plugins.geany.org/downloads.html
 * Vim - текстовый редактор для программистов с удобными сочетаниями клавиш
 http://www.vim.org/download.php
-* Kate - редактор текста и кода из KDE под Windows https://kate-editor.org/get-it/
+* Kate - редактор текста и кода из KDE под Windows (тянет с собой kde и занимает много оперативы) https://kate-editor.org/get-it/
 * Sublime Text - код закрыт, редактор кода, очень удобен для javascript, css, html. В бесплатной версии иногда выскакивает реклама https://www.sublimetext.com/
 	
 #### Разные
@@ -344,7 +204,7 @@ http://www.sumatrapdfreader.org/free-pdf-reader.html
 
 * Microsoft Office Trial пробная версия, код закрыт, но замены нету
 https://www.microsoft.com/en-us/evalcenter/evaluate-office-professional-plus-2013
-* LibreOffice - свободный оффисный пакет, но многие формата отображает плохо
+* LibreOffice - свободный оффисный пакет, но многие форматы отображает плохо
 https://www.libreoffice.org/download/libreoffice-fresh/
 * onlyoffice - ещё один открытый оффис, может лучше читать MS Office документы http://www.onlyoffice.com/ru/download-desktop.aspx
 
@@ -382,6 +242,7 @@ http://www.cgsecurity.org/wiki/TestDisk
 
 * DAEMON Tools Lite - код закрыт, лучший из бесплатных эмуляторов дисководов
 http://www.daemon-tools.cc/rus/downloads
+    * ultimate версию с поддержкой полной эмуляции дисковода и скрытием факта эмуляции можно только купить, она платная (хотя пиратские версии есть на торрентах)
 * ImDisk Toolkit - это версия с дополнительными опциями (динамическое подстраивание размера виртуального диска под свободную оперативную память, синхронизация файлов с диском при отключении, блокировка выгрузки виртуального диска в файл подкачки и т.д.) от другого разработчика https://sourceforge.net/projects/imdisk-toolkit/
 	* ImDisk Virtual Disk Driver - на её основе сделан ImDisk Toolkit, может создавать виртуальный диск в быстрой оперативной памяти http://www.ltr-data.se/opencode.html/
 * AMD Radeon™ RAMDisk - код закрыт, может создавать виртуальный диск в оперативной памяти, а при выключении сбросывать его содержимое на диск. Из минусов: сама занимает 100 мб в оперативной памяти, диски больше 4Гб только в платной версии
@@ -421,7 +282,7 @@ http://www.antp.be/software/renamer
 * GoldenDict - просмотр множества форматов словарей в том числе с произношением (подходят словари и от lingvo, на сегодня лучшие для русскоязычных) http://goldendict.org/download.php
 	* Подборка словарей Lingvo для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки в GoldenDict просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
 
-* SAS.Planet - просмотр карты из разных источников с возможностью загрузки областей и просмотром только кэшированного (оффлайн) плюс множество возможностей http://www.sasgis.org/download
+* SAS.Planet - **похоже программа устарела** просмотр карты из разных источников с возможностью загрузки областей и просмотром только кэшированного (оффлайн) плюс множество возможностей http://www.sasgis.org/download
 	* Авторы сначало не хотели открывать код, но сам код доступен под GPL v3 (не проверялось) https://bitbucket.org/sas_team/
 * Stellarium - планетарий, который создаёт реалистичное трёхмерное небо http://www.stellarium.org/ru/
 * Celestia - 3D модель космоса, спутников, звезд, планет, комет, галактик http://www.shatters.net/celestia/
@@ -462,7 +323,8 @@ http://www.cpuid.com/softwares/cpu-z.html
 * FurMark - код закрыт, тест производительности видеокарты через OpenGL http://www.geeks3d.com/dlz/
 * GPU Caps Viewer - код закрыт, информация о видео карте http://ozone3d.net/gpu_caps_viewer/
 * CrystalDiskInfo - тест скорости записи и чтения на любой носитель http://crystalmark.info/download/index-e.html
-
+* LICEcap - сделать анимированный GIF с записью экрана http://www.cockos.com/licecap/
+* [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif или видео), линейка, выбор цвета, встроенный редактор скриншотов и д.р.
 
 ## Компоненты операционных систем
 
@@ -487,6 +349,7 @@ https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 		* http://www.dslreports.com/forum/r30348398-WIN7-Win-7-updates-to-avoid-or-be-careful-with
 		
 * Platform Update for Windows 7 - обновление нужно для улучшения работы GPU и некоторых программ. Оно не входит в комулятивный набор обновлений (описан выше) - https://www.microsoft.com/en-us/download/details.aspx?id=36805
+* Отдельные официальные hotfix (исправления) которые больше недоступны на обычном сайте Microsoft http://www.catalog.update.microsoft.com/Search.aspx?q=hotfix
 
 ## Операционные системы
 
