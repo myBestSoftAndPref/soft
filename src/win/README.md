@@ -176,20 +176,18 @@ http://www.putty.org/
 
 * Notepad++ универсальный блокнот, удобен и для программирования https://notepad-plus-plus.org/ <br>
   Плагины:
-  * dspellcheck (установить словари, включить проверку одновременно нескольких языков)
+  * встроенный плагин dspellcheck (установить словари, включить проверку одновременно нескольких языков)
   * TextFx - набор инструментов для преобразования текста в кучу форматов и кодировок, просмотр статистики (количества слов и тд), валидации, вырезания и вставки спец символов, лишних пробелов.
   * цветовая схема для markdown https://github.com/Edditoria/markdown_npp_zenburn
-* Atom - редактор кода от github, множество языков и плагинов. В его основе движок браузера от Chrome поэтому занимает много оперативной памяти https://atom.io/ <br>
-  Плагины:
-  * minimap - карта документа
-  * sync-scroll - синхронизация прокрутки окон
+* Atom - убогий и тяжелый редактор, но среди плагинов может попасться что-то интересное https://atom.io
+* Visual Studio Code - тяжелый для блокнота, но из него можно сделать IDE через плагины. Поддерживает много форматов файлов, встроенная удобная поддержка markdown, множество удобных плагинов https://code.visualstudio.com
 * Geany - аналог Notepad++ http://www.geany.org/Download/Releases  
 	Плагины:
 	* http://plugins.geany.org/downloads.html
 * Vim - текстовый редактор для программистов с удобными сочетаниями клавиш
 http://www.vim.org/download.php
 * Kate - редактор текста и кода из KDE под Windows (тянет с собой kde и занимает много оперативы) https://kate-editor.org/get-it/
-* Sublime Text - код закрыт, редактор кода, очень удобен для javascript, css, html. В бесплатной версии иногда выскакивает реклама https://www.sublimetext.com/
+* Sublime Text - код закрыт, редактор кода, отличается хорошей подсветкой языков. В бесплатной версии иногда выскакивает реклама https://www.sublimetext.com/
 	
 #### Разные
 
@@ -200,19 +198,22 @@ http://www.sumatrapdfreader.org/free-pdf-reader.html
 * CoolReader - чтение книг, версия 2 имеет более удобный и красивый интерфейс https://sourceforge.net/projects/crengine
 * FBReader - читалка книг https://ru.fbreader.org/
 
-#### Оффисные пакеты
+#### Офисные пакеты
 
 * Microsoft Office Trial пробная версия, код закрыт, но замены нету
 https://www.microsoft.com/en-us/evalcenter/evaluate-office-professional-plus-2013
 * LibreOffice - свободный оффисный пакет, но многие форматы отображает плохо
 https://www.libreoffice.org/download/libreoffice-fresh/
 * onlyoffice - ещё один открытый оффис, может лучше читать MS Office документы http://www.onlyoffice.com/ru/download-desktop.aspx
+* WPS Office - код закрыт, один из лучших бесплатных офисов https://www.wps.com/
 
 ## Диски и файлы
 
 #### Архиваторы
 
 * 7zip - архиватор 7z, zip, tar и др. http://www.7-zip.org/
+* 7zip zstd - с поддержкой архиваторов семейства LZ, можно установить целиком или как плагин к 7zip
+(т.е. поддерживает больше форматов чем обычный 7zip) https://github.com/mcmilk/7-Zip-zstd
 * Universal Extractor - поддерживает множество форматов http://legroom.net/software/uniextract
 * PeaZip - свободный архиватор, множество форматов http://www.peazip.org/
 * Lessmsi - распаковывает .msi файлы https://github.com/activescott/lessmsi
@@ -260,15 +261,11 @@ http://www.antp.be/software/renamer
 
 #### Менеджеры паролей
 
-* KeePassX https://www.keepassx.org/
-* KeePassXC Password Manager - более новая версия KeePassX от других авторов https://keepassxc.org
+* KeePassXC Password Manager https://keepassxc.org
 
 #### Шифрование дисков
 
-* VeraCrypt - форк TrueCrypt, конвертирует контейнеры TrueCrypt в свой формат, более защищен https://veracrypt.codeplex.com/
-* CipherShed форк TrueCrypt, полностью совместим с TrueCrypt https://ciphershed.org/
-* о TrueCrypt и форках http://www.opennet.ru/cgi-bin/opennet/ks.cgi?mask=truecrypt
-* верифицированные код, проектом проводившим аудит TrueCrypt https://github.com/AuditProject/truecrypt-verified-mirror
+* VeraCrypt - шифрует диски целиком или создает шифрованные контейнеры https://veracrypt.codeplex.com/
 
 ## Эмуляторы компьютеров, операционных систем, игровых консолей
 
@@ -306,14 +303,13 @@ https://technet.microsoft.com/en-us/sysinternals/bb896653.aspx?f=255&MSPPError=-
 http://processhacker.sourceforge.net/downloads.php
 * Autoruns - код закрыт, менеджер автозагрузки программ и служб
 https://technet.microsoft.com/en-us/sysinternals/bb963902.aspx
-* HWiNFO - код закрыт, информация о оборудовании http://www.hwinfo.com/download.php
+* HWiNFO - код закрыт, аналог Everest и AIDA информация о оборудовании http://www.hwinfo.com/download.php
 * CPU-Z - код закрыт, информация о процессоре и смежном оборудовании
 http://www.cpuid.com/softwares/cpu-z.html
 * GPU-Z - код закрыт, инфа о видеокарте https://www.techpowerup.com/gpuz/
 * ext2fsd - драйвер для работы с ext2/3/4 под Windows http://www.ext2fsd.com/
 * отключение сбора статистики в Win7-10:
 	* https://github.com/10se1ucgo/DisableWinTracking
-	* https://github.com/Nummer/Destroy-Windows-10-Spying
 * Для запуска программ с правами и скриптов администратора http://www.microsoft.com/en-us/download/details.aspx?id=7352
 * DNSCrypt - шифруем DNS чтобы провайдер не вмешивался и видел только IP (номер сервера), а не конкретный адрес сайта. Так же провайдер не сможет блокировать сайты просто запретив у себя адрес в DNS https://dnscrypt.org/#dnscrypt-windows
 * Набор системных утилит с закрытым кодом от компании **nirsoft**. Очень известный и популярный. http://www.nirsoft.net/utils/
