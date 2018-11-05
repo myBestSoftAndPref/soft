@@ -324,6 +324,8 @@ http://www.cpuid.com/softwares/cpu-z.html
 
 ## Компоненты операционных систем
 
+Microsoft удалила файлы по некоторым ссылка. Смотрите старую версию страниц по ссылка ниже в архиве https://web.archive.org и ищите по названиям и номерам версии файлов на сайте http://www.catalog.update.microsoft.com/Search.aspx?q=hotfix
+
 * DirectX (в Win7 и выше устанавливать через систему обновлений)
 https://www.microsoft.com/ru-ru/download/details.aspx?id=34429
 * исправление долгого обновления Win7
