@@ -130,7 +130,7 @@
 ## Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
 1. [FindBar Tweak](https://addons.mozilla.org/ru/firefox/addon/findbar-tweak) - удобный поиск по странице с отметками найденного на полосе прокрутки.
-2. [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и удобен <sub>(особенно если использовать один профиль на разных машинах, чтобы не менять менеджеры загрузок)</sub>. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.
+2. [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и может качать файлы доступные только авторизованным пользователям. Может качать в несколько потоков. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером.
 3. [Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
 4. [FlashGot Mass Downloader](https://addons.mozilla.org/ru/firefox/addon/flashgot/) - поиск ссылок на видео, файлы и интеграция с любым менеджером загрузок
 
@@ -143,7 +143,8 @@
 ## Программы (замена дополнений, которые невозможно реализовать на WebExtensions API)
 
 * [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р.
-* [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты
+* [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты <sub>чтобы сделать скриншот всплывающих окон нужно поставить задержку в настройках и во время задержки вывести всплывающее окно</sub>
+* [Flameshot](https://github.com/lupoDharkael/flameshot) (Ubuntu) - скриншоты, с встроенными инструментами для редактирования
 * [peek](https://github.com/phw/peek) (ubuntu) - запись экрана в виде gif
 * [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (ubuntu) - запись экрана
 * [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - линейка

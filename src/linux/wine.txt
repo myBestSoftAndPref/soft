@@ -69,3 +69,6 @@ DRI_PRIME=1 WINEPREFIX=~/.wine-steam wine "/home/user/.wine-steam/drive_c/Progra
 
 ПРОБЛЕМЫ.
     Некоторые программы могут неккоректно работать в win64, но работать в win32.
+
+Чтобы запустить без ограничений wine (чуть менее безопасно)
+WINEARCH=win32 WINEPREFIX=~/.wine-steam wine -no-dwrite -no-cef-sandbox
