@@ -145,6 +145,7 @@
 * [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р.
 * [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты <sub>чтобы сделать скриншот всплывающих окон нужно поставить задержку в настройках и во время задержки вывести всплывающее окно</sub>
 * [Flameshot](https://github.com/lupoDharkael/flameshot) (Ubuntu) - скриншоты, с встроенными инструментами для редактирования
+    * Для интеграции **flameshot** в систему в настройках клавиш нужно удалить связь клавиши **print** с встроенной программой скриншотов. И назначить команду **flameshot gui** для скришота области экрана, и команду **flameshot full** для скришота всего экрана.
 * [peek](https://github.com/phw/peek) (ubuntu) - запись экрана в виде gif
 * [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (ubuntu) - запись экрана
 * [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - линейка
