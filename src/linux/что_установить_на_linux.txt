@@ -235,9 +235,12 @@ uif2iso
 ----------------------
 !!!файловые менеджеры
 Krusader - в KDE
-double commander (doublecmd) - qt и gtk, поддерживает некоторые плагины\
-	от total commander
-xfe - двух панельный менеджер xfce, так себе
+    Зависимости: sudo apt install krename kompare kdiff3 cfv arj unace-nonfree rar unrar kget lhasa
+    В настройках krusader в пункт diff utility вставить: /usr/bin/kdiff3
+    Как вариант лучшая альтернатива для kdiff3 может быть утилита meld. И в diff utility нужно указать путь /usr/bin/meld после установки:
+        sudo apt install meld
+    
+double commander (doublecmd) - глючный, поддерживает некоторые плагины от total commander
 
 ----------------------
 !!!Консольные утилиты
@@ -446,6 +449,7 @@ svn (subversion)
 git - лучше ставить обновленную версия с официального PPA, там поддержка libsecret (хранение паролей для отдельных репозиториев)
     https://git-scm.com/download/linux
     sudo apt install git git-gui git-extras gist
+    Единственная нормальная утилита для nerge: sudo apt install meld
     
 RabbitVCS - GUI для git и SVN
 git-cola - GUI для git
@@ -556,21 +560,9 @@ Kwave
 Blender
 -----------------------
 Утилиты которые использует Krusader
-krename - групповое переименование
-kompare - сравнение
-kdiff3 - сравнение
-cfv - создание и проверка контрольных сумм
-arj - Архиваторы
-unace - Архиватор (на момент написания non-free версия поддерживает больше форматов архивов и лучше ставить ее)
-rar - архиватор
-kget - скачивание
-md5deep - считалка хэша
-md5sum - считалка хэша
-sha1deep - считалка хэша
-lha
-unarj - не найдены
+    sudo apt install krename kompare kdiff3 cfv arj unace-nonfree rar unrar kget lhasa
 
-unrar-free
+В настройках krusader в пункт diff utility вставить: /usr/bin/kdiff3
 -----------------------
 LabPlot - построение графиков и анализ
 -----------------------

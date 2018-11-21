@@ -82,7 +82,7 @@
             в /mnt/etc/default/grub
         3.  Установить не из chroot, а из обычной консоли (где sdc это флэшка на которой /boot)
                 sudo grub-install --root-directory=/mnt /dev/sdc --recheck --no-floppy
-        4.  выполнить из chroot
+        4.  выполнить из chroot (ignore warnings???)
                 update-grub
         5.  выполнить из chroot
                 update-initramfs -k all -c
@@ -106,3 +106,7 @@
 Как вариант после обновления ядра можно делать бэкап /boot раздела на зашифрованный диск. Тогда если /boot повредиться можно открыть раздел с LiveUSB, перенести все файлы обратно на /boot раздел флэшки, установить загрузчик GRUB заново (войти в chroot и выполнить пункт 5.3). Не проверял.
     
 ЛАЙФХАК. Если загрузилась Windows при вставленной флэшке, то скорее всего она не достаточно плотно вставлена для чтения. Можно дождаться загрузки Windows не трогая флэшку, убедиться, что флэшка там не видна и вытащить ее.
+
+Don't install grub bootloader during Ubuntu instalation to C:\ to let Windows use native Windows' bootloader???
+
+Баги. В Ubuntu могут наблдаться различные Warning (предупреждения). Скорее всего из-за багов в дистрибутиве или программе шифрования. Используйте LTS версии Ubuntu.
