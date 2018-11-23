@@ -318,6 +318,7 @@ javascript:void((function () {
 **A** Причина в старом [баге Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
 
 **Q** **(Для Ubuntu 18.04)** Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, snap, flatpak или AppImage.
+<br>
 **A** Выполните команды для удаления:
 ```
 sudo apt purge firefox xul-ext-ubufox firefox-locale-en
