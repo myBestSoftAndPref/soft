@@ -9,7 +9,6 @@
 
 2. (не работает с ```Windows```)  
 Программой ```Unetbootin```
-Установка ```sudo apt-get install unetbootin```
+Установка `sudo apt-get install unetbootin`
 
-3. Инструкций как вручную сделать USB Flash с ```Windows``` под ```ubuntu```:  
-http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html
+3. Инструкций как вручную сделать USB Flash с ```Windows``` под ```ubuntu``` [тут](http://onetransistor.blogspot.com.by/2014/09/make-bootable-windows-usb-from-ubuntu.html)
