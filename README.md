@@ -20,5 +20,5 @@
 Статьи о Ubuntu:
 * [Как включить Hibernation (гибернацию, спящий режим)](https://raw.githubusercontent.com/myBestSoftAndPref/soft/master/src/linux/hibernation.txt)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzI4MDA2NF19
+eyJoaXN0b3J5IjpbNzgwOTc5NjI2XX0=
 -->
