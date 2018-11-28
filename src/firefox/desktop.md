@@ -326,3 +326,6 @@ sudo rm -rf /usr/lib/firefox
 sudo rm -rf /usr/lib/firefox-addons
 ```
 Если у вас кроме английского установлен и другой язык, то кроме ```firefox-locale-en``` вам придется удалить и пакет для вашего языка.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTg5NDI4MTk0OV19
+-->
