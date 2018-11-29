@@ -56,3 +56,6 @@ user_pref("lightweightThemes.getMoreURL", "");
 user_pref("lightweightThemes.recommendedThemes", "");
 user_pref("extensions.update.enabled", false);
 user_pref("browser.search.update", false);
+
+// в будущем отключить DoH (DNS over HTTPS) и сервис, который 2 раза в сутки проверяет скорость соединения на сторонних ресурсах чтобы решить включать или нет DoH
+user_pref("network.trr.mode", 0);
