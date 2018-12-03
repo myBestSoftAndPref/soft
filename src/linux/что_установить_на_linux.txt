@@ -393,6 +393,10 @@ ReText - редактор markdown с предпросмотром
     3. Идет по умолчанию как зависимость, но на всякий случай: sudo apt install libjs-mathjax
     4. Цветовая тема ReText по умолчанию плохая, лучше использовать например эту:
         https://gist.github.com/EndangeredMassa/8849279
+Abricotine - на node.js
+ghostwriter
+AsciidocFX - редактор формата Asciidoc похоже на markdown, но лучше. Есть кнопки для форматирования табл, диаграм и т.д.
+    Для работы нужно скачать нужную версию Java и указать ее: INSTALL4J_JAVA_HOME=/opt/jdk1.8.0_192 /opt/AsciidocFX/AsciidocFX
 
 -----------------------
 !!!Разработка
