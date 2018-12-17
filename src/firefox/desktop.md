@@ -199,9 +199,9 @@ javascript:void((function () {
 2. `firefox/policies.json`: файл ```policies.json``` это просто еще один вид настроек, начиная с **Firefox 63** только через них можно отключить проверку обновлений. В этих настройках проверка обновлений отключена, если хотите сгенерировать свои настройки используйте [Enterprise Policy Generator](https://addons.mozilla.org/firefox/addon/enterprise-policy-generator/). Обновляемый список опций политик можно найти [тут](https://github.com/mozilla/policy-templates/blob/master/README.md)
     * Скопировать файл [policies.json](policies.json) с настройками политик по пути ```distribution/policies.json``` в **каталог установленного Firefox**<sub>(не профиля)</sub> и перезапустить Firefox. Этот вариант настроек отключает авто проверку обновлений. Чтоб обновить Firefox файл на вермя обновления нужно удалять и перезапускать Firefox.
 3. `profile/chrome/userChrome.css`: Это файл стилей, который действует на интерфейс Firefox. Через него можно менять оформление кнопок, строки адреса, боковую панель и т.д.
-    * [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
+    * [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек от **Aris-t2** для Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
 
-Если хотите больше настроек:
+**Если хотите больше настроек:**
 1. Неофициальная подборка настроек - [pyllyukko/user.js](https://github.com/pyllyukko/user.js)
 2. Неофициальная подборка настроек, развивается быстрее всего [ghacks-user.js](https://github.com/ghacksuserjs/ghacks-user.js) и [ghacks-user.js/wiki](https://github.com/ghacksuserjs/ghacks-user.js/wiki)
 3. Еще один тип настроек Firefox, которые не меняется ни через ```user.js```, ни через ```distribution/policies.json``` это [AutoConfig](https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig)
@@ -214,13 +214,13 @@ javascript:void((function () {
 ## Что нужно знать о приватности (сборе статистики компанией Mozilla)
 
 В **Mozilla Firefox** встроены функции для сбора статистики. Она собирается и явно, и неявно. Собираются данные о окружающих Wi-Fi точках вокруг, гео данные и многие другие. Искать информацию о них долго и составлять инструкцию по их отключению долго. Универсального решения нет. Поэтому в данном блоге они не описаны. Самый простой вариант это использовать **Tor Browser**, но в нем отключена часть функций двойного назначения, они и могут собирать статистику, и нужны для работы некоторых функций сайтов. Поэтому использовать его обычным образом трудно.<br>
-**Google Chrome** собирает намного больше статистики, и присваивает каждому пользователю уникальный номер. Тоже касается и Chromium, но в меньшей степени. Если нужно использовать **Google Chrome** можете оценить [Chromium](https://www.chromium.org/Home) или неофициальный проект [ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium) делающий сборки Chromium с вырезанным сбором статистики.
+**Google Chrome** собирает намного больше статистики, и присваивает каждому пользователю уникальный номер. Тоже касается и Chromium, но в меньшей степени. Если нужно использовать **Google Chrome** можете оценить [Chromium](https://www.chromium.org/Home) с меньшим сбором статистики или неофициальный проект [ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium) делающий сборки Chromium с вырезанным сбором статистики.
 
 ## Управление
 
 **Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют функции дополнений [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)
 <br>
-**Note!** Некоторые дополнения могут блокировать или менять стандартные сочетания клавиш.
+**Note!** Некоторые **дополнения или сайты** могут блокировать или менять стандартные сочетания клавиш.
 
 ## FAQ
 
@@ -231,7 +231,7 @@ javascript:void((function () {
 **Q** Как запустить отдельный профиль Firefox  
 **A** Командой ```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
 
-**Q** (**для Ubuntu 18.04**) Как изменить иконку Firefox на панели? Как назначить каждому профилю Firefox свой ярлык?
+**Q** (**для Ubuntu**) Как изменить иконку Firefox на панели? Как назначить каждому профилю Firefox свой ярлык?
 <br>
 **A** Для этого нужно создать пару файлов ```ярлык``` и ```иконка```.
 После этого все ярлыки указывающие в поле ```Icon``` имя ```иконки``` созданного ```ярлыка``` будут иметь свою иконку не только на ярлыке, но и на панели.
@@ -286,6 +286,8 @@ javascript:void((function () {
         * ```/home/<user_name>/update-firefox-as-sudo.sh /opt/my_firefox/firefox```
     6. Теперь зайдите в меню ```О программе``` и обновите. Для обновления Firefox будет создан временный профиль, который авто удалится после закрытия Firefox. Если вы используете файл политик ```distribution/policies.json```, то он будет временно отключен <sub>(его имя будет изменено)</sub> чтобы обновить Firefox в случае, если политика запрещает обновление.
 
+**Note:** После отключения обновления через `distribution/policies.json` невозможно узнать о выходе обновления Firefox. Смотреть информацию об обновлениях можно вручную [тут](https://www.mozilla.org/en-US/firefox/releases/)
+
 **Q** Как добавить в Firefox открытие ```magnet``` ссылок на торренты.
 <br>
 **A** Иногда Firefox не добавляет связи программ с ```magnet``` ссылками. Нужно добавить вручную:
@@ -317,7 +319,7 @@ javascript:void((function () {
 <br>
 **A** Причина в старом [баге Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
 
-**Q** **(Для Ubuntu 18.04)** Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, snap, flatpak или AppImage.
+**Q** **(для Ubuntu)** Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, snap, flatpak или AppImage.
 <br>
 **A** Выполните команды для удаления:
 ```
@@ -326,6 +328,7 @@ sudo rm -rf /usr/lib/firefox
 sudo rm -rf /usr/lib/firefox-addons
 ```
 Если у вас кроме английского установлен и другой язык, то кроме ```firefox-locale-en``` вам придется удалить и пакет для вашего языка.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NDI4MTk0OV19
--->
+
+**Q** **(для Ubuntu)** Как использовать файловый диалог KDE в Firefox.
+<br>
+**A** Установить пакеты командой `sudo apt install xdg-desktop-portal xdg-desktop-portal-kde` и запустить firefox командой `GTK_USE_PORTAL=1 firefox`
