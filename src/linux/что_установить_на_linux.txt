@@ -290,6 +290,10 @@ KMail
 
 --другое
 youtube-dl + gui для него - закачка с youtube и др. сайтов
+    Установка с оф. сайта:
+        sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /opt/youtube-dl
+        sudo chmod a+rx /opt/youtube-dl
+        sudo ln -s /opt/youtube-dl /usr/bin/youtube-dl
 sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install youtube-dlg

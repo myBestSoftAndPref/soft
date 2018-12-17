@@ -59,3 +59,6 @@ user_pref("browser.search.update", false);
 
 // в будущем отключить DoH (DNS over HTTPS) и сервис, который 2 раза в сутки проверяет скорость соединения на сторонних ресурсах чтобы решить включать или нет DoH
 user_pref("network.trr.mode", 0);
+
+// отключение рекомендации дополнений (НЕ ПРОВЕРЕНО!)
+// browser.newtabpage.activity-stream.asrouter.providers.cfr

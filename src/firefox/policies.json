@@ -1,5 +1,8 @@
 {
   "policies": {
+    "DNSOverHTTPS": {
+      "Enabled": false
+    },
     "DisableAppUpdate": true,
     "DisableBuiltinPDFViewer": true,
     "DisableFeedbackCommands": true,
@@ -8,11 +11,11 @@
     "DisablePocket": true,
     "DisableTelemetry": true,
     "DontCheckDefaultBrowser": true,
-    "EnableTrackingProtection": {
-      "Value": false
-    },
     "FlashPlugin": {
       "Default": false
+    },
+    "Homepage": {
+      "StartPage": "none"
     },
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": ""
