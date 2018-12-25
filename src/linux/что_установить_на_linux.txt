@@ -501,6 +501,15 @@ digiKam - менеджер фото и картинок
 SimpleScreenRecorder - из стороннего ppa, запись экрана, с ubuntu 17 есть в официальном репе
 peek - запись экрана в виде gif, из стороннего ppa
 
+sudo apt install kamoso - работа с веб камерой в kde
+
+Отключить веб камеру (до перезагрузки): sudo modprobe -r uvcvideo
+Включить веб камеру: sudo modprobe -a uvcvideo
+Найти софт использующий веб камеру: lsof | grep video0
+Если камера не отключается, то нужно закрыть софт который уже использует камеру.
+Посмотреть драйвер веб камеры: sudo lsmod | grep uvcvideo
+
+
 --Кодеки и плагины
 xubuntu-restricted-extras - набор всех кодеков + flashplayer
     после установки данного пакета можно удалить ненужный в современном интернете и уязвимый Adobe Flash Player

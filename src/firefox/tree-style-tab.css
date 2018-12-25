@@ -1,0 +1,37 @@
+/* Show title of unread tabs with red and italic font */
+
+.tab.unread .label {
+  color: red !important;
+  font-style: italic !important;
+}
+
+
+
+
+.tab.discarded .label-content {
+  color: blue;
+}
+
+.tab .favicon {
+max-height:10px !important;
+max-width:10px !important;
+}
+
+.tab {
+height: 18px;
+  padding-top: 0 !important;
+padding-bottom: 0 !important;
+
+font-size: 13px;
+}
+
+.newtab-button-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+#tabbar {
+  bottom: 20px !important;
+}
