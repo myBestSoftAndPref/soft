@@ -320,9 +320,10 @@ javascript:void((function () {
 **A**
 Установите со страницы [Dictionaries and Language Packs](https://addons.mozilla.org/en-US/firefox/language-tools/) нужную локализацию <sub>Для старых версий Firefox на странице есть кнопка "просмотреть все версии"</sub>
 <br>
-На странице ```about:config``` изменить значение ```general.useragent.locale``` поставить значение 1) ```en-US``` - для английского языка или
-2) ```ru-RU``` - для русского языка.
-<br>
+На странице ```about:config``` изменить значение ```general.useragent.locale``` поставить значение:
+1. или ```en-US``` для английского языка
+2. или ```ru-RU``` для русского языка
+
 При этом параметр ```intl.locale.matchOS``` должен стоять в ```false```
 
 **Q** Команда ```-no-remote``` не работает. Команда ```-profile``` не работает. Появляется сообщение ошибки, что ```Firefox``` или ```Thunderbird``` уже запущен. Английский вариант: ```Firefox is already running, but is not responding...```.
