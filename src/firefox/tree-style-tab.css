@@ -35,3 +35,49 @@ font-size: 13px;
 #tabbar {
   bottom: 20px !important;
 }
+
+.tab:not(:hover) .closebox {
+  display: none;
+}
+
+
+.tab .closebox {
+display:none;
+}
+
+.tab .label.overflow {
+ mask-image: none;
+}
+
+.tab .twisty {
+  margin-right: -1.7em;
+  opacity: 0;
+  position: relative;
+  z-index: 10000;
+}
+
+.active-marker {
+display:none;
+}
+
+.tab.highlighted .label {
+color: white !important;
+background: black;
+}
+
+.tab:not(.pinned) {
+padding:0 !important;
+}
+
+.tab .label {
+margin-left:0;
+}
+
+
+/* for 1 lvl tree */
+.tab[data-level][data-level] {
+  margin-left: 6% !important;
+}
+.tab[data-level][data-level="0"] {
+margin-left: 0% !important;
+}

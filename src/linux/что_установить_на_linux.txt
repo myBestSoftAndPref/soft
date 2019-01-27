@@ -239,6 +239,7 @@ Krusader - в KDE
     В настройках krusader в пункт diff utility вставить: /usr/bin/kdiff3
     Как вариант лучшая альтернатива для kdiff3 может быть утилита meld. И в diff utility нужно указать путь /usr/bin/meld после установки:
         sudo apt install meld
+gnome-commander - в GTK
     
 double commander (doublecmd) - глючный, поддерживает некоторые плагины от total commander
 
@@ -518,6 +519,9 @@ xubuntu-restricted-extras - набор всех кодеков + flashplayer
 
 --плеера
 smplayer - более быстрый (в ppa версия с рекламой, поэтому возможно лучше оставить ту что идет по умолчанию с ubuntu)
+    устранение артефактов (напр. мерцание):
+        установить mvp плеер, переключиться на него в качестве движка в настройках.
+        Прим. в отличии от mplayer время задержки субтитров в настройках для mvp считается наоборот, возможно и др. несовпадения.
     установить свежую версию из официального ppa
         sudo add-apt-repository ppa:rvm/smplayer 
         sudo apt update 
@@ -829,6 +833,24 @@ cat /var/log/Xorg.0.log | grep -i DRI
 по аналогии выше, для Intel не работает с опцией ниже (нужно выбрать другой метод)
     Option      "AccelMethod"  "sna"
 
+-------------------
+Осторожно может сломать систему!
+Включение KMS (modesetting) видеодрайвера для intel вместо родного intel:
+
+Просто удаляем драйвер intel и система переходит на modesetting:
+    sudo apt-get purge xserver-xorg-video-intel
+    
+Можно еще отредактировать Xorg и указать использовать modesetting для intel:
+    (подробно тут https://unix.stackexchange.com/a/356059 )
+
+    Section "Device"
+            Identifier "Intel Graphics"
+            Driver "modesetting"
+            Option "AccelMethod" "glamor"
+            Option "TearFree" "True"
+            Option "DRI" "3"
+            BusID "PCI:0:2:0"
+    EndSection
 -------------------
 Включение нового amdgpu (не путать с amdgpu-pro от самой компании AMD) вместо старого драйвера radeon
 

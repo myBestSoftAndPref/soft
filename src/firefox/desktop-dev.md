@@ -3,6 +3,8 @@
 Дополнения и инструменты для программистов, web разработки, разработки для Firefox
 
 [Awesome WebExtensions](https://github.com/bfred-it/Awesome-WebExtensions) - набор ссылок на инструменты для разработки дополнений
+<br>
+[redux-webext](https://github.com/ivantsov/redux-webext) - библиотека для разработки расширений для firefox и chrome, позволяет удобно обмениваться сообщениями между background и content скриптами
 
 [Extension source viewer](https://addons.mozilla.org/en-US/firefox/addon/crxviewer/) - можно посмотреть код дополнения Firefox прямо на странице его установки на addons.mozilla.org
 <br>
