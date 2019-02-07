@@ -16,7 +16,7 @@
 <br>
 [Tree Style Tab](https://addons.mozilla.org/ru/firefox/addon/tree-style-tab) - вкладки вертикально в виде дерева.
 <br>
-[Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок и группы вкладок. Из отличий от других подобных дополнений - очень удобное встроенное управление группами вкладок.
+[Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок и группы вкладок. Из отличий от других подобных дополнений - очень удобное встроенное управление группами вкладок. <sub>К сожалению у **расширения есть баги**, лучшая и более надежная альтернатива это: расширения **Tree Style Tab** + **Simple Tab Groups**</sub>
 <br>
 [Drag-Select Link Text](https://addons.mozilla.org/en-US/firefox/addon/drag-select-link-text/) - позволяет выделять текст ссылок без зажатия ```Alt```
 <br>
@@ -97,7 +97,7 @@
 <br>
 [Session Boss](https://addons.mozilla.org/ru/firefox/addon/session-boss/) - сохранение и восстановление сессий (вкладок)
 <br>
-[Panorama View](https://addons.mozilla.org/en-US/firefox/addon/panorama-view/) - визуальные группы вкладок, для работы на странице ```about:config``` установить ```extensions.webextensions.tabhide.enabled = true```, это временное решение, с выходом новых версий браузеров это опция будет включена по умолчанию.
+[Simple Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/simple-tab-groups/) - создает группы вкладок между которыми можно переключаться. Совместимо с **Tree Style Tab**. Может работать как своеобразный меннеджер сессий, если в настройках выбрать "создание новой группы" для открытых окон.  <sub>(для удобной работы с **Tree Style Tab** нужно отключить авто создание пустой "групповой" вкладки в **Tree Style Tab**, если вкладка открыта меньше чем N сек. назад)</sub>
 <br>
 [FoxyTab](https://addons.mozilla.org/en-US/firefox/addon/foxytab/) - набор операций для вкладок, доступных через меню вкладок: закрыть дубли, закрыть слев, перезагрузить каждые N сек, переместить, сортировать по параметру и т.д.
 <br>
@@ -120,6 +120,14 @@
 [Tab Unloader](https://addons.mozilla.org/en-US/firefox/addon/tab-unloader-we/) - добавляет подпункт в контекстное меню вкладки для групповых действий с выгрузкой вкладок
 <br>
 [Close Tabs to the Left](https://addons.mozilla.org/en-US/firefox/addon/close-tabs-left/) - добавляет в контекстное меню вкладок пункт "закрыть все вкладки слева"
+<br>
+[HighlightAll](https://addons.mozilla.org/en-US/firefox/addon/highlightall/) - продвинутый поиск по странице с отметками положения найденного. Некоторая замена нерабочему устаревшему **FindBar Tweak**. К сожалению у **расширения много багов**.
+<br>
+[Conex]() - группировка табов, каждая группа в отдельном контейнере со своей копией куков и др. инфой (т.е. можно в каждой группе войти на один и тот же сайт под разными никами). К сожалению расширение **недостаточно удобно**.
+<br>
+[Link Properties Plus WE](https://addons.mozilla.org/ru/firefox/addon/link-properties-plus/) - предоставляет расширенные свойства для ссылок: размер файла по ссылке, дату последнего изменения и т.п.
+<br>
+[Session Boss](https://addons.mozilla.org/en-US/firefox/addon/session-boss/), [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager), [MySessions](https://addons.mozilla.org/en-US/firefox/addon/my-sessions/) - расширения для работы с сессиями, сохранение, восстанановление и др. В современном Firefox права расширений ограничены, поэтому нормально **сохранить ссылки на открытые локальные файлы и подобное невозможно**. **Совет:** использовать [Simple Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/simple-tab-groups/) для таких задач, оно не хуже.
 
 ## Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
@@ -157,11 +165,13 @@
 Это закладка с JavaScript внедряющимся на страницу и выполняющимся в момент нажатия на закладку.
 Для создания bookmarklet нужно создать закладку со скриптом в строке адреса (поле location):
 ```javascript
-javascript:void((function () {
+javascript:void((async () => {
 	alert('test');
 })());
 ```
 Во время создания код bookmarklet преобразуется в [URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI). Различные функции JavaScript связанные с переадресацией страницы могут быть запрещены политиками сайта, так что заменить расширения в этом плане не получится, так как подобные функции будут работать только на части сайтов.
+
+В новых версиях Firefox сайты могут блокировать `inline` скрипты через [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy), на таких сайтах bookmarklet может не сработать совсем. Если в создатели браузеров не изменят обработку bookmarklets, то **со временем bookmarklets перестанут работать совсем**.
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
@@ -208,9 +218,9 @@ javascript:void((function () {
 
 ## Что нужно знать о приватности (сборе статистики компанией Mozilla)
 
-В **Mozilla Firefox** встроены функции для сбора статистики. Она собирается и явно, и неявно. Собираются данные о окружающих Wi-Fi точках вокруг, гео данные и многие другие. Искать информацию о них долго и составлять инструкцию по их отключению долго. Универсального решения нет. Поэтому в данном блоге они не описаны. Самый простой вариант это использовать **Tor Browser**, но в нем отключена часть функций двойного назначения, они и могут собирать статистику, и нужны для работы некоторых функций сайтов. Поэтому использовать его обычным образом трудно.
+В **Mozilla Firefox** встроены функции для сбора статистики. Она собирается и явно, и неявно. Собираются данные о окружающих Wi-Fi точках вокруг, гео данные и многие другие. Искать информацию о них долго и составлять инструкцию по их отключению долго. Универсального решения нет. Поэтому в данном блоге они не описаны. Самый простой вариант это использовать **Tor Browser**, но в нем отключена часть функций двойного назначения, они и могут собирать статистику, и нужны для работы некоторых функций сайтов. Поэтому использовать его обычным образом трудно. Существует **неофициальная** сборка **Firefox** с отключенным сбором статистики, это [Librefox](https://github.com/intika/Librefox).
 
-**Google Chrome** собирает намного больше статистики, и присваивает каждому пользователю уникальный номер. Тоже касается и Chromium, но в меньшей степени. Если нужно использовать **Google Chrome** можете оценить [Chromium](https://www.chromium.org/Home) с меньшим сбором статистики или неофициальный проект [ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium) делающий сборки Chromium с вырезанным сбором статистики.
+**Google Chrome** собирает намного больше статистики, и присваивает каждому пользователю уникальный номер. Тоже касается и **Chromium** (свободной версии **Google Chrome**), но в меньшей степени. Если нужно использовать **Google Chrome** можете оценить [Chromium](https://www.chromium.org/Home) с меньшим сбором статистики или **неофициальный** проект [ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium) делающий сборки **Chromium** с вырезанным сбором статистики.
 
 ## Что нужно знать о XUL (старой системе расширений Firefox)
 
@@ -224,7 +234,7 @@ javascript:void((function () {
 
 **Старую версию** этой статьи для старых дополнений на [XUL](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL) для **Firefox 52** [ESR](https://www.mozilla.org/en-US/firefox/organizations/) можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md)
 <br>
-**Архив некоторых дополнений на xul** для Firefox 52, которые Mozilla видимо удалит со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
+**Архив некоторых дополнений на xul** для Firefox 52, которые Mozilla удалила со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
 
 ## Управление
 
@@ -330,7 +340,7 @@ javascript:void((function () {
 <br>
 **A** Причина в старом [баге Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
 
-**Q** **(для Ubuntu)** Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, snap, flatpak или AppImage.
+**Q** **(для Ubuntu)** Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage.
 <br>
 **A** Выполните команды для удаления:
 ```
@@ -342,4 +352,4 @@ sudo rm -rf /usr/lib/firefox-addons
 
 **Q** **(для Ubuntu)** Как использовать файловый диалог KDE в Firefox.
 <br>
-**A** Установить пакеты командой `sudo apt install xdg-desktop-portal xdg-desktop-portal-kde` и запустить firefox командой `GTK_USE_PORTAL=1 firefox`
+**A** Установить пакеты командой `sudo apt install xdg-desktop-portal xdg-desktop-portal-kde` и запустить firefox командой `GTK_USE_PORTAL=1 firefox` **Note:** это функция пока что с багами, не используйте!

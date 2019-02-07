@@ -40,4 +40,8 @@
 <br>
 [Live editor for CSS and LESS](https://addons.mozilla.org/en-US/firefox/addon/live-editor-for-css-and-less/) - редактор css и less в браузере, подсветка синтаксиса, автоформатирование, минимизация и др.
 <br>
+[{find+}](https://addons.mozilla.org/ru/firefox/addon/brandon1024-find) - поиск на странице по Regular Expression
+<br>
 [Augury](https://addons.mozilla.org/en-US/firefox/addon/angular-augury/) - инструменты для Angular разработчика
+<br>
+[React Developer Tools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) - инструменты для React + Redux разработчика
