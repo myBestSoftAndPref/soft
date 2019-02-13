@@ -359,6 +359,7 @@ libreoffice +
  также посмотреть по необходимости другие пакеты libreoffice (напр. редактор формул и т.д.)
  свежую версию можно установить:
     sudo apt-get remove --purge libreoffice*
+    sudo apt-get autoremove
     sudo snap install libreoffice
  чтобы запустить snap версию: /snap/bin/libreoffice
  Решение бага с не появляющимся меню в KDE при использовании кнопки Application Menu:
@@ -369,6 +370,9 @@ libreoffice +
     still - стабильная (может быть в репозитории Ubuntu по умолчанию)
 Если используете AppImage можно открыть отдельный компонент так
     libreoffice --writer
+Какую версию установить: скачать обычный deb пакет и установить, в отличии от snap или flatpak нету дублей либ в памяти и ресурсы на месте
+    как установить: распаковать архив и выполнить sudo dpkg -i *.deb
+    отключить автообновление в настройках
  
  + librecad
 FreeCAD - CAD система
