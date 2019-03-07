@@ -12,6 +12,8 @@
     Инструкция для debian, более надежный источник: https://wiki.debian.org/Hibernation/Hibernate_Without_Swap_Partition
     FAQ: https://help.ubuntu.com/community/SwapFaq
     Подробное и простое объяснение как работает hibernation, почему может не работать, с ссылками на ответы: https://askubuntu.com/a/1038856
+    Настройки hibernate из ядра (не uswsusp):
+        http://manpages.ubuntu.com/manpages/bionic/man5/hibernate.conf.5.html
 
 Для редактирования файлов конфигурации я использую редактор geany. Чтобы его установить можно выполнить:
     sudo apt install geany
@@ -136,6 +138,22 @@
             [Disable hibernate by default in upower]
             [Disable hibernate by default in logind]
     8.3 найти внизу этих пунктов слово ResultActive и поставить значение ResultActive=yes
+    
+    Если вы смотрите ЭТОТ раздел, но не используете uswsusp и хотите использовать hibernation из ядра:
+        1. Увеличьте размер swap файла, как указано в разделе 1ин и 2ва.
+        3. Получить UUID:
+            sudo findmnt -no SOURCE,UUID -T /swapfile
+        3. Получить offset (смещение) файла swapfile (смотреть первое число в столбце physical_offset):
+            sudo filefrag -v /swapfile
+        2. Открыть
+            sudo geany /etc/default/grub
+        4. Добавить вконец опции GRUB_CMDLINE_LINUX_DEFAULT внутрь между ковычек после пробела:
+            4.2 строку:                     resume=UUID=XXX-XXX-XXX-XXX-XXX     (где XXX-XXX-... - это UUID)
+            4.3 и через еще один пробел:    resume_offset=34816                 (где 34816 это вывод команды swap-offset)
+            4.4 Пример:
+                GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=e2ea34fc-b23a-4948-b2e6-a5a9a79682e5 resume_offset=34816"
+        5. Выполнить sudo update-grub
+        6. Перезагрузиться
     
 9. Устанавливаем время загрузки системы при пробуждении в случае проблем (чтобы не ждать долго)
     0. Открыть файл: sudo geany /etc/default/grub

@@ -468,11 +468,12 @@ svn (subversion)
 git - лучше ставить обновленную версия с официального PPA, там поддержка libsecret (хранение паролей для отдельных репозиториев)
     https://git-scm.com/download/linux
     sudo apt install git git-gui git-extras gist
-    Единственная нормальная утилита для nerge: sudo apt install meld
+    Единственная нормальная утилита для merge: sudo apt install meld
     
 RabbitVCS - GUI для git и SVN
 git-cola - GUI для git
 GitExtensions - gui на mono (вроде качественное, но не в официальном репе)
+    https://gitextensions.github.io/
 
 dolphin-plugins - в KDE набор плагинов в том числе для Git (доступны в файловом менеджере)
 
@@ -990,6 +991,10 @@ latte-doc - крутая док панель kde
 
 Можно еще удалить
     sudo apt purge apport
+    
+В дополнение удаляем утилиту для отправки статистики по клику в GUI
+она работает в паре с apport:
+    sudo apt purge whoopsie
 ------------------
 доп. утилиты для ядра.
 В том числе

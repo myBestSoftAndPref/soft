@@ -81,7 +81,7 @@
                 GRUB_CRYPTODISK_ENABLE=y
             в /mnt/etc/default/grub
         3.  Установить не из chroot, а из обычной консоли (где sdc это флэшка на которой /boot)
-                sudo grub-install --root-directory=/mnt /dev/sdc --recheck --no-floppy
+                sudo grub-install --force --root-directory=/mnt /dev/sdc --recheck --no-floppy
         4.  выполнить из chroot (ignore warnings???)
                 update-grub
         5.  выполнить из chroot
