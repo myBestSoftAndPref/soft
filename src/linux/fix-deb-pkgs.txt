@@ -2,6 +2,7 @@ sudo rm /var/lib/apt/lists/lock
 sudo rm /var/cache/apt/archives/lock
 
 sudo apt-get install --fix-missing
+sudo apt-get install --fix-broken --assume-yes
 
 sudo apt-get update
 sudo apt-get autoclean
