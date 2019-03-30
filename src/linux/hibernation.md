@@ -77,7 +77,7 @@ cat /proc/swaps                     # информация о состоянии
 
 0. Смотрим лимит размера образа системы: `cat /sys/power/image_size`
 1. Создаем файл конфигурации `sudo touch /etc/tmpfiles.d/hibernationsize.conf`
-2. Вставляем в `/etc/tmpfiles.d/hibernationsize.conf` текст конфигурации (8589934592 байт это 8 Гб, ож):
+2. Вставляем в `/etc/tmpfiles.d/hibernationsize.conf` текст конфигурации (8589934592 байт это 8 Гб, размер равный размеру вашей оперативной памяти):
     ```
     #    Path                  Mode UID  GID  Age Argument
     w    /sys/power/image_size     -    -    -    -   8589934592
