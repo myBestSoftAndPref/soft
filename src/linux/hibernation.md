@@ -43,7 +43,7 @@ cat /proc/swaps                     # информация о состоянии
 
 1. Открываем файл: `sudo geany /etc/fstab`
 2. Увидим там строку: `/swapfile none swap sw 0 0`. Заменить ее на строку: ```/swapfile   swap    swap    defaults        0       0```
-3. Сохранить файл. Перемонтировать диски из `/etc/fstab`, если там не стоит `noauto`: `sudo mount -a`
+3. Сохранить файл. Перемонтировать диски из `/etc/fstab`, если там не стоит `noauto` выполнив команду: `sudo mount -a`
 4. Если команда `sudo mount -a` не сработала, то на этом шаге перезагрузите систему
 
 **3. Указываем где `/swapfile` с которого загружаться**:
@@ -77,12 +77,12 @@ cat /proc/swaps                     # информация о состоянии
 
 0. Смотрим лимит размера образа системы: `cat /sys/power/image_size`
 1. Создаем файл конфигурации `sudo touch /etc/tmpfiles.d/hibernationsize.conf`
-2. Вставляем туда текст конфигурации:
+2. Вставляем в `/etc/tmpfiles.d/hibernationsize.conf` текст конфигурации:
     ```
     #    Path                  Mode UID  GID  Age Argument
     w    /sys/power/image_size     -    -    -    -   9000000000
     ```
-3. Перезагрузить систему
+3. Сохранить файл. Перезагрузить систему
 
 **2. Отключаем сжатие образа системы:**
 
