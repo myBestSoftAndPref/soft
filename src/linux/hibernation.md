@@ -126,9 +126,6 @@ sudo apt install geany
 sudo apt install uswsusp
 ```
 
-Удалить:
-GRUB_CMDLINE_LINUX_DEFAULT="quiet splash hibernate=nocompress resume=UUID=2f7d1692-5348-456d-9317-47147c4ef639 resume_offset=34816"
-
 ### 2. Настраиваем утилиту uswsusp
 
 1. Выполняем команду: `sudo dpkg-reconfigure -pmedium uswsusp`. Должны появиться шаги настройки в текстовом режиме. Команда **может не сработать** с первого раза как надо, не все шаги появятся. Тогда запустить ее еще раз.
