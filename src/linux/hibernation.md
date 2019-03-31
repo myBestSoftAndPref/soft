@@ -51,7 +51,7 @@ cat /proc/swaps                     # информация о состоянии
     ```bash
     sudo findmnt -no SOURCE,UUID -T /swapfile
     ```
-2. Получить `offset` (смещение) файла `/swapfile` относительно начала диска (смотреть **первое число** в столбце `physical_offset`, это число и есть смещение):
+2. Получить **offset** (смещение) файла `/swapfile` относительно начала диска (смотреть **первое число** в столбце `physical_offset`, это число и есть смещение):
     ```bash
     sudo filefrag -v /swapfile
     ```
@@ -59,7 +59,7 @@ cat /proc/swaps                     # информация о состоянии
     ```bash
     sudo geany /etc/default/grub
     ```
-4. Найти в открытом `/etc/default/grub` слово (опцию) `GRUB_CMDLINE_LINUX_DEFAULT`. Поставить в `resume` значение **UUID**, а в `resume_offset` число **offset** (смещение), полученные выше. И добавить это вконец этой опции после знака `=` (равно) внутрь между кавычек отделив пробелом опции `resume` и `resume_offset` как в примере:
+4. Найти в открытом `/etc/default/grub` слово (опцию) `GRUB_CMDLINE_LINUX_DEFAULT`. **Поставить** в `resume` значение **UUID**, а в `resume_offset` число **offset** (смещение), полученные выше. И добавить это вконец этой опции после знака `=` (равно) внутрь между кавычек отделив пробелом опции `resume` и `resume_offset` как в примере <sub>(`quiet splash` это параметры по умолчанию, их не трогаем)</sub>:
     ```bash
     GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=e2ea34fc-b23a-4948-b2e6-a5a9a79682e5 resume_offset=34816"
     ```
@@ -89,9 +89,9 @@ cat /proc/swaps                     # информация о состоянии
 **2. Отключаем сжатие образа системы:**
 
 1. Открываем `sudo geany /etc/default/grub`
-2. Добавляем в опции ядра параметр `hibernate=nocompress`, итоговая строка:
+2. Добавляем в опции ядра параметр `hibernate=nocompress`, итоговая строка <sub>(`quiet splash` это параметры по умолчанию, их не трогаем)</sub>:
     ```
-    GRUB_CMDLINE_LINUX_DEFAULT="hibernate=nocompress resume=UUID=2f7d1692-5348-456d-9317-47147c4ef639 resume_offset=34816"
+    GRUB_CMDLINE_LINUX_DEFAULT="quiet splash hibernate=nocompress resume=UUID=2f7d1692-5348-456d-9317-47147c4ef639 resume_offset=34816"
     ```
 3. Обновляем конфигурацию `sudo update-grub`
 4. Перезагрузить систему
