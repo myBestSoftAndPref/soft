@@ -1,0 +1,26 @@
+Покажет логи прошивок, если повезет там будет название прошивки wi fi:
+dmesg | grep -i firmwar
+
+Покажет логи для realtek устройств, например сетевых карт (сокращенно rtl):
+dmesg | grep rtl
+
+Какой-то репозиторий новых драйверов для realtek:
+https://github.com/lwfinger/rtlwifi_new
+
+Список всех сетевых карт:
+sudo lshw -class network
+
+Логи менеджера сети:
+journalctl $(type -p NetworkManager)
+
+Устанавливаем регион для wi fi (т.к. роутер может передавать на частоте вашего региона):
+    1. sudo geany /etc/default/crda
+    2. Смотрим регион тут: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+    3. Устанавливаем (RU для России): REGDOMAIN=RU
+    4. Перезагружаемся
+
+Пример с установкой параметра ant_sel=1 для wi fi карт realtek:
+    https://askubuntu.com/a/1018851
+    https://askubuntu.com/a/883688
+    https://askubuntu.com/a/1079892
+    https://manjabuntu.com/hardware/cлабый-wi-fi-сигнал-на-чипе-rtl8723b/

@@ -18,4 +18,4 @@
 
 
 Статьи о Ubuntu:
-* [Как включить Hibernation (гибернацию, спящий режим)](https://raw.githubusercontent.com/myBestSoftAndPref/soft/master/src/linux/hibernation.md)
+* [Как включить Hibernation (гибернацию, спящий режим)](https://github.com/myBestSoftAndPref/soft/tree/master/src/linux/hibernation.md)
