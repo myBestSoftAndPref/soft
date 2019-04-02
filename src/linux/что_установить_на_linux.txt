@@ -27,7 +27,7 @@ sudo apt install ppa-purge - чтобы удалять ppa
 Grub Customizer (в GTK) или sudo apt-get install kde-config-grub2 (в KDE)
 	- конфигуратор загрузки операционных систем
 	
-unetbootin - запись системы на флэшку, создание загрузочных дисков
+unetbootin - запись системы на флэшку, создание загрузочных дисков (исключен из официального репозитория)
 usb-creator-kde - создание live usb в KDE
 StarDict - словари + StarDict-tools (конвертирование словарей в StarDict) + StarDict-plugin-spell (проверка орфографии)
 GoldenDict -  форк StarDict, словари ABBYY Lingvo, StarDict, Babylon, Dictd

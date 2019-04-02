@@ -8,3 +8,6 @@ sudo apt-get update
 sudo apt-get autoclean
 sudo apt-get clean
 sudo apt-get autoremove
+
+Переустановка ядра в случае проблем (прим. поискать переустановку headers ядра):
+dpkg -l | grep linux-image-.*-generic | sort -k3 | tail -n1 | awk '{system ("sudo apt-get install --reinstall " $2)}'

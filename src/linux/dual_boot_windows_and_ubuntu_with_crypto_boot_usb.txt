@@ -134,3 +134,22 @@
 Don't install grub bootloader during Ubuntu instalation to C:\ to let Windows use native Windows' bootloader???
 
 Баги. В Ubuntu могут наблдаться различные Warning (предупреждения). Скорее всего из-за багов в дистрибутиве или программе шифрования. Используйте LTS версии Ubuntu.
+
+Recovery after /boot partion is damaged (/dev/sda2 is / partion and /dev/sdc1 is /boot partion):
+0. Format Flash Driver with /boot and move backup of the /boot to recreated /boot partion
+1. Execute as sudo:                     sudo cryptsetup luksOpen /dev/sda2 cryptlinux
+2. Execute as sudo (enter to chroot):   sudo mount /dev/mapper/local-root /mnt && sudo mount /dev/sdc1 /mnt/boot && sudo mount --bind /dev /mnt/dev && sudo chroot /mnt
+3. Execute as chroot:                   mount -t proc proc /proc && mount -t sysfs sys /sys && mount -t devpts devpts /dev/pts
+3. Go to /mnt/etc/fstab and change UUID of /boot partion to a right value (you can see UUID of the /boot partion in Partion Manager). Fix other UUID if is needed.
+3. Copy /boot backup to new partion:    sudo cp -r /mnt/home/user/myBackupFolder/boot/* /mnt/boot/
+3. delete /boot/grub to be sure that it is right: sudo rm -rf /mnt/boot/grub
+    (We need it to regenerate grub.cfg with NEW /boot partion UUID)
+6. Execute as chroot:                   update-initramfs -k all -c
+4. Execute as sudo:                     sudo grub-install --force --root-directory=/mnt /dev/sdc --recheck --no-floppy
+5. Execute as chroot:                   update-grub
+
+Advance:
+6. Execute as chroot:                   update-initramfs -k all -c
+5. Execute as chroot:                   update-grub
+
+If /boot containtns garbage you can clear it: sudo rm -rf /mnt/boot/*

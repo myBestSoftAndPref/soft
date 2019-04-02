@@ -5,8 +5,6 @@ user_pref("dom.disable_beforeunload", true); //Отключить предупр
 user_pref("intl.locale.matchOS", false); //Использовать локаль из general.useragent.locale, а не установленную в ОС
 user_pref("browser.link.open_newwindow.restriction", 0); //Открывать попапы во вкладках вместо отдельных окон
 user_pref("browser.tabs.closeWindowWithLastTab", false); //Не закрывать Firefox при закрытии последней вкладки
-user_pref("dom.webnotifications.enabled", false); //отключаем надоедливые окошки с предложением включить уведомления
-user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
 user_pref("browser.xul.error_pages.expert_bad_cert", true); // Более информативная страница показа ошибок в сертификатах сайтов.
 user_pref("browser.fixup.alternate.enabled", false); //отключаем автоподстановку TLD и www, иногда мешает вводу
 user_pref("browser.urlbar.trimURLs", false); // показывать протоколы в адресах сайтов
@@ -14,6 +12,12 @@ user_pref("layout.spellcheckDefault", 2); // включить проверку �
 user_pref("devtools.screenshot.audio.enabled", false); //Отключает звук затвора фотоаппарата при снятии скриншота в через Developer Tools.
 user_pref("browser.sessionstore.max_tabs_undo", 25); //Устанавливаем максимальное количество истории закрытых табов в 25
 user_pref("devtools.aboutdebugging.showSystemAddons", true); //разрешаем показывать системные аддоны на странице about:debugging
+
+// отключаем надоедливые уведомления
+user_pref("dom.webnotifications.enabled", false); //отключаем надоедливые окошки с предложением включить уведомления
+user_pref("dom.webnotifications.serviceworker.enabled", false); //без этого не работает
+user_pref("dom.pushconnection.enabled", false); //без этого не работает
+user_pref("dom.push.enabled", false); //без этого не работает
 
 user_pref("browser.aboutHomeSnippets.updateUrl", ""); // отключаем рекламу на странице about:home
 user_pref("browser.startup.homepage_override.mstone", "ignore"); // отключаем пока страницы "What's new" после обновления

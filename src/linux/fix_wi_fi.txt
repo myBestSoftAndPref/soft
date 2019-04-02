@@ -13,6 +13,20 @@ sudo lshw -class network
 Логи менеджера сети:
 journalctl $(type -p NetworkManager)
 
+Информация о модуле выведенном командо dmesg | grep rtl.
+firmware прошивка и сам модуль могут иметь похожие, но разные названия
+Кроме всего выведет возможные параметры модуля wi fi которые можно менять:
+    modinfo rtl8188ee
+    
+Для realtek карт параметры можно устанавливать в файле /etc/modprobe.d/rtl8188ee.conf (где rtl8188ee это название модуля):
+    Пример содержимого:
+        options rtl8188ee ips=0 swlps=0 fwlps=0
+        
+Как посмотреть название driver (модуля):
+    1. Установить sudo apt install ethtool
+    2. Посмотреть имя в поле logical name вывода команды sudo lshw -class network
+    3. Выполнить команду ethtool -i wlp19s0 | grep driver где wlp19s0 это значение из поля logical name
+
 Устанавливаем регион для wi fi (т.к. роутер может передавать на частоте вашего региона):
     1. sudo geany /etc/default/crda
     2. Смотрим регион тут: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
@@ -24,3 +38,10 @@ journalctl $(type -p NetworkManager)
     https://askubuntu.com/a/883688
     https://askubuntu.com/a/1079892
     https://manjabuntu.com/hardware/cлабый-wi-fi-сигнал-на-чипе-rtl8723b/
+
+Установка драйвера из репозитория https://github.com/lwfinger/rtlwifi_new :
+1. sudo apt-get install git build-essential linux-headers-$(uname -r)
+2. git clone https://github.com/lwfinger/rtlwifi_new.git
+3. cd rtlwifi_new
+4. make
+5. sudo make install
