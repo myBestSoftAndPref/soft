@@ -40,3 +40,12 @@
 	min-height: 16px !important;
 	max-height: 16px !important;
 }
+
+#userContext-icons, #urlbar-zoom-button {
+    margin: 0 !important;
+}
+
+/* skype icon and other icons margin */
+#userContext-icons description, #userContext-icons label {
+    margin: 0 !important;
+}
