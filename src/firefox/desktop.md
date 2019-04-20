@@ -173,6 +173,8 @@ javascript:void((async () => {
 
 ## Официальные и сторонние сборки Firefox
 
+**Note:** версии для мобильных устройств можно запускать в эмуляторах систем.
+
 * [Firefox](https://ftp.mozilla.org/pub/firefox/) - **официальная**, обычный Firefox
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - **официальная**, без автозагрузки плагинов с закрытым кодом (например, встроенных кодеков для видео, может не играть некоторое видео)
 * [Firefox ESR](https://ftp.mozilla.org/pub/firefox/) - **официальная**, стабильная версия, обновляется почти раз в год
@@ -184,6 +186,10 @@ javascript:void((async () => {
 * [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - **официальная**, сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения, нету авто обновления.
 * [SeaMonkey](https://www.seamonkey-project.org/) - **официальная**, имеет старомодный интерфейс и дополнительные настройки, медленно развивается и отстает от Firefox.
 * [Librefox](https://github.com/intika/Librefox) - это настроенный Firefox с вырезанными или отключенными опциями телеметрии, с патчами приватности и подобное.
+* [Firefox for Android (Fennec)](https://www.mozilla.org/en-US/firefox/android/all/) - **официальная мобильная,** Firefox для Android, мобильная версия с урезанными и измененными функциями. Есть для ARM и Intel процессоров. Поддерживает расширения, но не так полно (по крайней мере пока).
+* [Firefox for iOS](https://www.mozilla.org/en-US/firefox/ios/16.0/releasenotes/) - **официальная мобильная,** версия для iOS на движке WebKit, т.к. iOS не поддерживает родной движок Firefox. Не поддерживает расширения, по сути это другой браузер.
+* [Firefox Focus](https://github.com/mozilla-mobile/focus-android#firefox-focus-for-android) - **официальная мобильная,** урезанная версия Firefox, в теории работает быстрее. Есть дополнительные функции, которых может не быть в обычном **Firefox for Android.** Для систем не поддерживающих родной движок Firefox использует другие движки (например в iOS).
+* [Firefox Klar](https://github.com/mozilla-mobile/focus-android#firefox-focus-for-android) - **официальная мобильная,** это **Firefox Focus** с другим именем и отключенной по умолчанию телеметрией (в **Firefox Focus** она включена по умолчанию). Эта сборка для Германии, т.к. слово в названии "focus" уже занято другой торговой маркой.
 
 ## Настройки для удобства
 
