@@ -1,12 +1,17 @@
 /* Show title of unread tabs with red and italic font */
 
+:root .tab .label.overflow {
+    mask-image: none !important;
+}
+
+.highlighter {
+    display: none !important;
+}
+
 .tab.unread .label {
   color: red !important;
   font-style: italic !important;
 }
-
-
-
 
 .tab.discarded .label-content {
   color: blue;
@@ -54,6 +59,7 @@ display:none;
   opacity: 0;
   position: relative;
   z-index: 10000;
+  position: absolute !important;
 }
 
 .active-marker {
