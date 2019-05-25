@@ -14,7 +14,7 @@
 
 Прямую ссылку на **.apk** файл Firefox for Android можно найти [тут](https://www.mozilla.org/en-US/firefox/android/all/)
 
-Старую версию этой статьи для Firefox for Android со старой системой расширений можно найти [тут]()
+Старую версию этой статьи для Firefox for Android со старой системой расширений можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/21209621e5c29dda711aafe371932419101cb44b/src/firefox/android.md)
 
 # Расширения
 1. [uBlock Origin](https://addons.mozilla.org/android/addon/ublock-origin) - блокировка рекламы и сбора статистики.
