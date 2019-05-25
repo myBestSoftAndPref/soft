@@ -64,5 +64,11 @@ user_pref("browser.search.update", false);
 // в будущем отключить DoH (DNS over HTTPS) и сервис, который 2 раза в сутки проверяет скорость соединения на сторонних ресурсах чтобы решить включать или нет DoH
 user_pref("network.trr.mode", 0);
 
+// включаем разные фичи разработчика, например в консоле по ctrl + shift + j появятся не только сообщения, но и поле ввода команд в консоль, которые влияют на сам Firefox
+user_pref("devtools.chrome.enabled", true);
+
+// отключаем проверку подписей расширений (работает не для всех систем, обходное решение тут: https://forum.mozilla-russia.org/viewtopic.php?pid=769320#p769320 )
+user_pref("xpinstall.signatures.required", false);
+
 // отключение рекомендации дополнений (НЕ ПРОВЕРЕНО!)
 // browser.newtabpage.activity-stream.asrouter.providers.cfr
