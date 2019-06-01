@@ -21,12 +21,16 @@
 	- [Игры](#Игры)
 	- [Система](#Система)
 - [Программы с закрытым кодом](#Программы-с-закрытым-кодом)
+	- [Предупреждение](#Предупреждение)
 	- [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий-1)
+- [Медиа](#Медиа-1)
+- [Навигация](#Навигация-1)
 	- [Интернет](#Интернет-1)
 	- [Справочники](#Справочники-1)
 	- [Файлы](#Файлы-1)
 	- [Документы](#Документы-1)
 	- [Система](#Система-1)
+	- [Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)](#Стандартные-приложения-android-от-google-в-том-числе-если-производитель-телефона-заменил-их-своими)
 
 # Почему ссылки на F-Droid в последнюю очередь?
 Ссылки даны на официальные сайты. Если прямых ссылок на ```.apk``` на официальном сайте нет, то ссылка на [Google Play](https://play.google.com/store). Если в [Google Play](https://play.google.com/store) нету, то ссылка на [F-Droid](https://f-droid.org). Если на официальном сайте ссылка на ```.apk``` ведет на другой сторонний источник (магазин), то ссылка на него.
@@ -62,26 +66,30 @@
 * [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore) - программа может напрямую качать .apk из Google Play, обновлять и т.д.
 
 ## Медиа
-* [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - универсальный плеер для аудио и видео, играет почти все существующие форматы
+* [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - универсальный плеер для аудио и видео, играет почти все существующие форматы. В нем иногда встречаются баги, и CPU может нагружать.
+* [Odyssey Music Player](https://github.com/gateship-one/odyssey) - музыкальный плеер требующий мало ресурсов.
 * [Audio Recorder](https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder) - диктофон, пишет в форматах .ogg, .wav, .flac, .m4a, .mka, .mp3. Есть настройка качества записи, паузы во время разговора по телефону, выбор каталога.
 * [Open Camera](https://sourceforge.net/projects/opencamera/files/) - альтернативная камера для видео и фото с множеством настроек и функций, автоопределением лиц
 * [Call recorder for Android](https://github.com/riul88/call-recorder-for-android) - автоматическая запись телефонных разговоров
 * [CosyDVR](http://cosydvr.esy.es/doku.php) - делает из камеры телефона видеорегистратор, пишет видео в фоне. Версия на [F-Droid](https://f-droid.org/repository/browse/?fdfilter=CosyDVR&fdid=es.esy.CosyDVR), версия для старых Android на [F-Droid](https://f-droid.org/repository/browse/?fdid=com.example.CosyDVR)
 
 ## Навигация
-* [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть ограничение на количество используемых карт, версия F-Droid пересобрана без этих ограничений). <sub>Вы должны понимать, что не смотря на все плюсы данные карты не заменят ```Google Maps``` или ```Yandex Maps```</sub>
+* [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) (OsmAnd+) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть **ограничение** на количество используемых карт, версия F-Droid пересобрана **без этих ограничений**). <sub>Вы должны понимать, что не смотря на все плюсы данные карты **не заменят** ```Google Maps``` или ```Yandex Maps```, которые сделаны более профессионально</sub>
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ## Органайзер
 * [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
 * [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - **не рекомендуется**, вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками (**ОСТОРОЖНО** может вызвать такие проблемы, что телефоном вы сможете пользоваться только после удаления этой программы)
+* [Omni Notes](https://github.com/federicoiosue/Omni-Notes) - развитое приложение для to do заметок разных типов (текст, аудио и прочее)
 
 ## Интернет
 * [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент. Для работы с GMail и некоторыми другими сервисами нужно зайти в сервис с браузера и включить возможность доступа программам к почте.
   * **Прим.** чтобы работать с gmail нужно в настройках аккаунта google в разделе "Безопасность" (Security) разрешить подключение "небезопасных приложений" (less security application); на самом деле никакой опасности тут нет. (если ссылка не изменилась, то менять [тут](https://myaccount.google.com/lesssecureapps))
 * [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата etc. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/android.md)
 * [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
-* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения
+* [Tor Browser](https://play.google.com/store/apps/details?id=org.torproject.torbrowser) - анонимный браузер от проекта Tor.
+* [Orbot](https://play.google.com/store/apps/details?id=org.torproject.android) - программа для подключения к цепочке анонимных прокси от проекта Tor.
+* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения **Note:** эта программа таинственно исчезла со всех ресурсов.
 * [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
 * [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) или [Torrent Client](https://f-droid.org/packages/com.github.axet.torrentclient/) - торрент клиент
 
@@ -90,14 +98,14 @@
 * [QDict](https://github.com/madmanteam/QDict) - словарь, поддерживает формат ```StarDict``` в котором существует очень много словарей
 * [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
 * [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
-* [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп
+* [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп. Есть [новая версия](https://play.google.com/store/apps/details?id=net.androgames.level) этой программ на **Google Play**, но она содержит рекламу.
 * [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (граммы в пинты, килограммы, футы в метры и так далее)
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
 * [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
 * [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) - карта звездного неба (созвездия, астрономические данные и т.д.)
 
 ## Файлы
-* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины)
+* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагину на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
 
 ## Документы
 * [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - **Осторожно.** Некоторые моменты вроде того что автор не позаботился даже о нормальном переводе на английский выглядят сомнительно, но удалять из списка пока не буду. Удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
@@ -127,10 +135,11 @@
 * [SD Scanner](https://f-droid.org/en/packages/com.gmail.jerickson314.sdscanner/) - для многих относительно старых систем Android список файлов не обновляется при подключении к компьютеру и новые файлы не видны сразу. Эта программа обновляет состояние.
 * [androidVNC](https://f-droid.org/packages/android.androidVNC/) - удаленное управление (например компьютером) по vnc
 * [Save For Offline](https://f-droid.org/packages/jonas.tool.saveForOffline/) - добавляет в меню "поделиться" (share) возможность сохранить файл, например так можно сохранять файлы в Mozilla Firefox
+* [KDE Connect](https://f-droid.org/packages/org.kde.kdeconnect_tp/) - позволяют интегрироваться с KDE (Kubuntu и другими linux системами с KDE) или Gnome (Ubuntu GNOME и др.) с установленным расширением GSConnect. Пересылать файлы, управлять телефоном и прочее по USB кабелю и Wi-Fi сети.
 
 # Программы с закрытым кодом
-
-**Предупреждение.** О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все окружающие разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой **официальный** источник программ для Android - это [Amazon Appstore](https://www.amazon.com/getappstore)
+## Предупреждение
+О [Yandex.Store](https://store.yandex.by/). Был случай когда одно из его приложений записывало все окружающие разговоры. С осторожностью относитесь к его программам. После [Google Play](https://play.google.com/store) на сегодня самый большой **официальный** источник программ для Android - это [Amazon Appstore](https://www.amazon.com/getappstore)
 
 ## Источники программ (магазины, репозиторий)
 * [Google Play](https://play.google.com/store) - самый большой магазин. Код проходит некоторую автоматическую проверку.
@@ -139,18 +148,32 @@
 * [1Mobile Market](http://market.1mobile.com/) - **не рекомендуется**. Магазин бесплатных .apk, в магазин загружаются и приложения с Google Play (они отмечены специальным значком). В этом магазине бывают косяки, загруженные программы могут работать с ошибками. Сам магазин доверия не внушает, репутации не имеет. Есть шанс, что он вредоносный или может распостранять вредоносные программы.
 * [APKMirror](http://www.apkmirror.com) - **не рекомендуется**. Онлайн сервис через который можно скачать .apk загруженные в него с Google Play. Не имеет репутации, может быть опасен.
 
+# Медиа
+* [PhotoScan](https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner) - позволяет использовать фотоаппарат как фото сканер.
+* [Google Photos](https://play.google.com/store/apps/details?id=com.google.android.apps.photos) - управление и редактирование фотографий.
+* [Cardboard Camera](https://play.google.com/store/apps/details?id=com.google.vr.cyclops) - от Google, позволяет снять VR-фотографии.
+
+# Навигация
+* [Yandex.Metro](https://play.google.com/store/apps/details?id=ru.yandex.metro) - навигация по веткам метро для: Москвы, Санкт-Петербурга, Киева, Харькова, Минска и Стамбула.
+* [Yandex.Maps](https://play.google.com/store/apps/details?id=ru.yandex.yandexmaps) - карты от yandex.
+* [Google Maps](https://play.google.com/store/apps/details?id=com.google.android.apps.maps) - карты от Google с возможностью скачивать области для offline навигации.
+
 ## Интернет
-* [Opera](http://www.opera.com/ru/mobile/operabrowser/android) - браузер на основе Chromium, умеет сжимать трафик, есть встроенная слабая встроенная блокировка рекламы, умеет сохранять страницы одним файлов в формате .mht (.mhtml)
-* [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик
+* [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome) - браузер от Google.
+* [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик.
+* [Yandex.Browser Lite](https://play.google.com/store/apps/details?id=com.yandex.browser.lite) - браузер, легковесный вариант Yandex.Browser экономящий батарею и ресурсы.
 * [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
 * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
 * [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - популярный чат, обмен сообщениями
 * [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - популярный чат, обмен сообщениями
+* [Google Duo](https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon) - видео чат от Google.
+* [Hangouts](https://play.google.com/store/apps/details?id=com.google.android.talk) - мессенджер от Google.
 
 ## Справочники
 * [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь, бесплатная версия имеет ограничение по количеству подключенных словарей. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия с открытым кодом для обычных компьютеров, но для Android версии код закрыт.
 	* Подборка словарей Lingvo для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки в GoldenDict просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
 * [Sound Meter](https://play.google.com/store/apps/details?id=kr.sira.sound&hl=en) - шумометр, меряет уровень шума. Из-за встроенных фильтров Android подавляющих шум может работать неточно. Таблицу вредности шумов можно найти в интернете, например [тут](http://chchearing.org/noise/common-environmental-noise-levels/)
+* [Measure - Quick Everyday Measurements](https://play.google.com/store/apps/details?id=com.google.tango.measure) - от Google, для измерение длинны и прочего с помощью камеры.
 
 ## Файлы
 * [7Zipper](https://play.google.com/store/apps/details?id=org.joa.zipperplus7) или [7Zipper 2.0](https://play.google.com/store/apps/details?id=org.joa.zipperplus7v2) - архиватор. Распаковка zip, alz, egg, tar, tar.gz, tar.bz2, gz, bz2, rar, jar, 7z, lzh поддержка разделенных ZIP архивов (Z01, Z02 ..., zip.001, zip.002 .. ). Работа с архивами 7z, ZIP. Hex-Viewer. FTP-клиент и сервер.
@@ -159,8 +182,25 @@
 
 ## Документы
 * [WPS Office + PDF](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) - офис, для .docx, .xls и других форматов
-* [Microsoft Office Mobile](https://play.google.com/store/apps/details?id=com.microsoft.office.officehub) - офис, для .docx, .xls и других форматов. Список самих программ от Microsoft (Word, Excel, PowerPoint) есть по этой [ссылке](https://play.google.com/store/apps/dev?id=6720847872553662727)
+* [Microsoft Office](https://play.google.com/store/apps/dev?id=6720847872553662727) - набор стандартных офисных программ от Microsoft, для .docx, .xls, презентаций и других форматов по аналогии с офисом для обычных компьютеров.
+* [Docs](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs), [Slides](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.slides), [Sheets](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.sheets) - набор офисных программ от Google
 
 ## Система
-* [Volume control - Vollynx](https://play.google.com/store/apps/details?id=com.loadlynx_jp.vollynx.free) - очень удобный регулятор громкости для всех типов звука (будильник, оповещение, bluetooth, наушники, звонок и т.д.)
-* [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) - удобное управление вращением экрана и запретами вращения из шторки телефона
+* [Volume control - Vollynx](https://play.google.com/store/apps/details?id=com.loadlynx_jp.vollynx.free) - очень удобный регулятор громкости для всех типов звука (будильник, оповещение, bluetooth, наушники, звонок и т.д.).
+* [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) - удобное управление вращением экрана и запретами вращения из шторки телефона.
+* [Chrome Remote Desktop](https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop) - пара к такой же программе установленной на компьютере, позволяет через интернет управлять телефоном удаленно.
+* [Google Cloud Print](https://play.google.com/store/apps/details?id=com.google.android.apps.cloudprint) - управление виртуальными принтерами, в том числе подключенным к облачным сервисам в сети.
+
+## Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)
+Часто производители телефонов заменяют стандартные приложения Google своими, не всегда лучшими аналогами. Можно установить стандартные версии с Google Play по [этой](https://play.google.com/store/apps/dev?id=5700313618786177705) ссылке.
+
+Чтобы эти приложения работали как нужно Google в стандартном Android дает им необходимые права. Установка вручную на измененную производителем телефона систему не всегда позволяет использовать эти приложения нормально. Например будильник (набор программ: будильник, таймер, секундомер) может быть завершен системой для экономии заряда и не сработать.
+
+* [Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin) - стандартная клавиатура, есть возможность ввода свайпом (swipe) не отрывая пальца.
+* [Calculator](https://play.google.com/store/apps/details?id=com.google.android.calculator) - стандартный калькулятор.
+* [Google Calendar](https://play.google.com/store/apps/details?id=com.google.android.calendar) - стандартный календарь.
+* [Contacts](https://play.google.com/store/apps/details?id=com.google.android.contacts) - стандартная программа для управления списком контактов.
+* [Синтезатор речи Google](https://play.google.com/store/apps/details?id=com.google.android.tts) (tts) - стандартный синтезатор речи.
+* [Clock](https://play.google.com/store/apps/details?id=com.google.android.deskclock) - стандартный набор программ будильника: будильник, таймер, секундомер. **Осторожно,** может не всегда срабатывать, лучше используйте родной будильник системы!
+* [Google Рукописный ввод](https://play.google.com/store/apps/details?id=com.google.android.apps.handwriting.ime) (handwriting) - стандартная клавиатура для рукописного ввода.
+* [Dialer](https://play.google.com/store/apps/details?id=com.google.android.dialer) (Телефон) - стандартная программа для телефонных звонков.
