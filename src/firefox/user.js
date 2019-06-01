@@ -70,5 +70,8 @@ user_pref("devtools.chrome.enabled", true);
 // отключаем проверку подписей расширений (работает не для всех систем, обходное решение тут: https://forum.mozilla-russia.org/viewtopic.php?pid=769320#p769320 )
 user_pref("xpinstall.signatures.required", false);
 
+// отключаем самовольную выгрузку вкладок при нехватке памяти
+user_pref("browser.tabs.unloadOnLowMemory", false);
+
 // отключение рекомендации дополнений (НЕ ПРОВЕРЕНО!)
 // browser.newtabpage.activity-stream.asrouter.providers.cfr
