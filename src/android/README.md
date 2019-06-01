@@ -23,8 +23,8 @@
 - [Программы с закрытым кодом](#Программы-с-закрытым-кодом)
 	- [Предупреждение](#Предупреждение)
 	- [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий-1)
-- [Медиа](#Медиа-1)
-- [Навигация](#Навигация-1)
+	- [Медиа](#Медиа-1)
+	- [Навигация](#Навигация-1)
 	- [Интернет](#Интернет-1)
 	- [Справочники](#Справочники-1)
 	- [Файлы](#Файлы-1)
@@ -148,12 +148,12 @@
 * [1Mobile Market](http://market.1mobile.com/) - **не рекомендуется**. Магазин бесплатных .apk, в магазин загружаются и приложения с Google Play (они отмечены специальным значком). В этом магазине бывают косяки, загруженные программы могут работать с ошибками. Сам магазин доверия не внушает, репутации не имеет. Есть шанс, что он вредоносный или может распостранять вредоносные программы.
 * [APKMirror](http://www.apkmirror.com) - **не рекомендуется**. Онлайн сервис через который можно скачать .apk загруженные в него с Google Play. Не имеет репутации, может быть опасен.
 
-# Медиа
+## Медиа
 * [PhotoScan](https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner) - позволяет использовать фотоаппарат как фото сканер.
 * [Google Photos](https://play.google.com/store/apps/details?id=com.google.android.apps.photos) - управление и редактирование фотографий.
 * [Cardboard Camera](https://play.google.com/store/apps/details?id=com.google.vr.cyclops) - от Google, позволяет снять VR-фотографии.
 
-# Навигация
+## Навигация
 * [Yandex.Metro](https://play.google.com/store/apps/details?id=ru.yandex.metro) - навигация по веткам метро для: Москвы, Санкт-Петербурга, Киева, Харькова, Минска и Стамбула.
 * [Yandex.Maps](https://play.google.com/store/apps/details?id=ru.yandex.yandexmaps) - карты от yandex.
 * [Google Maps](https://play.google.com/store/apps/details?id=com.google.android.apps.maps) - карты от Google с возможностью скачивать области для offline навигации.
