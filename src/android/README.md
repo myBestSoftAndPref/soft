@@ -136,6 +136,8 @@
 * [androidVNC](https://f-droid.org/packages/android.androidVNC/) - удаленное управление (например компьютером) по vnc
 * [Save For Offline](https://f-droid.org/packages/jonas.tool.saveForOffline/) - добавляет в меню "поделиться" (share) возможность сохранить файл, например так можно сохранять файлы в Mozilla Firefox
 * [KDE Connect](https://f-droid.org/packages/org.kde.kdeconnect_tp/) - позволяют интегрироваться с KDE (Kubuntu и другими linux системами с KDE) или Gnome (Ubuntu GNOME и др.) с установленным расширением GSConnect. Пересылать файлы, управлять телефоном и прочее по USB кабелю и Wi-Fi сети.
+* [KISS Launcher](https://github.com/Neamar/KISS) - легкий launcher, помогает экономить батарею.
+* [OpenLauncher](https://github.com/OpenLauncherTeam/openlauncher) - еще один open source launcher.
 
 # Программы с закрытым кодом
 ## Предупреждение
