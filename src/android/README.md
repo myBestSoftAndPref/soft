@@ -89,7 +89,7 @@
 * [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
 * [Tor Browser](https://play.google.com/store/apps/details?id=org.torproject.torbrowser) - анонимный браузер от проекта Tor.
 * [Orbot](https://play.google.com/store/apps/details?id=org.torproject.android) - программа для подключения к цепочке анонимных прокси от проекта Tor.
-* [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения **Note:** эта программа таинственно исчезла со всех ресурсов.
+* [Download Navi - Download Manager](https://github.com/TachibanaGeneralLaboratories/download-navi) или [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения и прочее. **Note:** _GigaGet Download Manager_ таинственно исчезла со всех ресурсов.
 * [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
 * [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) или [Torrent Client](https://f-droid.org/packages/com.github.axet.torrentclient/) - торрент клиент
 
