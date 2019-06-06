@@ -192,6 +192,7 @@
 * [Rotation Control](https://play.google.com/store/apps/details?id=org.crape.rotationcontrol) - удобное управление вращением экрана и запретами вращения из шторки телефона.
 * [Chrome Remote Desktop](https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop) - пара к такой же программе установленной на компьютере, позволяет через интернет управлять телефоном удаленно.
 * [Google Cloud Print](https://play.google.com/store/apps/details?id=com.google.android.apps.cloudprint) - управление виртуальными принтерами, в том числе подключенным к облачным сервисам в сети.
+* [Quick Settings](https://play.google.com/store/apps/details?id=it.simonesestito.ntiles) - дополнительный набор иконок для шторки в Android (они называются tile). Кроме иконок на настройки и приложения есть встроенные приложения и иконки для них: **Coffeine** (запрет на засыпание телефона), **Rotate** (режимы поворота), **Internet Speed** (статистика по скорости интернета), **Music Volume** (для быстрого отключения звука медиа приложений) и другие.
 
 ## Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)
 Часто производители телефонов заменяют стандартные приложения Google своими, не всегда лучшими аналогами. Можно установить стандартные версии с Google Play по [этой](https://play.google.com/store/apps/dev?id=5700313618786177705) ссылке.
