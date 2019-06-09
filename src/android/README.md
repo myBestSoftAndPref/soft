@@ -111,6 +111,9 @@
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
 * [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
 * [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) - карта звездного неба (созвездия, астрономические данные и т.д.)
+* [SpeedMeter](https://play.google.com/store/apps/details?id=fly.speedmeter.grub) - опеределение скорости движения на основе данных GPS.
+* [Forecastie](https://play.google.com/store/apps/details?id=com.casticalabs.forecastie) - просмотр данных о погоде из сети (температура, давление, осадки и прочее), есть карта температур, ветров, дождей и графики.
+* [Weather](https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyweather) - удобный просмотр погоды по городам, но нет карты погоды.
 
 ## Файлы
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагину на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
@@ -119,9 +122,10 @@
 * [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - **Осторожно.** Некоторые моменты вроде того что автор не позаботился даже о нормальном переводе на английский выглядят сомнительно, но удалять из списка пока не буду. Удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
 * [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
 * [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы и другие уникальные функции
-* [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов. [Document Viewer Font Pack](https://f-droid.org/repository/browse/?fdfilter=Document+Viewer&fdid=org.sufficientlysecure.viewer.fontpack) - шрифты для неё
+* [Document Viewer](https://f-droid.org/repository/browse/?fdid=org.sufficientlysecure.viewer) - просмотр множества типов документов.
 * [VIMTouch](https://f-droid.org/repository/browse/?fdfilter=vim&fdid=net.momodalo.app.vimtouch) - текстовый редактор, подсветка синтаксисов, старается в некоторой степени следовать стилю компьютерного редактора VIM
-* [LibreOffice](https://www.libreoffice.org/download/android-viewer/) - аналог Microsoft Office, пока еще нестабильный, но уже может работать с многими форматами
+* [LibreOffice Viewer for Android](https://www.libreoffice.org/download/android-viewer/) - аналог Microsoft Office, пока еще нестабильный, но уже может работать с многими форматами
+* [Editor](https://github.com/billthefarmer/editor) - блокнот с подсветкой синтаксиса для некоторых языков программирования и разметки.
 
 ## Приватность
 * [KeePassDroid](https://github.com/bpellin/keepassdroid/releases) - менеджер паролей KeePass
@@ -146,6 +150,7 @@
 * [KDE Connect](https://f-droid.org/packages/org.kde.kdeconnect_tp/) - позволяют интегрироваться с KDE (Kubuntu и другими linux системами с KDE) или Gnome (Ubuntu GNOME и др.) с установленным расширением GSConnect. Пересылать файлы, управлять телефоном и прочее по USB кабелю и Wi-Fi сети.
 * [KISS Launcher](https://github.com/Neamar/KISS) - легкий launcher, помогает экономить батарею.
 * [OpenLauncher](https://github.com/OpenLauncherTeam/openlauncher) - еще один open source launcher.
+* [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot) - SSH клиент.
 
 # Программы с закрытым кодом
 ## Предупреждение
@@ -201,6 +206,7 @@
 * [Chrome Remote Desktop](https://play.google.com/store/apps/details?id=com.google.chromeremotedesktop) - пара к такой же программе установленной на компьютере, позволяет через интернет управлять телефоном удаленно.
 * [Google Cloud Print](https://play.google.com/store/apps/details?id=com.google.android.apps.cloudprint) - управление виртуальными принтерами, в том числе подключенным к облачным сервисам в сети.
 * [Quick Settings](https://play.google.com/store/apps/details?id=it.simonesestito.ntiles) - дополнительный набор иконок для шторки в Android (они называются tile). Кроме иконок на настройки и приложения есть встроенные приложения и иконки для них: **Coffeine** (запрет на засыпание телефона), **Rotate** (режимы поворота), **Internet Speed** (статистика по скорости интернета), **Music Volume** (для быстрого отключения звука медиа приложений) и другие.
+* [SystemUI Tuner](https://play.google.com/store/apps/details?id=com.zacharee1.systemuituner) - настройка интерфеса системы, скрытие некоторых иконок статус бара, настройка различных уведомлений, действий на кнопки и жесты и прочее. Для полной установки **требуется** через консоль компьютера по USB кабелю в режиме debug отправить телефону команду разрешив **SystemUI Tuner** доступ к некоторым функциям (подробно описано на странице программы в **Google Play**).
 
 ## Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)
 Часто производители телефонов заменяют стандартные приложения Google своими, не всегда лучшими аналогами. Можно установить стандартные версии с Google Play по [этой](https://play.google.com/store/apps/dev?id=5700313618786177705) ссылке.
