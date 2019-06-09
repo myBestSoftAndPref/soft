@@ -167,6 +167,7 @@
 * [PhotoScan](https://play.google.com/store/apps/details?id=com.google.android.apps.photos.scanner) - позволяет использовать фотоаппарат как фото сканер.
 * [Google Photos](https://play.google.com/store/apps/details?id=com.google.android.apps.photos) - управление и редактирование фотографий.
 * [Cardboard Camera](https://play.google.com/store/apps/details?id=com.google.vr.cyclops) - от Google, позволяет снять VR-фотографии.
+* [Shazam](https://play.google.com/store/apps/details?id=com.shazam.android) - по звуку через микрофон определяет исполнителя музыки, может искать по тексту песни и названию альбома.
 
 ## Навигация
 * [Yandex.Metro](https://play.google.com/store/apps/details?id=ru.yandex.metro) - навигация по веткам метро для: Москвы, Санкт-Петербурга, Киева, Харькова, Минска и Стамбула.
