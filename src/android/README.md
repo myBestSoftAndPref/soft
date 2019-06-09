@@ -151,6 +151,7 @@
 * [KISS Launcher](https://github.com/Neamar/KISS) - легкий launcher, помогает экономить батарею.
 * [OpenLauncher](https://github.com/OpenLauncherTeam/openlauncher) - еще один open source launcher.
 * [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot) - SSH клиент.
+* [Shelter](https://play.google.com/store/apps/details?id=net.typeblog.shelter) - запускает программы в изоляции от остальной системы, можно запустить две разных копии одного приложения, например войти в два разных аккаунта Skype одновременно.
 
 # Программы с закрытым кодом
 ## Предупреждение
