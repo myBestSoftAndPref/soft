@@ -164,6 +164,7 @@
 * [Sound Meter](https://play.google.com/store/apps/details?id=kr.sira.sound&hl=en) - шумометр, меряет уровень шума. Из-за встроенных фильтров Android подавляющих шум может работать неточно. Таблицу вредности шумов можно найти в интернете, например [тут](http://chchearing.org/noise/common-environmental-noise-levels/)
 * [Measure - Quick Everyday Measurements](https://play.google.com/store/apps/details?id=com.google.tango.measure) - от Google, для измерение длинны и прочего с помощью камеры.
 * [Mathematics](https://play.google.com/store/apps/details?id=de.daboapps.mathematics) - удобная математическая среда
+* [Graphing Calculator + Math, Algebra & Calculus](https://play.google.com/store/apps/details?id=us.mathlab.android) - графический калькулятор с множеством функций, составление формул, графики и прочее, от разработчика Mathlab
 
 ## Файлы
 * [7Zipper](https://play.google.com/store/apps/details?id=org.joa.zipperplus7) или [7Zipper 2.0](https://play.google.com/store/apps/details?id=org.joa.zipperplus7v2) - архиватор. Распаковка zip, alz, egg, tar, tar.gz, tar.bz2, gz, bz2, rar, jar, 7z, lzh поддержка разделенных ZIP архивов (Z01, Z02 ..., zip.001, zip.002 .. ). Работа с архивами 7z, ZIP. Hex-Viewer. FTP-клиент и сервер.
