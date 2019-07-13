@@ -122,6 +122,7 @@
 * [OpenLauncher](https://github.com/OpenLauncherTeam/openlauncher) - еще один open source launcher.
 * [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot) - SSH клиент.
 * [Shelter](https://play.google.com/store/apps/details?id=net.typeblog.shelter) - запускает программы в изоляции от остальной системы, можно запустить две разных копии одного приложения, например войти в два разных аккаунта Skype одновременно.
+* [J2ME Loader](https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloader) - может запускать программы и игры на java (j2me) от старых телефонов.
 
 # Программы с закрытым кодом
 
