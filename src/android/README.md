@@ -8,9 +8,8 @@
 	- [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий)
 	- [Медиа](#Медиа)
 	- [Навигация](#Навигация)
-	- [Органайзер](#Органайзер)
 	- [Интернет](#Интернет)
-	- [Справочники](#Справочники)
+	- [Органайзеры и справочники](#Органайзеры-и-справочники)
 	- [Файлы](#Файлы)
 	- [Документы](#Документы)
 	- [Приватность](#Приватность)
@@ -22,19 +21,19 @@
 	- [Медиа](#Медиа-1)
 	- [Навигация](#Навигация-1)
 	- [Интернет](#Интернет-1)
-	- [Справочники](#Справочники-1)
+	- [Органайзеры и справочники](#Органайзеры-и-справочники-1)
 	- [Файлы](#Файлы-1)
 	- [Документы](#Документы-1)
 	- [Система](#Система-1)
 - [Советы, заметки и решение проблем](#Советы-заметки-и-решение-проблем)
 	- [Чего не хватает в этом списке](#Чего-не-хватает-в-этом-списке)
-	- [Почему ссылки на F-Droid в последнюю очередь?](#Почему-ссылки-на-f-droid-в-последнюю-очередь)
-	- [Почему может не работать авто синхронизация в некоторых программах?](#Почему-может-не-работать-авто-синхронизация-в-некоторых-программах)
+	- [Почему ссылки на F-Droid в последнюю очередь?](#Почему-ссылки-на-F-Droid-в-последнюю-очередь)
+	- [Почему может не работать авто синхронизация в некоторых программах (например в K9 Mail)?](#Почему-может-не-работать-авто-синхронизация-в-некоторых-программах-например-в-K9-Mail)
 	- [Почему могут не работать сторонние будильники и таймеры?](#Почему-могут-не-работать-сторонние-будильники-и-таймеры)
-	- [Почему может не работать вход в почту (например Gmail) через K9 Mail и другие?](#Почему-может-не-работать-вход-в-почту-например-gmail-через-k9-mail-и-другие)
-	- [Не работает навигация без Google-сервисов](#Не-работает-навигация-без-google-сервисов)
-	- [Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)](#Стандартные-приложения-android-от-google-в-том-числе-если-производитель-телефона-заменил-их-своими)
-	- [Запуск нескольких копий одной программы с разными настройками на Android](#Запуск-нескольких-копий-одной-программы-с-разными-настройками-на-android)
+	- [Почему может не работать вход в почту (например Gmail) через K9 Mail и другие?](#Почему-может-не-работать-вход-в-почту-например-Gmail-через-K9-Mail-и-другие)
+	- [Почему без Google-сервисов не работает навигация в некоторых программах?](#Почему-без-Google-сервисов-не-работает-навигация-в-некоторых-программах)
+	- [Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)](#Стандартные-приложения-Android-от-Google-в-том-числе-если-производитель-телефона-заменил-их-своими)
+	- [Запуск нескольких копий одной программы с разными настройками на Android](#Запуск-нескольких-копий-одной-программы-с-разными-настройками-на-Android)
 
 # Программы с открытым кодом
 
@@ -56,11 +55,6 @@
 * [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) (OsmAnd+) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть **ограничение** на количество используемых карт, версия F-Droid пересобрана **без этих ограничений**). <sub>Вы должны понимать, что не смотря на все плюсы данные карты **не заменят** ```Google Maps``` или ```Yandex Maps```, которые сделаны более профессионально</sub>
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
-## Органайзер
-* [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
-* [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - **не рекомендуется**, вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками (**ОСТОРОЖНО** может вызвать такие проблемы, что телефоном вы сможете пользоваться только после удаления этой программы)
-* [Omni Notes](https://github.com/federicoiosue/Omni-Notes) - развитое приложение для to do заметок разных типов (текст, аудио и прочее)
-
 ## Интернет
 * [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент. Для работы с GMail и некоторыми другими сервисами нужно зайти в сервис с браузера и включить возможность доступа программам к почте.
   * **Прим.** чтобы работать с gmail нужно в настройках аккаунта google в разделе "Безопасность" (Security) разрешить подключение "небезопасных приложений" (less security application); на самом деле никакой опасности тут нет. (если ссылка не изменилась, то менять [тут](https://myaccount.google.com/lesssecureapps))
@@ -72,7 +66,10 @@
 * [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
 * [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) или [Torrent Client](https://f-droid.org/packages/com.github.axet.torrentclient/) - торрент клиент
 
-## Справочники
+## Органайзеры и справочники
+* [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
+* [Torchie](https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie) - **не рекомендуется**, вспышка в качестве фонарика. Очень удобное включение удерживанием кнопок громкости только в режиме когда телефон блокирован и не работает датчик приближения (телефон в кармане). Поиграйтесь с настройками (**ОСТОРОЖНО** может вызвать такие проблемы, что телефоном вы сможете пользоваться только после удаления этой программы)
+* [Omni Notes](https://github.com/federicoiosue/Omni-Notes) - развитое приложение для to do заметок разных типов (текст, аудио и прочее)
 * [QuickDic restored](https://github.com/rdoeffinger/Dictionary/releases) - словарь иностранных слов, работает без интернета
 * [QDict](https://github.com/madmanteam/QDict) - словарь, поддерживает формат ```StarDict``` в котором существует очень много словарей
 * [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
@@ -85,6 +82,8 @@
 * [SpeedMeter](https://play.google.com/store/apps/details?id=fly.speedmeter.grub) - опеределение скорости движения на основе данных GPS.
 * [Forecastie](https://play.google.com/store/apps/details?id=com.casticalabs.forecastie) - просмотр данных о погоде из сети (температура, давление, осадки и прочее), есть карта температур, ветров, дождей и графики.
 * [Weather](https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyweather) - удобный просмотр погоды по городам, но нет карты погоды.
+* [PalmCalc 2019+](https://f-droid.org/en/packages/com.github.palmcalc2019.palmcalc/) - это ответвление от популярного калькулятора **PalmCalc**, код оригинальной версии больше не открытый, и оригинальный **PalmCalc** почему-то удален из Google Play. Сайт оригинального PalmCalc: http://palmcalc.com/
+* [microMathematics Plus](https://play.google.com/store/apps/details?id=com.mkulesh.micromath.plus) (μMath+), [GNURoot Octave](https://play.google.com/store/apps/details?id=com.gnuroot.octave) <sup>(для работы нужен root)</sup>, [octave4android](https://github.com/corbinlc/octave4android), [Addi](https://play.google.com/store/apps/details?id=com.addi) - математические среды для вычислений, построений графиков и прочего. Подойдет студентам и всем кому нужна высшая математика.
 
 ## Файлы
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагину на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
@@ -153,16 +152,18 @@
 * [Yandex.Browser Lite](https://play.google.com/store/apps/details?id=com.yandex.browser.lite) - браузер, легковесный вариант Yandex.Browser экономящий батарею и ресурсы.
 * [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
 * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
-* [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - популярный чат, обмен сообщениями
-* [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - популярный чат, обмен сообщениями
-* [Google Duo](https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon) - видео чат от Google.
-* [Hangouts](https://play.google.com/store/apps/details?id=com.google.android.talk) - мессенджер от Google.
+* [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - видео звонки и чат
+* [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - видео звонки и чат
+* [Discord - Chat for Gamers](https://play.google.com/store/apps/details?id=com.discord) - видео звонки и чат
+* [Google Duo](https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon) - видео звонки, нацелен на высокое качество видео даже с плохим сигналом
+* [Hangouts](https://play.google.com/store/apps/details?id=com.google.android.talk) - видео звонки и чат
 
-## Справочники
+## Органайзеры и справочники
 * [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь, бесплатная версия имеет ограничение по количеству подключенных словарей. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия с открытым кодом для обычных компьютеров, но для Android версии код закрыт.
 	* Подборка словарей Lingvo для русского (перевод с Fr, De, It, Es) **включая** озвучивание слов и толковый словарь (для установки в GoldenDict просто указать каталог словарей в настройках) https://yadi.sk/d/R9KYaEYJ7utB2
 * [Sound Meter](https://play.google.com/store/apps/details?id=kr.sira.sound&hl=en) - шумометр, меряет уровень шума. Из-за встроенных фильтров Android подавляющих шум может работать неточно. Таблицу вредности шумов можно найти в интернете, например [тут](http://chchearing.org/noise/common-environmental-noise-levels/)
 * [Measure - Quick Everyday Measurements](https://play.google.com/store/apps/details?id=com.google.tango.measure) - от Google, для измерение длинны и прочего с помощью камеры.
+* [Mathematics](https://play.google.com/store/apps/details?id=de.daboapps.mathematics) - удобная математическая среда
 
 ## Файлы
 * [7Zipper](https://play.google.com/store/apps/details?id=org.joa.zipperplus7) или [7Zipper 2.0](https://play.google.com/store/apps/details?id=org.joa.zipperplus7v2) - архиватор. Распаковка zip, alz, egg, tar, tar.gz, tar.bz2, gz, bz2, rar, jar, 7z, lzh поддержка разделенных ZIP архивов (Z01, Z02 ..., zip.001, zip.002 .. ). Работа с архивами 7z, ZIP. Hex-Viewer. FTP-клиент и сервер.
@@ -194,7 +195,7 @@
 
 Почему приоритет у **Google Play**, а не у **F-Droid**? Потому что в **F-Droid** обновления задерживаются, а программы бывает пересобираются с ошибками. И потому что из **Google Play** можно выкачать программу напрямую через программу [Yalp Store](https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/)
 
-## Почему может не работать авто синхронизация в некоторых программах?
+## Почему может не работать авто синхронизация в некоторых программах (например в K9 Mail)?
 Некоторые программы, например [K-9 Mail](https://github.com/k9mail/k-9/releases) и его **авто синхронизация**, включают синхронизацию только если синхронизация включена в настройках сети Android. Чтобы все работало **авто синхронизацию** нужно включить в настройках Android, и в пункте **Учетные записи** отключить синхронизации для каждой ненужной программы **отдельно**.
 
 Пункт в настройках Android под названием `Счетчик данных > Ограничить фоновые данные` тоже может заблокировать синхронизацию.
@@ -215,7 +216,7 @@
 
 Для обхода проблем с **2-Step Verification** привяжите другой почтовый ящик к Gmail, который не будет блокировать при входе в Gmail из другой страны, например [mail.ru](https://www.mail.ru). И используйте его для восстановления доступа к Gmail.
 
-## Не работает навигация без Google-сервисов
+## Почему без Google-сервисов не работает навигация в некоторых программах?
 Возможно дело в отсутствии [UnifiedNlp](https://f-droid.org/en/packages/com.google.android.gms/). Он же входит в поставку MicroG. На свежих версия Andoird (например, LinageOS >= 15) UnifiedNlp следует установить как системное приложение (или собрать с патчем, см. [README.md](https://github.com/microg/android_packages_apps_UnifiedNlp/blob/HEAD/README.md)).
 
 ## Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)
