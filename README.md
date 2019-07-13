@@ -19,3 +19,4 @@
 
 Статьи о Ubuntu:
 * [Как включить Hibernation (гибернацию, спящий режим)](https://github.com/myBestSoftAndPref/soft/tree/master/src/linux/hibernation.md)
+* [Как настроить программу DNSCRYPT (шифрованные DNS запросы для всей системы, чтобы избежать блокировок сайтов по DNS, рекламы и цензуры со стороны провайдера)](https://github.com/myBestSoftAndPref/soft/tree/master/src/linux/dnscrypt_setup.md)

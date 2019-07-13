@@ -11,7 +11,8 @@ user_pref("browser.urlbar.trimURLs", false); // показывать прото�
 user_pref("layout.spellcheckDefault", 2); // включить проверку орфографии во всех полях ввода
 user_pref("devtools.screenshot.audio.enabled", false); //Отключает звук затвора фотоаппарата при снятии скриншота в через Developer Tools.
 user_pref("browser.sessionstore.max_tabs_undo", 25); //Устанавливаем максимальное количество истории закрытых табов в 25
-user_pref("devtools.aboutdebugging.showSystemAddons", true); //разрешаем показывать системные аддоны на странице about:debugging
+user_pref("devtools.aboutdebugging.showSystemAddons", true); //разрешаем показывать системные аддоны на странице about:debugging до 67 версии
+user_pref("devtools.aboutdebugging.showHiddenAddons", true); // для 68+
 
 // отключаем надоедливые уведомления
 user_pref("dom.webnotifications.enabled", false); //отключаем надоедливые окошки с предложением включить уведомления
