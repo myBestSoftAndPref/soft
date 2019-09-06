@@ -4,19 +4,11 @@
       "Enabled": false
     },
     "DisableAppUpdate": true,
-    "DisableBuiltinPDFViewer": true,
-    "DisableFeedbackCommands": true,
-    "DisableFirefoxScreenshots": true,
     "DisableFirefoxStudies": true,
-    "DisablePocket": true,
+    "DisableSystemAddonUpdate": true,
     "DisableTelemetry": true,
     "DontCheckDefaultBrowser": true,
-    "FlashPlugin": {
-      "Default": false
-    },
-    "Homepage": {
-      "StartPage": "none"
-    },
+    "NetworkPrediction": false,
     "OverrideFirstRunPage": "",
     "OverridePostUpdatePage": ""
   }

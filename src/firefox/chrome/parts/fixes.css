@@ -1,9 +1,11 @@
 /* 2. fix of top window padding (for Win7) */
+
 @media (-moz-os-version: windows-win10) {
-  #main-window {
+  #main-window:not([sizemode="fullscreen"]) {
     padding-top: 7px !important;
   }
 }
+
 
 /* 2. fix of top nav-bar padding (for Win7) */
 @media (-moz-os-version: windows-win7) {

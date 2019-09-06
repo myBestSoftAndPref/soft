@@ -1,0 +1,97 @@
+:root {
+  --tab-height-compact: 15px !important;
+}
+.tab-meta-image {
+
+max-height: 12px !important;
+}
+
+#topmenu {
+  display: none !important;
+}
+
+.tab {
+padding:0 !important;
+box-shadow: none !important;
+}
+
+.tab .tab-loading-burst::before {
+  display: none !important;
+}
+
+.tab-icon-wrapper {
+max-height: 12px !important;
+max-width:12px !important;
+
+}
+#tablist-wrapper.shrinked .tab-title-wrapper {
+margin:0 !important;
+}
+
+.tab .tab-meta-image {
+margin:0 !important;
+max-height: 12px !important;
+max-width:12px !important;
+}
+
+.tab .tab-icon {
+max-height: 12px !important;
+max-width:12px !important;
+margin:0 !important;
+}
+
+#pinnedtablist {
+max-height: 24px !important;
+
+height: 24px !important;
+}
+
+#pinnedtablist .tab {
+max-height: 24px !important;
+max-width:24px !important;
+height: 24px !important;
+width:24px !important;
+}
+
+#pinnedtablist .tab .tab-meta-image {
+max-height: 24px !important;
+max-width:24px !important;
+height: 24px !important;
+width:24px !important;
+}
+
+#pinnedtablist .tab .tab-icon-wrapper {
+max-height: 24px !important;
+max-width:24px !important;
+height: 24px !important;
+width:24px !important;
+}
+
+#pinnedtablist .tab .tab-icon-wrapper .tab-icon {
+max-height: 24px !important;
+max-width:24px !important;
+height: 24px !important;
+width:24px !important;
+}
+
+.tab .tab-context {
+height: 100% !important;
+
+}
+
+body.incognito #tablist .tab:not(.hasContext) .tab-context, body:not(.incognito) #tablist .tab.hasContext .tab-context, body.incognito #pinnedtablist:not(.compact) .tab:not(.hasContext) .tab-context, body:not(.incognito) #pinnedtablist:not(.compact) .tab.hasContext .tab-context {
+
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    box-shadow: inset 0px -1px 0px 0px var(--identity-color);
+}
+
+/* Hide close button */
+.tab-close {
+  display: none;
+}
+/* Fix title gradient */
+.tab:hover:not(.pinned) > .tab-title-wrapper {
+  mask-image: linear-gradient(to left, transparent 0, black 2em);
+}
