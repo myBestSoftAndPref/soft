@@ -32,15 +32,6 @@
 - [FAQ](#faq)
   - [Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов? Как сделать русские сайты в английской версии Firefox?](#Почему-в-английской-версии-firefox-видны-английские-сайты-Почему-я-вижу-англо-язычные-версии-сайтов-Как-сделать-русские-сайты-в-английской-версии-firefox)
   - [Как запустить отдельный профиль Firefox](#Как-запустить-отдельный-профиль-firefox)
-  - [[Ubuntu] Как изменить иконку Firefox на панели? Как назначить каждому профилю Firefox свой ярлык со своей иконкой?](#ubuntu-Как-изменить-иконку-firefox-на-панели-Как-назначить-каждому-профилю-firefox-свой-ярлык-со-своей-иконкой)
-  - [[Ubuntu] Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla](#ubuntu-Установка-и-обновление-firefox-не-из-репозитория-ubuntu-а-с-сайта-mozilla)
-  - [Как добавить в Firefox открытие `magnet` ссылок на торренты](#Как-добавить-в-firefox-открытие-magnet-ссылок-на-торренты)
-  - [Дополнения не работают на страницах сайта mozilla.com. Как заставить их работать на этих сайтах?](#Дополнения-не-работают-на-страницах-сайта-mozillacom-Как-заставить-их-работать-на-этих-сайтах)
-  - [Как сменить локализацию Firefox? Как изменить язык интерфейса Firefox?](#Как-сменить-локализацию-firefox-Как-изменить-язык-интерфейса-firefox)
-  - [Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`](#Команда--no-remote-не-работает-Команда--profile-не-работает-Появляется-сообщение-ошибки-что-firefox-или-thunderbird-уже-запущен-Английский-вариант-firefox-is-already-running-but-is-not-responding)
-  - [[Ubuntu] Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage](#ubuntu-Как-удалить-firefox-Это-может-быть-нужно-если-вы-хотите-заменить-firefox-из-репозитория-ubuntu-на-версию-из-другого-репозитория-ppa-snap-flatpak-или-appimage)
-  - [[Ubuntu] Как использовать файловый диалог KDE в Firefox](#ubuntu-Как-использовать-файловый-диалог-kde-в-firefox)
-  - [Как удалить английский или другой словарь Firefox по умолчанию (предустановленный)? Как оставить только установленные пользователем словари?](#Как-удалить-английский-или-другой-словарь-firefox-по-умолчанию-предустановленный-Как-оставить-только-установленные-пользователем-словари)
   - [Что такое файл **omni.ja** в Firefox, для чего и как работает? Как распокавать или упаковать **omni.ja**? Подробнее можно почитать тут)](#Что-такое-файл-omnija-в-firefox-для-чего-и-как-работает-Как-распокавать-или-упаковать-omnija-Подробнее-можно-почитать-тут)
   - [Почему даже после закрытия сайта мне приходят уведомления?](#Почему-даже-после-закрытия-сайта-мне-приходят-уведомления)
 
@@ -48,34 +39,48 @@
 ## Сохранение страниц сайтов
 
 [Web ScrapBook](https://addons.mozilla.org/firefox/addon/webscrapbook/) - сохраняет страницу одним файлом (изображения, скрипты etc). Для того чтобы это дополнение сохраняло и скрипты JavaScript внутри страниц нужно включить сохранение скриптов в настройках <sub>Скрипты на некоторых сайтах сохраняются не правильно</sub>. Поддерживает формат ```.maff```<sub>С некоторыми ограничениями</sub>. Может сохранять файл с ресурсами как ```.html``` и его можно открыть в других браузерах. Не поддерживает ```.mht``` <sub>в планах разработчика дополнения есть поддержка чтения ```.mht``` файлов. Чтобы открыть `maff` или `htz` файл в браузере одним кликом смотрите [эту](https://github.com/danny0838/webscrapbook/wiki/View) инструкцию. Чтобы сконвертировать большое количество `mht` файлов в `maff` используйте [это](http://maf.mozdev.org/installation.html) дополнение и [Firefox 52 ESR](https://ftp.mozilla.org/pub/firefox/releases/52.9.0esr/) для его работы</sub>
+<br>
 [Save Page WE](https://addons.mozilla.org/en-US/firefox/addon/save-page-we/) - сохраняет страницу одним файлом (изображения, скрипты etc). В отличии от [Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/) ресурсы хранятся в виде base64, поэтому JavaScript внутри страницы (динамические элементы) сохраняет хуже. В некоторых случаях может сработать лучше чем [Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/).
+<br>
 [SingleFile](https://addons.mozilla.org/en-US/firefox/addon/single-file/) - сохраняет страницу одним файлом (изображения, скрипты etc)
 
 ## Вкладки (табы) их внешний вид (вертикально, разделение табов etc) и поведение
 
 [Tile Tabs WE](https://addons.mozilla.org/en-US/firefox/addon/tile-tabs-we/) - может делить окно браузера на несколько частей, чтобы просматривать несколько сайтов одновременно. На деле новое API не позволяет дополнениям разграничивать окно, поэтому открываются новые окна, что очень неудобно.
+<br>
 [Tree Style Tab](https://addons.mozilla.org/ru/firefox/addon/tree-style-tab) - вкладки вертикально в виде дерева.
+<br>
 [Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок и группы вкладок. Из отличий от других подобных дополнений - очень удобное встроенное управление группами вкладок. <sub>К сожалению **у расширения есть баги**, лучшая и более надежная альтернатива это: расширения **Tree Style Tab** + **Simple Tab Groups**</sub>
 [Drag-Select Link Text](https://addons.mozilla.org/en-US/firefox/addon/drag-select-link-text/) - позволяет выделять текст ссылок без зажатия ```Alt```
-[Tab Reloader (page auto refresh)](https://addons.mozilla.org/en-US/firefox/addon/tab-reloader/)
-или [ReloadMatic: Automatic Tab Refresh](https://addons.mozilla.org/en-US/firefox/addon/reloadmatic/)
-или [Auto Reload Tab](https://addons.mozilla.org/en-US/firefox/addon/auto-reload-tab) - позволяет установить вкладкам таймер по которому они будут перезагружаться
+<br>
+[Tab Reloader (page auto refresh)](https://addons.mozilla.org/en-US/firefox/addon/tab-reloader/) или [ReloadMatic: Automatic Tab Refresh](https://addons.mozilla.org/en-US/firefox/addon/reloadmatic/) или [Auto Reload Tab](https://addons.mozilla.org/en-US/firefox/addon/auto-reload-tab) - позволяет установить вкладкам таймер по которому они будут перезагружаться
+<br>
 [Simple Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/simple-tab-groups/) - создает группы вкладок между которыми можно переключаться. Совместимо с **Tree Style Tab**. Может работать как своеобразный меннеджер сессий, если в настройках выбрать "создание новой группы" для открытых окон.  <sub>(для удобной работы с **Tree Style Tab** нужно отключить авто создание пустой "групповой" вкладки в **Tree Style Tab**, если вкладка открыта меньше чем N сек. назад)</sub>
+<br>
 [FoxyTab](https://addons.mozilla.org/en-US/firefox/addon/foxytab/) - набор операций для вкладок, доступных через меню вкладок: закрыть дубли, закрыть слев, перезагрузить каждые N сек, переместить, сортировать по параметру и т.д.
+<br>
 [Undo Close Tab](https://addons.mozilla.org/en-US/firefox/addon/undoclosetabbutton/) - кнопка открытие недавно закрытых вкладок и список недавно закрытых вкладок по клику правой кнопкой мыши
+<br>
 [Discard Tab](https://addons.mozilla.org/en-US/firefox/addon/discard-tab/) - добавляет пункт меню в контекстное меню вкладки для выгрузки вкладки из памяти
+<br>
 [Tab Unloader](https://addons.mozilla.org/en-US/firefox/addon/tab-unloader-we/) - добавляет подпункт в контекстное меню вкладки для групповых действий с выгрузкой вкладок
+<br>
 [Close Tabs to the Left](https://addons.mozilla.org/en-US/firefox/addon/close-tabs-left/) - добавляет в контекстное меню вкладок пункт "закрыть все вкладки слева"
 
 ## Работа с сессиями, группами вкладок и контейнерами (изоляцией сайтов друг от друга)
 [Session Boss](https://addons.mozilla.org/en-US/firefox/addon/session-boss/), [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager), [MySessions](https://addons.mozilla.org/en-US/firefox/addon/my-sessions/) - расширения для работы с сессиями, сохранение, восстанановление и др. В современном Firefox права расширений ограничены, поэтому нормально **сохранить ссылки на открытые локальные файлы и подобное невозможно**. **Совет:** использовать [Simple Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/simple-tab-groups/) для таких задач, оно не хуже.
+<br>
 [Temporary Containers](https://addons.mozilla.org/ru/firefox/addon/temporary-containers/) или [Firefox Multi-Account Containers](https://addons.mozilla.org/ru/firefox/addon/multi-account-containers/) - создает изолированные контейнеры для вкладок. Можно в каждом из контейнеров войти на один и тот же сайт под разными именами. Дополнение имеет ограничение, история посещений (отпечаток браузера) не полностью изолированна, как это сделано в "приватный режим", но и этого должно быть достаточно <sub>каждая будет иметь свою копию **cookies** и **localStorage**</sub>
+<br>
 [Conex](https://addons.mozilla.org/en-US/firefox/addon/conex/) - группировка табов, каждая группа в отдельном контейнере со своей копией куков и др. инфой (т.е. можно в каждой группе войти на один и тот же сайт под разными никами). К сожалению расширение **недостаточно удобно**.
 
 ## Скачивание (граб) видео, аудио, картинок и других ресурсов
 [Grab Any Media](https://addons.mozilla.org/en-US/firefox/addon/grab-any-media/) - поиск ссылок на audio и video файлы на странице (слабый аналог FlashGot)
+<br>
 [Double-click Image Downloader](https://addons.mozilla.org/en-US/firefox/addon/double-click-image-download/) - быстрое сохранение изображений (по клику, перетаскиванию, сочетанием клавиш). Можно сохранить все изображения на странице.
+<br>
 [Video DownloadHelper](https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/) - популярное дополнение для скачивание видео с различных сайтов. Возможна подгрузка рекламы или сбор статистики <sub>упоминаю их потому что дополнение популярно</sub>. Но как вариант может понадобиться.
+<br>
 [DownThemAll!](https://addons.mozilla.org/firefox/addon/downthemall/) - для удобного управление загрузками с дополнительными фильтрами и опциями, многопоточная загрузка не поддерживается. Не путать со старым дополнением **DownThemAll!** на XUL который имел намного больший функционал.
 
 ## Пользовательские скрипты (user scripts) 
@@ -83,61 +88,91 @@
 
 ## Блокировка рекламы
 [uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin) <sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики
+<br>
 [Google search link fix](https://addons.mozilla.org/en-US/firefox/addon/google-search-link-fix/) - чистит ссылки в поисковиках Google, Yandex от переадресации. На деле приватность не защищает, но убирает раздражающую переадресацию и переход по ссылке станет быстрее.
+<br>
 [Decentraleyes](https://addons.mozilla.org/ru/firefox/addon/decentraleyes/) - встраивает набор некоторых популярных javascript библиотек в Firefox, так что при открытии страниц библиотеки не загружаются снова из интернета и не происходит проверки на их актуальность (нету лишних запросов в интернет). Экономит трафик, защищает от отслеживания, ускоряет загрузку страниц.
 
 ## Изменение и управление поведения отдельных сайтов и сервисов
 [Ageless for YouTube](https://addons.mozilla.org/en-US/firefox/addon/ageless/) - снимает ограничение роликов youtube по возрасту
+<br>
 [View Image](https://addons.mozilla.org/ru/firefox/addon/view-image/) - для сайта Google, добавляем в просмотр картинок на странице поиска картинок кнопку по которой можно посмотреть полную версию картинки
+<br>
 [Exodify](https://addons.mozilla.org/en-US/firefox/addon/exodify/) - для сайта Google Play, показывает сервисы которым отправляет статистику конкретное приложение
+<br>
 [Iridium](https://addons.mozilla.org/ru/firefox/addon/particle-iridium/) - настройка youtube, установка качества по умолчанию, отключение авто воспроизведения и другое
 
 ## Для закладок, работы с ними и дополнительные функции
 [Bookmark Tab Here](https://addons.mozilla.org/en-US/firefox/addon/bookmark-tab-here/) - удобное добавление закладок через меню по правой кнопке мыши на или в каталоге закладок
+<br>
 [Default Bookmark Folder](https://addons.mozilla.org/ru/firefox/addon/default-bookmark-folder) - можно установить каталог для закладок по умолчанию, добавление закладок в адресную строку, позицию закладки при добавлении (верх/низ каталога) etc
 
 ## Extensions (addons, расширения) работающие как отдельные программы
 
 ## Расширения добавляющие новый функционал в Firefox
 [NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page WE](https://addons.mozilla.org/en-US/firefox/addon/zoom-page-we/) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
+<br>
 [Foxy Gestures](https://addons.mozilla.org/en-US/firefox/addon/foxy-gestures/) и [Gesturefy](https://addons.mozilla.org/en-US/firefox/addon/gesturefy/) - можно вешать действия на жесты.
+<br>
 [Print Edit WE](https://addons.mozilla.org/en-US/firefox/addon/print-edit-we/) - сохранение страницы как .PDF, редактирование перед печатью и настройки параметров печати.
+<br>
 [FoxyProxy Standard](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/) - удобное управление настройками proxy
+<br>
 [Awesome RSS](https://addons.mozilla.org/en-US/firefox/addon/awesome-rss/) - иконка RSS и Atom в адресной строке, по нажатию на иконку может открываться отдельная программа для чтения RSS и Atom лент, **если** эта программа установлена в системе отдельно и назначена **в системе** по умолчанию для чтения RSS и Atom лент.
+<br>
 [Snap Links Plus](https://addons.mozilla.org/en-US/firefox/addon/snaplinksplus/) - можно прямоугольником выделить ссылки и так открыть, копировать, добавить в закладки группу ссылок.
+<br>
 [View Page Archive & Cache](https://addons.mozilla.org/ru/firefox/addon/view-page-archive) или [Resurrect Pages](https://addons.mozilla.org/ru/firefox/addon/resurrect-pages) - можно получить ссылки на страницу в веб архиве и кэше поисковиков (например если страница удалена, то она может быть просмотрена из архива или кэша).
+<br>
 [Copy Link Text](https://addons.mozilla.org/ru/firefox/addon/copy-link-text-webextension/) - можно копировать текст ссылки
+<br>
 [Copy PlainText](https://addons.mozilla.org/en-US/firefox/addon/copy-plaintext) - добавляет в контекстное меню пункт для копирования текста без форматирования
+<br>
 [InlineDisposition Reloaded](https://addons.mozilla.org/ru/firefox/addon/inlinedisposition-reloaded/) - делает все файлы вместо скачиваемых просматриваемыми, например текст или видео вместо скачивания будут или попытаются открыты в браузере
+<br>
 [Minimap Scroller](https://addons.mozilla.org/en-US/firefox/addon/minimap-scroller-sidebar/) - отображает сайт в виде mini map (уменьшенной копии), так что его можно увидеть целиком не прокручивая страницу.
+<br>
 [Domain in Title](https://addons.mozilla.org/en-US/firefox/addon/domain-in-title/) - добавляет адрес страницы в заголовок окна и всплывающую подсказку с заголовком окна
+<br>
 [Parent Path](https://addons.mozilla.org/en-US/firefox/addon/parent-path/) - быстрый переход по частям ссылки в адресной строке. Удобно для перехода на главную страницу
+<br>
 [Link Properties Plus WE](https://addons.mozilla.org/ru/firefox/addon/link-properties-plus/) - предоставляет расширенные свойства для ссылок: размер файла по ссылке, дату последнего изменения и т.п.
+<br>
 [Save In…](https://addons.mozilla.org/en-US/firefox/addon/save-in/) - пункт контекстного меню (по правой кнопке мыши) который позволяет сохранять сразу в предопределенный каталог
+<br>
 [Open in Browser](https://addons.mozilla.org/en-US/firefox/addon/open-in-browser/) - дополнительное меню при сохранении файлов, позволяет открывать файлы внутри браузера (например можно проиграть видео внутри браузера встроенным плеером вместо его скачивания)
+<br>
 [HighlightAll](https://addons.mozilla.org/en-US/firefox/addon/highlightall/) - продвинутый поиск по странице с отметками положения найденного. Некоторая замена нерабочему устаревшему **FindBar Tweak**. К сожалению **у расширения много багов**.
 
 ## Управление видео и аудио
 [MuteTab](https://addons.mozilla.org/en-US/firefox/addon/mutetab/) - можно отключить звук во всех вкладках по умолчанию и включать только вручную
+<br>
 [Video Speed Controller](https://addons.mozilla.org/ru/firefox/addon/videospeed/) - добавляет дополнительные горячие клавиши (hot keys) для управление воспроизведением видео на сайтах
+<br>
 [Floating Player](https://addons.mozilla.org/en-US/firefox/addon/floating-player/) - по нажатию кнопки видео со страницы открывается в отдельном окне браузера
 
 ## Работа с поисковыми движками, их функционалом и интерфейсом
 [Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь дополнения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл search.json.mozlz4
+<br>
 [mozlz4-edit](https://addons.mozilla.org/ru/firefox/addon/mozlz4-edit/) - позволяет добавлять поисковые системы Firefox вручную. Сам список поисковых систем в каталоге профиля Firefox, файл: search.json.mozlz4. <sub>После редактирования нужно перезапустить Firefox</sub>. Может просматривать файлы оканчивающиеся на "lz4" (backup закладок, сессий, отчетов об ошибках и др.)
 
 ## Гиковские расширения, для продвинутых пользователей
 [NoScript](https://addons.mozilla.org/ru/firefox/addon/noscript) и [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) <sub>не рекомендуется обычным пользователям, излишне сложно</sub> - можно отключить видео/аудио на сайтах, полезно например в дороге при дорогом и медленном трафике сотовых операторов.
+<br>
 [Change Timezone (Time Shift)](https://addons.mozilla.org/en-US/firefox/addon/change-timezone-time-shift/) или [Spoof Timezone](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/) - смена часового пояса браузера, который видят сайты
 
 ## Словари и локализации
 [Dictionaries and Language Packs](https://addons.mozilla.org/en-US/firefox/language-tools/) - официальные словари и локализации <sub>Для старых версий Firefox на странице есть кнопка "просмотреть все версии"</sub>
+<br>
 [Объединённый словарь русской орфографии](https://addons.mozilla.org/en-US/firefox/addon/unified-russian-english-spell/) - совмещенный словарь англ. + рус. <sub>При выборе словаря (клик правой кнопкой мыши на поле ввода) этот словарь имеет название "русский" хотя проверяет на двух языках сразу.</sub>
 
 ## Разное
 [Page Hacker](https://addons.mozilla.org/en-US/firefox/addon/page-hacker/) - позволяет редактировать страницу прямо в Firefox
+<br>
 [SiteDelta Watch](https://addons.mozilla.org/en-US/firefox/addon/sitedelta-watch/) и [SiteDelta Highlight](https://addons.mozilla.org/en-US/firefox/addon/sitedelta-highlight/) или [Update Scanner](https://addons.mozilla.org/en-US/firefox/addon/update-scanner) - мониторинг сайтов на изменения, подсветка измененных областей и др. функции.
+<br>
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)
+<br>
 [Plasma Integration](https://addons.mozilla.org/firefox/addon/plasma-integration/) - для интеграции с KDE (системами Kubuntu, OpenSUSE KDE, Manjaro KDE и прочими с KDE)
 
 # Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
@@ -249,7 +284,6 @@ javascript:void((async () => {
 **Архив некоторых дополнений на xul** для Firefox 52, которые Mozilla удалила со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
 
 # Управление
-
 **Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют функции дополнений [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)
 
 **Note!** Некоторые **дополнения или сайты** могут блокировать или менять стандартные сочетания клавиш.
@@ -257,10 +291,13 @@ javascript:void((async () => {
 # FAQ
 ## Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов? Как сделать русские сайты в английской версии Firefox?
 При загрузке Firefox передает серверу список языков вашей версии Firefox. На ее основе делается выбор версии языка сайта. Изменить язык можно на странице ```about:config```.
+<br>
 Для русского языка на сайтах установить: ```intl.accept_languages``` > ```ru-RU, ru, en-US, en```. Для английского языка: ```en-US, en```
 
 ## Как запустить отдельный профиль Firefox
-Командой ```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
+Командой
+<br>
+```"c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"```
 
 ## [Ubuntu] Как изменить иконку Firefox на панели? Как назначить каждому профилю Firefox свой ярлык со своей иконкой?
 Для этого нужно создать пару файлов ```ярлык``` и ```иконка```.
@@ -335,13 +372,14 @@ javascript:void((async () => {
 После этого зайти в **Настройки** Firefox, найти пункт **Языки** и сменить язык на нужный.
 
 **Note.** При этом параметр `intl.locale.matchOS` должен стоять в `false`
+
 **Note.** В старой версии Firefox нужно было менять опцию `general.useragent.locale` на странице `about:config` и ставить ей значения, например: `en-US` для английского языка или `ru-RU` для русского языка.
 Note. При смене языка список отправляемых страницам сайтов языков сбрасывается на выбранный язык локализации, это значит что вы Firefox начнет по умолчанию открывать сайты на выбранном языке, чтобы поставить нужный язык смотрите [этот раздел](#Почему-в-английской-версии-firefox-видны-английские-сайты-Почему-я-вижу-англо-язычные-версии-сайтов-Как-сделать-русские-сайты-в-английской-версии-firefox)
 
 ## Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`
 Причина в старом [баге Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
 
-## [Ubuntu] Как удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage
+## [Ubuntu] Как полностью удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage
 Выполните команды для удаления:
 ```
 sudo apt purge firefox xul-ext-ubufox firefox-locale-en
@@ -411,6 +449,7 @@ override chrome://browser/content/built_in_addons.json C:\built_in_addons.json
 **Как упаковать `omni.ja`**. Нужно запаковать все файлы, а не сам распакованный omni.ja **выделив эти файлы** и нажав "запаковать" в вашем архиваторе. Паковать **в zip с максимальным сжатием** и переименовать в `omni.ja`. Потом перенести в свое место в каталоге Firefox и перезапустить Firefox.
 
 **Note:** Итоговый перепакованный omni.ja будет отличаться размером и вроде бы даже форматом, но так советуют паковать на официальной странице Mozilla?
+
 **Note:** Если в **omni.ja** будет с ошибками, то Firefox не запустится, поэтому **делайте копию** перед экспериментами.
 
 ## Почему даже после закрытия сайта мне приходят уведомления?
