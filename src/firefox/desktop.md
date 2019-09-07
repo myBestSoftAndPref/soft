@@ -209,9 +209,9 @@ javascript:void((async () => {
 	alert('test');
 })());
 ```
-Во время создания код bookmarklet преобразуется в [URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI). Различные функции JavaScript связанные с переадресацией страницы могут быть запрещены политиками сайта, так что заменить расширения в этом плане не получится, так как подобные функции будут работать только на части сайтов. Также существуют [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) теги, которые в режиме **closed** делают содержимое недоступным для изменения скриптам.
+Во время создания код bookmarklet преобразуется в [URI Encoding](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURI). Различные функции JavaScript связанные с переадресацией страницы могут быть запрещены политиками сайта, так что заменить расширения в этом плане не получится, так как подобные функции будут работать только на части сайтов. Также существуют [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM) теги, которые в режиме **closed** делают содержимое недоступным для изменения скриптами (и bookmarklet'ами).
 
-В новых версиях Firefox сайты могут блокировать `inline` скрипты через [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy), на таких сайтах bookmarklets могут не сработать совсем. Если создатели браузеров не изменят обработку bookmarklets, то **со временем bookmarklets перестанут работать совсем**.
+В новых версиях Firefox сайты могут блокировать `inline` скрипты через [Content Security Policy](https://en.wikipedia.org/wiki/Content_Security_Policy) (**CSP**), на таких сайтах bookmarklets могут не сработать совсем. Если создатели браузеров не изменят обработку bookmarklets, то **со временем bookmarklets перестанут работать совсем**, потому что внедрение **CSP** повышает безопасность и считается хорошей практикой.
 
 [marklets.com](http://marklets.com/) - репозитории готовых bookmarklets, код не проверяет никто.
 
