@@ -164,6 +164,8 @@
 [NoScript](https://addons.mozilla.org/ru/firefox/addon/noscript) и [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) <sub>не рекомендуется обычным пользователям, излишне сложно</sub> - можно отключить видео/аудио на сайтах, полезно например в дороге при дорогом и медленном трафике сотовых операторов.
 <br>
 [Change Timezone (Time Shift)](https://addons.mozilla.org/en-US/firefox/addon/change-timezone-time-shift/) или [Spoof Timezone](https://addons.mozilla.org/en-US/firefox/addon/spoof-timezone/) - смена часового пояса браузера, который видят сайты
+<br>
+[AdNauseam](https://addons.mozilla.org/firefox/addon/adnauseam/) - блокирует рекламу и может кликать по скрытым банерам, таким образом обманывая рекламодателей посылая ложную статистику. На самом деле в нем есть баги и использовать его как основной блокировщик рекламы трудно. На сегодня это расширение является ответвлением от **uBlock Origin**.
 
 ## Словари и локализации
 [Dictionaries and Language Packs](https://addons.mozilla.org/en-US/firefox/language-tools/) - официальные словари и локализации <sub>Для старых версий Firefox на странице есть кнопка "просмотреть все версии"</sub>
