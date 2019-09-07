@@ -182,6 +182,8 @@
 [Plasma Integration](https://addons.mozilla.org/firefox/addon/plasma-integration/) - для интеграции с KDE (системами Kubuntu, OpenSUSE KDE, Manjaro KDE и прочими с KDE)
 <br>
 [Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) - можно применять CSS стили к отдельным сайтам меняя их оформление, и подключать готовые стили написанные другими пользователями с сайтов репозиториев таких стилей.
+<br>
+[Saka Key](https://addons.mozilla.org/firefox/addon/saka-key/) - привязывает сочетания клавиш (hot keys) к стандартным действиям со страницей такими как scroll, zoom, обновление страницы и прочее.
 
 # Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
