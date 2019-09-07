@@ -2,7 +2,7 @@
 
 @media (-moz-os-version: windows-win10) {
   #main-window:not([sizemode="fullscreen"]) {
-    padding-top: 7px !important;
+    padding-top: 4px !important;
   }
 }
 
