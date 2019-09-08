@@ -1159,5 +1159,7 @@ i915.lvds_use_ssc=0 i915.enable_psr=0
 info о bios
 
 sudo dmidecode bios-version
-
+-------------------
+Проект me_cleaner - это отключение технологии ME в Intel в которой возможно содержится бэкдор от самой intel
+https://ru.wikipedia.org/wiki/Intel_Management_Engine#Нейтрализация_прошивки
 
