@@ -98,7 +98,7 @@
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) или [Violentmonkey](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) - менеджер пользовательских скриптов javascript.
 
 ## Пользовательские стили (CSS user styles)
-
+[Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) - можно применять CSS стили к отдельным сайтам меняя их оформление, и подключать готовые стили написанные другими пользователями с сайтов репозиториев таких стилей.
 
 ## Блокировка рекламы
 [uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin) <sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики
@@ -126,7 +126,6 @@
 [Checkmarks](https://addons.mozilla.org/firefox/addon/checkmarks-web-ext) - проверяет закладки на существование страницы, импорты, синхронизацию, может восстановить иконки закладок.
 
 ## Работающие как отдельные программы
-[Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) - можно применять CSS стили к отдельным сайтам меняя их оформление, и подключать готовые стили написанные другими пользователями с сайтов репозиториев таких стилей.
 
 ## Добавляющие новый функционал
 [NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page WE](https://addons.mozilla.org/en-US/firefox/addon/zoom-page-we/) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
