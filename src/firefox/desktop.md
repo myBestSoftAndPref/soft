@@ -208,12 +208,12 @@
 
 # Программы (замена дополнений, которые невозможно реализовать на WebExtensions API)
 
-* [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р. В настройках этой программы можно установить рашсирение для интеграции с Firefox
+* [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р. В настройках этой программы можно установить рашсирение для интеграции с Firefox. Имеет расширение для интеграции с Firefox (включение в настройках программы).
 * [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты <sub>чтобы сделать скриншот всплывающих окон нужно поставить задержку в настройках и во время задержки вывести всплывающее окно</sub>
 * [Flameshot](https://github.com/lupoDharkael/flameshot) (linux) - скриншоты, с встроенными инструментами для редактирования
-    * <sub>Для интеграции **Flameshot** в систему в настройках клавиш нужно удалить связь клавиши `print` с встроенной программой скриншотов. И назначить команду `flameshot gui` для скришота области экрана, и команду `flameshot full` для скришота всего экрана.</sub>
+  * <sub>Для интеграции **Flameshot** в систему в настройках клавиш нужно удалить связь клавиши `print` с встроенной программой скриншотов. И назначить команду `flameshot gui` для скришота области экрана, и команду `flameshot full` для скришота всего экрана.</sub>
 * [peek](https://github.com/phw/peek) (linux) - запись экрана в виде gif
-    * <sub>Можно назначить например на `ctrl + print` команду `peek` для записи области экрана</sub>
+  * <sub>Можно назначить например на `ctrl + print` команду `peek` для записи области экрана</sub>
 * [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (linux) - запись экрана
 * [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - линейка
 * [Color Picker](https://userbase.kde.org/Plasma/ColorPicker) и [KColorChooser](https://www.kde.org/applications/graphics/kcolorchooser/) (Kubuntu) - выбор цвета
@@ -223,6 +223,7 @@
 * [Pidgin](https://pidgin.im) - мессенджер, поддерживает многие протоколы, особенно с [плагинами](https://developer.pidgin.im/wiki/ThirdPartyPlugins) <sub>(Skype чат, шифрование на стороне пользователей [OTR](https://en.wikipedia.org/wiki/Off-the-Record_Messaging), Facebook Chat, WhatsApp etc)</sub>
 * [Thunderbird](https://www.thunderbird.net) - почтовый клиент
 * [uGet](http://ugetdm.com/downloads) <sub>(не путать с неудобной kGet, uGet свободно работает и в KDE)</sub> - менеджер загрузок
+* [KeePassXC](https://keepassxc.org/) - менеджер паролей. Имеет расширение для интеграции с Firefox (включение в настройках программы).
 
 # Bookmarklets
 
