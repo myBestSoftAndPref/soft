@@ -9,8 +9,9 @@
   - [Сохранение страниц сайтов](#Сохранение-страниц-сайтов)
   - [Вкладки (табы), их внешний вид (вертикально, разделение табов etc) и поведение](#Вкладки-табы-их-внешний-вид-вертикально-разделение-табов-etc-и-поведение)
   - [Работа с сессиями, группами вкладок и контейнерами (изоляцией сайтов друг от друга)](#Работа-с-сессиями-группами-вкладок-и-контейнерами-изоляцией-сайтов-друг-от-друга)
-  - [Скачивание (граб) видео, аудио, картинок и других ресурсов](#Скачивание-граб-видео-аудио-картинок-и-других-ресурсов)
+  - [Скачивание (grubbibg) видео, аудио, картинок и других ресурсов](#Скачивание-grubbibg-видео-аудио-картинок-и-других-ресурсов)
   - [Пользовательские скрипты (user scripts)](#Пользовательские-скрипты-user-scripts)
+  - [Пользовательские стили (CSS user styles)](#Пользовательские-стили-css-user-styles)
   - [Блокировка рекламы](#Блокировка-рекламы)
   - [Изменение и управление поведения отдельных сайтов и сервисов](#Изменение-и-управление-поведения-отдельных-сайтов-и-сервисов)
   - [Для закладок, работы с ними и дополнительные функции](#Для-закладок-работы-с-ними-и-дополнительные-функции)
@@ -48,9 +49,9 @@
 # Extensions (addons, расширения, дополнения)
 ## Сохранение страниц сайтов
 
-[Web ScrapBook](https://addons.mozilla.org/firefox/addon/webscrapbook/) - сохраняет страницу одним файлом (изображения, скрипты etc). Для того чтобы это дополнение сохраняло и скрипты JavaScript внутри страниц нужно включить сохранение скриптов в настройках <sub>Скрипты на некоторых сайтах сохраняются не правильно</sub>. Поддерживает формат ```.maff```<sub>С некоторыми ограничениями</sub>. Может сохранять файл с ресурсами как ```.html``` и его можно открыть в других браузерах. Не поддерживает ```.mht``` <sub>в планах разработчика дополнения есть поддержка чтения ```.mht``` файлов. Чтобы открыть `maff` или `htz` файл в браузере одним кликом смотрите [эту](https://github.com/danny0838/webscrapbook/wiki/View) инструкцию. Чтобы сконвертировать большое количество `mht` файлов в `maff` используйте [это](http://maf.mozdev.org/installation.html) дополнение и [Firefox 52 ESR](https://ftp.mozilla.org/pub/firefox/releases/52.9.0esr/) для его работы</sub>
+[WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/) - сохраняет страницу одним файлом (изображения, скрипты etc). Для того чтобы это дополнение сохраняло и скрипты JavaScript внутри страниц нужно включить сохранение скриптов в настройках <sub>Скрипты на некоторых сайтах сохраняются не правильно</sub>. Поддерживает формат ```.maff```<sub>С некоторыми ограничениями</sub>. Может сохранять файл с ресурсами как ```.html``` и его можно открыть в других браузерах. Не поддерживает ```.mht``` <sub>в планах разработчика дополнения есть поддержка чтения ```.mht``` файлов. Чтобы открыть `maff` или `htz` файл в браузере одним кликом смотрите [эту](https://github.com/danny0838/webscrapbook/wiki/View) инструкцию. Чтобы сконвертировать большое количество `mht` файлов в `maff` используйте [это](http://maf.mozdev.org/installation.html) дополнение и [Firefox 52 ESR](https://ftp.mozilla.org/pub/firefox/releases/52.9.0esr/) для его работы</sub>
 <br>
-[Save Page WE](https://addons.mozilla.org/en-US/firefox/addon/save-page-we/) - сохраняет страницу одним файлом (изображения, скрипты etc). В отличии от [Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/) ресурсы хранятся в виде base64, поэтому JavaScript внутри страницы (динамические элементы) сохраняет хуже. В некоторых случаях может сработать лучше чем [Web ScrapBook](https://addons.mozilla.org/en-US/firefox/addon/web-scrapbook/).
+[Save Page WE](https://addons.mozilla.org/en-US/firefox/addon/save-page-we/) - сохраняет страницу одним файлом (изображения, скрипты etc). В отличии от [WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/) ресурсы хранятся в виде base64, поэтому JavaScript внутри страницы (динамические элементы) сохраняет хуже. В некоторых случаях может сработать лучше чем [WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/)
 <br>
 [SingleFile](https://addons.mozilla.org/en-US/firefox/addon/single-file/) - сохраняет страницу одним файлом (изображения, скрипты etc)
 
@@ -84,7 +85,7 @@
 <br>
 [Conex](https://addons.mozilla.org/en-US/firefox/addon/conex/) - группировка табов, каждая группа в отдельном контейнере со своей копией куков и др. инфой (т.е. можно в каждой группе войти на один и тот же сайт под разными никами). К сожалению расширение **недостаточно удобно**.
 
-## Скачивание (граб) видео, аудио, картинок и других ресурсов
+## Скачивание (grubbibg) видео, аудио, картинок и других ресурсов
 [Grab Any Media](https://addons.mozilla.org/en-US/firefox/addon/grab-any-media/) - поиск ссылок на audio и video файлы на странице (слабый аналог FlashGot)
 <br>
 [Double-click Image Downloader](https://addons.mozilla.org/en-US/firefox/addon/double-click-image-download/) - быстрое сохранение изображений (по клику, перетаскиванию, сочетанием клавиш). Можно сохранить все изображения на странице.
@@ -95,6 +96,9 @@
 
 ## Пользовательские скрипты (user scripts) 
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) или [Violentmonkey](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) - менеджер пользовательских скриптов javascript.
+
+## Пользовательские стили (CSS user styles)
+
 
 ## Блокировка рекламы
 [uBlock Origin](https://addons.mozilla.org/ru/firefox/addon/ublock-origin) <sub>(лучшая замена для AdBlock Plus)</sub> - блокировка рекламы и сбора статистики
@@ -122,6 +126,7 @@
 [Checkmarks](https://addons.mozilla.org/firefox/addon/checkmarks-web-ext) - проверяет закладки на существование страницы, импорты, синхронизацию, может восстановить иконки закладок.
 
 ## Работающие как отдельные программы
+[Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) - можно применять CSS стили к отдельным сайтам меняя их оформление, и подключать готовые стили написанные другими пользователями с сайтов репозиториев таких стилей.
 
 ## Добавляющие новый функционал
 [NoSquint Plus](https://addons.mozilla.org/ru/firefox/addon/nosquint-plus) или [Zoom Page WE](https://addons.mozilla.org/en-US/firefox/addon/zoom-page-we/) - удобное управление масштабом страницы и отдельно масштабом текста. Умеет подгонять страницу по ширине окна (ужимать).
@@ -194,8 +199,6 @@
 [Chrome Store Foxified](https://addons.mozilla.org/en-US/firefox/addon/chrome-store-foxified/) - можно устанавливать некоторые расширения для Chrome в Firefox (из Chrome Store)
 <br>
 [Plasma Integration](https://addons.mozilla.org/firefox/addon/plasma-integration/) - для интеграции с KDE (системами Kubuntu, OpenSUSE KDE, Manjaro KDE и прочими с KDE)
-<br>
-[Stylus](https://addons.mozilla.org/firefox/addon/styl-us/) - можно применять CSS стили к отдельным сайтам меняя их оформление, и подключать готовые стили написанные другими пользователями с сайтов репозиториев таких стилей.
 <br>
 [Saka Key](https://addons.mozilla.org/firefox/addon/saka-key/) - привязывает сочетания клавиш (hot keys) к стандартным действиям со страницей такими как scroll, zoom, обновление страницы и прочее.
 
