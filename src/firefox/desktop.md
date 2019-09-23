@@ -172,6 +172,8 @@
 [Video Speed Controller](https://addons.mozilla.org/ru/firefox/addon/videospeed/) - добавляет дополнительные горячие клавиши (hot keys) для управление воспроизведением видео на сайтах
 <br>
 [Floating Player](https://addons.mozilla.org/en-US/firefox/addon/floating-player/) - по нажатию кнопки видео со страницы открывается в отдельном окне браузера
+<br>
+[Video Background Play Fix](https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/) - блокирует функции через который сайт может определить перешел пользователь на другую вкладку, минимизировал окна, включил полноэкранный режим и прочее, так например youtube не сможет определить это и не будет останавливать видео
 
 ## Работа с поисковыми движками, их функционалом и интерфейсом
 [Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь дополнения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл search.json.mozlz4
