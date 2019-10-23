@@ -31,6 +31,13 @@
   margin-bottom: 1px !important;
 }
 
+#page-action-buttons > #contextual-feature-recommendation > #cfr-label-container > #cfr-label {
+  padding: 0 !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  height: 16px !important;
+}
+
 /* 2. fix urlbar history-dropmarker padding */
 #urlbar .urlbar-history-dropmarker {
     padding-left: 4px !important;
