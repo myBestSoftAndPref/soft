@@ -2,6 +2,7 @@
     margin: 0 !important;
 }
 
+#urlbar-container,
 #urlbar-container .urlbar-page-action,
 #urlbar-container .urlbar-page-action > .urlbar-icon {
     padding: 0 !important;
