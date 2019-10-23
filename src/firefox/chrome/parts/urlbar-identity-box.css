@@ -1,21 +1,21 @@
 /* the rule no need for new Firefox 70+ cause identity box is hidden by default, the rule is going to be deleted soon */
 
 /* hide url bar identity-box ssl advance info */
-/* #identity-box #identity-icon-labels {
+#identity-box #identity-icon-labels {
     display: none !important;
-} */
+}
 
-/* #identity-box:hover #identity-icon-labels {
+#identity-box:hover #identity-icon-labels {
     display: inherit !important;
-} */
+}
 
 /* ************************ */
 /* fixes */
 /* ************************ */
 
 /* 1. identity-icon-labels height fix */
-/* #identity-icon-labels {
+#identity-icon-labels {
     height: 18px !important;
     min-height: 18px !important;
     max-height: 18px !important;
-} */
+}
