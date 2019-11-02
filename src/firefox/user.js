@@ -81,3 +81,6 @@ user_pref("browser.tabs.unloadOnLowMemory", false);
 // отключаем некрасивые рекомендации расширений в менеджере расширений (функция показа рекомендаций будет добавлена в новых версиях firefox)
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+
+// включаем пользовательские стили интерфеса самого Firefox (которые отключены по умолчанию в новых версиях)
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);

@@ -1,55 +1,56 @@
 # Что это?
 
-Это минимальны набор дополнений, стилей и настроек для **release** версии **Firefox**.
+Это минимальны набор расширений (дополнений), стилей и настроек для **release** версии **Firefox**.
 
-Подборку дополнений для программистов можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/desktop-dev.md)
+Подборку расширений для программистов можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/desktop-dev.md)
 
-- [Что это?](#Что-это)
-- [Extensions (addons, расширения, дополнения)](#extensions-addons-расширения-дополнения)
-  - [Сохранение страниц сайтов](#Сохранение-страниц-сайтов)
-  - [Вкладки (табы), их внешний вид (вертикально, разделение табов etc) и поведение](#Вкладки-табы-их-внешний-вид-вертикально-разделение-табов-etc-и-поведение)
-  - [Работа с сессиями, группами вкладок и контейнерами (изоляцией сайтов друг от друга)](#Работа-с-сессиями-группами-вкладок-и-контейнерами-изоляцией-сайтов-друг-от-друга)
-  - [Скачивание (grubbing) видео, аудио, картинок и других ресурсов](#Скачивание-grubbing-видео-аудио-картинок-и-других-ресурсов)
-  - [Пользовательские скрипты (user scripts)](#Пользовательские-скрипты-user-scripts)
-  - [Пользовательские стили (CSS user styles)](#Пользовательские-стили-css-user-styles)
-  - [Блокировка рекламы](#Блокировка-рекламы)
-  - [Изменение и управление поведения отдельных сайтов и сервисов](#Изменение-и-управление-поведения-отдельных-сайтов-и-сервисов)
-  - [Для закладок, работы с ними и дополнительные функции](#Для-закладок-работы-с-ними-и-дополнительные-функции)
-  - [Работающие как отдельные программы](#Работающие-как-отдельные-программы)
-  - [Добавляющие новый функционал](#Добавляющие-новый-функционал)
-  - [Управление видео и аудио](#Управление-видео-и-аудио)
-  - [Работа с поисковыми движками, их функционалом и интерфейсом](#Работа-с-поисковыми-движками-их-функционалом-и-интерфейсом)
-  - [Гиковские, для продвинутых пользователей](#Гиковские-для-продвинутых-пользователей)
-  - [Словари и локализации](#Словари-и-локализации)
-  - [Разное](#Разное)
-- [Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)](#Дополнения-для-которых-НЕТ-аналога-в-firefox-57-с-переходом-на-webextensions-api)
-- [Программы (замена дополнений, которые невозможно реализовать на WebExtensions API)](#Программы-замена-дополнений-которые-невозможно-реализовать-на-webextensions-api)
+- [Что это?](#%d0%a7%d1%82%d0%be-%d1%8d%d1%82%d0%be)
+- [Extensions (addons, расширения, дополнения)](#extensions-addons-%d1%80%d0%b0%d1%81%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%b8%d1%8f-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b5%d0%bd%d0%b8%d1%8f)
+  - [Сохранение страниц сайтов](#%d0%a1%d0%be%d1%85%d1%80%d0%b0%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2)
+  - [Вкладки (табы), их внешний вид (вертикально, разделение табов etc) и поведение](#%d0%92%d0%ba%d0%bb%d0%b0%d0%b4%d0%ba%d0%b8-%d1%82%d0%b0%d0%b1%d1%8b-%d0%b8%d1%85-%d0%b2%d0%bd%d0%b5%d1%88%d0%bd%d0%b8%d0%b9-%d0%b2%d0%b8%d0%b4-%d0%b2%d0%b5%d1%80%d1%82%d0%b8%d0%ba%d0%b0%d0%bb%d1%8c%d0%bd%d0%be-%d1%80%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d1%82%d0%b0%d0%b1%d0%be%d0%b2-etc-%d0%b8-%d0%bf%d0%be%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d0%b5)
+  - [Работа с сессиями, группами вкладок и контейнерами (изоляцией сайтов друг от друга)](#%d0%a0%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-%d1%81%d0%b5%d1%81%d1%81%d0%b8%d1%8f%d0%bc%d0%b8-%d0%b3%d1%80%d1%83%d0%bf%d0%bf%d0%b0%d0%bc%d0%b8-%d0%b2%d0%ba%d0%bb%d0%b0%d0%b4%d0%be%d0%ba-%d0%b8-%d0%ba%d0%be%d0%bd%d1%82%d0%b5%d0%b9%d0%bd%d0%b5%d1%80%d0%b0%d0%bc%d0%b8-%d0%b8%d0%b7%d0%be%d0%bb%d1%8f%d1%86%d0%b8%d0%b5%d0%b9-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2-%d0%b4%d1%80%d1%83%d0%b3-%d0%be%d1%82-%d0%b4%d1%80%d1%83%d0%b3%d0%b0)
+  - [Скачивание (grubbing) видео, аудио, картинок и других ресурсов](#%d0%a1%d0%ba%d0%b0%d1%87%d0%b8%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-grubbing-%d0%b2%d0%b8%d0%b4%d0%b5%d0%be-%d0%b0%d1%83%d0%b4%d0%b8%d0%be-%d0%ba%d0%b0%d1%80%d1%82%d0%b8%d0%bd%d0%be%d0%ba-%d0%b8-%d0%b4%d1%80%d1%83%d0%b3%d0%b8%d1%85-%d1%80%d0%b5%d1%81%d1%83%d1%80%d1%81%d0%be%d0%b2)
+  - [Пользовательские скрипты (user scripts)](#%d0%9f%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d1%81%d0%ba%d0%b8%d0%b5-%d1%81%d0%ba%d1%80%d0%b8%d0%bf%d1%82%d1%8b-user-scripts)
+  - [Пользовательские стили (CSS user styles)](#%d0%9f%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d1%8c%d1%81%d0%ba%d0%b8%d0%b5-%d1%81%d1%82%d0%b8%d0%bb%d0%b8-css-user-styles)
+  - [Блокировка рекламы](#%d0%91%d0%bb%d0%be%d0%ba%d0%b8%d1%80%d0%be%d0%b2%d0%ba%d0%b0-%d1%80%d0%b5%d0%ba%d0%bb%d0%b0%d0%bc%d1%8b)
+  - [Изменение и управление поведения отдельных сайтов и сервисов](#%d0%98%d0%b7%d0%bc%d0%b5%d0%bd%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b8-%d1%83%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%be%d0%b2%d0%b5%d0%b4%d0%b5%d0%bd%d0%b8%d1%8f-%d0%be%d1%82%d0%b4%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d1%85-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2-%d0%b8-%d1%81%d0%b5%d1%80%d0%b2%d0%b8%d1%81%d0%be%d0%b2)
+  - [Для закладок, работы с ними и дополнительные функции](#%d0%94%d0%bb%d1%8f-%d0%b7%d0%b0%d0%ba%d0%bb%d0%b0%d0%b4%d0%be%d0%ba-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%8b-%d1%81-%d0%bd%d0%b8%d0%bc%d0%b8-%d0%b8-%d0%b4%d0%be%d0%bf%d0%be%d0%bb%d0%bd%d0%b8%d1%82%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%b8)
+  - [Работающие как отдельные программы](#%d0%a0%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%8e%d1%89%d0%b8%d0%b5-%d0%ba%d0%b0%d0%ba-%d0%be%d1%82%d0%b4%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b)
+  - [Добавляющие новый функционал](#%d0%94%d0%be%d0%b1%d0%b0%d0%b2%d0%bb%d1%8f%d1%8e%d1%89%d0%b8%d0%b5-%d0%bd%d0%be%d0%b2%d1%8b%d0%b9-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%be%d0%bd%d0%b0%d0%bb)
+  - [Управление видео и аудио](#%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-%d0%b2%d0%b8%d0%b4%d0%b5%d0%be-%d0%b8-%d0%b0%d1%83%d0%b4%d0%b8%d0%be)
+  - [Работа с поисковыми движками, их функционалом и интерфейсом](#%d0%a0%d0%b0%d0%b1%d0%be%d1%82%d0%b0-%d1%81-%d0%bf%d0%be%d0%b8%d1%81%d0%ba%d0%be%d0%b2%d1%8b%d0%bc%d0%b8-%d0%b4%d0%b2%d0%b8%d0%b6%d0%ba%d0%b0%d0%bc%d0%b8-%d0%b8%d1%85-%d1%84%d1%83%d0%bd%d0%ba%d1%86%d0%b8%d0%be%d0%bd%d0%b0%d0%bb%d0%be%d0%bc-%d0%b8-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%be%d0%bc)
+  - [Гиковские, для продвинутых пользователей](#%d0%93%d0%b8%d0%ba%d0%be%d0%b2%d1%81%d0%ba%d0%b8%d0%b5-%d0%b4%d0%bb%d1%8f-%d0%bf%d1%80%d0%be%d0%b4%d0%b2%d0%b8%d0%bd%d1%83%d1%82%d1%8b%d1%85-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%b9)
+  - [Словари и локализации](#%d0%a1%d0%bb%d0%be%d0%b2%d0%b0%d1%80%d0%b8-%d0%b8-%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d0%b8)
+  - [Разное](#%d0%a0%d0%b0%d0%b7%d0%bd%d0%be%d0%b5)
+- [Расширения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)](#%d0%a0%d0%b0%d1%81%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%b8%d1%8f-%d0%b4%d0%bb%d1%8f-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d1%85-%d0%9d%d0%95%d0%a2-%d0%b0%d0%bd%d0%b0%d0%bb%d0%be%d0%b3%d0%b0-%d0%b2-firefox-57-%d1%81-%d0%bf%d0%b5%d1%80%d0%b5%d1%85%d0%be%d0%b4%d0%be%d0%bc-%d0%bd%d0%b0-webextensions-api)
+- [Программы (замена расширений, которые невозможно реализовать на WebExtensions API)](#%d0%9f%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d1%8b-%d0%b7%d0%b0%d0%bc%d0%b5%d0%bd%d0%b0-%d1%80%d0%b0%d1%81%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%b8%d0%b9-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d0%bd%d0%b5%d0%b2%d0%be%d0%b7%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d1%80%d0%b5%d0%b0%d0%bb%d0%b8%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d1%8c-%d0%bd%d0%b0-webextensions-api)
 - [Bookmarklets](#bookmarklets)
-- [Официальные и сторонние сборки Firefox](#Официальные-и-сторонние-сборки-firefox)
-- [Настройки для удобства](#Настройки-для-удобства)
-- [Что нужно знать о приватности (сборе статистики компанией Mozilla)](#Что-нужно-знать-о-приватности-сборе-статистики-компанией-mozilla)
-- [Что нужно знать о XUL (старой системе расширений Firefox)](#Что-нужно-знать-о-xul-старой-системе-расширений-firefox)
-- [Управление](#Управление)
+- [Официальные и сторонние сборки Firefox](#%d0%9e%d1%84%d0%b8%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b5-%d0%b8-%d1%81%d1%82%d0%be%d1%80%d0%be%d0%bd%d0%bd%d0%b8%d0%b5-%d1%81%d0%b1%d0%be%d1%80%d0%ba%d0%b8-firefox)
+- [Настройки для удобства](#%d0%9d%d0%b0%d1%81%d1%82%d1%80%d0%be%d0%b9%d0%ba%d0%b8-%d0%b4%d0%bb%d1%8f-%d1%83%d0%b4%d0%be%d0%b1%d1%81%d1%82%d0%b2%d0%b0)
+- [Что нужно знать о приватности (сборе статистики компанией Mozilla)](#%d0%a7%d1%82%d0%be-%d0%bd%d1%83%d0%b6%d0%bd%d0%be-%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d0%be-%d0%bf%d1%80%d0%b8%d0%b2%d0%b0%d1%82%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d1%81%d0%b1%d0%be%d1%80%d0%b5-%d1%81%d1%82%d0%b0%d1%82%d0%b8%d1%81%d1%82%d0%b8%d0%ba%d0%b8-%d0%ba%d0%be%d0%bc%d0%bf%d0%b0%d0%bd%d0%b8%d0%b5%d0%b9-mozilla)
+- [Что нужно знать о XUL (старой системе расширений Firefox)](#%d0%a7%d1%82%d0%be-%d0%bd%d1%83%d0%b6%d0%bd%d0%be-%d0%b7%d0%bd%d0%b0%d1%82%d1%8c-%d0%be-xul-%d1%81%d1%82%d0%b0%d1%80%d0%be%d0%b9-%d1%81%d0%b8%d1%81%d1%82%d0%b5%d0%bc%d0%b5-%d1%80%d0%b0%d1%81%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%b8%d0%b9-firefox)
+- [Управление](#%d0%a3%d0%bf%d1%80%d0%b0%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5)
 - [FAQ](#faq)
-  - [Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов? Как сделать русские сайты в английской версии Firefox?](#Почему-в-английской-версии-firefox-видны-английские-сайты-Почему-я-вижу-англо-язычные-версии-сайтов-Как-сделать-русские-сайты-в-английской-версии-firefox)
-  - [Как запустить отдельный профиль Firefox](#Как-запустить-отдельный-профиль-firefox)
-  - [(Ubuntu) Как изменить иконку Firefox на панели? Как назначить каждому профилю Firefox свой ярлык со своей иконкой?](#ubuntu-Как-изменить-иконку-firefox-на-панели-Как-назначить-каждому-профилю-firefox-свой-ярлык-со-своей-иконкой)
-  - [(Ubuntu) Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla](#ubuntu-Установка-и-обновление-firefox-не-из-репозитория-ubuntu-а-с-сайта-mozilla)
-  - [Как добавить в Firefox открытие `magnet` ссылок на торренты](#Как-добавить-в-firefox-открытие-magnet-ссылок-на-торренты)
-  - [Дополнения не работают на страницах сайта mozilla.com. Как заставить их работать на этих сайтах?](#Дополнения-не-работают-на-страницах-сайта-mozillacom-Как-заставить-их-работать-на-этих-сайтах)
-  - [Как сменить локализацию Firefox? Как изменить язык интерфейса Firefox?](#Как-сменить-локализацию-firefox-Как-изменить-язык-интерфейса-firefox)
-  - [Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`](#Команда--no-remote-не-работает-Команда--profile-не-работает-Появляется-сообщение-ошибки-что-firefox-или-thunderbird-уже-запущен-Английский-вариант-firefox-is-already-running-but-is-not-responding)
-  - [(Ubuntu) Как полностью удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage](#ubuntu-Как-полностью-удалить-firefox-Это-может-быть-нужно-если-вы-хотите-заменить-firefox-из-репозитория-ubuntu-на-версию-из-другого-репозитория-ppa-snap-flatpak-или-appimage)
-  - [(Ubuntu) Как использовать файловый диалог KDE в Firefox](#ubuntu-Как-использовать-файловый-диалог-kde-в-firefox)
-  - [Как удалить английский или другой словарь Firefox по умолчанию (предустановленный)? Как оставить только установленные пользователем словари?](#Как-удалить-английский-или-другой-словарь-firefox-по-умолчанию-предустановленный-Как-оставить-только-установленные-пользователем-словари)
-  - [Что такое файл **omni.ja** в Firefox, для чего и как работает? Как распаковать или упаковать **omni.ja**? Подробнее можно почитать тут)](#Что-такое-файл-omnija-в-firefox-для-чего-и-как-работает-Как-распаковать-или-упаковать-omnija-Подробнее-можно-почитать-тут)
-  - [Почему даже после закрытия сайта мне приходят уведомления?](#Почему-даже-после-закрытия-сайта-мне-приходят-уведомления)
-  - [Как сделать скриншот страницы в Firefox с высоким разрешением (качеством)](#Как-сделать-скриншот-страницы-в-firefox-с-высоким-разрешением-качеством)
+  - [Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов? Как сделать русские сайты в английской версии Firefox?](#%d0%9f%d0%be%d1%87%d0%b5%d0%bc%d1%83-%d0%b2-%d0%b0%d0%bd%d0%b3%d0%bb%d0%b8%d0%b9%d1%81%d0%ba%d0%be%d0%b9-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b8-firefox-%d0%b2%d0%b8%d0%b4%d0%bd%d1%8b-%d0%b0%d0%bd%d0%b3%d0%bb%d0%b8%d0%b9%d1%81%d0%ba%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d1%8b-%d0%9f%d0%be%d1%87%d0%b5%d0%bc%d1%83-%d1%8f-%d0%b2%d0%b8%d0%b6%d1%83-%d0%b0%d0%bd%d0%b3%d0%bb%d0%be-%d1%8f%d0%b7%d1%8b%d1%87%d0%bd%d1%8b%d0%b5-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b8-%d1%81%d0%b0%d0%b9%d1%82%d0%be%d0%b2-%d0%9a%d0%b0%d0%ba-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c-%d1%80%d1%83%d1%81%d1%81%d0%ba%d0%b8%d0%b5-%d1%81%d0%b0%d0%b9%d1%82%d1%8b-%d0%b2-%d0%b0%d0%bd%d0%b3%d0%bb%d0%b8%d0%b9%d1%81%d0%ba%d0%be%d0%b9-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b8-firefox)
+  - [Как запустить отдельный профиль Firefox](#%d0%9a%d0%b0%d0%ba-%d0%b7%d0%b0%d0%bf%d1%83%d1%81%d1%82%d0%b8%d1%82%d1%8c-%d0%be%d1%82%d0%b4%d0%b5%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d0%bf%d1%80%d0%be%d1%84%d0%b8%d0%bb%d1%8c-firefox)
+  - [(Ubuntu) Как изменить иконку Firefox на панели? Как назначить каждому профилю Firefox свой ярлык со своей иконкой?](#ubuntu-%d0%9a%d0%b0%d0%ba-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c-%d0%b8%d0%ba%d0%be%d0%bd%d0%ba%d1%83-firefox-%d0%bd%d0%b0-%d0%bf%d0%b0%d0%bd%d0%b5%d0%bb%d0%b8-%d0%9a%d0%b0%d0%ba-%d0%bd%d0%b0%d0%b7%d0%bd%d0%b0%d1%87%d0%b8%d1%82%d1%8c-%d0%ba%d0%b0%d0%b6%d0%b4%d0%be%d0%bc%d1%83-%d0%bf%d1%80%d0%be%d1%84%d0%b8%d0%bb%d1%8e-firefox-%d1%81%d0%b2%d0%be%d0%b9-%d1%8f%d1%80%d0%bb%d1%8b%d0%ba-%d1%81%d0%be-%d1%81%d0%b2%d0%be%d0%b5%d0%b9-%d0%b8%d0%ba%d0%be%d0%bd%d0%ba%d0%be%d0%b9)
+  - [(Ubuntu) Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla](#ubuntu-%d0%a3%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8-%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-firefox-%d0%bd%d0%b5-%d0%b8%d0%b7-%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%be%d1%80%d0%b8%d1%8f-ubuntu-%d0%b0-%d1%81-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-mozilla)
+  - [Как добавить в Firefox открытие `magnet` ссылок на торренты](#%d0%9a%d0%b0%d0%ba-%d0%b4%d0%be%d0%b1%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%b2-firefox-%d0%be%d1%82%d0%ba%d1%80%d1%8b%d1%82%d0%b8%d0%b5-magnet-%d1%81%d1%81%d1%8b%d0%bb%d0%be%d0%ba-%d0%bd%d0%b0-%d1%82%d0%be%d1%80%d1%80%d0%b5%d0%bd%d1%82%d1%8b)
+  - [Расширения не работают на страницах сайта mozilla.com. Как заставить их работать на этих сайтах?](#%d0%a0%d0%b0%d1%81%d1%88%d0%b8%d1%80%d0%b5%d0%bd%d0%b8%d1%8f-%d0%bd%d0%b5-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%8e%d1%82-%d0%bd%d0%b0-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d0%b0%d1%85-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-mozillacom-%d0%9a%d0%b0%d0%ba-%d0%b7%d0%b0%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d0%b8%d1%85-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d1%82%d1%8c-%d0%bd%d0%b0-%d1%8d%d1%82%d0%b8%d1%85-%d1%81%d0%b0%d0%b9%d1%82%d0%b0%d1%85)
+  - [Как сменить локализацию Firefox? Как изменить язык интерфейса Firefox?](#%d0%9a%d0%b0%d0%ba-%d1%81%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c-%d0%bb%d0%be%d0%ba%d0%b0%d0%bb%d0%b8%d0%b7%d0%b0%d1%86%d0%b8%d1%8e-firefox-%d0%9a%d0%b0%d0%ba-%d0%b8%d0%b7%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c-%d1%8f%d0%b7%d1%8b%d0%ba-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d1%84%d0%b5%d0%b9%d1%81%d0%b0-firefox)
+  - [(Ubuntu) Установка или обновление Firefox одной командой с сайта Mozilla (т.е. версии от Mozilla, а не от разработчиков Ubuntu)](#ubuntu-%d0%a3%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%ba%d0%b0-%d0%b8%d0%bb%d0%b8-%d0%be%d0%b1%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%b8%d0%b5-firefox-%d0%be%d0%b4%d0%bd%d0%be%d0%b9-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%be%d0%b9-%d1%81-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-mozilla-%d1%82%d0%b5-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d0%b8-%d0%be%d1%82-mozilla-%d0%b0-%d0%bd%d0%b5-%d0%be%d1%82-%d1%80%d0%b0%d0%b7%d1%80%d0%b0%d0%b1%d0%be%d1%82%d1%87%d0%b8%d0%ba%d0%be%d0%b2-ubuntu)
+  - [Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`](#%d0%9a%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%b0--no-remote-%d0%bd%d0%b5-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d0%b5%d1%82-%d0%9a%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%b0--profile-%d0%bd%d0%b5-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d0%b5%d1%82-%d0%9f%d0%be%d1%8f%d0%b2%d0%bb%d1%8f%d0%b5%d1%82%d1%81%d1%8f-%d1%81%d0%be%d0%be%d0%b1%d1%89%d0%b5%d0%bd%d0%b8%d0%b5-%d0%be%d1%88%d0%b8%d0%b1%d0%ba%d0%b8-%d1%87%d1%82%d0%be-firefox-%d0%b8%d0%bb%d0%b8-thunderbird-%d1%83%d0%b6%d0%b5-%d0%b7%d0%b0%d0%bf%d1%83%d1%89%d0%b5%d0%bd-%d0%90%d0%bd%d0%b3%d0%bb%d0%b8%d0%b9%d1%81%d0%ba%d0%b8%d0%b9-%d0%b2%d0%b0%d1%80%d0%b8%d0%b0%d0%bd%d1%82-firefox-is-already-running-but-is-not-responding)
+  - [(Ubuntu) Как полностью удалить Firefox (или thunderbird)? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage](#ubuntu-%d0%9a%d0%b0%d0%ba-%d0%bf%d0%be%d0%bb%d0%bd%d0%be%d1%81%d1%82%d1%8c%d1%8e-%d1%83%d0%b4%d0%b0%d0%bb%d0%b8%d1%82%d1%8c-firefox-%d0%b8%d0%bb%d0%b8-thunderbird-%d0%ad%d1%82%d0%be-%d0%bc%d0%be%d0%b6%d0%b5%d1%82-%d0%b1%d1%8b%d1%82%d1%8c-%d0%bd%d1%83%d0%b6%d0%bd%d0%be-%d0%b5%d1%81%d0%bb%d0%b8-%d0%b2%d1%8b-%d1%85%d0%be%d1%82%d0%b8%d1%82%d0%b5-%d0%b7%d0%b0%d0%bc%d0%b5%d0%bd%d0%b8%d1%82%d1%8c-firefox-%d0%b8%d0%b7-%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%be%d1%80%d0%b8%d1%8f-ubuntu-%d0%bd%d0%b0-%d0%b2%d0%b5%d1%80%d1%81%d0%b8%d1%8e-%d0%b8%d0%b7-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b3%d0%be-%d1%80%d0%b5%d0%bf%d0%be%d0%b7%d0%b8%d1%82%d0%be%d1%80%d0%b8%d1%8f-ppa-snap-flatpak-%d0%b8%d0%bb%d0%b8-appimage)
+  - [(Ubuntu) Как использовать файловый диалог KDE в Firefox](#ubuntu-%d0%9a%d0%b0%d0%ba-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d1%8c-%d1%84%d0%b0%d0%b9%d0%bb%d0%be%d0%b2%d1%8b%d0%b9-%d0%b4%d0%b8%d0%b0%d0%bb%d0%be%d0%b3-kde-%d0%b2-firefox)
+  - [Как удалить английский или другой словарь Firefox по умолчанию (предустановленный)? Как оставить только установленные пользователем словари?](#%d0%9a%d0%b0%d0%ba-%d1%83%d0%b4%d0%b0%d0%bb%d0%b8%d1%82%d1%8c-%d0%b0%d0%bd%d0%b3%d0%bb%d0%b8%d0%b9%d1%81%d0%ba%d0%b8%d0%b9-%d0%b8%d0%bb%d0%b8-%d0%b4%d1%80%d1%83%d0%b3%d0%be%d0%b9-%d1%81%d0%bb%d0%be%d0%b2%d0%b0%d1%80%d1%8c-firefox-%d0%bf%d0%be-%d1%83%d0%bc%d0%be%d0%bb%d1%87%d0%b0%d0%bd%d0%b8%d1%8e-%d0%bf%d1%80%d0%b5%d0%b4%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b9-%d0%9a%d0%b0%d0%ba-%d0%be%d1%81%d1%82%d0%b0%d0%b2%d0%b8%d1%82%d1%8c-%d1%82%d0%be%d0%bb%d1%8c%d0%ba%d0%be-%d1%83%d1%81%d1%82%d0%b0%d0%bd%d0%be%d0%b2%d0%bb%d0%b5%d0%bd%d0%bd%d1%8b%d0%b5-%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d0%be%d0%b2%d0%b0%d1%82%d0%b5%d0%bb%d0%b5%d0%bc-%d1%81%d0%bb%d0%be%d0%b2%d0%b0%d1%80%d0%b8)
+  - [Что такое файл **omni.ja** в Firefox, для чего и как работает? Как распаковать или упаковать **omni.ja**? Подробнее можно почитать тут)](#%d0%a7%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-%d1%84%d0%b0%d0%b9%d0%bb-omnija-%d0%b2-firefox-%d0%b4%d0%bb%d1%8f-%d1%87%d0%b5%d0%b3%d0%be-%d0%b8-%d0%ba%d0%b0%d0%ba-%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%d0%b5%d1%82-%d0%9a%d0%b0%d0%ba-%d1%80%d0%b0%d1%81%d0%bf%d0%b0%d0%ba%d0%be%d0%b2%d0%b0%d1%82%d1%8c-%d0%b8%d0%bb%d0%b8-%d1%83%d0%bf%d0%b0%d0%ba%d0%be%d0%b2%d0%b0%d1%82%d1%8c-omnija-%d0%9f%d0%be%d0%b4%d1%80%d0%be%d0%b1%d0%bd%d0%b5%d0%b5-%d0%bc%d0%be%d0%b6%d0%bd%d0%be-%d0%bf%d0%be%d1%87%d0%b8%d1%82%d0%b0%d1%82%d1%8c-%d1%82%d1%83%d1%82)
+  - [Почему даже после закрытия сайта мне приходят уведомления?](#%d0%9f%d0%be%d1%87%d0%b5%d0%bc%d1%83-%d0%b4%d0%b0%d0%b6%d0%b5-%d0%bf%d0%be%d1%81%d0%bb%d0%b5-%d0%b7%d0%b0%d0%ba%d1%80%d1%8b%d1%82%d0%b8%d1%8f-%d1%81%d0%b0%d0%b9%d1%82%d0%b0-%d0%bc%d0%bd%d0%b5-%d0%bf%d1%80%d0%b8%d1%85%d0%be%d0%b4%d1%8f%d1%82-%d1%83%d0%b2%d0%b5%d0%b4%d0%be%d0%bc%d0%bb%d0%b5%d0%bd%d0%b8%d1%8f)
+  - [Как сделать скриншот страницы в Firefox с высоким разрешением (качеством)](#%d0%9a%d0%b0%d0%ba-%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d1%82%d1%8c-%d1%81%d0%ba%d1%80%d0%b8%d0%bd%d1%88%d0%be%d1%82-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%b8%d1%86%d1%8b-%d0%b2-firefox-%d1%81-%d0%b2%d1%8b%d1%81%d0%be%d0%ba%d0%b8%d0%bc-%d1%80%d0%b0%d0%b7%d1%80%d0%b5%d1%88%d0%b5%d0%bd%d0%b8%d0%b5%d0%bc-%d0%ba%d0%b0%d1%87%d0%b5%d1%81%d1%82%d0%b2%d0%be%d0%bc)
 
 # Extensions (addons, расширения, дополнения)
 ## Сохранение страниц сайтов
 
-[WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/) - сохраняет страницу одним файлом (изображения, скрипты etc). Для того чтобы это дополнение сохраняло и скрипты JavaScript внутри страниц нужно включить сохранение скриптов в настройках <sub>Скрипты на некоторых сайтах сохраняются не правильно</sub>. Поддерживает формат ```.maff```<sub>С некоторыми ограничениями</sub>. Может сохранять файл с ресурсами как ```.html``` и его можно открыть в других браузерах. Не поддерживает ```.mht``` <sub>в планах разработчика дополнения есть поддержка чтения ```.mht``` файлов. Чтобы открыть `maff` или `htz` файл в браузере одним кликом смотрите [эту](https://github.com/danny0838/webscrapbook/wiki/View) инструкцию. Чтобы сконвертировать большое количество `mht` файлов в `maff` используйте [это](http://maf.mozdev.org/installation.html) дополнение и [Firefox 52 ESR](https://ftp.mozilla.org/pub/firefox/releases/52.9.0esr/) для его работы</sub>
+[WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/) - сохраняет страницу одним файлом (изображения, скрипты etc). Для того чтобы это расширение сохраняло и скрипты JavaScript внутри страниц нужно включить сохранение скриптов в настройках <sub>Скрипты на некоторых сайтах сохраняются не правильно</sub>. Поддерживает формат ```.maff```<sub>С некоторыми ограничениями</sub>. Может сохранять файл с ресурсами как ```.html``` и его можно открыть в других браузерах. Не поддерживает ```.mht``` <sub>в планах разработчика расширения есть поддержка чтения ```.mht``` файлов. Чтобы открыть `maff` или `htz` файл в браузере одним кликом смотрите [эту](https://github.com/danny0838/webscrapbook/wiki/View) инструкцию. Чтобы сконвертировать большое количество `mht` файлов в `maff` используйте [это](http://maf.mozdev.org/installation.html) расширение и [Firefox 52 ESR](https://ftp.mozilla.org/pub/firefox/releases/52.9.0esr/) для его работы</sub>
 <br>
 [Save Page WE](https://addons.mozilla.org/en-US/firefox/addon/save-page-we/) - сохраняет страницу одним файлом (изображения, скрипты etc). В отличии от [WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/) ресурсы хранятся в виде base64, поэтому JavaScript внутри страницы (динамические элементы) сохраняет хуже. В некоторых случаях может сработать лучше чем [WebScrapBook](https://addons.mozilla.org/en-US/firefox/addon/webscrapbook/)
 <br>
@@ -57,11 +58,11 @@
 
 ## Вкладки (табы), их внешний вид (вертикально, разделение табов etc) и поведение
 
-[Tile Tabs WE](https://addons.mozilla.org/en-US/firefox/addon/tile-tabs-we/) - может делить окно браузера на несколько частей, чтобы просматривать несколько сайтов одновременно. На деле новое API не позволяет дополнениям разграничивать окно, поэтому открываются новые окна, что очень неудобно.
+[Tile Tabs WE](https://addons.mozilla.org/en-US/firefox/addon/tile-tabs-we/) - может делить окно браузера на несколько частей, чтобы просматривать несколько сайтов одновременно. На деле новое API не позволяет расширениям разграничивать окно, поэтому открываются новые окна, что очень неудобно.
 <br>
 [Tree Style Tab](https://addons.mozilla.org/ru/firefox/addon/tree-style-tab) - вкладки вертикально в виде дерева.
 <br>
-[Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок и группы вкладок. Из отличий от других подобных дополнений - очень удобное встроенное управление группами вкладок. <sub>К сожалению **у расширения есть баги**, лучшая и более надежная альтернатива это: расширения **Tree Style Tab** + **Simple Tab Groups**</sub>
+[Tree Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) - древовидный вид вкладок и группы вкладок. Из отличий от других подобных расширений - очень удобное встроенное управление группами вкладок. <sub>К сожалению **у расширения есть баги**, лучшая и более надежная альтернатива это: расширения **Tree Style Tab** + **Simple Tab Groups**</sub>
 [Drag-Select Link Text](https://addons.mozilla.org/en-US/firefox/addon/drag-select-link-text/) - позволяет выделять текст ссылок без зажатия ```Alt```
 <br>
 [Tab Reloader (page auto refresh)](https://addons.mozilla.org/en-US/firefox/addon/tab-reloader/) или [ReloadMatic: Automatic Tab Refresh](https://addons.mozilla.org/en-US/firefox/addon/reloadmatic/) или [Auto Reload Tab](https://addons.mozilla.org/en-US/firefox/addon/auto-reload-tab) - позволяет установить вкладкам таймер по которому они будут перезагружаться
@@ -81,7 +82,7 @@
 ## Работа с сессиями, группами вкладок и контейнерами (изоляцией сайтов друг от друга)
 [Session Boss](https://addons.mozilla.org/en-US/firefox/addon/session-boss/), [Tab Session Manager](https://addons.mozilla.org/en-US/firefox/addon/tab-session-manager), [MySessions](https://addons.mozilla.org/en-US/firefox/addon/my-sessions/) - расширения для работы с сессиями, сохранение, восстанановление и др. В современном Firefox права расширений ограничены, поэтому нормально **сохранить ссылки на открытые локальные файлы и подобное невозможно**. **Совет:** использовать [Simple Tab Groups](https://addons.mozilla.org/en-US/firefox/addon/simple-tab-groups/) для таких задач, оно не хуже.
 <br>
-[Temporary Containers](https://addons.mozilla.org/ru/firefox/addon/temporary-containers/) или [Firefox Multi-Account Containers](https://addons.mozilla.org/ru/firefox/addon/multi-account-containers/) - создает изолированные контейнеры для вкладок. Можно в каждом из контейнеров войти на один и тот же сайт под разными именами. Дополнение имеет ограничение, история посещений (отпечаток браузера) не полностью изолированна, как это сделано в "приватный режим", но и этого должно быть достаточно <sub>каждая будет иметь свою копию **cookies** и **localStorage**</sub>
+[Temporary Containers](https://addons.mozilla.org/ru/firefox/addon/temporary-containers/) или [Firefox Multi-Account Containers](https://addons.mozilla.org/ru/firefox/addon/multi-account-containers/) - создает изолированные контейнеры для вкладок. Можно в каждом из контейнеров войти на один и тот же сайт под разными именами. Расширение имеет ограничение, история посещений (отпечаток браузера) не полностью изолированна, как это сделано в "приватный режим", но и этого должно быть достаточно <sub>каждая будет иметь свою копию **cookies** и **localStorage**</sub>
 <br>
 [Conex](https://addons.mozilla.org/en-US/firefox/addon/conex/) - группировка табов, каждая группа в отдельном контейнере со своей копией куков и др. инфой (т.е. можно в каждой группе войти на один и тот же сайт под разными никами). К сожалению расширение **недостаточно удобно**.
 
@@ -90,9 +91,9 @@
 <br>
 [Double-click Image Downloader](https://addons.mozilla.org/en-US/firefox/addon/double-click-image-download/) - быстрое сохранение изображений (по клику, перетаскиванию, сочетанием клавиш). Можно сохранить все изображения на странице.
 <br>
-[Video DownloadHelper](https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/) - популярное дополнение для скачивание видео с различных сайтов. Возможна подгрузка рекламы или сбор статистики <sub>упоминаю их потому что дополнение популярно</sub>. Но как вариант может понадобиться.
+[Video DownloadHelper](https://addons.mozilla.org/en-US/firefox/addon/video-downloadhelper/) - популярное расширение для скачивание видео с различных сайтов. Возможна подгрузка рекламы или сбор статистики <sub>упоминаю их потому что расширение популярно</sub>. Но как вариант может понадобиться.
 <br>
-[DownThemAll!](https://addons.mozilla.org/firefox/addon/downthemall/) - для удобного управление загрузками с дополнительными фильтрами и опциями, многопоточная загрузка не поддерживается. Не путать со старым дополнением **DownThemAll!** на XUL который имел намного больший функционал.
+[DownThemAll!](https://addons.mozilla.org/firefox/addon/downthemall/) - для удобного управление загрузками с дополнительными фильтрами и опциями, многопоточная загрузка не поддерживается. Не путать со старым расширением **DownThemAll!** на XUL который имел намного больший функционал.
 
 ## Пользовательские скрипты (user scripts) 
 [Greasemonkey](https://addons.mozilla.org/ru/firefox/addon/greasemonkey) или [Violentmonkey](https://addons.mozilla.org/en-US/firefox/addon/violentmonkey/) - менеджер пользовательских скриптов javascript.
@@ -176,7 +177,7 @@
 [Video Background Play Fix](https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/) - блокирует функции через который сайт может определить перешел пользователь на другую вкладку, минимизировал окна, включил полноэкранный режим и прочее, так например youtube не сможет определить это и не будет останавливать видео
 
 ## Работа с поисковыми движками, их функционалом и интерфейсом
-[Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь дополнения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл search.json.mozlz4
+[Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь расширения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл search.json.mozlz4
 <br>
 [mozlz4-edit](https://addons.mozilla.org/ru/firefox/addon/mozlz4-edit/) - позволяет добавлять поисковые системы Firefox вручную. Сам список поисковых систем в каталоге профиля Firefox, файл: search.json.mozlz4. <sub>После редактирования нужно перезапустить Firefox</sub>. Может просматривать файлы оканчивающиеся на "lz4" (backup закладок, сессий, отчетов об ошибках и др.)
 
@@ -203,14 +204,14 @@
 <br>
 [Saka Key](https://addons.mozilla.org/firefox/addon/saka-key/) - привязывает сочетания клавиш (hot keys) к стандартным действиям со страницей такими как scroll, zoom, обновление страницы и прочее.
 
-# Дополнения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
+# Расширения для которых НЕТ аналога в Firefox 57+ (с переходом на WebExtensions API)
 
 1. [FindBar Tweak](https://addons.mozilla.org/ru/firefox/addon/findbar-tweak) - удобный поиск по странице с отметками найденного на полосе прокрутки.
-2. [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и может качать файлы доступные только авторизованным пользователям. Может качать в несколько потоков. Дополнение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером. Не путать с новой версией **DownThemAll!** которая не на XUL и имеет меньший функционал.
+2. [DownThemAll!](https://addons.mozilla.org/en-US/firefox/addon/downthemall/) - менеджер загрузок, хорошо интегрирован с Firefox и может качать файлы доступные только авторизованным пользователям. Может качать в несколько потоков. Расширение к нему [DownThemAll! AntiContainer](https://addons.mozilla.org/ru/firefox/addon/downthemall-anticontainer/) позволяет скачивать файлы с сайтов, которые не дают прямых ссылок и скачиваются только браузером. Не путать с новой версией **DownThemAll!** которая не на XUL и имеет меньший функционал.
 3. [Dictionary Switcher](https://addons.mozilla.org/en-uS/firefox/addon/dictionary-switcher/) - индикатор текущего словаря, переключение (автоматическое или нет) и другие параметры.
 4. [FlashGot Mass Downloader](https://addons.mozilla.org/ru/firefox/addon/flashgot/) - поиск ссылок на видео, файлы и интеграция с любым менеджером загрузок
 
-# Программы (замена дополнений, которые невозможно реализовать на WebExtensions API)
+# Программы (замена расширений, которые невозможно реализовать на WebExtensions API)
 
 * [ShareX](https://getsharex.com/downloads/) (Windows) - скриншоты, запись экрана (в том числе в gif), линейка, выбор цвета, встроенный редактор скриншотов и д.р. В настройках этой программы можно установить рашсирение для интеграции с Firefox. Имеет расширение для интеграции с Firefox (включение в настройках программы).
 * [Spectacle](https://www.kde.org/applications/graphics/spectacle/) (Kubuntu) - скриншоты <sub>чтобы сделать скриншот всплывающих окон нужно поставить задержку в настройках и во время задержки вывести всплывающее окно</sub>
@@ -252,11 +253,11 @@ javascript:void((async () => {
 * [Firefox EME](https://ftp.mozilla.org/pub/firefox/) - **официальная**, без автозагрузки плагинов с закрытым кодом (например, встроенных кодеков для видео, может не играть некоторое видео)
 * [Firefox ESR](https://ftp.mozilla.org/pub/firefox/) - **официальная**, стабильная версия, обновляется почти раз в год
 * [Tor Browser](https://www.torproject.org/projects/torbrowser.html.en) - **официальная** (совместно с Mozilla), максимально анонимная сборка с встроенным постоянным подключением через анонимные прокси
-* [Pale Moon](https://www.palemoon.org/) - по утверждению разработчика вырезан сбор статистики, сборка собрана с дополнительными оптимизациями, есть оптимизации для CPU Intel Atom. Имеет странности в лицензии. Проект планирует сохранить поддержку XUL (то есть старых дополнений с богатым функционалом) и развивать ее дальше.
+* [Pale Moon](https://www.palemoon.org/) - по утверждению разработчика вырезан сбор статистики, сборка собрана с дополнительными оптимизациями, есть оптимизации для CPU Intel Atom. Имеет странности в лицензии. Проект планирует сохранить поддержку XUL (то есть старых расширений с богатым функционалом) и развивать ее дальше.
 * [Waterfox](https://www.waterfoxproject.org/) - аналогично Pale Moon, со своими оптимизациями
 * [IceCat](http://ftp.gnu.org/gnu/gnuzilla/) - **официальная** (от проекта gnu), с удаленными следящими опциями, на деле не очень качественная, лучше использовать TorBrowser
 * [Firefox Developer Edition](https://www.mozilla.org/ru/firefox/developer/) - **официальная**, альфа версия Firefox с дополнительными инструментами для разработчика и багами
-* [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - **официальная**, сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные дополнения, нету авто обновления.
+* [Firefox Unbranded Builds](https://wiki.mozilla.org/Add-ons/Extension_Signing#Unbranded_Builds) - **официальная**, сборка Firefox без фирменных знаков Mozilla в которую можно устанавливать неподписанные расширения, нету авто обновления.
 * [SeaMonkey](https://www.seamonkey-project.org/) - **официальная**, имеет старомодный интерфейс и дополнительные настройки, медленно развивается и отстает от Firefox.
 * [Librefox](https://github.com/intika/Librefox) - **устарела и не обновляется**, это настроенный Firefox с вырезанными или отключенными опциями телеметрии, с патчами приватности и подобное.
 * [LibreWolf](https://gitlab.com/librewolf-community/browser/linux) - ответвление от [Librefox](https://github.com/intika/Librefox), это настроенный Firefox с вырезанными или отключенными опциями телеметрии, с патчами приватности и подобное.
@@ -280,7 +281,7 @@ javascript:void((async () => {
 2. `firefox/policies.json`: файл ```policies.json``` это просто еще один вид настроек, начиная с **Firefox 63** только через них можно отключить проверку обновлений. В этих настройках проверка обновлений отключена, если хотите сгенерировать свои настройки используйте [Enterprise Policy Generator](https://addons.mozilla.org/firefox/addon/enterprise-policy-generator/). Обновляемый список опций политик можно найти [тут](https://github.com/mozilla/policy-templates/blob/master/README.md)
     * Скопировать файл [policies.json](policies.json) с настройками политик по пути ```distribution/policies.json``` в **каталог установленного Firefox**<sub>(не профиля)</sub> и перезапустить Firefox. Этот вариант настроек отключает авто проверку обновлений. Чтоб обновить Firefox файл на вермя обновления нужно удалять и перезапускать Firefox.
 3. `profile/chrome/userChrome.css`: Это файл стилей, который действует на интерфейс Firefox. Через него можно менять оформление кнопок, строки адреса, боковую панель и т.д.
-    * [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек от [Aris-t2](https://github.com/Aris-t2) для Firefox, некая замена старым дополнения для настройки, новое API не позволяет дополнениям менять настройки, поэтому копировать стили и настройки придется вручную.
+    * [Custom CSS tweaks for Firefox 57+](https://github.com/Aris-t2/CustomCSSforFx) - набор стилей и настроек от [Aris-t2](https://github.com/Aris-t2) для Firefox, некая замена старым расширениям для настройки, новое API не позволяет расширениям менять настройки, поэтому копировать стили и настройки придется вручную.
 
 **Если хотите больше настроек:**
 1. Неофициальная подборка настроек - [pyllyukko/user.js](https://github.com/pyllyukko/user.js)
@@ -308,14 +309,14 @@ javascript:void((async () => {
 
 На сегодня **Firefox for Android** едиснтвенный браузер для Android поддерживающий расширения.
 
-**Старую версию** этой статьи для старых дополнений на [XUL](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL) для **Firefox 52** [ESR](https://www.mozilla.org/en-US/firefox/organizations/) можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md)
+**Старую версию** этой статьи для старых расширений на [XUL](https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XUL) для **Firefox 52** [ESR](https://www.mozilla.org/en-US/firefox/organizations/) можно найти [тут](https://github.com/myBestSoftAndPref/soft/blob/54662c153e424389866e991c4946b0fa9f210858/src/firefox/desktop.md)
 
-**Архив некоторых дополнений на xul** для Firefox 52, которые Mozilla удалила со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
+**Архив некоторых расширений на xul** для Firefox 52, которые Mozilla удалила со своего сайта [тут](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/xul_addon_arch)
 
 # Управление
-**Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют функции дополнений [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)
+**Обратите внимание на эту подборку!** Некоторые сочетания клавиш заменяют функции расширений [официальной странице справки для Hot Keys](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly?redirectlocale=en-US&as=u&redirectslug=Keyboard+shortcuts&utm_source=inproduct)
 
-**Note!** Некоторые **дополнения или сайты** могут блокировать или менять стандартные сочетания клавиш.
+**Note!** Некоторые **расширения или сайты** могут блокировать или менять стандартные сочетания клавиш.
 
 # FAQ
 ## Почему в английской версии Firefox видны английские сайты? Почему я вижу англо язычные версии сайтов? Как сделать русские сайты в английской версии Firefox?
@@ -324,7 +325,7 @@ javascript:void((async () => {
 Для русского языка на сайтах установить: ```intl.accept_languages``` > ```ru-RU, ru, en-US, en```. Для английского языка: ```en-US, en```
 
 ## Как запустить отдельный профиль Firefox
-Командой
+Командой, при этом на некоторых системах каталог профиля должен быть заранее создан и не создается автоматически. Для linux систем каталог профиля рекомендуется создать в файловой системе поддерживающей права доступа (например ext4), например можно создать в `/home` каталоге.
 <br>
 ```
 "c:\firefox.exe" -no-remote -profile "d:\<путь_к_профилю>\myProfile"
@@ -355,7 +356,7 @@ javascript:void((async () => {
 6. **NOTE!** Права на доступ для файлов в каталогах ```/usr/share/pixmaps/``` и ```/usr/share/applications/``` нужно установить аналогично другим файлам в тех же каталогах (владелец и группа ```root```, права на запись и запуск только у владельца, у остальных пользователей и групп права только на чтение, права на запуск иконки нет)
 
 ## (Ubuntu) Установка и обновление Firefox не из репозитория Ubuntu, а с сайта Mozilla
-Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. Не устанавливайте Firefox из snap в Ubuntu, snap имеет проблемы с отображением курсора и отключением неконтролируемого авто обновления.
+Это рекомендуется пользователям Ubuntu. На данный момент обновления в Ubuntu могут задерживаться на несколько дней. Не устанавлива��те Firefox из snap в Ubuntu, snap имеет проблемы с отображением курсора и отключением неконтролируемого авто обновления.
 1. Названия ```my_firefox``` и ```my_firefox_profile``` можно заменить на что угодно. Имя пользователя ```<user_name>``` заменить на свое.
 2. [Качаем Firefox](https://www.mozilla.org/en-US/firefox/new/)
 3. Распаковываем в
@@ -390,13 +391,13 @@ javascript:void((async () => {
 1. Открыть страницу `about:config`
 2. Создать опцию `network.protocol-handler.expose.magnet` типа ```boolean``` (`логическое`) с значением `false`
 
-## Дополнения не работают на страницах сайта [mozilla.com](https://mozilla.com). Как заставить их работать на этих сайтах?
-Работа дополнений на этих сайтах отключена в целях безопасности. Для включения работы дополнений на этих сайтах:
+## Расширения не работают на страницах сайта [mozilla.com](https://mozilla.com). Как заставить их работать на этих сайтах?
+Работа расширений на этих сайтах отключена в целях безопасности. Для включения работы расширений на этих сайтах:
 1. Открыть страницу `about:config`
 2. Создать опцию `privacy.resistFingerprinting.block_mozAddonManager` типа `boolean` (`логическое`) с значением `true`
 3. Открыть страницу `about:config?filter=extensions.webextensions.restrictedDomains` удалить все значения данной опции (оставить пустую строку)
 
-**Note!** В некоторых дополнениях есть проверка на активацию дополнения для сайт [https://mozilla.com](https://mozilla.com). Даже с опцией выше такие дополнения могут отказаться работать на [https://mozilla.com](https://mozilla.com), в этом случае нужно писать разработчику дополнения, чтобы он исправил это и позволил дополнению работать на [https://mozilla.com](https://mozilla.com)
+**Note!** В некоторых расширениях есть проверка на активацию расширения для сайт [https://mozilla.com](https://mozilla.com). Даже с опцией выше такие расширения могут отказаться работать на [https://mozilla.com](https://mozilla.com), в этом случае нужно писать разработчику расширения, чтобы он исправил это и позволил расширению работать на [https://mozilla.com](https://mozilla.com)
 
 ## Как сменить локализацию Firefox? Как изменить язык интерфейса Firefox?
 Установите со страницы [Dictionaries and Language Packs](https://addons.mozilla.org/en-US/firefox/language-tools/) нужную локализацию <sub>Для старых версий Firefox (например Firefox **ESR**) на странице есть кнопка "просмотреть все версии"</sub>
@@ -408,10 +409,24 @@ javascript:void((async () => {
 
 **Note.** При смене языка список отправляемых страницам сайтов языков сбрасывается на выбранный язык локализации, это значит что вы Firefox начнет по умолчанию открывать сайты на выбранном языке, чтобы поставить нужный язык смотрите [этот раздел](#Почему-в-английской-версии-firefox-видны-английские-сайты-Почему-я-вижу-англо-язычные-версии-сайтов-Как-сделать-русские-сайты-в-английской-версии-firefox)
 
+
+## (Ubuntu) Установка или обновление Firefox одной командой с сайта Mozilla (т.е. версии от Mozilla, а не от разработчиков Ubuntu)
+Сборки от Mozilla самые актуальные с своевременно закрытыми уязвимостями, вовремя обновленные и без изменений от разработчиков Ubuntu, поэтому **рекомендуется** ставить их, а не из репозитория Ubuntu. Для Ubuntu самый простой способ установить или установить или обновить Firefox с сайта Mozilla это полностью скачать архив с Firefox, распаковать его и создать ссылку на Firefox в каталоге где система может его найти (в classpth).
+
+
+**Note.** Имя firefox (или thunderbird) не должно быть занято, если занято, то переименовать его в команде. Ссылку на firefox скопировать с сайта Mozilla. Рекомендуется **удалить** Firefox из Ubuntu перед этой командой. Старая версия firefox (или thunderbird) этой командой будет **затерта**.
+```sh
+## ссылку на архив найти и заменить на актуальную
+sudo rm -rf /opt/firefox && sudo wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/70.0.1/linux-x86_64/ru/firefox-70.0.1.tar.bz2 -O /opt/firefox.tar.bz2 && cd /opt/ && sudo tar xjf firefox.tar.bz2 && sudo rm -rf firefox.tar.bz2 && sudo ln -s /opt/firefox/firefox /usr/bin/firefox
+
+## вариант для thunderbird такой же
+sudo rm -rf /opt/firefox && sudo wget https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/68.2.1/linux-x86_64/ru/thunderbird-68.2.1.tar.bz2 -O /opt/thunderbird.tar.bz2 && cd /opt/ && sudo tar xjf thunderbird.tar.bz2 && sudo rm -rf thunderbird.tar.bz2 && sudo ln -s /opt/thunderbird/thunderbird /usr/bin/thunderbird
+```
+
 ## Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`
 Причина в старом [баге Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
 
-## (Ubuntu) Как полностью удалить Firefox? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage
+## (Ubuntu) Как полностью удалить Firefox (или thunderbird)? Это может быть нужно, если вы хотите заменить Firefox из репозитория Ubuntu на версию из другого репозитория, PPA, snap, flatpak или AppImage
 Выполните команды для удаления:
 ```
 sudo apt purge firefox xul-ext-ubufox firefox-locale-en
@@ -419,6 +434,11 @@ sudo rm -rf /usr/lib/firefox
 sudo rm -rf /usr/lib/firefox-addons
 ```
 Если у вас кроме английского установлен и другой язык, то кроме ```firefox-locale-en``` вам придется удалить и пакет для вашего языка.
+
+Аналогично удалить **thunderbird** можно одной командой
+```sh
+sudo apt purge thunderbird && sudo rm -rf /usr/lib/thunderbird && sudo rm -rf /usr/lib/thunderbird-addons
+```
 
 ## (Ubuntu) Как использовать файловый диалог KDE в Firefox
 Установить пакеты командой `sudo apt install xdg-desktop-portal xdg-desktop-portal-kde` и запустить firefox командой `GTK_USE_PORTAL=1 firefox`
@@ -428,7 +448,7 @@ sudo rm -rf /usr/lib/firefox-addons
 ## Как удалить английский или другой словарь Firefox по умолчанию (предустановленный)? Как оставить только установленные пользователем словари?
 **Это может быть нужно**, если используется двуязычный (или мультиязычный) словарь, который проверяет сразу на нескольких языках и нет необходимости переключаться между ними. А сам Firefox в этом случае может сбиваться и автоматически переключаться на одноязычный словарь.
 
-**Как это сделать.** Нужно подменить список предустановленных дополнений, которым считается и словарь на свой. Содержимое этого списка оставить таким же, только удалить строку загружающую ненужный вам словарь.
+**Как это сделать.** Нужно подменить список предустановленных расширений, которым считается и словарь на свой. Содержимое этого списка оставить таким же, только удалить строку загружающую ненужный вам словарь.
 
 **По шагам:**
 1. Распаковываем `firefox/browser/omni.ja` и достаем оттуда chrome/`browser/content/browser/built_in_addons.json` (о том как **распаковать или упаковать omni.ja** инструкция ниже)
