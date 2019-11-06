@@ -5,6 +5,8 @@
 [Awesome WebExtensions](https://github.com/bfred-it/Awesome-WebExtensions) - набор ссылок на инструменты для разработки дополнений
 <br>
 [redux-webext](https://github.com/ivantsov/redux-webext) - библиотека для разработки расширений для firefox и chrome, позволяет удобно обмениваться сообщениями между background и content скриптами
+<br>
+[Deprecated tools](https://developer.mozilla.org/en-US/docs/Tools/Deprecated_tools) - список функций для разработки, который когда-то были в Firefox, но были удалены, для каждой из таких функций указан альтернативный вариант часто это расширения которые теперь можно установить отдельно
 
 [Extension source viewer](https://addons.mozilla.org/en-US/firefox/addon/crxviewer/) - можно посмотреть код дополнения Firefox прямо на странице его установки на addons.mozilla.org
 <br>
