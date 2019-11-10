@@ -424,7 +424,7 @@ javascript:void((async () => {
 sudo rm -rf /opt/firefox && sudo wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/70.0.1/linux-x86_64/ru/firefox-70.0.1.tar.bz2 -O /opt/firefox.tar.bz2 && cd /opt/ && sudo tar xjf firefox.tar.bz2 && sudo rm -rf firefox.tar.bz2 && sudo ln -s /opt/firefox/firefox /usr/bin/firefox
 
 ## вариант для thunderbird такой же
-sudo rm -rf /opt/firefox && sudo wget https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/68.2.1/linux-x86_64/ru/thunderbird-68.2.1.tar.bz2 -O /opt/thunderbird.tar.bz2 && cd /opt/ && sudo tar xjf thunderbird.tar.bz2 && sudo rm -rf thunderbird.tar.bz2 && sudo ln -s /opt/thunderbird/thunderbird /usr/bin/thunderbird
+sudo rm -rf /opt/thunderbird && sudo wget https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/68.2.1/linux-x86_64/ru/thunderbird-68.2.1.tar.bz2 -O /opt/thunderbird.tar.bz2 && cd /opt/ && sudo tar xjf thunderbird.tar.bz2 && sudo rm -rf thunderbird.tar.bz2 && sudo ln -s /opt/thunderbird/thunderbird /usr/bin/thunderbird
 ```
 
 ## Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`
