@@ -419,19 +419,21 @@ javascript:void((async () => {
 
 
 ## (Ubuntu) Установка или обновление Firefox и Thunderbird одной командой с сайта Mozilla (т.е. это установка версий Firefox и Thunderbird от Mozilla, а не от разработчиков Ubuntu)
-Сборки от Mozilla самые актуальные с своевременно закрытыми уязвимостями, вовремя обновленные и без изменений от разработчиков Ubuntu, поэтому **рекомендуется** ставить их, а не из репозитория Ubuntu. Для Ubuntu самый простой способ установить или установить или обновить Firefox с сайта Mozilla это полностью скачать архив с Firefox, распаковать его и создать ссылку на Firefox в каталоге где система может его найти (в classpth).
+Сборки от Mozilla **самые новые** с своевременно закрытыми уязвимостями, вовремя обновленные и без изменений от разработчиков Ubuntu, поэтому **рекомендуется** ставить их, а не из репозитория Ubuntu. Для Ubuntu самый простой способ установить или установить или обновить Firefox с сайта Mozilla это полностью скачать архив с Firefox, распаковать его и создать ссылку на Firefox в каталоге где система может его найти (в classpth).
 
 
 **Note.** Имя firefox (или thunderbird) не должно быть занято, если занято, то переименовать его в команде. Ссылку на firefox скопировать с сайта Mozilla. Рекомендуется **удалить** Firefox из Ubuntu перед этой командой. Старая версия firefox (или thunderbird) этой командой будет **затерта**.
 ```sh
+## Установка Firefox в /opt одной командой
 ## ссылку на архив найти и заменить на актуальную
 sudo rm -rf /opt/firefox && sudo wget https://download-installer.cdn.mozilla.net/pub/firefox/releases/70.0.1/linux-x86_64/ru/firefox-70.0.1.tar.bz2 -O /opt/firefox.tar.bz2 && cd /opt/ && sudo tar xjf firefox.tar.bz2 && sudo rm -rf firefox.tar.bz2 && sudo ln -s /opt/firefox/firefox /usr/bin/firefox
 
+## Установка Thunderbird в /opt одной командой
 ## вариант для thunderbird такой же
 sudo rm -rf /opt/thunderbird && sudo wget https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/68.2.1/linux-x86_64/ru/thunderbird-68.2.1.tar.bz2 -O /opt/thunderbird.tar.bz2 && cd /opt/ && sudo tar xjf thunderbird.tar.bz2 && sudo rm -rf thunderbird.tar.bz2 && sudo ln -s /opt/thunderbird/thunderbird /usr/bin/thunderbird
 ```
 
-После выполнения этих команд на рабочем столе создайте ярлыки с командой на запуск `firefox` и/или `thunderbird`. Иконки для ярлыков можно найти в /opt/firefox и /opt/thunderbird
+После выполнения этих команд на рабочем столе **создайте ярлыки** с командой на запуск `firefox` и/или `thunderbird`. Иконки для ярлыков можно найти в `/opt/firefox` и `/opt/thunderbird`
 
 ## Команда `-no-remote` не работает. Команда `-profile` не работает. Появляется сообщение ошибки, что `Firefox` или `Thunderbird` уже запущен. Английский вариант: `Firefox is already running, but is not responding...`
 Причина в старом [баге Firefox](https://bugzilla.mozilla.org/show_bug.cgi?id=382477). Возможно баг воспроизводится только для Linux систем. Есть [обходное решение](https://bugzilla.mozilla.org/show_bug.cgi?id=382477#c2) (я его пока не пробовал)
