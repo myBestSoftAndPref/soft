@@ -175,12 +175,12 @@
 <br>
 [Floating Player](https://addons.mozilla.org/en-US/firefox/addon/floating-player/) - по нажатию кнопки видео со страницы открывается в отдельном окне браузера
 <br>
-[Video Background Play Fix](https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/) - блокирует функции через который сайт может определить перешел пользователь на другую вкладку, минимизировал окна, включил полноэкранный режим и прочее, так например youtube не сможет определить это и не будет останавливать видео
+[Video Background Play Fix](https://addons.mozilla.org/en-US/firefox/addon/video-background-play-fix/) - блокирует функции через который сайт может определить перешел пользователь на другую вкладку, минимизировал окна, включил полноэкранный режим и прочее, так например youtube не сможет определить это и не будет останавливать видео при уходе пользователя со страницы (особенно на Android системах)
 
 ## Работа с поисковыми движками, их функционалом и интерфейсом
-[Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь расширения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл search.json.mozlz4
+[Swift Selection Search](https://addons.mozilla.org/en-US/firefox/addon/swift-selection-search/) - при выделении текста на странице появляется всплывающая подсказка через которую можно искать выделенный текст в разных поисковых системах (google, yandex, ...). Внутрь расширения можно добавлять свои поисковые системы или загружать из файла профиля (настроек) Firefox: файл `search.json.mozlz4` в профиле Firefox.
 <br>
-[mozlz4-edit](https://addons.mozilla.org/ru/firefox/addon/mozlz4-edit/) - позволяет добавлять поисковые системы Firefox вручную. Сам список поисковых систем в каталоге профиля Firefox, файл: search.json.mozlz4. <sub>После редактирования нужно перезапустить Firefox</sub>. Может просматривать файлы оканчивающиеся на "lz4" (backup закладок, сессий, отчетов об ошибках и др.)
+[mozlz4-edit](https://addons.mozilla.org/ru/firefox/addon/mozlz4-edit/) - позволяет добавлять поисковые системы Firefox вручную. Сам список поисковых систем в каталоге профиля Firefox, файл: `search.json.mozlz4` в профиле Firefox. <sub>После редактирования нужно перезапустить Firefox</sub>. Может просматривать файлы оканчивающиеся на "lz4" (backup закладок, сессий, отчетов об ошибках и др.)
 
 ## Гиковские, для продвинутых пользователей
 [NoScript](https://addons.mozilla.org/ru/firefox/addon/noscript) и [uMatrix](https://addons.mozilla.org/en-US/firefox/addon/umatrix/) <sub>не рекомендуется обычным пользователям, излишне сложно</sub> - можно отключить видео/аудио на сайтах, полезно например в дороге при дорогом и медленном трафике сотовых операторов.
@@ -220,8 +220,8 @@
   * <sub>Для интеграции **Flameshot** в систему в настройках клавиш нужно удалить связь клавиши `print` с встроенной программой скриншотов. И назначить команду `flameshot gui` для скришота области экрана, и команду `flameshot full` для скришота всего экрана.</sub>
 * [peek](https://github.com/phw/peek) (linux) - запись экрана в виде gif
   * <sub>Можно назначить например на `ctrl + print` команду `peek` для записи области экрана</sub>
-* [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (linux) - запись экрана
-* [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - линейка
+* [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder/) (linux) - запись экрана как видео
+* [KRuler](https://www.kde.org/applications/graphics/kruler/) (Kubuntu) - на экраная линейка
 * [Color Picker](https://userbase.kde.org/Plasma/ColorPicker) и [KColorChooser](https://www.kde.org/applications/graphics/kcolorchooser/) (Kubuntu) - выбор цвета
 * [qBittorrent](https://www.qbittorrent.org) - торрент клиент
 * [HTTrack](https://www.httrack.com) - копирование сайтов целиком
@@ -229,7 +229,7 @@
 * [Pidgin](https://pidgin.im) - мессенджер, поддерживает многие протоколы, особенно с [плагинами](https://developer.pidgin.im/wiki/ThirdPartyPlugins) <sub>(Skype чат, шифрование на стороне пользователей [OTR](https://en.wikipedia.org/wiki/Off-the-Record_Messaging), Facebook Chat, WhatsApp etc)</sub>
 * [Thunderbird](https://www.thunderbird.net) - почтовый клиент
 * [uGet](http://ugetdm.com/downloads) <sub>(не путать с неудобной kGet, uGet свободно работает и в KDE)</sub> - менеджер загрузок
-* [KeePassXC](https://keepassxc.org/) - менеджер паролей. Имеет расширение для интеграции с Firefox (включение в настройках программы).
+* [KeePassXC](https://keepassxc.org/) - менеджер паролей. Имеет расширение для интеграции с Firefox (включение расширения в настройках программы).
 
 # Bookmarklets
 
@@ -465,43 +465,43 @@ sudo apt purge thunderbird && sudo rm -rf /usr/lib/thunderbird && sudo rm -rf /u
 **По шагам:**
 1. Распаковываем `firefox/browser/omni.ja` и достаем оттуда chrome/`browser/content/browser/built_in_addons.json` (о том как **распаковать или упаковать omni.ja** инструкция ниже)
 2. В `chrome/browser/content/browser/built_in_addons.json` будет **примерно** такой код:
-```json
-{
-    "dictionaries": {
-        "en-US": "dictionaries/en-US.dic"
-    },
-    "system": [
-        "formautofill@mozilla.org",
-        "screenshots@mozilla.org",
-        "webcompat-reporter@mozilla.org",
-        "webcompat@mozilla.org"
-    ]
-}
-```
+    ```json
+    {
+        "dictionaries": {
+            "en-US": "dictionaries/en-US.dic"
+        },
+        "system": [
+            "formautofill@mozilla.org",
+            "screenshots@mozilla.org",
+            "webcompat-reporter@mozilla.org",
+            "webcompat@mozilla.org"
+        ]
+    }
+    ```
 3. Из него удаляем строку `"en-US": "dictionaries/en-US.dic"` (у вас словарь может иметь другое имя, особенно если предустановленный словарь у вас не английский, например `"ru-RU": "dictionaries/ru-RU.dic"` для русского словаря). Получится **примерно** такой код (просто с удаленной строка или строка**ми**):
-```json
-{
-    "dictionaries": {
-        
-    },
-    "system": [
-        "formautofill@mozilla.org",
-        "screenshots@mozilla.org",
-        "webcompat-reporter@mozilla.org",
-        "webcompat@mozilla.org"
-    ]
-}
-```
+    ```json
+    {
+        "dictionaries": {
+            
+        },
+        "system": [
+            "formautofill@mozilla.org",
+            "screenshots@mozilla.org",
+            "webcompat-reporter@mozilla.org",
+            "webcompat@mozilla.org"
+        ]
+    }
+    ```
 4. Кладем этот отредактированный файл по любому пути, например `C:\built_in_addons.json` или любому другому. **В Linux** лучше всего положить этот файл в каталог с правами доступа на запись только для суперпользователя (**sudo**), например: `/opt/built_in_addons.json`
 5. Редактируем файл `firefox/chrome.manifest` из каталога установленного Firefox (не профиля!), добавляем туда строку (новый путь к файлу `built_in_addons.json`). Код будет таким:
-```
-override chrome://browser/content/built_in_addons.json C:\built_in_addons.json
-```
+    ```
+    override chrome://browser/content/built_in_addons.json C:\built_in_addons.json
+    ```
 6. Перезапустить Firefox, готово
 
  > **Важно о безопасности этого способа!** <br> Ниже словаря есть список установленных расширений. Если для новой версии Firefox этот **список изменится**, а ваш измененный файл, которым вы подменили исходный останется тем же, то может быть ошибка. Хуже всего, что Firefox может работать даже с неправильной версией файла `built_in_addons.json`, так что при обновлении Firefox вы можете и не понять, что что-то не так. Firefox может использовать такие "системные" (system) расширения для закрытия дыр в безопасности. Если в списке такого расширения не будет, то **Firefox может остаться уязвим**. <br> **Поэтому:** нужно **при любом обновлении Firefox** распаковывать `firefox/browser/omni.ja` и проверять изменился файл `chrome/browser/content/browser/built_in_addons.json` или нет. Если изменился, то **использовать новую версию**.
 
-## Что такое файл **omni.ja** в Firefox, для чего и как работает? Как распаковать или упаковать **omni.ja**? Подробнее можно почитать [тут](https://developer.mozilla.org/en-US/docs/Mozilla/About_omni.ja_(formerly_omni.jar))
+## Что такое файл `omni.ja` в Firefox, для чего и как работает? Как распаковать или упаковать `omni.ja`? Подробнее можно почитать [тут](https://developer.mozilla.org/en-US/docs/Mozilla/About_omni.ja_(formerly_omni.jar))
 Это файл содержащий файлы Firefox упакованный в один архив для быстрейшей загрузки в память и ускорения запуска Firefox. Этот файл расположен в каталоге Firefox (не профиля, Firefox, а дистрибутива!) и делится на 2 вида: **firefox/browser/omni.ja** и **firefox/omni.ja**.
 
 Архив **firefox/browser/omni.ja** содержит файлы и настройки **по умолчанию** default (предустановленные, default).
