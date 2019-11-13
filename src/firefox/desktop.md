@@ -267,6 +267,8 @@ javascript:void((async () => {
 * [Firefox for iOS](https://www.mozilla.org/en-US/firefox/ios/16.0/releasenotes/) - **официальная мобильная,** версия для iOS на движке WebKit, т.к. iOS не поддерживает родной движок Firefox. Не поддерживает расширения, по сути это другой браузер.
 * [Firefox Focus](https://github.com/mozilla-mobile/focus-android#firefox-focus-for-android) - **официальная мобильная,** урезанная версия Firefox, в теории работает быстрее. Есть дополнительные функции, которых может не быть в обычном **Firefox for Android.** Для систем не поддерживающих родной движок Firefox использует другие движки (например в iOS).
 * [Firefox Klar](https://github.com/mozilla-mobile/focus-android#firefox-focus-for-android) - **официальная мобильная,** это **Firefox Focus** с другим именем и отключенной по умолчанию телеметрией (в **Firefox Focus** она включена по умолчанию). Эта сборка для Германии, т.к. слово в названии "focus" уже занято другой торговой маркой.
+* [Firefox Lite](https://support.mozilla.org/en-US/kb/get-started-firefox-lite) - **официальная мобильная,** похож на **Firefox Focus** тем, что использует движок из Android, а не родной для Firefox. Фактически это другой браузер. Некоторые из особенностей: встроенная возможность сохранять скриншот всей страницы и блокировка рекламы по умолчанию. Из Google Play загрузка доступна для Азиатских стран.
+* [Firefox Preview (Fenix)](https://github.com/mozilla-mobile/fenix) - **официальная мобильная,** это тестовая версия Firefox, не для обычного использования, на ней Mozilla тестирует новые разработки. Можно сказать, что это Alpha версия Firefox. Архитектура **Firefox Preview** может сильно отличаться от текущей версии Firefox.
 
 # Настройки для удобства
 
