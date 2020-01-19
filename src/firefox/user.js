@@ -84,3 +84,9 @@ user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 
 // включаем пользовательские стили интерфеса самого Firefox (которые отключены по умолчанию в новых версиях)
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+
+// отключаем what is new (whats new) кнопку и сообщение о новых дабавленных в Firefox функциях
+user_pref("devtools.whatsnew.enabled", false);
+user_pref("devtools.whatsnew.feature-enabled", false);
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
+
