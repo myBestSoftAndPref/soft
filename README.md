@@ -12,6 +12,7 @@
 
 Статьи:
 * [Firefox](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/desktop.md)
+* [Thunderbird](https://github.com/myBestSoftAndPref/soft/tree/master/src/thunderbird/desktop.md)
 * [Firefox для Android](https://github.com/myBestSoftAndPref/soft/tree/master/src/firefox/android.md)
 * [Android](https://github.com/myBestSoftAndPref/soft/tree/master/src/android/README.md)
 * [Windows](https://github.com/myBestSoftAndPref/soft/tree/master/src/win/README.md)
