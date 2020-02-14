@@ -90,3 +90,5 @@ user_pref("devtools.whatsnew.enabled", false);
 user_pref("devtools.whatsnew.feature-enabled", false);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 
+// Опционально. Отключаем запрет делать внедрение DLL в Firefox, он увеличивает стабильность, но снижает интеграцию с другими программами и системой
+// user_pref("browser.launcherProcess.enabled", false);
