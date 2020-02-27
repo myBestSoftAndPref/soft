@@ -47,3 +47,5 @@
 [Augury](https://addons.mozilla.org/en-US/firefox/addon/angular-augury/) - инструменты для Angular разработчика
 <br>
 [React Developer Tools](https://addons.mozilla.org/en-US/firefox/addon/react-devtools/) - инструменты для React + Redux разработчика
+<br>
+[Google Lighthouse](https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/) - от Google, для теста и анализа сайтов
