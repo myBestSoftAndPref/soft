@@ -11,7 +11,7 @@
 	4. [Интернет](#Интернет)
 	5. [Органайзеры и справочники](#Органайзеры-и-справочники)
 	6. [Файлы](#Файлы)
-	7. [Документы](#Документы)
+	7. [Оффис](#Оффис)
 	8. [Приватность](#Приватность)
 	9. [Игры](#Игры)
 	10. [Система](#Система)
@@ -20,7 +20,7 @@
 		2. [Математика](#Математика)
 	12. [Физика](#Физика)
 	13. [Черчение](#Черчение)
-	14. [Программирование системной администрирование](#Программирование-системной-администрирование)
+	14. [Программирование, системное администрирование](#Программирование-системное-администрирование)
 2. [Программы с закрытым кодом](#Программы-с-закрытым-кодом)
 	1. [Предупреждение](#Предупреждение)
 	2. [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий-1)
@@ -29,7 +29,7 @@
 	5. [Интернет](#Интернет-1)
 	6. [Органайзеры и справочники](#Органайзеры-и-справочники-1)
 	7. [Файлы](#Файлы-1)
-	8. [Документы](#Документы-1)
+	8. [Оффис](#Оффис-1)
 	9. [Система](#Система-1)
 3. [Советы, заметки и решение проблем](#Советы-заметки-и-решение-проблем)
 	1. [Чего не хватает в этом списке](#Чего-не-хватает-в-этом-списке)
@@ -103,7 +103,7 @@
 ## Файлы
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагины на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
 
-## Документы
+## Оффис
 * [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - **Осторожно.** Некоторые моменты вроде того что автор не позаботился даже о нормальном переводе на английский выглядят сомнительно, но удалять из списка пока не буду. Удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
 * [Cool Reader](https://sourceforge.net/projects/crengine/files/) - удобная читалка для fb2, epub, chm, rtf, doc, html и других форматов, поддерживает множество форматов и opds онлайн каталоги
 * [FBReader](https://fbreader.org/FBReaderJ) - не такая удобная, как ```Cool Reader```, но имеет возможность подключать плагины, читать с некоторым трудом .mht файлы и другие уникальные функции
@@ -154,7 +154,7 @@
 ## Черчение
 пусто
 
-## Программирование системной администрирование
+## Программирование, системное администрирование
 * [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot) - SSH клиент.
 * [androidVNC](https://f-droid.org/packages/android.androidVNC/) - удаленное управление (например компьютером) по vnc
 
@@ -216,7 +216,7 @@
 * [ZArchiver](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver) - архиватор. Создавать архивы: 7z (7zip), zip, bzip2 (bz2), gzip (gz), XZ, tar; Распаковывать архивы: 7z (7zip), zip, rar, rar5, bzip2, gzip, xz, iso, tar, arj, cab, lzh, lha, lzma, xar, tgz, tbz, Z, deb, rpm, zipx, mtz, chm, dmg, cpio, cramfs, img (fat, ntfs, ubf), wim, ecm, arc (freearc); Просматривать содержимое архивов: 7z (7zip), zip, rar, rar5, bzip2, gzip, xz, iso, tar, arj, cab, lzh, lha, lzma, xar, tgz, tbz, Z, deb, rpm, zipx, mtz, chm, dmg, cpio, cramfs, img (fat, ntfs, ubf), wim, ecm, arc (freearc);
 * [Total Commander](https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander) - двух панельный файловый менеджер. Может открывать и архивировать zip.
 
-## Документы
+## Оффис
 * [WPS Office + PDF](https://play.google.com/store/apps/details?id=cn.wps.moffice_eng) - офис, для .docx, .xls и других форматов
 * [Microsoft Office](https://play.google.com/store/apps/dev?id=6720847872553662727) - набор стандартных офисных программ от Microsoft, для .docx, .xls, презентаций и других форматов по аналогии с офисом для обычных компьютеров.
 * [Docs](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.docs), [Slides](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.slides), [Sheets](https://play.google.com/store/apps/details?id=com.google.android.apps.docs.editors.sheets) - набор офисных программ от Google
