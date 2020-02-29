@@ -4,36 +4,44 @@
 
 Если по ссылке программа не доступна (ссылка сломана), то ищите программу сами. <sub>особенно в **F-Droid** любят менять ссылки</sub>
 
-- [Программы с открытым кодом](#Программы-с-открытым-кодом)
-	- [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий)
-	- [Медиа](#Медиа)
-	- [Навигация](#Навигация)
-	- [Интернет](#Интернет)
-	- [Органайзеры и справочники](#Органайзеры-и-справочники)
-	- [Файлы](#Файлы)
-	- [Документы](#Документы)
-	- [Приватность](#Приватность)
-	- [Игры](#Игры)
-	- [Система](#Система)
-- [Программы с закрытым кодом](#Программы-с-закрытым-кодом)
-	- [Предупреждение](#Предупреждение)
-	- [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий-1)
-	- [Медиа](#Медиа-1)
-	- [Навигация](#Навигация-1)
-	- [Интернет](#Интернет-1)
-	- [Органайзеры и справочники](#Органайзеры-и-справочники-1)
-	- [Файлы](#Файлы-1)
-	- [Документы](#Документы-1)
-	- [Система](#Система-1)
-- [Советы, заметки и решение проблем](#Советы-заметки-и-решение-проблем)
-	- [Чего не хватает в этом списке](#Чего-не-хватает-в-этом-списке)
-	- [Почему ссылки на F-Droid в последнюю очередь?](#Почему-ссылки-на-f-droid-в-последнюю-очередь)
-	- [Почему может не работать авто синхронизация в некоторых программах (например в K9 Mail)?](#Почему-может-не-работать-авто-синхронизация-в-некоторых-программах-например-в-k9-mail)
-	- [Почему могут не работать сторонние будильники и таймеры?](#Почему-могут-не-работать-сторонние-будильники-и-таймеры)
-	- [Почему может не работать вход в почту (например Gmail) через K9 Mail и другие?](#Почему-может-не-работать-вход-в-почту-например-gmail-через-k9-mail-и-другие)
-	- [Почему без Google-сервисов не работает навигация в некоторых программах?](#Почему-без-google-сервисов-не-работает-навигация-в-некоторых-программах)
-	- [Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)](#Стандартные-приложения-android-от-google-в-том-числе-если-производитель-телефона-заменил-их-своими)
-	- [Запуск нескольких копий одной программы с разными настройками на Android](#Запуск-нескольких-копий-одной-программы-с-разными-настройками-на-android)
+1. [Программы с открытым кодом](#Программы-с-открытым-кодом)
+	1. [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий)
+	2. [Медиа](#Медиа)
+	3. [Навигация](#Навигация)
+	4. [Интернет](#Интернет)
+	5. [Органайзеры и справочники](#Органайзеры-и-справочники)
+	6. [Файлы](#Файлы)
+	7. [Документы](#Документы)
+	8. [Приватность](#Приватность)
+	9. [Игры](#Игры)
+	10. [Система](#Система)
+	11. [Профессиональные и не очень](#Профессиональные-и-не-очень)
+		1. [Астрономия, время, календари](#Астрономия-время-календари)
+		2. [Математика](#Математика)
+	12. [Физика](#Физика)
+	13. [Черчение](#Черчение)
+	14. [Программирование системной администрирование](#Программирование-системной-администрирование)
+2. [Программы с закрытым кодом](#Программы-с-закрытым-кодом)
+	1. [Предупреждение](#Предупреждение)
+	2. [Источники программ (магазины, репозиторий)](#Источники-программ-магазины-репозиторий-1)
+	3. [Медиа](#Медиа-1)
+	4. [Навигация](#Навигация-1)
+	5. [Интернет](#Интернет-1)
+	6. [Органайзеры и справочники](#Органайзеры-и-справочники-1)
+	7. [Файлы](#Файлы-1)
+	8. [Документы](#Документы-1)
+	9. [Система](#Система-1)
+3. [Советы, заметки и решение проблем](#Советы-заметки-и-решение-проблем)
+	1. [Чего не хватает в этом списке](#Чего-не-хватает-в-этом-списке)
+	2. [Почему ссылки на F-Droid в последнюю очередь?](#Почему-ссылки-на-f-droid-в-последнюю-очередь)
+	3. [Почему может не работать авто синхронизация в некоторых программах (например уведомления о почте в K9 Mail)?](#Почему-может-не-работать-авто-синхронизация-в-некоторых-программах-например-уведомления-о-почте-в-k9-mail)
+	4. [Почему могут не появляться уведомления (notifications) от K9 Mail и других программ? Почему некоторые программ работают с задержкой или не правильно работают в фоне (на срабатываю или завершаются)? Что делать? (Это из-за оптимизатора батареи, он их тормозит и завершает)](#Почему-могут-не-появляться-уведомления-notifications-от-k9-mail-и-других-программ-Почему-некоторые-программ-работают-с-задержкой-или-не-правильно-работают-в-фоне-на-срабатываю-или-завершаются-Что-делать-Это-из-за-оптимизатора-батареи-он-их-тормозит-и-завершает)
+	5. [Почему могут не работать сторонние будильники и таймеры?](#Почему-могут-не-работать-сторонние-будильники-и-таймеры)
+	6. [Почему может не работать вход в почту (например Gmail) через K9 Mail и другие?](#Почему-может-не-работать-вход-в-почту-например-gmail-через-k9-mail-и-другие)
+	7. [Почему без Google-сервисов не работает навигация в некоторых программах?](#Почему-без-google-сервисов-не-работает-навигация-в-некоторых-программах)
+	8. [Стандартные приложения Android от Google (в том числе если производитель телефона заменил их своими)](#Стандартные-приложения-android-от-google-в-том-числе-если-производитель-телефона-заменил-их-своими)
+	9. [Запуск нескольких копий одной программы с разными настройками на Android](#Запуск-нескольких-копий-одной-программы-с-разными-настройками-на-android)
+	10. [Про программы камеры для фото и видео и о том что же выбрать](#Про-программы-камеры-для-фото-и-видео-и-о-том-что-же-выбрать)
 
 # Программы с открытым кодом
 
@@ -41,7 +49,8 @@
 * [F-Droid](https://f-droid.org/) - репозиторий программ с открытым кодом (часто версии программ в нём устаревшие, зато проверенные). В настройках программы можно включить дополнительный источник программ от [Guardian Project](https://guardianproject.info/) (Tor, приватные мессенджеры и так далее).
 	* **Предупреждение:** [F-Droid](https://f-droid.org) перекомпилирует приложения, бывает с ошибками. Если программа не работает - пробуйте установить её из других источников, оригинально скомпилированную. Некоторые open source программы могут туда не попасть - у владельцев [F-Droid](https://f-droid.org) просто не хватает знаний на компилирование. Если open source программа использует какую-то несвободную библиотеку, то она тоже может туда не попасть, из-за политики [F-Droid](https://f-droid.org) использовать только open source программы.
 * [Aptoide](https://www.aptoide.com/) - формально код открыт, но на деле приложения хранятся онлайн на сайте aptoide.com, каждый пользователь может создать свой репозиторий. В результате - много поддельных вредоносных приложений, что-то стоящее найти очень трудно. **Не рекомендуется**, если вы не хотите сделать свой собственный репозиторий.
-* [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore) - программа может напрямую качать .apk из Google Play, обновлять и т.д.
+* [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore) - **перестал разрабатываться хотя по прежнему может работать**, программа может напрямую качать .apk из Google Play, обновлять и т.д.
+* [Aurora Store](http://auroraoss.com/) - аналог [Yalp Store](https://f-droid.org/repository/browse/?fdfilter=store&fdid=com.github.yeriomin.yalpstore) (часть кода из него), но со своими фичами и активно разрабатывается.
 
 ## Медиа
 * [VLC](http://download.videolan.org/pub/videolan/vlc-android/) - универсальный плеер для аудио и видео, играет почти все существующие форматы. В нем иногда встречаются баги, и CPU может нагружать.
@@ -56,15 +65,24 @@
 * [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ## Интернет
-* [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент. Для работы с GMail и некоторыми другими сервисами нужно зайти в сервис с браузера и включить возможность доступа программам к почте.
-  * **Прим.** чтобы работать с gmail нужно в настройках аккаунта google в разделе "Безопасность" (Security) разрешить подключение "небезопасных приложений" (less security application); на самом деле никакой опасности тут нет. (если ссылка не изменилась, то менять [тут](https://myaccount.google.com/lesssecureapps))
-* [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом формата etc. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/android.md)
-* [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
-* [Tor Browser](https://play.google.com/store/apps/details?id=org.torproject.torbrowser) - анонимный браузер от проекта Tor.
-* [Orbot](https://play.google.com/store/apps/details?id=org.torproject.android) - программа для подключения к цепочке анонимных прокси от проекта Tor.
-* [Download Navi - Download Manager](https://github.com/TachibanaGeneralLaboratories/download-navi) или [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения и прочее. **Note:** _GigaGet Download Manager_ таинственно исчезла со всех ресурсов.
-* [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
-* [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) или [Torrent Client](https://f-droid.org/packages/com.github.axet.torrentclient/) - торрент клиент
+* **Менеджеры загрузок, ftp клиенты, торрент клиенты**
+  * [LibreTorrent](https://f-droid.org/repository/browse/?fdfilter=torrent&fdid=org.proninyaroslav.libretorrent) или [Torrent Client](https://f-droid.org/packages/com.github.axet.torrentclient/) - торрент клиент
+  * [Download Navi - Download Manager](https://github.com/TachibanaGeneralLaboratories/download-navi) или [GigaGet Download Manager](https://f-droid.org/repository/browse/?fdfilter=GigaGet&fdid=us.shandian.giga) - менеджер загрузок, может качать в несколько потоков, можно выбрать каталог сохранения и прочее. **Note:** _GigaGet Download Manager_ таинственно исчезла со всех ресурсов.
+* **Мессенджеры**
+  * [Conversations](https://f-droid.org/repository/browse/?fdfilter=conversation&fdid=eu.siacs.conversations) - обмен сообщениями по протоколу XMPP (Jabber), поддерживает стойкое к взлому шифрование OTR на стороне клиента. То есть через него можно абсолютно приватно общаться с другом (для работы нужно зарегистрироваться на любом XMPP сервере)
+* **Почтовые клиенты**
+  * [K-9 Mail](https://github.com/k9mail/k-9/releases) - почтовый клиент. Для работы с GMail и некоторыми другими сервисами нужно зайти в сервис с браузера и включить возможность доступа программам к почте.
+    * **Note.** чтобы работать с gmail нужно в настройках аккаунта google в разделе "Безопасность" (Security) разрешить подключение "небезопасных приложений" (less security application); на самом деле никакой опасности тут нет. (если ссылка не изменилась, то менять [тут](https://myaccount.google.com/lesssecureapps))
+    * **Note.** В **K9 Mail** может быть баг с тем что синхронизация (получение уведомлений о приходе писем) не срабатывает когда авто-синхронизация включена в настройках или вы можете хотеть синхронизацию в **K9 Mail** когда она отключена в телефоне. Для вкючения синхронизации зайдите в настройки, пункт **Сеть** (Network) и поставить **Фоновая синхронизация** (Background sync) в значение **всегда** (always)
+    * **Note.** Чтобы **гарантированно получать уведомления** о новой почте не забудьте отключить в настройках батареи все оптимизации батареи, отключите и общие и конкретно для **K9 Mail**. В настройках прав (разрешений) разрешите для **K9 Mail** все что можно.
+  * [Librem Mail](https://f-droid.org/en/packages/one.librem.mail/) - ответвление от **K9 Mail**, с поддержкой шифрование end-to-end (т.е. сообщение зашифровано и владелец почтового сервера не может его прочитать)
+  * [FairEmail](https://play.google.com/store/apps/details?id=eu.faircode.email) - почтовый клиент
+* **Браузеры**
+  * [Firefox](https://ftp.mozilla.org/pub/mobile/releases/) - браузер, может блокировать рекламу и сохранять/открывать страницы одним файлом через установленные расширения etc. Больше о его настройке по [ссылке](https://github.com/myBestSoftAndPref/soft/blob/master/src/firefox/android.md)
+  * [Chromium](https://download-chromium.appspot.com/?platform=Android&type=snapshots) - браузер на основе которого делается Chrome
+  * [Tor Browser](https://play.google.com/store/apps/details?id=org.torproject.torbrowser) - анонимный браузер от проекта Tor.
+* **Разное**
+  * [Orbot](https://play.google.com/store/apps/details?id=org.torproject.android) - программа для подключения к цепочке анонимных прокси от проекта Tor.
 
 ## Органайзеры и справочники
 * [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика
@@ -73,21 +91,17 @@
 * [QuickDic restored](https://github.com/rdoeffinger/Dictionary/releases) - словарь иностранных слов, работает без интернета
 * [QDict](https://github.com/madmanteam/QDict) - словарь, поддерживает формат ```StarDict``` в котором существует очень много словарей
 * [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
-* [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
 * [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп. Есть [новая версия](https://play.google.com/store/apps/details?id=net.androgames.level) этой программ на **Google Play**, но она содержит рекламу.
 * [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (граммы в пинты, килограммы, футы в метры и так далее)
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
-* [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
-* [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) и [KStars](https://edu.kde.org/kstars/) - карта звездного неба (созвездия, астрономические данные и т.д.)
 * [SpeedMeter](https://play.google.com/store/apps/details?id=fly.speedmeter.grub) - опеределение скорости движения на основе данных GPS.
 * [Forecastie](https://play.google.com/store/apps/details?id=com.casticalabs.forecastie) - просмотр данных о погоде из сети (температура, давление, осадки и прочее), есть карта температур, ветров, дождей и графики.
 * [Weather](https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyweather) - удобный просмотр погоды по городам, но нет карты погоды.
 * [PalmCalc 2019+](https://f-droid.org/en/packages/com.github.palmcalc2019.palmcalc/) - это ответвление от популярного калькулятора **PalmCalc**, код оригинальной версии больше не открытый, и оригинальный **PalmCalc** почему-то удален из Google Play. Сайт оригинального PalmCalc: http://palmcalc.com/
-* [microMathematics Plus](https://play.google.com/store/apps/details?id=com.mkulesh.micromath.plus) (μMath+), [GNURoot Octave](https://play.google.com/store/apps/details?id=com.gnuroot.octave) <sup>(для работы нужен root)</sup>, [octave4android](https://github.com/corbinlc/octave4android), [Addi](https://play.google.com/store/apps/details?id=com.addi), [Mather](https://f-droid.org/repository/browse/?fdid=org.icasdri.mather) <sup>(можно писать формулы на Math.js)</sup>  - математические среды для вычислений, построений графиков и прочего. Подойдет студентам и всем кому нужна высшая математика.
-* [Lifeograph](https://play.google.com/store/apps/details?id=net.sourceforge.lifeograph) - дневник с зашифрованными записями, есть [версия для настольной](http://lifeograph.sourceforge.net/wiki/Main_Page)
+* [Lifeograph](https://play.google.com/store/apps/details?id=net.sourceforge.lifeograph) - дневник с зашифрованными записями, есть [версия для настольного компьютера](http://lifeograph.sourceforge.net/wiki/Main_Page)
 
 ## Файлы
-* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагину на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
+* [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагины на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
 
 ## Документы
 * [920 Text Editor](https://github.com/jecelyin/920-Text-Editor-old/tree/master/apk) - **Осторожно.** Некоторые моменты вроде того что автор не позаботился даже о нормальном переводе на английский выглядят сомнительно, но удалять из списка пока не буду. Удобный блокнот, просмотр и редактирование множества форматов, подсветка синтаксисов
@@ -108,22 +122,41 @@
 * [PPSSPP](http://www.ppsspp.org/downloads.html) - эмулятор консоли PlayStation Portable
 
 ## Система
-* [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
-* [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление авто поворотом для каждой программы отдельно
-* [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
-* [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный легкий рабочий стол (launcher)
-* [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - показывает информацию о процессах, соединениях, использовании памяти, процессоре и т. д.
-* [Hacker's Keyboard](https://github.com/klausw/hackerskeyboard/releases) - полноценная клавиатура с ctrl, стрелками, отображением английских символов на русских клавишах и т.д. Словари языков почему-то есть только в Google Play.
-* [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
-* [SD Scanner](https://f-droid.org/en/packages/com.gmail.jerickson314.sdscanner/) - для многих относительно старых систем Android список файлов не обновляется при подключении к компьютеру и новые файлы не видны сразу. Эта программа обновляет состояние.
-* [androidVNC](https://f-droid.org/packages/android.androidVNC/) - удаленное управление (например компьютером) по vnc
-* [Save For Offline](https://f-droid.org/packages/jonas.tool.saveForOffline/) - добавляет в меню "поделиться" (share) возможность сохранить файл, например так можно сохранять файлы в Mozilla Firefox
-* [KDE Connect](https://f-droid.org/packages/org.kde.kdeconnect_tp/) - позволяют интегрироваться с KDE (Kubuntu и другими linux системами с KDE) или Gnome (Ubuntu GNOME и др.) с установленным расширением GSConnect. Пересылать файлы, управлять телефоном и прочее по USB кабелю и Wi-Fi сети.
-* [KISS Launcher](https://github.com/Neamar/KISS) - легкий launcher, помогает экономить батарею.
-* [OpenLauncher](https://github.com/OpenLauncherTeam/openlauncher) - еще один open source launcher.
+* **Лаунчеры** (launchers) - графические оболочки
+  * [Lawnchair 2](https://play.google.com/store/apps/details?id=ch.deletescape.lawnchair.plah) - одна из немногих качественных, красивых и удобных оболочек. Если в системе используется несколько профилей, то в меню программ будут вкладки для каждого профиля, есть галочка приостановки профиля. Можено настроить для экономии заряда в Amoled дисплее использование настоящего черного цвета.
+  * [ADW.Launcher](https://f-droid.org/repository/browse/?fdfilter=launcher&fdid=org.adw.launcher) - альтернативный легкий рабочий стол (launcher)
+* **Разное**
+  * [Rotation Lock + Landscape](https://f-droid.org/repository/browse/?fdfilter=search&fdid=org.cmotc.tools.rotationlockpp&fdpage=4) - кнопка в шторку для блокировки переворота экрана
+  * [Rotation Manager](https://f-droid.org/repository/browse/?fdfilter=rotate&fdid=com.spydiko.rotationmanager_foss) - управление авто поворотом для каждой программы отдельно
+  * [Twisted Home Manager](https://f-droid.org/repository/browse/?fdfilter=twisted+home&fdid=com.twsitedapps.homemanager) - менеджер рабочих столов (launcher)
+  * [OS Monitor](https://f-droid.org/repository/browse/?fdfilter=OS+Monitor&fdid=com.eolwral.osmonitor) - **работает только на старых версиях Android**, показывает информацию о процессах, соединениях, использовании памяти, процессоре и т. д.
+  * [Hacker's Keyboard](https://github.com/klausw/hackerskeyboard/releases) - полноценная клавиатура с ctrl, стрелками, отображением английских символов на русских клавишах и т.д. Словари языков почему-то есть только в Google Play.
+  * [DiskUsage](https://f-droid.org/repository/browse/?fdfilter=diskusage&fdid=com.google.android.diskusage) - удобное отображение занимаемого файлами пространства, для удаления ненужных файлов
+  * [SD Scanner](https://f-droid.org/en/packages/com.gmail.jerickson314.sdscanner/) - для многих относительно старых систем Android список файлов не обновляется при подключении к компьютеру и новые файлы не видны сразу. Эта программа обновляет состояние.
+  * [Save For Offline](https://f-droid.org/packages/jonas.tool.saveForOffline/) - добавляет в меню "поделиться" (share) возможность сохранить файл, например так можно сохранять файлы в Mozilla Firefox
+  * [KDE Connect](https://f-droid.org/packages/org.kde.kdeconnect_tp/) - позволяют интегрироваться с KDE (Kubuntu и другими linux системами с KDE) или Gnome (Ubuntu GNOME и др.) с установленным расширением GSConnect. Пересылать файлы, управлять телефоном и прочее по USB кабелю и Wi-Fi сети.
+  * [Shelter](https://play.google.com/store/apps/details?id=net.typeblog.shelter) - запускает программы в изоляции от остальной системы, можно запустить две разных копии одного приложения, например войти в два разных аккаунта Skype одновременно. Создает и использует только один профиль `Work` со слепком программ и сервисов системы (профили кроме основного в новых системах Android можно останавливать и так остановить все приложения в профиле, например в [Lawnchair 2](https://play.google.com/store/apps/details?id=ch.deletescape.lawnchair.plah) в меню программ есть галочка для этого и вкладки с разделением программ по профилям).
+  * [J2ME Loader](https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloader) - может запускать программы и игры на java (j2me) от старых телефонов.
+
+## Профессиональные и не очень
+### Астрономия, время, календари
+* [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
+  * [Suntimes Calendars](https://f-droid.org/en/packages/com.forrestguice.suntimescalendars/) - дополнение к **Suntimes**, может добавить в стандартный календарь (к датам календаря) время восхода, заката, фазы луны и прочее
+* [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) и [KStars](https://edu.kde.org/kstars/) - карта звездного неба (созвездия, астрономические данные и т.д.)
+* [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
+
+### Математика
+* [microMathematics Plus](https://play.google.com/store/apps/details?id=com.mkulesh.micromath.plus) (μMath+), [GNURoot Octave](https://play.google.com/store/apps/details?id=com.gnuroot.octave) <sup>(для работы нужен root)</sup>, [octave4android](https://github.com/corbinlc/octave4android), [Addi](https://play.google.com/store/apps/details?id=com.addi), [Mather](https://f-droid.org/repository/browse/?fdid=org.icasdri.mather) <sup>(можно писать формулы на Math.js)</sup>  - математические среды для вычислений, построений графиков и прочего. Подойдет студентам и всем кому нужна высшая математика.
+
+## Физика
+пусто
+
+## Черчение
+пусто
+
+## Программирование системной администрирование
 * [ConnectBot](https://play.google.com/store/apps/details?id=org.connectbot) - SSH клиент.
-* [Shelter](https://play.google.com/store/apps/details?id=net.typeblog.shelter) - запускает программы в изоляции от остальной системы, можно запустить две разных копии одного приложения, например войти в два разных аккаунта Skype одновременно.
-* [J2ME Loader](https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloader) - может запускать программы и игры на java (j2me) от старых телефонов.
+* [androidVNC](https://f-droid.org/packages/android.androidVNC/) - удаленное управление (например компьютером) по vnc
 
 # Программы с закрытым кодом
 
@@ -145,21 +178,30 @@
 * [Shazam](https://play.google.com/store/apps/details?id=com.shazam.android) - по звуку через микрофон определяет исполнителя музыки, может искать по тексту песни и названию альбома.
 
 ## Навигация
-* [Yandex.Metro](https://play.google.com/store/apps/details?id=ru.yandex.metro) - навигация по веткам метро для: Москвы, Санкт-Петербурга, Киева, Харькова, Минска и Стамбула.
+* [Yandex.Metro](https://play.google.com/store/apps/details?id=ru.yandex.metro) - навигация по веткам метро для: Москвы, Санкт-Петербурга, Киева, Харькова, Минска и Стамбула и других
 * [Yandex.Maps](https://play.google.com/store/apps/details?id=ru.yandex.yandexmaps) - карты от yandex.
 * [Google Maps](https://play.google.com/store/apps/details?id=com.google.android.apps.maps) - карты от Google с возможностью скачивать области для offline навигации.
 
 ## Интернет
-* [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome) - браузер от Google.
-* [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик.
-* [Yandex.Browser Lite](https://play.google.com/store/apps/details?id=com.yandex.browser.lite) - браузер, легковесный вариант Yandex.Browser экономящий батарею и ресурсы.
-* [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
-* [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
-* [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - видео звонки и чат
-* [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - видео звонки и чат
-* [Discord - Chat for Gamers](https://play.google.com/store/apps/details?id=com.discord) - видео звонки и чат
-* [Google Duo](https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon) - видео звонки, нацелен на высокое качество видео даже с плохим сигналом
-* [Hangouts](https://play.google.com/store/apps/details?id=com.google.android.talk) - видео звонки и чат
+* **Менеджеры загрузок, ftp клиенты, торрент клиенты**
+  * пусто
+* **Мессенджеры**
+  * [Skype](https://play.google.com/store/apps/details?id=com.skype.raider) - видео звонки и чат
+  * [Viber](https://play.google.com/store/apps/details?id=com.viber.voip) - видео звонки и чат
+  * [Telegram](https://play.google.com/store/apps/details?id=org.telegram.messenger) - видео звонки и чат
+  * [WhatsApp Messenger](https://play.google.com/store/apps/details?id=com.whatsapp) - видео звонки и чат
+  * [Discord - Chat for Gamers](https://play.google.com/store/apps/details?id=com.discord) - видео звонки и чат
+  * [Google Duo](https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon) - видео звонки, нацелен на высокое качество видео даже с плохим сигналом
+  * [Hangouts](https://play.google.com/store/apps/details?id=com.google.android.talk) - видео звонки и чат, ограничение на количество человек в групповом звонке
+  * [Slack](https://play.google.com/store/apps/details?id=com.Slack) - развитый мессенджер в котором можно создавать под темы сообщений, есть звонки и много других функций. В бесплатной версии ограничение на 10 000 сообщений, нет групповых звонков и невозможность демонстрации экрана.
+* **Почтовые клиенты**
+  * пусто
+* **Браузеры**
+  * [Google Chrome](https://play.google.com/store/apps/details?id=com.android.chrome) - браузер от Google.
+  * [Yandex.Browser](https://browser.yandex.by/mobile) - браузер на основе Chromium, сжимает трафик.
+  * [Yandex.Browser Lite](https://play.google.com/store/apps/details?id=com.yandex.browser.lite) - браузер, легковесный вариант Yandex.Browser экономящий батарею и ресурсы.
+* **Разное**
+  * пусто
 
 ## Органайзеры и справочники
 * [GoldenDict](https://play.google.com/store/apps/details?id=mobi.goldendict.android.free) - словарь, бесплатная версия имеет ограничение по количеству подключенных словарей. Полностью поддерживает словари форматов Lingvo, Babylon, StarDict, Lingoes и Dictd. Существует одноименная версия с открытым кодом для обычных компьютеров, но для Android версии код закрыт.
@@ -197,14 +239,27 @@
 ## Почему ссылки на F-Droid в последнюю очередь?
 Ссылки даны на официальные сайты. Если прямых ссылок на ```.apk``` на официальном сайте нет, то ссылка на [Google Play](https://play.google.com/store). Если в [Google Play](https://play.google.com/store) нету, то ссылка на [F-Droid](https://f-droid.org). Если на официальном сайте ссылка на ```.apk``` ведет на другой сторонний источник (магазин), то ссылка на него.
 
-Почему приоритет у **Google Play**, а не у **F-Droid**? Потому что в **F-Droid** обновления задерживаются, а программы бывает пересобираются с ошибками. И потому что из **Google Play** можно выкачать программу напрямую через программу [Yalp Store](https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/)
+Почему приоритет у **Google Play**, а не у **F-Droid**? Потому что в **F-Droid** обновления задерживаются, а программы бывает пересобираются с ошибками. И потому что из **Google Play** можно выкачать программу напрямую через программу [Yalp Store](https://f-droid.org/en/packages/com.github.yeriomin.yalpstore/) или [Aurora Store](http://auroraoss.com/)
 
-## Почему может не работать авто синхронизация в некоторых программах (например в K9 Mail)?
+## Почему может не работать авто синхронизация в некоторых программах (например уведомления о почте в K9 Mail)?
 Некоторые программы, например [K-9 Mail](https://github.com/k9mail/k-9/releases) и его **авто синхронизация**, включают синхронизацию только если синхронизация включена в настройках сети Android. Чтобы все работало **авто синхронизацию** нужно включить в настройках Android, и в пункте **Учетные записи** отключить синхронизации для каждой ненужной программы **отдельно**.
+
+**Note.** На самом деле в настроках сети в [K-9 Mail](https://github.com/k9mail/k-9/releases) можно включить авто синхронизацию всегда даже если в Android она выключена.
 
 Пункт в настройках Android под названием `Счетчик данных > Ограничить фоновые данные` тоже может заблокировать синхронизацию.
 
+Различные оптимизации батареи - это встроенные программы в Android которые могут отключать или замедлять работу других программы, которые по их мнению расходуют много заряда. Нужно поискать в меню Android все что связано с батареей и отключить оптимизации.
+
 **Note:** в разных версиях Android названия пунктов меню и настройки могут отличаться.
+
+## Почему могут не появляться уведомления (notifications) от K9 Mail и других программ? Почему некоторые программ работают с задержкой или не правильно работают в фоне (на срабатываю или завершаются)? Что делать? (Это из-за оптимизатора батареи, он их тормозит и завершает)
+
+Чтобы сэкономить заряд в Android есть программы оптимизирующие батарею. Они тормозят и / или завершают программы которые по их мнению расходуют батарею слишком сильно. Они могут не давать показывать им уведомления или не давать срабатывать иногда когда экран телефона погашен или пользователь ими не пользуется (в фоне). В разных версиях Android меню и параметры **разные**, поэтому нужно найти в **настройках** телефона все что связано с батареей и поискать все возможные настройки **оптимизации батареи** и отключить их для всех или для нужных программ.
+
+**Пример для Android 9 Pie:**
+1. Configuration > Battery > Battery Saver - **выключить**
+2. Configuration > Battery > Adaptive Battery - **выключить**
+3. Configuration > Battery > `Triple dot menu` > Battery usage > `Triple dot menu` > Show full device usage - появится список программ в котором нужно выбрать нужную программу, найти там пункт Battery optimization и **отключить** оптимизацию для конкретной программы
 
 ## Почему могут не работать сторонние будильники и таймеры?
 **Внимательно** проверяйте работу сторонних таймеров, будильников etc, случаи когда производитель меняет настройки системы так, что они иногда не срабатывают были и есть! 
@@ -236,6 +291,12 @@
 * [Clock](https://play.google.com/store/apps/details?id=com.google.android.deskclock) - стандартный набор программ будильника: будильник, таймер, секундомер. **Осторожно,** может не всегда срабатывать, лучше используйте родной будильник системы!
 * [Google Рукописный ввод](https://play.google.com/store/apps/details?id=com.google.android.apps.handwriting.ime) (handwriting) - стандартная клавиатура для рукописного ввода.
 * [Dialer](https://play.google.com/store/apps/details?id=com.google.android.dialer) (Телефон) - стандартная программа для телефонных звонков.
+* [Google Camera](https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera) - для моделей телефонов не от Google может не находиться через **приложение** Google Play, но будет видна через **сайт** Google Play. Скачать можно через [Aurora Store](http://auroraoss.com/) установив там подмену модели телефона на телефон от Google.
 
 ## Запуск нескольких копий одной программы с разными настройками на Android
 Используйте программу [Shelter](https://play.google.com/store/apps/details?id=net.typeblog.shelter)
+
+## Про программы камеры для фото и видео и о том что же выбрать
+Сейчас на разных телефонах устанавливаются разные наборы камер, с разными функциями, разным количеством камер. Есть большая вероятность что все функции камер телефона будут доступны только в родной камере. Все другие камеры будут иметь только ограниченные функции не смотря на то что в них может быть больше режимов.
+
+**Этот раздел не закончен, тут еще будет про  camera api, мегапиксели и о том что лучше выбрать!**
