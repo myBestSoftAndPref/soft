@@ -41,9 +41,17 @@ user_pref("browser.onboarding.enabled", false); //отключаем надое�
 // ссылки на русском будут копироваться как есть, без кодирования
 user_pref("browser.urlbar.decodeURLsOnCopy", true);
 
+// Судя по всему нужно отключать некоторые виды отправки статистики на анализ безопасности в гугл и другие сервисы отдельно каждый, просто снять галочки недостаточно
 //отдельно отключаем отправку хэшей загружаемых файлов в гугл для проверки на вредоносность
 //хотя по идеи она и так должна быть отключена при отключении browser.safebrowsing через стандартные настройки
+user_pref("browser.safebrowsing.malware.enabled", false);
+user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.safebrowsing.passwords.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
+user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
+user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 // Отключает посылку статистики при обновлении аддонов.
