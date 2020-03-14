@@ -314,18 +314,18 @@ toolbarbutton > .toolbarbutton-badge-stack > .toolbarbutton-badge {
 
 /* #################### "parts/fixes.css"; */
 
-/* 2. fix of top window padding (for Win7) */
+/* 2. fix of top window padding (for Win10) */
 
 @media (-moz-os-version: windows-win10) {
-    #main-window[sizemode="maximized"] {
-      padding-top: 7.2px !important; 
+    #main-window[sizemode="maximized"] #nav-bar {
+      padding-top: 7.2px !important;
     }
   }
   
   
-  /* 2. fix of top nav-bar padding (for Win7) */
-  @media (-moz-os-version: windows-win7) {
-      #nav-bar {
-          padding-top: 7.2px !important;
-      }
+/* 2. fix of top nav-bar padding (for Win7) */
+@media (-moz-os-version: windows-win7) {
+  #main-window[sizemode="maximized"] #nav-bar {
+    padding-top: 7.2px !important;
   }
+}
