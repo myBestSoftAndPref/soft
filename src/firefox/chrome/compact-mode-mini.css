@@ -1,0 +1,331 @@
+/* #################### "parts/titlebar.css"; */
+
+/* hide tab bar when Firefox has compact mode */
+#main-window[sizemode="maximized"][uidensity="compact"]  #titlebar,
+#main-window[sizemode="maximized"][uidensity="compact"]  #titlebar * {
+    visibility: collapse !important;
+}
+
+/* #################### "parts/tabbar-mini.css"; */
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #alltabs-button,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #new-tab-button,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs tab .tab-background .tab-line,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs .tabs-newtab-button,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs tab .tab-close-button {
+    display: none !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar .tab-content {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-text.tab-label,
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar #tabbrowser-tabs > .tabbrowser-arrowscrollbox {
+    min-height: 15px !important;
+    height: 15px !important;
+    max-height: 15px !important;
+
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab {
+    font-size: 12px !important;
+    border-right: 2px solid black !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab::after {
+    display: none !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-icon-image {
+    background-color: #EFF0F1 !important;
+    margin: 0 !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-text.tab-label {
+    line-height: 12px !important;
+}
+
+
+/* #################### "parts/tabbar-mini-highlight.css"; */
+
+/* should be included after tabbar-mini.css */
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab .tab-content {
+    background-color: white !important;
+    color: black !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[selected="true"] .tab-content {
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[multiselected="true"]:not([selected="true"]) .tab-content {
+    background-color: #d2d2d2 !important;
+}
+
+/* #################### "parts/tabbar-mini-tab-states-indication.css"; */
+
+/* should be included after tabbar-mini.css */
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[notselectedsinceload="true"] * {
+    text-decoration: underline !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[pending="true"] * {
+    text-decoration: line-through !important;
+}
+
+#main-window[sizemode="maximized"][uidensity="compact"] #navigator-toolbox > #TabsToolbar tab[busy="true"] * {
+    text-decoration: wavy underline !important;
+}
+
+
+/* #################### "parts/sidebar.css"; */
+
+/* hide sidebar-header in compact mode */
+#main-window[sizemode="maximized"][uidensity="compact"] #sidebar-header {
+    visibility: collapse !important;
+}
+
+/* unrestricted sidebar width */
+#sidebar,
+#sidebar-header,
+#sidebar-box {
+    overflow: hidden !important;
+    min-width: 0px !important;
+    max-width: 9999px !important;
+}
+
+#sidebar-splitter {
+    width: 0px !important;
+    border-right: 1px inset black !important;
+}
+
+
+/* #################### "parts/urlbar.css"; */
+
+#urlbar {
+    margin: 0 !important;
+}
+
+#urlbar-container,
+#urlbar-container .urlbar-page-action,
+#urlbar-container .urlbar-page-action > .urlbar-icon {
+    padding: 0 !important;
+}
+
+#urlbar .urlbar-input-box {
+    font-size: 16px !important;
+    font-family: Tahoma, Geneva, sans-serif !important;
+}
+
+#urlbar .urlbar-history-dropmarker,
+#urlbar .urlbar-history-dropmarker .dropmarker-icon {
+    padding: 0px !important;
+}
+
+/* ************************ */
+/* fixes */
+/* ************************ */
+
+/* 1. fix urlbar vertical scroll */
+.urlbar-input-box > * {
+    margin-top: -2px !important;
+    margin-bottom: -2px !important;
+}
+#page-action-buttons {
+  margin-bottom: 1px !important;
+}
+
+#page-action-buttons > #contextual-feature-recommendation > #cfr-label-container > #cfr-label {
+  padding: 0 !important;
+  min-height: 16px !important;
+  max-height: 16px !important;
+  height: 16px !important;
+}
+
+/* 2. fix urlbar history-dropmarker padding */
+#urlbar .urlbar-history-dropmarker {
+    padding-left: 4px !important;
+}
+
+#page-action-buttons {
+	height: 16px !important;
+	min-height: 16px !important;
+	max-height: 16px !important;
+}
+
+#userContext-icons, #urlbar-zoom-button {
+    margin: 0 !important;
+}
+
+/* skype icon and other icons margin */
+#userContext-icons description, #userContext-icons label {
+    margin: 0 !important;
+}
+
+/* #################### "parts/navbar.css"; */
+
+#nav-bar toolbarbutton {
+    margin-right: 3px !important;
+}
+
+#nav-bar toolbarbutton:last-child {
+    margin: 0 !important;
+}
+
+#nav-bar toolbarbutton,
+#nav-bar toolbarbutton > .toolbarbutton-badge-stack,
+#nav-bar toolbarbutton .toolbarbutton-icon {
+    padding: 0 !important;
+    height: 20px !important;
+    min-height: 20px !important;
+    max-height: 20px !important;
+    border-radius: 0 !important;
+}
+
+#nav-bar toolbarbutton > .toolbarbutton-badge-stack {
+    padding: 0 !important;
+}
+
+toolbarbutton > .toolbarbutton-badge-stack > .toolbarbutton-badge {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+:root[uidensity="compact"] .toolbarbutton-badge {
+    margin-inline-end: 0px !important;
+}
+
+/* ************************ */
+/* fixes */
+/* ************************ */
+
+/* 1. stop reload button width fix */
+#stop-reload-button {
+    width: 28px !important;
+    min-width: 28px !important;
+    max-width: 28px !important;
+}
+
+/* #################### "parts/urlbar-identity-box.css"; */
+
+/* the rule no need for new Firefox 70+ cause identity box is hidden by default, the rule is going to be deleted soon */
+
+/* hide url bar identity-box ssl advance info */
+#identity-box #identity-icon-labels {
+    display: none !important;
+}
+
+#identity-box:hover #identity-icon-labels {
+    display: inherit !important;
+}
+
+/* ************************ */
+/* fixes */
+/* ************************ */
+
+/* 1. identity-icon-labels height fix */
+#identity-icon-labels {
+    height: 18px !important;
+    min-height: 18px !important;
+    max-height: 18px !important;
+}
+
+/* #################### "parts/bookmarkbar.css"; */
+
+/* minimize bookmarkbar */
+#PersonalToolbar {
+    padding: 0 !important;
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item {
+    padding: 0 !important;
+    margin: 0 1px 0 0 !important;
+    min-width: 28px !important;
+    border-radius: 0 !important;
+}
+
+#PlacesToolbar toolbarbutton {
+    box-shadow: inset 0px 0px 82px -53px rgba(0, 0, 0, 0.75);
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item[open="true"] {
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    text-align: left !important;
+    padding-left: 2px !important;
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item[type="menu"] > .toolbarbutton-icon {
+    display: none !important;
+}
+
+#PersonalToolbar,
+#PlacesToolbar toolbarbutton.bookmark-item,
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    height: 13px !important;
+    min-height: 13px !important;
+    max-height: 13px !important;
+
+}
+
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    font-size: 12px !important;
+    font-family: Tahoma, Geneva, sans-serif !important;
+    margin-top: -6px !important;
+}
+
+.bookmark-item > menupopup menuitem.bookmark-item {
+
+}
+
+#PlacesToolbarItems > .bookmark-item > .toolbarbutton-icon[label]:not([label=""]) {
+    margin-inline-end: 0px !important;
+}
+
+/* KDE 5.8 fix */
+
+#PlacesToolbar toolbarbutton.bookmark-item > .toolbarbutton-text {
+    padding-top: 3px;
+}
+
+
+/* #################### "parts/menu-bar.css"; */
+
+#toolbar-menubar[autohide="true"] {
+    position: absolute !important;
+    z-index: 4 !important;
+}
+
+#toolbar-menubar[autohide="true"] > #menubar-items {
+    background: rgba(245, 246, 247, 0.9) !important;
+    box-shadow: inset 2px 2px 24px -6px rgba(0, 0, 0, 0.75);
+}
+
+#toolbar-menubar {
+    padding: 0 !important;
+}
+
+/* #################### "parts/fixes.css"; */
+
+/* 2. fix of top window padding (for Win7) */
+
+@media (-moz-os-version: windows-win10) {
+    #main-window[sizemode="maximized"] {
+      padding-top: 7.2px !important; 
+    }
+  }
+  
+  
+  /* 2. fix of top nav-bar padding (for Win7) */
+  @media (-moz-os-version: windows-win7) {
+      #nav-bar {
+          padding-top: 7.2px !important;
+      }
+  }
