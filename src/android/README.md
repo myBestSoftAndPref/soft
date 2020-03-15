@@ -62,7 +62,7 @@
 
 ## Навигация
 * [OsmAnd~](https://f-droid.org/packages/net.osmand.plus/) (OsmAnd+) - показывает карты OpenStreetMap без интернета (не путать с версией из Google Play в которой есть **ограничение** на количество используемых карт, версия F-Droid пересобрана **без этих ограничений**). <sub>Вы должны понимать, что не смотря на все плюсы данные карты **не заменят** ```Google Maps``` или ```Yandex Maps```, которые сделаны более профессионально</sub>
-* [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
+* [GPSTest](https://play.google.com/store/apps/details?id=com.android.gpstest) или [SatStat](https://f-droid.org/repository/browse/?fdfilter=satstat&fdid=com.vonglasow.michael.satstat) - показывает найденные спутники, полезно чтобы знать в какой местности какая точность позиционирования
 
 ## Интернет
 * **Менеджеры загрузок, ftp клиенты, торрент клиенты**
@@ -90,7 +90,7 @@
 * [Omni Notes](https://github.com/federicoiosue/Omni-Notes) - развитое приложение для to do заметок разных типов (текст, аудио и прочее)
 * [QuickDic restored](https://github.com/rdoeffinger/Dictionary/releases) - словарь иностранных слов, работает без интернета
 * [QDict](https://github.com/madmanteam/QDict) - словарь, поддерживает формат ```StarDict``` в котором существует очень много словарей
-* [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
+* [Binary Eye](https://play.google.com/store/apps/details?id=de.markusfisch.android.binaryeye) или [Barcode Scanner](https://github.com/zxing/zxing/releases) - сканер штрих кодов, QR кодов и их создание с поиском информации по ним через интернет браузер
 * [Bubble](https://f-droid.org/repository/browse/?fdid=net.androgames.level) - строительный уровень, показывает угол наклона поверхностей на основе датчика гироскоп. Есть [новая версия](https://play.google.com/store/apps/details?id=net.androgames.level) этой программ на **Google Play**, но она содержит рекламу.
 * [Unit Converter Ultimate](https://f-droid.org/repository/browse/?fdfilter=converter&fdid=com.physphil.android.unitconverterultimate) - конвертер величин (граммы в пинты, килограммы, футы в метры и так далее)
 * [Ruler](https://f-droid.org/repository/browse/?fdfilter=ruler&fdid=org.secuso.privacyfriendlyruler) - на дисплее отображается транспортир и линейка
@@ -99,6 +99,7 @@
 * [Weather](https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyweather) - удобный просмотр погоды по городам, но нет карты погоды.
 * [PalmCalc 2019+](https://f-droid.org/en/packages/com.github.palmcalc2019.palmcalc/) - это ответвление от популярного калькулятора **PalmCalc**, код оригинальной версии больше не открытый, и оригинальный **PalmCalc** почему-то удален из Google Play. Сайт оригинального PalmCalc: http://palmcalc.com/
 * [Lifeograph](https://play.google.com/store/apps/details?id=net.sourceforge.lifeograph) - дневник с зашифрованными записями, есть [версия для настольного компьютера](http://lifeograph.sourceforge.net/wiki/Main_Page)
+* [Etar](https://play.google.com/store/apps/details?id=ws.xsoh.etar) - простой календарь без привязки к Google Service
 
 ## Файлы
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагины на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
@@ -137,6 +138,7 @@
   * [KDE Connect](https://f-droid.org/packages/org.kde.kdeconnect_tp/) - позволяют интегрироваться с KDE (Kubuntu и другими linux системами с KDE) или Gnome (Ubuntu GNOME и др.) с установленным расширением GSConnect. Пересылать файлы, управлять телефоном и прочее по USB кабелю и Wi-Fi сети.
   * [Shelter](https://play.google.com/store/apps/details?id=net.typeblog.shelter) - запускает программы в изоляции от остальной системы, можно запустить две разных копии одного приложения, например войти в два разных аккаунта Skype одновременно. Создает и использует только один профиль `Work` со слепком программ и сервисов системы (профили кроме основного в новых системах Android можно останавливать и так остановить все приложения в профиле, например в [Lawnchair 2](https://play.google.com/store/apps/details?id=ch.deletescape.lawnchair.plah) в меню программ есть галочка для этого и вкладки с разделением программ по профилям).
   * [J2ME Loader](https://play.google.com/store/apps/details?id=ru.playsoftware.j2meloader) - может запускать программы и игры на java (j2me) от старых телефонов.
+  * [Volume Control](https://play.google.com/store/apps/details?id=com.punksta.apps.volumecontrol) - очень удобный регулятор громкости для всех типов звука (будильник, оповещение, bluetooth, наушники, звонок и т.д.).
 
 ## Профессиональные и не очень
 ### Астрономия, время, календари
@@ -181,6 +183,7 @@
 * [Yandex.Metro](https://play.google.com/store/apps/details?id=ru.yandex.metro) - навигация по веткам метро для: Москвы, Санкт-Петербурга, Киева, Харькова, Минска и Стамбула и других
 * [Yandex.Maps](https://play.google.com/store/apps/details?id=ru.yandex.yandexmaps) - карты от yandex.
 * [Google Maps](https://play.google.com/store/apps/details?id=com.google.android.apps.maps) - карты от Google с возможностью скачивать области для offline навигации.
+* [Google Earth](https://play.google.com/store/apps/details?id=com.google.earth) - качественные изображения Земли со спутника
 
 ## Интернет
 * **Менеджеры загрузок, ftp клиенты, торрент клиенты**
