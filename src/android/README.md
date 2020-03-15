@@ -99,7 +99,6 @@
 * [Weather](https://play.google.com/store/apps/details?id=org.secuso.privacyfriendlyweather) - удобный просмотр погоды по городам, но нет карты погоды.
 * [PalmCalc 2019+](https://f-droid.org/en/packages/com.github.palmcalc2019.palmcalc/) - это ответвление от популярного калькулятора **PalmCalc**, код оригинальной версии больше не открытый, и оригинальный **PalmCalc** почему-то удален из Google Play. Сайт оригинального PalmCalc: http://palmcalc.com/
 * [Lifeograph](https://play.google.com/store/apps/details?id=net.sourceforge.lifeograph) - дневник с зашифрованными записями, есть [версия для настольного компьютера](http://lifeograph.sourceforge.net/wiki/Main_Page)
-* [Etar](https://play.google.com/store/apps/details?id=ws.xsoh.etar) - простой календарь без привязки к Google Service
 
 ## Файлы
 * [Ghost Commander](https://sourceforge.net/projects/ghostcommander/files/Releases/) - двух панельный файловый менеджер, есть поддержка zip, WebDav, Box, SFTP, Samba, Google Drive, Dropbox (дополнительные функции устанавливаются через плагины). Плагины в Google Play можно найти по [этой](https://play.google.com/store/apps/developer?id=Ghost+Squared) ссылке, плагины на сайте разработчика по [этой](https://sourceforge.net/projects/ghostcommander/files/Releases/) (в F-Droid ограниченный набор плагинов).
@@ -146,6 +145,7 @@
   * [Suntimes Calendars](https://f-droid.org/en/packages/com.forrestguice.suntimescalendars/) - дополнение к **Suntimes**, может добавить в стандартный календарь (к датам календаря) время восхода, заката, фазы луны и прочее
 * [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) и [KStars](https://edu.kde.org/kstars/) - карта звездного неба (созвездия, астрономические данные и т.д.)
 * [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
+* [Etar](https://play.google.com/store/apps/details?id=ws.xsoh.etar) - простой календарь без привязки к Google Service
 
 ### Математика
 * [microMathematics Plus](https://play.google.com/store/apps/details?id=com.mkulesh.micromath.plus) (μMath+), [GNURoot Octave](https://play.google.com/store/apps/details?id=com.gnuroot.octave) <sup>(для работы нужен root)</sup>, [octave4android](https://github.com/corbinlc/octave4android), [Addi](https://play.google.com/store/apps/details?id=com.addi), [Mather](https://f-droid.org/repository/browse/?fdid=org.icasdri.mather) <sup>(можно писать формулы на Math.js)</sup>  - математические среды для вычислений, построений графиков и прочего. Подойдет студентам и всем кому нужна высшая математика.
