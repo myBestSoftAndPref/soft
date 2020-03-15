@@ -145,7 +145,7 @@
   * [Suntimes Calendars](https://f-droid.org/en/packages/com.forrestguice.suntimescalendars/) - дополнение к **Suntimes**, может добавить в стандартный календарь (к датам календаря) время восхода, заката, фазы луны и прочее
 * [Sky Map](https://play.google.com/store/apps/details?id=com.google.android.stardroid) и [KStars](https://edu.kde.org/kstars/) - карта звездного неба (созвездия, астрономические данные и т.д.)
 * [Moon Phase](https://f-droid.org/repository/browse/?fdfilter=Moon+Phase&fdid=akk.astro.droid.moonphase) - показывает фазу луны
-* [Etar](https://play.google.com/store/apps/details?id=ws.xsoh.etar) - простой календарь без привязки к Google Service
+* [Simple Calendar Pro](https://f-droid.org/en/packages/com.simplemobiletools.calendar.pro/) - простой календарь без привязки к Google Service
 
 ### Математика
 * [microMathematics Plus](https://play.google.com/store/apps/details?id=com.mkulesh.micromath.plus) (μMath+), [GNURoot Octave](https://play.google.com/store/apps/details?id=com.gnuroot.octave) <sup>(для работы нужен root)</sup>, [octave4android](https://github.com/corbinlc/octave4android), [Addi](https://play.google.com/store/apps/details?id=com.addi), [Mather](https://f-droid.org/repository/browse/?fdid=org.icasdri.mather) <sup>(можно писать формулы на Math.js)</sup>  - математические среды для вычислений, построений графиков и прочего. Подойдет студентам и всем кому нужна высшая математика.
