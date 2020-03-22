@@ -114,6 +114,7 @@
 
 ## Приватность
 * [KeePassDroid](https://github.com/bpellin/keepassdroid/releases) - менеджер паролей KeePass
+* [Keepass2Android Password Safe](https://play.google.com/store/apps/details?id=keepass2android.keepass2android) - альтернатива **KeePassDroid** с удобным интерфейсом
 * [Orbot](https://guardianproject.info/apps/orbot/) - клиент Tor, бесплатная цепочка анонимных прокси
 
 ## Игры
@@ -140,6 +141,7 @@
   * [Volume Control](https://play.google.com/store/apps/details?id=com.punksta.apps.volumecontrol) - очень удобный регулятор громкости для всех типов звука (будильник, оповещение, bluetooth, наушники, звонок и т.д.).
 
 ## Профессиональные и не очень
+
 ### Астрономия, время, календари
 * [Suntimes](https://f-droid.org/packages/com.forrestguice.suntimeswidget/) - показывает время восхода и заката для разных часовых поясов и разных типов, состояние луны и другую подобную информацию.
   * [Suntimes Calendars](https://f-droid.org/en/packages/com.forrestguice.suntimescalendars/) - дополнение к **Suntimes**, может добавить в стандартный календарь (к датам календаря) время восхода, заката, фазы луны и прочее
