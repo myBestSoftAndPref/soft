@@ -1,0 +1,51 @@
+2. If yoou don't sure which disk you should use you can type
+    sudo fdisk -l to
+to be sure
+1. Use KDE Partion Manager or gparted to format usb flash drive to FAT32 or NTFS (use NTFS if iso size is too big)
+2. Set a label to the drive partion e.g. WININST (there is minimal label length, use at least 6 symbols). Use unique label only! Other drivers should not have the same label.
+2.2 Set boot flag to the partion
+3. mount Windows iso:
+    sudo mkdir /media/iso
+    sudo mount -o loop path/to/iso/file/YOUR_ISO_FILE.ISO /media/iso
+4. copy files from the iso to the flash drive partion
+5. Make it bootable
+    sudo grub-install --force --target=i386-pc --boot-directory="/media/<username>/<drive_label>/boot" /dev/sdX
+6. save the text as boot/grub/grub.cfg on the flash drive partion (change label)
+    default=1  
+    timeout=15
+    color_normal=light-cyan/dark-gray
+    menu_color_normal=black/light-cyan
+    menu_color_highlight=white/black
+    
+    menuentry "Start Windows Installation" {
+        insmod ntfs
+        insmod search_label
+        search --no-floppy --set=root --label <USB_drive_label> --hint hd0,msdos1
+        ntldr /bootmgr
+        boot
+    }
+
+    menuentry "Boot from the first hard drive" {
+        insmod ntfs
+        insmod chain
+        insmod part_msdos
+        insmod part_gpt
+        set root=(hd1)
+        chainloader +1
+        boot
+    }
+
+Problems:
+1. Sometimes you should switch off all other SSD/HDD excepti the disk wich you use to install Windows.
+2. sometimes you need to install
+    sudo apt install grub-pc-bin
+3. если будет ругаться на multiple labels. Пересоздание таблицы разделов не поможет избавиться от этой проблемы, почистить можно только этой утилитой.
+    например если создать сначало табл. разделов gpt, а потом dos, то остаться могут и та и та табл. После удаления labels нужно пересоздать табл. разделов
+    1. запустить
+        sudo wipefs /dev/sdb
+    2. выведет таблицу, столбец offset это адреса labels
+    3. удалить эти labels
+        wipefs -o 0x8001 /dev/sdb
+    4. или можно почистить все
+        sudo wipefs -a -f /dev/sdb
+4. может быть нужно закрыть все программы просматривающие usb диск чтобы grub мог установиться

@@ -128,6 +128,10 @@
     padding: 0px !important;
 }
 
+#urlbar[breakout] {
+	position: relative !important;
+}
+
 /* ************************ */
 /* fixes */
 /* ************************ */

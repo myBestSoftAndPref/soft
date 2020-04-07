@@ -83,6 +83,7 @@
   * [Tor Browser](https://play.google.com/store/apps/details?id=org.torproject.torbrowser) - анонимный браузер от проекта Tor.
 * **Разное**
   * [Orbot](https://play.google.com/store/apps/details?id=org.torproject.android) - программа для подключения к цепочке анонимных прокси от проекта Tor.
+  * [NewPipe](https://f-droid.org/en/packages/org.schabi.newpipe/) - клиент для youtube, есть старая версия [NewPipe Legacy](https://f-droid.org/en/packages/org.schabi.newpipelegacy/)
 
 ## Органайзеры и справочники
 * [Search Light](https://f-droid.org/repository/browse/?fdfilter=search&fdid=com.scottmain.android.searchlight&fdpage=4) - вспышка в качестве фонарика

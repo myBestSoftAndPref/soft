@@ -133,3 +133,6 @@ Windows Registry Editor Version 5.00
 # Проблемы
 
 * Если не сделать "полное выключение" Windows, то разделы ntfs в Linux монтироваться не будут
+
+
+Отключить windows milicious software removal tool !!!!
