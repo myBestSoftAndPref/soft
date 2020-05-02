@@ -1163,3 +1163,19 @@ sudo dmidecode bios-version
 Проект me_cleaner - это отключение технологии ME в Intel в которой возможно содержится бэкдор от самой intel
 https://ru.wikipedia.org/wiki/Intel_Management_Engine#Нейтрализация_прошивки
 -------------------
+В Kubuntu 20.04 не установлена зависимость драйвер touchpad, как в старых версиях (мало настроек), чтобы пофиксить и вернуть пункт "отключить тачпад когда включена мышь":
+sudo apt install xserver-xorg-input-synaptics
+-------------------
+Даже если в системе 2 физических диска при установке Ubuntu всегда устанавливает efi на первый диск, даже если в устночщике отметить этот диск как без efi
+чтобы это пофиксить выполнить где /dev/sda диск на который нужно установить efi (тот на котором система)
+
+заменить мантируемый диск efi на новый, т.е. поменять UUID который можно посмотреть в программе kde partion manager
+kate /etc/fstab
+sudo mount /dev/sda2 /boot/efi # это fat32 раздел с efi который на втором диске
+sudo grub-install --force --efi-directory=/boot/efi --target=x86_64-efi /dev/sda --recheck
+sudo update-grub # это на всякий случай
+
+потом можно открыть файловый менеджер, зайти на старый неверный раздел efi и удалить оттеда запись ubuntu (НА РАЗДЕЛЕ EFI)
+/Boot/fbx64.efi
+/Boot/mmx64.efi
+/ubuntu

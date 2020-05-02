@@ -22,6 +22,10 @@
 		При генерации настроек и загрузочной initramfs grub берет /etc/crypttab и генерирует по все по нем?
 	
 	Похожий вопрос с предложением хранить раздел boot отдельно: https://askubuntu.com/a/166030
+
+Note. Before all it is better to clean usb flash drive for /boot and recreate partions
+    sudo wipefs -a -f /dev/sdb
+where sdb is the usb drive
 	
 Шаг за шагом
 	0. Предполагается, что вы создали отдельный раздел /boot обычным способом через инстолятор (ниже его монтируем в chroot /mnt чтобы изменить конфиг)
@@ -58,10 +62,8 @@
                 sudo mount /dev/sda2 /mnt/boot       # где sda2 это /boot, например на флэшке (то есть скорее всего имя будет sdb1 или sdc1)
                 sudo mount --bind /dev /mnt/dev
                 sudo chroot /mnt
-		4.2 Откроется строка консоли от sudo, через нее тоже монтируем часть устройств
-                > mount -t proc proc /proc
-                > mount -t sysfs sys /sys
-                > mount -t devpts devpts /dev/pts
+		4.2 Откроется строка консоли от chroot (root user), через нее тоже монтируем часть устройств
+                mount -t proc proc /proc && mount -t sysfs sys /sys && mount -t devpts devpts /dev/pts
 		4.3 Создаем файл конфигов (выполнить не от chroot)
                 sudo touch /mnt/etc/crypttab
 		4.4 Смотрим UUID (где sda3 это раздел luks)
