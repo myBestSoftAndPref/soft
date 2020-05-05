@@ -79,7 +79,7 @@ where sdb is the usb drive
         1.  Если зашифрованный диск закрыт, то монтировать его снова коммандой:
                 sudo cryptsetup luksOpen /dev/sda3 cryptlinux   # где sda3 это luks контейнер (который можно увидеть в редакторе разделов kde или gtk)
         2.  Добавить stroki
-                GRUB_ENABLE_CRYPTODISK=y
+                GRUB_ENABLE_CRYPTODISK=y # это основная опция и возможно хватит только ее
                 GRUB_CRYPTODISK_ENABLE=y
             в /mnt/etc/default/grub
         3.  Установить не из chroot, а из обычной консоли (где sdc это флэшка на которой /boot)
@@ -121,6 +121,10 @@ where sdb is the usb drive
                 cryptlinux UUID=12285699-ef55-43b1-97fb-f568e39d720b /dev/disk/by-uuid/a3004f43-76ce-4a6c-be03-99eb8479719b luks,retry=1,lvm=local,keyscript=/lib/cryptsetup/scripts/passdev
         8. Выполнить:
             sudo update-initramfs -u
+
+Устанавливаем grub а efi раздел (esp) чтобы не выносить /boot на флэшку, а только вынести efi на флэшку
+# grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=grub --boot-directory=esp
+# grub-mkconfig -o esp/grub/grub.cfg
             
     
 ПРОБЛЕМА. На флэшку grub может установиться не полностью, тогда нужно гуглить. На самом деле GRUB устанавливается нормально, просто не устанавливается ядро в /boot (см. ниже)

@@ -136,3 +136,9 @@ Windows Registry Editor Version 5.00
 
 
 Отключить windows milicious software removal tool !!!!
+
+1. Открыть панель управления
+Control Panel\Hardware and Sound\Power Options\System Settings
+- возможно отключить fast start up т.к. он использует hibernation для быстрого старта и если установлены другие системы
+они не смогут нормально просматривать ntfs диски
+
