@@ -1,3 +1,5 @@
+Заметки переехали сюда https://gitlab.com/blog.awesomesoft/blog.awesomesoft из-за раздражающих запросов подтверждения github, который невозможно отключить. Тут обновлений больше не будет.
+
 ### Disclaimer
 
 
